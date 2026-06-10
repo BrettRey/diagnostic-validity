@@ -47,3 +47,9 @@ sklearn 1.6.1 on this machine.
 ## Last updated
 
 2026-06-10 — Phase 1 complete: bib firewall restored, manifests versioned, W&R 2020 read, pre-registration logged, MegaAcceptability v2 analysed. Awaiting Phase 2 (pm).
+
+**RESUME HERE (2026-06-10, post-reset):** literature intake done; 5 source
+extracts saved in `intake/`; assembly into item B + TO_VERIFY pending. Full
+resume plan + key findings: **`intake/HANDOFF.md`**. Phase 3 frame frozen
+(prepositions stratum done); awaiting two pm file-drops (SUBTLEX-UK + Reynolds
+matrix → `data/`) before the F4 sampler can run.
