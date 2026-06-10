@@ -9,6 +9,11 @@ Implements the pre-registration logged in DECISIONS.md (2026-06-10):
   - flag frames with post-dichotomization base rate outside [0.02, 0.98];
   - continuous check: eigen spectrum of the undichotomized z-bar matrix.
 
+Phase 3 opening additions (pm directives 2026-06-10): rank sweep extended to
+10 with effective parameter counts; nonparametric bootstrap SEs/CIs for the
+per-frame projectibility scores (formal T2 closure); top frame loadings on
+the first two PCs of the continuous z-bar matrix.
+
 Emits structured outputs only (CSV + a factual findings.md), no
 interpretation -- that is pm-node work (PLAN.md sections 5-6). Reuses the
 golden-tested estimators in models.py; does not modify them.
@@ -37,8 +42,9 @@ TSV = os.path.join(ROOT, "data", "mega-acceptability-v2",
 RESULTS = os.path.join(ROOT, "results")
 RUNDIR = os.path.join(RESULTS, "pilot_runs")          # gitignored
 SEED = 7
-RANK_SWEEP = (1, 2, 3, 4, 5)
+RANK_SWEEP = tuple(range(1, 11))   # 1..10 (pm Phase 3 directive 2)
 GRID_RANK = 1                 # fixed Model-A complexity for verdict invariance
+BOOTSTRAP_B = 200             # projectibility bootstrap resamples (pm dir. 1)
 
 
 def git_rev() -> str:
@@ -128,6 +134,29 @@ def eig_spectrum(M: np.ndarray, k: int = 10):
     return ev[:k]
 
 
+def pc_loadings(M: np.ndarray, k: int = 2):
+    """Top-k principal-component loadings (eigenvectors of the frame
+    correlation matrix) of a verbs x frames matrix. Returns (eigenvalues,
+    loadings[frames x k]). Sign is arbitrary; reported as-is."""
+    r = np.corrcoef(M.T)
+    r = np.nan_to_num(r, nan=0.0)
+    vals, vecs = np.linalg.eigh(r)
+    idx = np.argsort(vals)[::-1][:k]
+    return vals[idx], vecs[:, idx]
+
+
+def bootstrap_projectibility(X: np.ndarray, B: int, seed: int = SEED):
+    """Nonparametric bootstrap over verbs (rows) of the per-frame
+    projectibility statistic. Returns array [B x p]."""
+    rng = np.random.default_rng(seed)
+    n = X.shape[0]
+    out = []
+    for _ in range(B):
+        idx = rng.integers(0, n, size=n)
+        out.append(models.projectibility(X[idx], seed=seed))
+    return np.asarray(out)
+
+
 def analyse_arm(arm, rank, label):
     X = arm["X"]
     cv = models.cellwise_cv(X, rank=rank, seed=SEED)
@@ -175,10 +204,12 @@ def main():
     # ---- primary arm: rank sweep + full estimands -----------------------
     primary = arms["primary_past_z0"]
     Xp = primary["X"]
+    n_p, p_p = Xp.shape
     rank_curve = []
     for r in RANK_SWEEP:
         cv = models.cellwise_cv(Xp, rank=r, seed=SEED)
         rank_curve.append({"rank": r,
+                           "n_params_lowrank": r * (n_p + p_p) + p_p,
                            "logloss_lowrank": round(cv["logloss_lowrank"], 6),
                            "logloss_network": round(cv["logloss_network"], 6),
                            "diff_mean": round(cv["diff_mean"], 6),
@@ -194,6 +225,16 @@ def main():
     degenerate = [(primary["frames"][j], round(float(base_rates_frame[j]), 4))
                   for j in range(len(primary["frames"]))
                   if base_rates_frame[j] < 0.02 or base_rates_frame[j] > 0.98]
+
+    # ---- pm Phase 3 directives: PC loadings + projectibility bootstrap --
+    pc_vals, pc_vecs = pc_loadings(primary["cont"], k=2)
+    net_params_primary = int(net_p["n_params"])
+    boot = bootstrap_projectibility(Xp, BOOTSTRAP_B, seed=SEED)   # B x p
+    boot_se = boot.std(axis=0, ddof=1)
+    boot_lo = np.percentile(boot, 2.5, axis=0)
+    boot_hi = np.percentile(boot, 97.5, axis=0)
+    boot_sig = boot_lo > 0
+    n_sig = int(boot_sig.sum())
 
     # ---- all arms: comparison at fixed GRID_RANK for verdict invariance -
     grid_rows = [analyse_arm(arms[name], GRID_RANK, name)
@@ -235,6 +276,19 @@ def main():
         for i in order:
             f.write(f"{primary['verbs'][i]},{misfit[i]:.6f}\n")
 
+    with open(os.path.join(RESULTS, "pilot_pc_loadings.csv"), "w") as f:
+        f.write("frame,pc1_loading,pc2_loading\n")
+        for j, fr in enumerate(primary["frames"]):
+            f.write(f"{fr},{pc_vecs[j, 0]:.6f},{pc_vecs[j, 1]:.6f}\n")
+
+    order = np.argsort(-proj)
+    with open(os.path.join(RESULTS, "pilot_projectibility_bootstrap.csv"),
+              "w") as f:
+        f.write("frame,point,boot_se,ci_lo,ci_hi,sig_gt0\n")
+        for j in order:
+            f.write(f"{primary['frames'][j]},{proj[j]:.6f},{boot_se[j]:.6f},"
+                    f"{boot_lo[j]:.6f},{boot_hi[j]:.6f},{bool(boot_sig[j])}\n")
+
     manifest = {
         "phase": 1,
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -259,20 +313,29 @@ def main():
                  for name, spec in zip(arms, arms_spec)},
         "verdict_sign_invariant": sign_invariant,
         "verdict_band_invariant": band_invariant,
+        "bootstrap_B": BOOTSTRAP_B,
+        "n_frames_projectible_ci_gt0": n_sig,
+        "network_n_params_primary": net_params_primary,
+        "pc_eigenvalues_continuous_top2": [round(float(v), 4) for v in pc_vals],
     }
     with open(os.path.join(RESULTS, "pilot_manifest.json"), "w") as f:
         json.dump(manifest, f, indent=2)
 
     write_findings(manifest, grid_rows, headline, rank_curve, best_rank,
                    spec_dich, spec_cont, proj, misfit, primary, degenerate,
-                   sign_invariant, band_invariant)
-    print("Phase 1 complete. best_rank=%d sign_invariant=%s band_invariant=%s"
-          % (best_rank, sign_invariant, band_invariant))
+                   sign_invariant, band_invariant,
+                   boot_se, boot_lo, boot_sig, n_sig,
+                   pc_vals, pc_vecs, net_params_primary)
+    print("Phase 1 complete. best_rank=%d sign_invariant=%s band_invariant=%s "
+          "proj_sig=%d/%d"
+          % (best_rank, sign_invariant, band_invariant, n_sig, len(proj)))
 
 
 def write_findings(manifest, grid_rows, headline, rank_curve, best_rank,
                    spec_dich, spec_cont, proj, misfit, primary, degenerate,
-                   sign_invariant, band_invariant):
+                   sign_invariant, band_invariant,
+                   boot_se, boot_lo, boot_sig, n_sig,
+                   pc_vals, pc_vecs, net_params_primary):
     L = []
     w = L.append
     w("# Phase 1 findings -- MegaAcceptability v2 reanalysis\n")
@@ -330,12 +393,22 @@ def write_findings(manifest, grid_rows, headline, rank_curve, best_rank,
     w("## Model A rank sweep (primary arm)\n")
     w("Residual structure check: does held-out prediction improve past one "
       "latent dimension? (Calibration note, DECISIONS 2026-06-10.)\n")
-    w("| rank | logloss_lowrank | logloss_network | diff_mean | diff_se |")
-    w("|---|---|---|---|---|")
+    w("| rank | n_params_lowrank | logloss_lowrank | logloss_network | "
+      "diff_mean | diff_se |")
+    w("|---|---|---|---|---|---|")
     for rc in rank_curve:
-        w(f"| {rc['rank']} | {rc['logloss_lowrank']} | "
-          f"{rc['logloss_network']} | {rc['diff_mean']} | {rc['diff_se']} |")
+        w(f"| {rc['rank']} | {rc['n_params_lowrank']} | "
+          f"{rc['logloss_lowrank']} | {rc['logloss_network']} | "
+          f"{rc['diff_mean']} | {rc['diff_se']} |")
+    netll = rank_curve[0]["logloss_network"]
+    crossed = [rc["rank"] for rc in rank_curve
+               if rc["logloss_lowrank"] <= netll]
     w("")
+    w(f"- Network (primary): n_params = {net_params_primary} (BIC node fits), "
+      f"held-out log-loss ~ {netll}. Lowest low-rank rank reaching that "
+      f"log-loss within 1..{rank_curve[-1]['rank']}: "
+      f"**{crossed[0] if crossed else 'none in range'}**. Matched-complexity "
+      f"reading (parsimony at equal prediction) is pm-node work.\n")
 
     w("## Eigenvalue spectra (primary arm)\n")
     w("Pre-reg 5 continuous check + residual-structure spectrum. First 10 "
@@ -345,17 +418,39 @@ def write_findings(manifest, grid_rows, headline, rank_curve, best_rank,
     w("- Dichotomized 0/1 matrix:    " +
       ", ".join(f"{v:.3f}" for v in spec_dich) + "\n")
 
+    w("## Principal-component loadings (primary arm, continuous z-bar)\n")
+    w("Frame loadings on the first two PCs of the continuous z-bar frame "
+      "correlation matrix (eigenvalues " +
+      ", ".join(f"{v:.2f}" for v in pc_vals) +
+      "). Sign is arbitrary; no labels (pm-node interprets). Full table: "
+      "`results/pilot_pc_loadings.csv`.\n")
+    frames = primary["frames"]
+    for c, nm in [(0, "PC1"), (1, "PC2")]:
+        ld = pc_vecs[:, c]
+        hi = np.argsort(-ld)[:6]
+        lo = np.argsort(ld)[:6]
+        w(f"- {nm} highest: " +
+          "; ".join(f"{frames[j]} ({ld[j]:+.3f})" for j in hi))
+        w(f"- {nm} lowest:  " +
+          "; ".join(f"{frames[j]} ({ld[j]:+.3f})" for j in lo))
+    w("")
+
     w("## Projectibility (primary arm)\n")
     n_pos = int((proj > 0.01).sum())
-    w(f"- Frames with projectibility > 0.01: {n_pos} of {len(proj)} "
-      f"(PLAN §4 T2 reference is ≥ 10; formal significance/bootstrap "
-      f"deferred to pm-node). Full ranking: `results/pilot_projectibility.csv`.")
+    w(f"- Frames with projectibility > 0.01 (point estimate): {n_pos} of "
+      f"{len(proj)}.")
+    w(f"- Nonparametric bootstrap over verbs ({manifest['bootstrap_B']} "
+      f"resamples): **{n_sig} of {len(proj)} frames have a 95% CI lower "
+      f"bound > 0** (PLAN §4 T2 reference is ≥ 10). Per-frame point/SE/CI in "
+      f"`results/pilot_projectibility_bootstrap.csv`.")
     top = np.argsort(-proj)[:8]
     bot = np.argsort(proj)[:5]
-    w("- Top frames: " +
-      "; ".join(f"{primary['frames'][j]} ({proj[j]:.3f})" for j in top))
-    w("- Bottom frames: " +
-      "; ".join(f"{primary['frames'][j]} ({proj[j]:.3f})" for j in bot) + "\n")
+    w("- Top frames (point; CI_lo): " +
+      "; ".join(f"{primary['frames'][j]} {proj[j]:.3f}; {boot_lo[j]:.3f}"
+                for j in top))
+    w("- Bottom frames (point; CI_lo; sig>0): " +
+      "; ".join(f"{primary['frames'][j]} {proj[j]:.3f}; {boot_lo[j]:.3f}; "
+                f"{bool(boot_sig[j])}" for j in bot) + "\n")
 
     w("## Per-verb misfit (primary arm)\n")
     w("Standardized network misfit; full ranking in `results/pilot_misfit.csv`.")

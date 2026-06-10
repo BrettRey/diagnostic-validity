@@ -8,6 +8,8 @@ results/*
 !results/pilot_projectibility.csv
 !results/pilot_misfit.csv
 !results/pilot_manifest.json
+!results/pilot_pc_loadings.csv
+!results/pilot_projectibility_bootstrap.csv
 paper/*.aux
 paper/*.bbl
 paper/*.bcf
