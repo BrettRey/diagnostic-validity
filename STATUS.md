@@ -5,7 +5,7 @@ Target: *Language*
 
 ## Current phase
 
-**Phase 0 complete. Phase 1 BLOCKED (see below).**
+**Phase 0 complete. Phase 1 IN PROGRESS (blocker resolved 2026-06-10).**
 
 Phase 0 (pm-node, Brett + Claude chat): plan, diagnostic battery, tested pipeline, outcome-neutral §1–2, verified references. DONE.
 
@@ -13,21 +13,26 @@ Phase 1 (executor): fetch MegaAcceptability v2, run src/pipeline.py, emit result
 
 ## Blockers
 
-**Golden test failure on this machine (`test_network_signature`).**
+None. (Golden test blocker resolved 2026-06-10 — see Resolved below.)
 
-`python -m pytest tests/ -q` fails: `edge_f1: 0.199` (expected > 0.55); `edge_density: 1.0` (expected ~0.16).
+## Resolved
 
-Root cause: `src/models.py:65` uses `l1_ratio=1.0` with `solver="liblinear"`.
-The `l1_ratio` parameter is only valid for `elasticnet`; `liblinear` ignores it and
-uses `l2` penalty, producing a fully connected (non-sparse) network. The golden
-numbers in GOLDEN.md were computed in an environment where this was treated
-differently (possibly older sklearn where `liblinear` defaulted to `l1`).
+**Golden test failure (`test_network_signature`) — FIXED 2026-06-10.**
 
-Fix: change line 65 from `l1_ratio=1.0` to `penalty="l1"`.
-After fixing, re-run both golden commands and update GOLDEN.md numbers.
+Root cause: `src/models.py:65` passed `l1_ratio=1.0` to a `solver="liblinear"`
+model without setting `penalty`. `l1_ratio` applies only to `penalty="elasticnet"`,
+so it was ignored and the penalty defaulted to `l2`, producing a fully connected
+network (`edge_density=1.0`, `edge_f1=0.199`).
 
-**Per CLAUDE.md rule 3: executor must not touch `src/` until Brett clears this via pm-update.**
+Fix (authorized by Brett via chat, 2026-06-10): line 65 `l1_ratio=1.0` →
+`penalty="l1"`. `pytest -q` now passes 4/4. Both GOLDEN.md commands reproduce
+to the documented 4-decimal tolerance.
+
+**GOLDEN.md was NOT changed.** The earlier instruction here ("update GOLDEN.md
+numbers") was mistaken: the anchors were generated from correct l1 code, so the
+fix restores them rather than changing them. Verified in-memory before applying.
+sklearn 1.6.1 on this machine.
 
 ## Last updated
 
-2026-06-10 — Project scaffold set up from Phase 0 bundle; golden test failure found.
+2026-06-10 — Golden blocker fixed; Phase 1 started (fetch MegaAcceptability v2).

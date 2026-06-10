@@ -62,7 +62,7 @@ C_GRID = (0.05, 0.1, 0.2, 0.4)
 
 
 def _l1_logistic(C: float) -> LogisticRegression:
-    return LogisticRegression(l1_ratio=1.0, C=C, solver="liblinear",
+    return LogisticRegression(penalty="l1", C=C, solver="liblinear",
                               max_iter=2000)
 
 
