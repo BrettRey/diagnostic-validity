@@ -5,11 +5,22 @@ Target: *Language*
 
 ## Current phase
 
-**Phase 0 complete. Phase 1 IN PROGRESS (blocker resolved 2026-06-10).**
+**Phase 1 COMPLETE (2026-06-10). Awaiting Phase 2 (pm-node: go/no-go vs PLAN §4; citing-papers sweep).**
 
-Phase 0 (pm-node, Brett + Claude chat): plan, diagnostic battery, tested pipeline, outcome-neutral §1–2, verified references. DONE.
+Phase 0 (pm-node): plan, battery, tested pipeline, outcome-neutral §1–2, verified references. DONE.
 
-Phase 1 (executor): fetch MegaAcceptability v2, run src/pipeline.py, emit results/pilot_findings.md + CSVs, post pm-update.
+Phase 1 (executor): DONE. MegaAcceptability v2 fetched + analysed per the 2026-06-10 pre-registration (DECISIONS.md). Driver: `src/run_phase1.py`. Deliverables: `results/pilot_findings.md`, `pilot_comparison.csv`, `pilot_projectibility.csv`, `pilot_misfit.csv`, `pilot_manifest.json`.
+
+Phase 1 headline (factual; interpretation is Phase 2):
+- Network (Model B) beats low-rank (Model A) on held-out cells in all 5 arms, all significant at 2 SE; verdict sign-invariant.
+- A-vs-B gap narrows as Model A rank rises (diff_mean 0.149 @rank1 → 0.059 @rank5); best CV rank = 5 (the pre-set ceiling).
+- Eigen-dominance uniformly ~1.5 (never >3); continuous z̄ spectrum has two large eigenvalues (12.9, 9.6). Band-invariance False (values straddle the 1.5 cutoff).
+- 48/49 frames project >0.01; no degenerate frames. Primary slice = 1000 verbs × 49 frames (frame 'S, I V' is non-past-only).
+
+Open for pm (Phase 2):
+- Go/no-go vs PLAN §4 (T1/T2/T3).
+- Promote whiterawlins2016/2020 from TO_VERIFY into references.bib (build fails on those keys by design until then).
+- Optional: bootstrap projectibility SEs for formal T2 significance (deferred).
 
 ## Blockers
 
@@ -35,4 +46,4 @@ sklearn 1.6.1 on this machine.
 
 ## Last updated
 
-2026-06-10 — Golden blocker fixed; Phase 1 started (fetch MegaAcceptability v2).
+2026-06-10 — Phase 1 complete: bib firewall restored, manifests versioned, W&R 2020 read, pre-registration logged, MegaAcceptability v2 analysed. Awaiting Phase 2 (pm).
