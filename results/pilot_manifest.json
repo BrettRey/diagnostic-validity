@@ -1,0 +1,115 @@
+{
+  "phase": 1,
+  "timestamp": "2026-06-10T20:24:31.446896+00:00",
+  "dataset": "MegaAcceptability v2 (megaattitude.io)",
+  "dataset_file": "data/mega-acceptability-v2/mega-acceptability-v2.tsv",
+  "dataset_sha256": "81ae0810dd7b2af230de980ff8acb0675727ae194ac82e6caabacdeb744955e4",
+  "n_judgments_raw": 375000,
+  "n_judgments_native_nonNA": 373440,
+  "seed": 7,
+  "grid_rank": 1,
+  "best_rank_primary": 5,
+  "git_rev": "cbe53738bb78a9e599568fbd41283140eb7fb5cd",
+  "versions": {
+    "python": "3.11.4",
+    "numpy": "2.1.3",
+    "scikit_learn": "1.6.1",
+    "pandas": "2.3.3"
+  },
+  "n_verbs_full_dataset": 1007,
+  "n_frames_full_dataset": 50,
+  "arms": {
+    "primary_past_z0": {
+      "slice": [
+        "past"
+      ],
+      "normalize": "z",
+      "rule": [
+        "z",
+        0.0
+      ],
+      "n_verbs": 1000,
+      "n_verbs_in_slice": 1000,
+      "n_verbs_excluded": 0,
+      "n_frames": 49,
+      "frames_absent": [
+        "S, I V"
+      ],
+      "base_rate": 0.4122
+    },
+    "sens_past_z025": {
+      "slice": [
+        "past"
+      ],
+      "normalize": "z",
+      "rule": [
+        "z",
+        0.25
+      ],
+      "n_verbs": 1000,
+      "n_verbs_in_slice": 1000,
+      "n_verbs_excluded": 0,
+      "n_frames": 49,
+      "frames_absent": [
+        "S, I V"
+      ],
+      "base_rate": 0.3198
+    },
+    "sens_past_raw4": {
+      "slice": [
+        "past"
+      ],
+      "normalize": "raw",
+      "rule": [
+        "raw_ge",
+        4.0
+      ],
+      "n_verbs": 1000,
+      "n_verbs_in_slice": 1000,
+      "n_verbs_excluded": 0,
+      "n_frames": 49,
+      "frames_absent": [
+        "S, I V"
+      ],
+      "base_rate": 0.3113
+    },
+    "sens_past_raw45": {
+      "slice": [
+        "past"
+      ],
+      "normalize": "raw",
+      "rule": [
+        "raw_ge",
+        4.5
+      ],
+      "n_verbs": 1000,
+      "n_verbs_in_slice": 1000,
+      "n_verbs_excluded": 0,
+      "n_frames": 49,
+      "frames_absent": [
+        "S, I V"
+      ],
+      "base_rate": 0.2282
+    },
+    "sens_alltense_z0": {
+      "slice": [
+        "past",
+        "present",
+        "past_progressive"
+      ],
+      "normalize": "z",
+      "rule": [
+        "z",
+        0.0
+      ],
+      "n_verbs": 1000,
+      "n_verbs_in_slice": 1007,
+      "n_verbs_excluded": 7,
+      "n_frames": 50,
+      "frames_absent": [],
+      "base_rate": 0.3562
+    }
+  },
+  "verdict_sign_invariant": true,
+  "verdict_band_invariant": false
+}

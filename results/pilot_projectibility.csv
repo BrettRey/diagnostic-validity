@@ -1,0 +1,50 @@
+frame,projectibility
+NP V that S,0.058170
+NP V that S[+future],0.053652
+NP V to NP that S[+future],0.049645
+NP V to NP whether S[+future],0.049428
+NP be V about whether S,0.047580
+NP V whichNP S,0.047334
+NP be V that S[+future],0.047205
+NP V whether to VP,0.046635
+NP V to NP that S,0.045876
+NP V S,0.045722
+NP V whether S[+future],0.044737
+NP V whichNP to VP,0.044377
+NP be V about NP,0.044160
+NP V to NP whether S,0.043712
+NP be V whether S[+future],0.040758
+NP be V S,0.040494
+NP V whether S,0.040293
+NP be V that S,0.037409
+NP V NP to NP,0.036112
+NP be V whether S,0.035297
+NP V about whether S,0.033409
+NP be V that S[-tense],0.033035
+NP be V,0.032437
+NP V to NP that S[-tense],0.032185
+NP V that S[-tense],0.028269
+NP be V whether to VP,0.027149
+NP be V to VP[+eventive],0.026666
+NP V,0.024242
+NP be V whichNP to VP,0.022943
+NP V so,0.021684
+NP V about NP,0.021493
+NP V for NP to VP,0.021333
+NP V to VP[-eventive],0.019566
+NP V NP that S[+future],0.018967
+NP be V to VP[-eventive],0.018174
+NP V VPing,0.018038
+NP V NP whether S,0.017956
+NP V to VP[+eventive],0.017318
+NP be V whichNP S,0.017048
+NP V NP to VP[-eventive],0.016431
+NP V NP to VP[+eventive],0.016285
+NP V NP VPing,0.015716
+NP be V so,0.015225
+NP V NP that S,0.015010
+NP V NP whether S[+future],0.014963
+NP V NP,0.011867
+NP V NP whichNP S,0.011777
+NP V NP that S[-tense],0.010722
+NP V NP VP,0.009546

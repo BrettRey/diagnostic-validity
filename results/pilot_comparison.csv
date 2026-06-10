@@ -1,0 +1,7 @@
+arm,n_verbs,n_verbs_excluded,n_frames,base_rate,rankA,logloss_lowrank,logloss_network,diff_mean,diff_se,network_better,significant_2se,eig_dominance,eig_band,edge_density,top_eigenvalue
+primary_past_z0,1000,0,49,0.4122,1,0.537501,0.388961,0.148541,0.003874,True,True,1.5224,1.5-3 (intermediate),0.2517,10.6712
+sens_past_z025,1000,0,49,0.3198,1,0.493482,0.344344,0.149137,0.003749,True,True,1.5581,1.5-3 (intermediate),0.227,10.4881
+sens_past_raw4,1000,0,49,0.3113,1,0.500986,0.363141,0.137845,0.003709,True,True,1.5135,1.5-3 (intermediate),0.2194,9.8651
+sens_past_raw45,1000,0,49,0.2282,1,0.435317,0.305896,0.129422,0.00358,True,True,1.4613,<1.5 (no dominance),0.1879,8.9319
+sens_alltense_z0,1000,7,50,0.3562,1,0.543716,0.423861,0.119855,0.003596,True,True,1.4648,<1.5 (no dominance),0.2384,8.9388
+primary_past_z0@bestrank,1000,0,49,0.4122,5,0.448223,0.388961,0.059262,0.002662,True,True,1.5224,1.5-3 (intermediate),0.2526,10.6712
