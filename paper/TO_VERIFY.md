@@ -70,9 +70,12 @@ here; only the pm node RESOLVES them.
 14. SUBTLEX-UK — Phase 3 frequency frame (F2). van Heuven, Mandera,
     Keuleers & Brysbaert ~2014, Quarterly Journal of Experimental
     Psychology, "SUBTLEX-UK: A new and improved word frequency database
-    for British English". [pm 2026-06-10 — frame citation; verify before
-    bib.] Need: full cite (volume, issue, pages, DOI). Frame file URL +
-    SHA-256 logged to the Phase 3 sampling manifest.
+    for British English".
+    - [RESOLVED 2026-06-10 — pm verified + promoted to references.bib as
+      vanheuven2014: QJEP 67(6), 1176–1190, DOI 10.1080/17470218.2013.850521.
+      The Zipf scale is introduced in this same paper, so the F2 frame and
+      its banding variable share one citation.] Frame file URL + SHA-256
+      still to be logged to the Phase 3 sampling manifest at fetch time.
 
 ## Claims to verify against sources
 
