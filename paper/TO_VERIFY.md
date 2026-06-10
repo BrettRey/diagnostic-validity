@@ -82,6 +82,25 @@ here; only the pm node RESOLVES them.
 A. CGEL's actual classification of *worth* (adjective with exceptional
    NP complement vs preposition), with chapter/section — gates a clause
    in §2.1 currently marked ⟨VERIFY⟩. Chat-session prior: ~0.6 adjective.
+   - [READ 2026-06-10 — CGEL ch.7 §2.2 "problem items: Worth"
+     (00-CGEL.md l.18569); cross-refs ch.6 (four NP-licensing adjectives,
+     l.16706) and ch.7 §2.1 (l.18460)]. VERDICT: CGEL classifies *worth*
+     as an ADJECTIVE (highly exceptional). Verbatim: "Worth belongs to the
+     categories of noun and adjective. … As an adjective, however, worth
+     is highly exceptional. Most importantly for present purposes, it
+     licenses an NP complement … In this respect, it is like a
+     preposition, but overall the case for analysing it as an adjective is
+     strong." And: "We conclude that although worth differs markedly from
+     central members of the adjective category, the evidence shows that
+     that is the category to which it belongs." Grounds CGEL gives:
+     complement to *become*; as adjunct requires a predicand;
+     *very worth* (only *very much* in the "decidedly" sense); cannot
+     front with its complement in relatives (*the amount worth which …).
+     RESOLUTION: the §2.1 clause "the Cambridge Grammar weighs it
+     differently" (sc. from Maling 1983's preposition/completed-reanalysis
+     reading) is CORRECT — CGEL = adjective. pm prior (~0.6 adj) confirmed
+     and arguably understated. pm to rewrite §2.1, drop the ⟨VERIFY⟩, cite
+     CGEL ch.7 §2.2.
 B. Every `source:` field in diagnostics.yaml — confirm each diagnostic's
    canonical statement and location before the battery is frozen.
 C. Matthews 2014 "diagnostics have drifted" characterization in §2.1 —
