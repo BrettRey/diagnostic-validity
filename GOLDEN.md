@@ -5,6 +5,12 @@ Executor: re-run both commands below before trusting any new analysis.
 If values drift beyond the 4th decimal, STOP and post a pm-update
 (CLAUDE.md rule 3). `python -m pytest tests/ -q` must also pass (4 tests).
 
+**Environment.** These anchors were generated under scikit-learn 1.8.0
+(pm-node) and reproduce to the 4th decimal under scikit-learn 1.6.1 with
+`penalty="l1"` in src/models.py. The liblinear/`l1_ratio` behaviour that
+differs across sklearn versions is exactly why every results/ manifest now
+records library versions (`versions` field; pm-update, 2026-06-10).
+
 ## Command 1: planted reflective (rank-1) structure
     python src/pipeline.py --demo reflective --seed 7
 

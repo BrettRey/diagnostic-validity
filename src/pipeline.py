@@ -18,6 +18,7 @@ import argparse
 import hashlib
 import json
 import os
+import platform
 import sys
 from datetime import datetime, timezone
 
@@ -26,6 +27,22 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 import models   # noqa: E402
 import synth    # noqa: E402
+
+
+def _versions() -> dict:
+    """Library versions for the manifest. This bug class (sklearn changing
+    liblinear's l1_ratio handling across versions) is why every run records
+    its environment -- see GOLDEN.md."""
+    import sklearn
+    v = {"python": platform.python_version(),
+         "numpy": np.__version__,
+         "scikit_learn": sklearn.__version__}
+    try:
+        import pandas as _pd
+        v["pandas"] = _pd.__version__
+    except Exception:
+        v["pandas"] = None
+    return v
 
 
 def run(X: np.ndarray, lexemes, items, tag: str, outdir: str,
@@ -62,6 +79,7 @@ def run(X: np.ndarray, lexemes, items, tag: str, outdir: str,
         "data_sha256": hashlib.sha256(X.tobytes()).hexdigest(),
         "seed": seed, "rank": rank, "C": C,
         "shape": list(X.shape),
+        "versions": _versions(),
     }
     with open(os.path.join(outdir, tag, "manifest.json"), "w") as f:
         json.dump(manifest, f, indent=2)

@@ -9,8 +9,21 @@ here; only the pm node RESOLVES them.
 1. White & Rawlins 2016 — MegaAcceptability release paper. Believed:
    SALT 26 proceedings, "A computational model of S-selection". Need:
    venue confirmation, volume, pages, DOI.
+   - [READ 2026-06-10 — pm to promote] Confirmed via the W&R 2020
+     reference list (lingbuzz 004596) and megaattitude.io: White, Aaron
+     Steven & Kyle Rawlins. 2016. "A computational model of S-selection."
+     *Semantics and Linguistic Theory* (SALT) 26, 641–663. CLC
+     Publications, Ithaca, NY. DOI 10.3765/salt.v26i0.3819. Ready for key
+     whiterawlins2016 (@inproceedings).
 2. White & Rawlins 2020 — "Frequency, acceptability, and selection: A
    case study of clause-embedding", Glossa. Need: volume, article no.
+   - [READ 2026-06-10 — pm to promote] PDF read (lingbuzz 004596);
+     published version confirmed via publisher metadata
+     (doi.org/10.5334/gjgl.1001): *Glossa: a journal of general
+     linguistics* 5(1), published 2020-11-04, DOI 10.5334/gjgl.1001.
+     Glossa uses continuous article numbering; the article id was not
+     captured from the metadata, but the DOI is sufficient for a
+     biblatex-APA @article. Ready for key whiterawlins2020.
 3. Marsman et al. — Ising/IRT equivalence result (network psychometrics).
    Believed: Marsman et al., Multivariate Behavioral Research, ~2018,
    "An introduction to network psychometrics...". Need: full citation
@@ -46,3 +59,15 @@ C. Matthews 2014 "diagnostics have drifted" characterization in §2.1 —
    soften.
 D. MegaAcceptability v2 normalization procedure details (gates the
    dichotomization step in Phase 1).
+   - [READ 2026-06-10 — W&R 2020 §3, §4.3, App. B] W&R normalize with an
+     ORDINAL (linked/cumulative-logit) MIXED-EFFECTS model fit to the 1–7
+     ratings: fixed effects for verb, frame, and their interaction; random
+     unconstrained cutpoints per participant. The fitted model yields a
+     real-valued normalized acceptability per verb-frame pair (§4.3 uses
+     "a slightly modified form"). They explicitly contrast this with
+     simple z-scoring. The v2 release ships RAW ordinal 1–7 responses, not
+     normalized scores. The Phase 1 pilot DELIBERATELY uses participant-
+     level z-scoring (pre-reg 2026-06-10, DECISIONS.md), a simpler
+     approximation; reproducing W&R's ordinal-model normalizer is not
+     required to de-risk the model-comparison machinery, and is deferred
+     unless a Study 1 paper claim needs it.

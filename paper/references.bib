@@ -1,1 +1,84 @@
-../../../.house-style/references.bib
+% references.bib --- diagnostic-validity (project-local, VERIFIED-ONLY).
+%
+% DELIBERATELY NOT a symlink to the central house-style bib, and this
+% project does NOT keep a separate references-local.bib. This overrides the
+% portfolio-wide bib workflow (symlink-to-central + references-local) on
+% purpose:
+%
+%   The verified-only invariant is the fabrication firewall. biber can only
+%   resolve a key that has passed through TO_VERIFY.md and been promoted
+%   here by the pm node. An unverified \cite therefore FAILS LOUDLY at
+%   compile time instead of silently resolving against the thousands of
+%   entries in the central bib. The repo also stays self-contained for
+%   handoff. Duplicating a handful of central entries here is the accepted
+%   cost (pm-update, 2026-06-10).
+%
+% Executor: add citation candidates to TO_VERIFY.md only. The pm node
+% promotes verified entries into THIS file (CLAUDE.md rules 1-2; PLAN §7
+% rule 2).
+%
+% Entries below are copied verbatim from the central, verified bib
+% (.house-style/references.bib) except cgel2002 and goodman1955, which use
+% project-internal keys (= central huddleston2002 and Goodman1955) so
+% main.tex needs no key changes. NOTE: whiterawlins2016 / whiterawlins2020
+% are cited in main.tex but are NOT yet here -- they are read and logged in
+% TO_VERIFY.md (items 1-2) and await pm promotion in Phase 2; until then the
+% build fails loudly on those keys, which is the firewall working.
+
+@book{croft2001,
+  author    = {Croft, William},
+  title     = {Radical Construction Grammar: {S}yntactic Theory in Typological Perspective},
+  publisher = {Oxford University Press},
+  address   = {Oxford},
+  year      = {2001},
+  doi       = {10.1093/acprof:oso/9780198299554.001.0001},
+  ids       = {croft2001radical}
+}
+
+@book{aarts2007,
+  author    = {Aarts, Bas},
+  title     = {Syntactic Gradience: {The} Nature of Grammatical Indeterminacy},
+  publisher = {Oxford University Press},
+  address   = {Oxford},
+  year      = {2007},
+  doi       = {10.1093/oso/9780199219261.001.0001}
+}
+
+@incollection{maling1983,
+     author = {Maling, Joan},
+     year = {1983},
+     doi    = {10.1007/978-94-009-6989-6_8},
+     title = {Transitive Adjectives: A Case of Categorial Reanalysis},
+     booktitle = {Linguistic Categories: Auxiliaries and Related Puzzles},
+     editor = {Heny, Frank and Richards, Barry},
+     publisher = {D. Reidel},
+     address = {Dordrecht},
+     pages = {253-289}
+}
+
+@book{matthews2014,
+  author    = {Matthews, Peter H.},
+  title     = {The Positions of Adjectives in {English}},
+  publisher = {Oxford University Press},
+  address   = {Oxford},
+  year      = {2014},
+  doi       = {10.1093/acprof:oso/9780199681594.001.0001}
+}
+
+% Project key = central huddleston2002.
+@book{cgel2002,
+  author    = {Huddleston, Rodney and Pullum, Geoffrey K.},
+  year      = {2002},
+  title     = {The Cambridge Grammar of the English Language},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+}
+
+% Project key = central Goodman1955.
+@book{goodman1955,
+  author    = {Goodman, Nelson},
+  year      = {1955},
+  title     = {Fact, Fiction, and Forecast},
+  publisher = {Harvard University Press},
+  address   = {Cambridge, MA},
+}

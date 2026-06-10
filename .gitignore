@@ -3,6 +3,11 @@ __pycache__/
 data/
 results/*
 !results/.gitkeep
+!results/pilot_findings.md
+!results/pilot_comparison.csv
+!results/pilot_projectibility.csv
+!results/pilot_misfit.csv
+!results/pilot_manifest.json
 paper/*.aux
 paper/*.bbl
 paper/*.bcf
