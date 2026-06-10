@@ -67,6 +67,12 @@ here; only the pm node RESOLVES them.
 13. Sprouse 2018 — handbook chapter with acceptability-replication-rate
     numbers (feeds item 5). [pm novelty sweep 2026-06-10 — READ before
     use.] Need: full cite (handbook title, editors, pages, publisher).
+14. SUBTLEX-UK — Phase 3 frequency frame (F2). van Heuven, Mandera,
+    Keuleers & Brysbaert ~2014, Quarterly Journal of Experimental
+    Psychology, "SUBTLEX-UK: A new and improved word frequency database
+    for British English". [pm 2026-06-10 — frame citation; verify before
+    bib.] Need: full cite (volume, issue, pages, DOI). Frame file URL +
+    SHA-256 logged to the Phase 3 sampling manifest.
 
 ## Claims to verify against sources
 
