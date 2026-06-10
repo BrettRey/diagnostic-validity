@@ -1,0 +1,180 @@
+% main.tex --- Do categorial diagnostics measure anything?
+% House style: CLAUDE.md. Outcome-neutrality rule: PLAN.md section 5.
+% ⟨RESULT⟩ = number pending from results/; ⟨VERIFY⟩ = claim pending
+% source check (see TO_VERIFY.md). Neither may be resolved by the
+% executor from memory.
+
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{references.bib}
+\addbibresource{references-local.bib}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{gb4e}\noautomath
+
+\title{Do categorial diagnostics measure anything?\\
+\large A psychometric study of English lexical categories}
+\author{Brett Reynolds\\Humber Polytechnic \& University of Toronto}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent ⟨RESULT: 150-word abstract after Phase 4; commits to reporting
+whichever measurement model wins per the pre-registered comparison⟩
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+Syntacticians settle category membership with diagnostics. Does the word
+take \textit{very}? Does it license an NP complement? Does it occur
+attributively? For a century, these tests have functioned as the field's
+measurement instruments~-- and, like any instruments, they presuppose
+answers to questions nobody has asked of them. Do they cohere? What does
+each one actually indicate? When two diagnostics disagree about the same
+word, which one is broken?
+
+Psychology confronted these questions about its own instruments decades
+ago and built a discipline~-- psychometrics~-- around them. Linguistics
+didn't. The diagnostic toolkit passed from textbook to textbook with its
+validity assumed rather than estimated. This paper estimates it.
+
+The empirical object is a lexeme\,$\times$\,diagnostic acceptability
+matrix: rows are words, columns are standard categorial diagnostics
+instantiated as test sentences, cells are acceptability ratings. Given
+such a matrix, the question \enquote{do these diagnostics measure
+anything?} becomes statistically precise. If the diagnostics for, say,
+adjectivehood jointly reflect one underlying property, the matrix should
+be well described by a model with few latent dimensions: the diagnostics
+behave as items on a test, and the category behaves as the construct the
+test measures. If instead the diagnostics form a web of mutual
+constraints with no common cause~-- each predicting some neighbours,
+none reflecting a shared essence~-- the matrix should be better described
+by a sparse network model. These are competing measurement models, and
+competing measurement models can be fitted and compared.
+
+The contrast matters because it operationalizes a standing theoretical
+dispute. The traditional view treats categories as discrete classes that
+diagnostics detect. \textcite{croft2001} argues the diagnostics are
+opportunistically selected and define no coherent classes at all.
+\textcite{aarts2007} defends graded membership in real categories.
+A fourth position~-- the one this paper's framework comes from~-- holds
+that categories are clusters of mutually reinforcing properties,
+maintained by mechanisms rather than defined by essences. Each position
+predicts a different matrix structure (\S\ref{sec:predictions}), so the
+data can adjudicate. We commit in advance: the analysis plan, model
+comparison, and decision thresholds were fixed before the data were
+analyzed, and this introduction is written to survive any outcome,
+because which model wins \emph{is} the finding.
+
+A category label, on any of these views, earns its keep by licensing
+inference. Call a classification \emph{projectible}, for a given purpose,
+to the extent that knowing an item's classification supports reliable
+predictions about its unexamined behaviour~-- a term we adapt from
+\textcite{goodman1955}. Projectibility gives the validity question teeth
+at the level of the individual diagnostic: a test that predicts nothing
+beyond itself is decoration, whatever its pedigree. We estimate a
+projectibility score for every diagnostic in the battery
+(\S\ref{sec:methods}): the improvement in out-of-sample prediction of a
+word's remaining profile that comes from observing that one test.
+
+The paper makes three contributions. First, a validated method: we show
+on data with known structure that the model comparison discriminates
+reflective from network organization, so a verdict on real data is
+licensed rather than assumed. Second, a reanalysis of the largest
+existing acceptability grid~-- the MegaAcceptability dataset of 1{,}000
+clause-embedding verbs in 50 frames \parencite{whiterawlins2016}~--
+asking the measurement question its creators didn't: ⟨RESULT⟩. Third, a
+new dense grid over the adjective--preposition--determinative region,
+including the boundary items the descriptive literature has long
+flagged (\textit{worth}, \textit{near}, \textit{fun}, \textit{galore}),
+with quantified rather than anecdotal misfit: ⟨RESULT⟩.
+
+\section{Background}\label{sec:background}
+
+\subsection{The diagnostic tradition and its discontents}
+
+Distributional diagnostics are as old as structuralism, but their
+troubles are best seen at category boundaries. \textit{Worth} licenses
+an NP complement like a preposition (\textit{worth a fortune}), resists
+\textit{very} like a preposition, accepts degree \textit{well} like a
+preposition (\textit{well worth the trip})~-- and occurs as complement
+of \textit{become} like an adjective, with a gapped gerund-participial
+complement (\textit{worth reading \underline{\hspace{1em}}}) that
+clusters with adjectival \textit{tough}-constructions.
+\textcite{maling1983} read the balance of evidence as completed
+reanalysis to preposition; the \textit{Cambridge Grammar}
+\parencite{cgel2002} weighs it differently~⟨VERIFY: confirm CGEL's
+classification and section before this clause is kept⟩. The point here
+isn't who's right. It's that both verdicts discard stable, replicable
+facts as noise, because the adjudication game has no role for them.
+
+\textcite{matthews2014} documents a second discontent: the diagnostics
+themselves have drifted. Positional tests that once defined the
+adjective class have been quietly reweighted as their inconvenient
+results accumulated, which is what unvalidated instruments look like
+over time. And \textcite{croft2001} presses the radical version of the
+complaint: since no two diagnostics pick out exactly the same class,
+the analyst's choice of which to trust is opportunistic, and the
+categories so established are artefacts of method. Croft's argument is
+usually met with rebuttal by example. It's better met with measurement:
+opportunism is only a vice if the diagnostics genuinely fail to cohere,
+and coherence is an estimable quantity.
+
+\subsection{Categories as instruments}
+
+Treating diagnostics as test items makes the dispute between these
+positions empirical. In a \emph{reflective} measurement model, a latent
+variable~-- the construct~-- causes the item responses; items correlate
+\emph{because} they share a cause, and the model implies a low-rank
+structure on the response matrix. In a \emph{network} model, no common
+cause exists: items constrain one another directly, pairwise, and the
+implied structure is a sparse graph. The contrast has restructured
+measurement debates in psychology~⟨VERIFY: Borsboom-school citation⟩,
+and it maps onto our theoretical landscape with almost embarrassing
+neatness: essence-detection is reflective; the maintained-cluster view
+is a structured network; Croftian fragmentation is a degenerate graph
+with no stable communities; Aartsian gradience is reflective structure
+read through graded scores.
+
+One technical caution governs everything that follows: low-rank network
+models and multidimensional item-response models are near relatives, and
+in limiting cases equivalent~⟨VERIFY: Marsman et al. citation and exact
+statement⟩. The comparison is therefore never raw fit alone. We compare
+structural commitments under matched complexity~-- cross-validated
+prediction, parsimony, and structure diagnostics together
+(\S\ref{sec:methods})~-- and we validate on planted structure that the
+battery of comparisons discriminates the regimes at our sample sizes.
+
+\subsection{Existing judgment data}
+
+⟨Drafted in Phase 2 after the citing-papers sweep: MegaAcceptability and
+the bleaching method \parencite{whiterawlins2016, whiterawlins2020};
+Sprouse--Almeida replication datasets as the hard-region validation set;
+CoLA; what none of them asked.⟩
+
+\section{Predictions}\label{sec:predictions}
+⟨Table mapping the four positions to expected matrix signatures;
+pre-registered thresholds from PLAN.md \S4.⟩
+
+\section{Study 1: MegaAcceptability reanalysis}\label{sec:study1}
+⟨RESULT⟩
+
+\section{Study 2: the category-boundary grid}\label{sec:methods}
+⟨Battery (diagnostics.yaml); bleached instantiation; LLM judge with
+designed gold sample and bias-corrected estimation ⟨VERIFY: PPI/DSL
+citations⟩; judge validation against published judgments.⟩
+
+\section{Results}\label{sec:results}
+⟨RESULT⟩
+
+\section{Discussion}\label{sec:discussion}
+⟨Phase 4. Must include the concession paragraph required by PLAN.md
+\S5 if the clean reflective model wins.⟩
+
+\printbibliography
+\end{document}

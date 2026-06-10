@@ -1,0 +1,192 @@
+# diagnostics.yaml — categorial diagnostic battery (Phase 3 grid)
+#
+# Status: SEED battery, pm-node drafted. Every `source` field is a pointer
+# to be VERIFIED against the cited text (exact section/page) before the
+# battery is frozen. No page numbers appear here by design: they get added
+# only after being read. Frames use the bleaching method (White & Rawlins):
+# someone / something / happened; LEX = the lexeme under test.
+#
+# Each diagnostic is an ITEM. A cell = (lexeme, diagnostic) = one bleached
+# sentence to be rated. `tradition` records what the textbook expectation
+# is, so item-level surprises are identifiable. `op` ∈ {judgment, corpus,
+# both}: corpus-operationalizable diagnostics also get a query spec in
+# Phase 3 (corpus evidence and ratings are separate columns, never merged).
+
+meta:
+  bleach_lexicon: [someone, something, happened, "do something"]
+  rating_scale: "1-7 ordinal, dichotomization threshold pre-registered in PLAN.md"
+  sources_pending_verification:
+    - "CGEL = Huddleston & Pullum 2002, chs. 5-7 (adjective, preposition, determinative criteria)"
+    - "Matthews 2014, The Positions of Adjectives in English (positional diagnostics; boundary inventory)"
+    - "Maling 1983 (worth/near; degree and complementation diagnostics)"
+    - "Aarts 2007, Syntactic Gradience (diagnostic batteries for A/P boundary)"
+
+diagnostics:
+  # --- degree and comparison -------------------------------------------
+  - id: very_mod
+    gloss: "accepts degree modification by 'very'"
+    frame: "Something was very LEX (something)."
+    tradition: {adjective: yes, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: CGEL adjective criteria; Maling 1983"
+  - id: too_mod
+    gloss: "accepts degree 'too'"
+    frame: "Something was too LEX (something)."
+    tradition: {adjective: yes, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: CGEL"
+  - id: comparative_more
+    gloss: "periphrastic comparison with 'more'"
+    frame: "Something was more LEX (something) than something else."
+    tradition: {adjective: yes, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: CGEL"
+  - id: inflectional_comparison
+    gloss: "inflectional comparative/superlative"
+    frame: "Something was LEX-er than something else."
+    tradition: {adjective: partial, preposition: marginal, determinative: marginal}
+    op: both
+    source: "VERIFY: CGEL on inflected prepositions (near); Maling 1983"
+  - id: well_mod
+    gloss: "accepts 'well' as degree modifier (standard varieties)"
+    frame: "Something was well LEX something."
+    tradition: {adjective: no, preposition: yes, determinative: no}
+    op: judgment
+    source: "VERIFY: Maling 1983; CGEL preposition modification"
+  - id: right_mod
+    gloss: "accepts 'right' as modifier"
+    frame: "Something was right LEX something."
+    tradition: {adjective: no, preposition: yes, determinative: no}
+    op: judgment
+    source: "VERIFY: CGEL preposition modification"
+
+  # --- complementation --------------------------------------------------
+  - id: np_complement
+    gloss: "licenses NP complement"
+    frame: "Something was LEX something."
+    tradition: {adjective: no, preposition: yes, determinative: no}
+    op: both
+    source: "VERIFY: CGEL; Maling 1983"
+  - id: gerund_gap_complement
+    gloss: "gerund-participial complement with object gap"
+    frame: "Something was LEX doing."
+    tradition: {adjective: partial, preposition: no, determinative: no}
+    op: judgment
+    note: "tough-construction-like signature; instantiation needs care per lexeme"
+    source: "VERIFY: CGEL on worth; Maling 1983"
+  - id: that_clause_complement
+    gloss: "licenses declarative content-clause complement"
+    frame: "Someone was LEX that something happened."
+    tradition: {adjective: partial, preposition: partial, determinative: no}
+    op: both
+    source: "VERIFY: CGEL"
+
+  # --- function/position -------------------------------------------------
+  - id: attributive
+    gloss: "attributive (pre-head) use in NP"
+    frame: "The LEX something happened."
+    tradition: {adjective: partial, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: Matthews 2014; CGEL"
+  - id: predicative_be
+    gloss: "predicative complement of 'be'"
+    frame: "Something was LEX."
+    tradition: {adjective: yes, preposition: partial, determinative: no}
+    op: both
+    source: "VERIFY: CGEL"
+  - id: postpositive
+    gloss: "postpositive modifier"
+    frame: "Something LEX happened."
+    tradition: {adjective: partial, preposition: partial, determinative: no}
+    op: judgment
+    note: "instantiate as: 'the something LEX' (e.g. the options available)"
+    source: "VERIFY: Matthews 2014"
+  - id: predeterminer_position
+    gloss: "occurs before central determinative"
+    frame: "LEX the something happened."
+    tradition: {adjective: no, preposition: no, determinative: partial}
+    op: both
+    source: "VERIFY: CGEL ch. 5"
+  - id: determiner_function
+    gloss: "functions as determiner in NP (no further determinative)"
+    frame: "LEX something happened."
+    tradition: {adjective: no, preposition: no, determinative: yes}
+    op: both
+    source: "VERIFY: CGEL ch. 5"
+  - id: fused_head
+    gloss: "fused determiner-head use"
+    frame: "LEX happened. / Someone saw LEX."
+    tradition: {adjective: no, preposition: no, determinative: partial}
+    op: both
+    source: "VERIFY: CGEL ch. 5 (fused heads)"
+  - id: partitive_of
+    gloss: "partitive construction with 'of'"
+    frame: "LEX of the somethings happened."
+    tradition: {adjective: no, preposition: no, determinative: partial}
+    op: both
+    source: "VERIFY: CGEL ch. 5"
+
+  # --- morphology ---------------------------------------------------------
+  - id: un_prefix
+    gloss: "accepts negative 'un-' prefixation"
+    frame: "Something was unLEX."
+    tradition: {adjective: partial, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: CGEL morphology"
+  - id: ly_adverb_base
+    gloss: "serves as base for '-ly' adverb"
+    frame: "Something happened LEXly."
+    tradition: {adjective: partial, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: CGEL"
+  - id: ness_nominalization
+    gloss: "serves as base for '-ness' nominalization"
+    frame: "The LEXness of something."
+    tradition: {adjective: partial, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: CGEL"
+
+  # --- clause-level and other --------------------------------------------
+  - id: seem_complement
+    gloss: "complement of 'seem'"
+    frame: "Something seemed LEX (something)."
+    tradition: {adjective: yes, preposition: marginal, determinative: no}
+    op: both
+    note: "known confound: seem admits some PPs; keep but expect low discrimination"
+    source: "VERIFY: CGEL"
+  - id: become_complement
+    gloss: "complement of 'become'"
+    frame: "Something became LEX (something)."
+    tradition: {adjective: yes, preposition: no, determinative: no}
+    op: both
+    source: "VERIFY: CGEL"
+  - id: coordination_with_adj
+    gloss: "coordinates with clear adjective"
+    frame: "Something was old and LEX (something)."
+    tradition: {adjective: yes, preposition: marginal, determinative: no}
+    op: judgment
+    source: "VERIFY: standard coordination diagnostic; locate canonical statement"
+  - id: fronting_pp
+    gloss: "phrase headed by LEX fronts as locative/complement preposing"
+    frame: "LEX something, something happened."
+    tradition: {adjective: marginal, preposition: partial, determinative: no}
+    op: judgment
+    source: "VERIFY: CGEL information packaging chapter"
+  - id: stranding
+    gloss: "stranding under relativization"
+    frame: "the something that something was LEX __"
+    tradition: {adjective: no, preposition: partial, determinative: no}
+    op: judgment
+    source: "VERIFY: CGEL"
+
+boundary_set:
+  # forced inclusion; analyzed with and without (PLAN.md RQ3)
+  [worth, near, like, due, fun, galore, ablaze, asleep, afraid, more,
+   less, enough, such, own, ago, else]
+
+notes:
+  - "Battery is deliberately over-inclusive; item analysis prunes, not priors."
+  - "Per-lexeme frame instantiation will need a template-exception table;
+     build it, don't silently hand-edit sentences."
+  - "Corpus operationalizations (op: both) get query specs in a separate
+     file in Phase 3; corpus and judgment columns are distinct items."

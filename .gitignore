@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+data/
+results/*
+!results/.gitkeep
+paper/*.aux
+paper/*.bbl
+paper/*.bcf
+paper/*.blg
+paper/*.log
+paper/*.run.xml
+paper/*.pdf
