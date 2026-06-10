@@ -81,6 +81,13 @@ Phase 3 (new grid, category boundary):
   starred/unstarred examples, (b) Sprouse–Almeida collected ratings —
   these are the HARD region, report agreement there separately.
 
+AMENDMENT 2026-06-10 (pm, pre-registered via pm-update). The Phase 3
+sampling frame is now fully specified: see DECISIONS.md "Phase 3 sampling
+frame" (F1–F7). Circularity firewall (F3): frame POS labels and CGEL list
+membership define strata for coverage and known-groups validity checks
+ONLY; no analysis conditions on them as ground truth — the measurement
+models see an unlabeled lexeme × item matrix.
+
 ## 4. Go/no-go thresholds (pre-registered, Phase 1 → Phase 2)
 
 GO if, on MegaAcceptability:
@@ -96,6 +103,13 @@ GO if, on MegaAcceptability:
 NO-GO (mush): neither model separates, projectibility flat, misfit
 uncorrelated with anything. Action: write up as a short methods caution
 elsewhere; do not proceed to Phase 3 collection.
+
+AMENDMENT 2026-06-10 (pm, pre-registered via pm-update). Dominance bands
+simplified to "dominant > 3 / non-dominant < 3" (the 1.5–3 intermediate
+band is dropped). Original T1 wording above ("> 3 vs < 1.5") preserved for
+the record. Applies to Phase 3 and any pilot re-run. (Phase 1 pilot at git
+22e5027 reported bands under the original 1.5 cut; the pm GO ruling treated
+the resulting band-invariance = False as a boundary artifact.)
 
 
 Power note (from tests/test_recovery.py): person-fit detection of
