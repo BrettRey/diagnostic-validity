@@ -1,0 +1,50 @@
+frame,pc1_loading,pc2_loading
+NP V,-0.165259,0.012834
+NP V NP,-0.120710,0.039457
+NP V NP VP,-0.005371,0.147401
+NP V NP VPing,0.012717,0.110993
+NP V NP that S,0.035853,0.214392
+NP V NP that S[+future],0.029291,0.228907
+NP V NP that S[-tense],0.022126,0.188553
+NP V NP to NP,-0.166975,0.113566
+NP V NP to VP[+eventive],0.044407,0.149005
+NP V NP to VP[-eventive],-0.024758,0.146488
+NP V NP whether S,0.025591,0.216177
+NP V NP whether S[+future],0.034461,0.216830
+NP V NP whichNP S,-0.007711,0.204131
+NP V S,-0.190586,0.109850
+NP V VPing,-0.141117,0.026029
+NP V about NP,-0.146174,0.058656
+NP V about whether S,-0.163914,0.095895
+NP V for NP to VP,-0.134303,0.068421
+NP V so,-0.156198,0.067852
+NP V that S,-0.209245,0.101203
+NP V that S[+future],-0.212460,0.116110
+NP V that S[-tense],-0.164840,0.104141
+NP V to NP that S,-0.186002,0.106857
+NP V to NP that S[+future],-0.190301,0.114408
+NP V to NP that S[-tense],-0.170441,0.111801
+NP V to NP whether S,-0.181585,0.107641
+NP V to NP whether S[+future],-0.183412,0.117619
+NP V to VP[+eventive],-0.107718,0.027144
+NP V to VP[-eventive],-0.122344,0.040426
+NP V whether S,-0.190188,0.114999
+NP V whether S[+future],-0.194087,0.122699
+NP V whether to VP,-0.177744,0.124682
+NP V whichNP S,-0.181817,0.089471
+NP V whichNP to VP,-0.179057,0.105331
+NP be V,0.168070,0.106147
+NP be V S,0.153615,0.147634
+NP be V about NP,0.187609,0.158965
+NP be V about whether S,0.173754,0.168444
+NP be V so,0.121268,0.130064
+NP be V that S,0.171949,0.162150
+NP be V that S[+future],0.164356,0.182403
+NP be V that S[-tense],0.161200,0.154552
+NP be V to VP[+eventive],0.111023,0.160087
+NP be V to VP[-eventive],0.060534,0.165767
+NP be V whether S,0.142578,0.195166
+NP be V whether S[+future],0.137643,0.200666
+NP be V whether to VP,0.121823,0.197621
+NP be V whichNP S,0.082392,0.197122
+NP be V whichNP to VP,0.070207,0.211980
