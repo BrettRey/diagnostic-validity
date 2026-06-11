@@ -112,7 +112,8 @@ def main():
         print("    " + it["sentence"] + "\n")
         while True:
             try:
-                raw = input("    rating 1-7 (+v/+u, q=pause): ").strip().lower()
+                raw = input("    rating 1-7 (add v/u after the digit, "
+                            "e.g. 4u); q=pause: ").strip().lower()
             except EOFError:
                 fh.close()
                 return
@@ -122,7 +123,9 @@ def main():
                 return
             digits = [c for c in raw if c in "1234567"]
             if len(digits) != 1:
-                print("    -> enter exactly one digit 1-7 (optionally +v/+u)")
+                print("    -> a flag is not a skip: enter a digit 1-7 first, "
+                      "then v/u if needed (e.g. 4u). Best-guess integer even "
+                      "when unsure.")
                 continue
             rating = int(digits[0])
             break
