@@ -1,0 +1,81 @@
+# determinatives_reynolds73.txt -- the 73 determinatives (F1c), reused
+# VERBATIM from Reynolds 2021's matrix (data/reynolds2021_determinative_matrix.csv).
+# Split is POSITIONAL per Reynolds 2021 (Appendix R: eqdist.etest sizes=c(73,65);
+# filename 73-65full.csv): first 73 data rows = determinatives, next 65 = pronouns.
+# Boundary verified 2026-06-11: data row 73 = various_det, row 74 = each_other.
+# Labels carry Reynolds' disambiguation suffixes (one_det vs one_pron; you/we/us are
+# personal determinatives here). Surface rendering + suffix handling is an
+# instantiation step (template-exception table), not part of this sourced list.
+a
+a_certain
+a_few
+a_great_many
+a_little
+all
+another
+any
+anybody
+anyone
+anything
+anywhere
+both
+certain
+each
+either
+enough
+every
+everybody
+everyone
+everything
+everywhere
+few
+fewer
+fewest
+little
+less
+least
+many
+many_a
+more
+most
+much
+neither
+last
+next
+no
+none
+nobody
+no_one
+nothing
+nowhere
+one_det
+two_det
+three_det
+once
+twice
+thrice
+several
+some
+somebody
+someone
+something
+somewhere
+somewhat
+such
+sufficient
+that
+these
+this
+those
+the
+us_det
+we_det
+you_det
+what_det
+whatever_det
+which_rel_det
+which_int_det
+whichever_rel_det
+whichever_int_det
+zero_det
+various_det

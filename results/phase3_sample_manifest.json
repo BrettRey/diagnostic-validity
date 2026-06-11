@@ -1,0 +1,127 @@
+{
+  "phase": 3,
+  "step": "F4 sampling",
+  "timestamp": "2026-06-11T02:39:06.845144+00:00",
+  "seed": 26,
+  "git_rev": "1a5515f12c2d883b1e5a6ef12494fedef6eab9c1",
+  "versions": {
+    "python": "3.11.4",
+    "numpy": "2.1.3",
+    "scikit_learn": "1.6.1",
+    "pandas": "2.3.3"
+  },
+  "frames": {
+    "subtlex_uk_txt": {
+      "path": "data/SUBTLEX-UK.txt",
+      "sha256": "9cc02e83efce5c606606578122b792e364dcee52799115218f2cfd596e0fe0f3",
+      "zipf_col": "LogFreq(Zipf)",
+      "pos_col": "DomPoS"
+    },
+    "reynolds_matrix": {
+      "path": "data/reynolds2021_determinative_matrix.csv",
+      "sha256": "a15af082a6bc5dbe24bcf57475c35cad1b00c2dc7e17af584db1841bf7abddf7"
+    },
+    "prepositions": {
+      "path": "sampling/prepositions_cgel_ch7.csv",
+      "sha256": "0df6b742520ba2ed8371e704900e5ce22147030dfb989b52432e3674d6fbb763"
+    },
+    "determinatives": {
+      "path": "sampling/determinatives_reynolds73.txt",
+      "sha256": "b77f2eaad6b4fc1165c43b0f1e145534d9f2ee0dc8878f78907037c06899a8da"
+    }
+  },
+  "adjective_band_populations": {
+    "zipf>=5": 119,
+    "4-5": 595,
+    "3-4": 2131,
+    "2-3": 3686
+  },
+  "adjective_per_band_target": 55,
+  "adjective_band_underfill_note": null,
+  "strata_counts": {
+    "boundary": 16,
+    "determinative": 67,
+    "preposition": 167,
+    "adjective": 213,
+    "blind": 59
+  },
+  "total_unique_lexemes": 522,
+  "n_collisions": 15,
+  "collisions": [
+    {
+      "lexeme": "enough",
+      "kept": "boundary",
+      "dropped": "determinative"
+    },
+    {
+      "lexeme": "less",
+      "kept": "boundary",
+      "dropped": "determinative"
+    },
+    {
+      "lexeme": "more",
+      "kept": "boundary",
+      "dropped": "determinative"
+    },
+    {
+      "lexeme": "such",
+      "kept": "boundary",
+      "dropped": "determinative"
+    },
+    {
+      "lexeme": "which",
+      "kept": "determinative",
+      "dropped": "determinative"
+    },
+    {
+      "lexeme": "whichever",
+      "kept": "determinative",
+      "dropped": "determinative"
+    },
+    {
+      "lexeme": "near",
+      "kept": "boundary",
+      "dropped": "preposition"
+    },
+    {
+      "lexeme": "less",
+      "kept": "boundary",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "few",
+      "kept": "determinative",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "last",
+      "kept": "determinative",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "such",
+      "kept": "boundary",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "afraid",
+      "kept": "boundary",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "little",
+      "kept": "determinative",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "own",
+      "kept": "boundary",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "strong",
+      "kept": "adjective",
+      "dropped": "blind"
+    }
+  ]
+}
