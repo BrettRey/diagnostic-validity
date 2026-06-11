@@ -1,0 +1,3902 @@
+[
+ {
+  "type": "warmup",
+  "cell_id": 9757,
+  "sentence": "Hypocritical something happened.",
+  "present_pos": 1
+ },
+ {
+  "type": "warmup",
+  "cell_id": 11037,
+  "sentence": "Something was old and ivorian.",
+  "present_pos": 2
+ },
+ {
+  "type": "warmup",
+  "cell_id": 12081,
+  "sentence": "The pitched something happened.",
+  "present_pos": 3
+ },
+ {
+  "type": "warmup",
+  "cell_id": 834,
+  "sentence": "The everyoneness of something.",
+  "present_pos": 4
+ },
+ {
+  "type": "warmup",
+  "cell_id": 5006,
+  "sentence": "Someone saw thereabouts.",
+  "present_pos": 5
+ },
+ {
+  "type": "warmup",
+  "cell_id": 11886,
+  "sentence": "Something was enough lives.",
+  "present_pos": 6
+ },
+ {
+  "type": "warmup",
+  "cell_id": 7018,
+  "sentence": "Something was single.",
+  "present_pos": 7
+ },
+ {
+  "type": "warmup",
+  "cell_id": 2162,
+  "sentence": "Something was more from than something else.",
+  "present_pos": 8
+ },
+ {
+  "type": "warmup",
+  "cell_id": 6259,
+  "sentence": "Something seemed serious.",
+  "present_pos": 9
+ },
+ {
+  "type": "warmup",
+  "cell_id": 9125,
+  "sentence": "Something was daring enough.",
+  "present_pos": 10
+ },
+ {
+  "type": "warmup",
+  "cell_id": 7088,
+  "sentence": "Something was first doing.",
+  "present_pos": 11
+ },
+ {
+  "type": "warmup",
+  "cell_id": 3001,
+  "sentence": "Something was too past.",
+  "present_pos": 12
+ },
+ {
+  "type": "warmup",
+  "cell_id": 4588,
+  "sentence": "Something was right thereat.",
+  "present_pos": 13
+ },
+ {
+  "type": "warmup",
+  "cell_id": 8123,
+  "sentence": "The something coastal happened.",
+  "present_pos": 14
+ },
+ {
+  "type": "warmup",
+  "cell_id": 2246,
+  "sentence": "Someone saw upon.",
+  "present_pos": 15
+ },
+ {
+  "type": "warmup",
+  "cell_id": 6288,
+  "sentence": "Something was very second.",
+  "present_pos": 16
+ },
+ {
+  "type": "warmup",
+  "cell_id": 859,
+  "sentence": "Something seemed everything.",
+  "present_pos": 17
+ },
+ {
+  "type": "warmup",
+  "cell_id": 8668,
+  "sentence": "Something was right relevant.",
+  "present_pos": 18
+ },
+ {
+  "type": "warmup",
+  "cell_id": 10413,
+  "sentence": "Something was old and czechoslovakian.",
+  "present_pos": 19
+ },
+ {
+  "type": "warmup",
+  "cell_id": 7097,
+  "sentence": "Something happened firstly.",
+  "present_pos": 20
+ },
+ {
+  "type": "gold",
+  "cell_id": 1967,
+  "sentence": "The something that something was zero __",
+  "present_pos": 21
+ },
+ {
+  "type": "gold",
+  "cell_id": 8068,
+  "sentence": "Something was right commercial.",
+  "present_pos": 22
+ },
+ {
+  "type": "gold",
+  "cell_id": 6152,
+  "sentence": "Something was public doing.",
+  "present_pos": 23
+ },
+ {
+  "type": "gold",
+  "cell_id": 2380,
+  "sentence": "Something was right above.",
+  "present_pos": 24
+ },
+ {
+  "type": "gold",
+  "cell_id": 9996,
+  "sentence": "Feeble the something happened.",
+  "present_pos": 25
+ },
+ {
+  "type": "gold",
+  "cell_id": 5628,
+  "sentence": "Overland the something happened.",
+  "present_pos": 26
+ },
+ {
+  "type": "gold",
+  "cell_id": 5962,
+  "sentence": "Something was outward.",
+  "present_pos": 27
+ },
+ {
+  "type": "gold",
+  "cell_id": 1901,
+  "sentence": "Something was which enough.",
+  "present_pos": 28
+ },
+ {
+  "type": "gold",
+  "cell_id": 6412,
+  "sentence": "Something was right small.",
+  "present_pos": 29
+ },
+ {
+  "type": "gold",
+  "cell_id": 1250,
+  "sentence": "Something was more no one than something else.",
+  "present_pos": 30
+ },
+ {
+  "type": "gold",
+  "cell_id": 11734,
+  "sentence": "Civil something, something happened.",
+  "present_pos": 31
+ },
+ {
+  "type": "repeat",
+  "cell_id": 60,
+  "sentence": "Like the something happened.",
+  "present_pos": 32
+ },
+ {
+  "type": "gold",
+  "cell_id": 10888,
+  "sentence": "Something was unbarnstable.",
+  "present_pos": 33
+ },
+ {
+  "type": "gold",
+  "cell_id": 6483,
+  "sentence": "Something was fairer than something else.",
+  "present_pos": 34
+ },
+ {
+  "type": "gold",
+  "cell_id": 3626,
+  "sentence": "Something was more touching than something else.",
+  "present_pos": 35
+ },
+ {
+  "type": "gold",
+  "cell_id": 2273,
+  "sentence": "Something happened withly.",
+  "present_pos": 36
+ },
+ {
+  "type": "gold",
+  "cell_id": 1337,
+  "sentence": "Something happened onely.",
+  "present_pos": 37
+ },
+ {
+  "type": "gold",
+  "cell_id": 316,
+  "sentence": "Something was right own.",
+  "present_pos": 38
+ },
+ {
+  "type": "gold",
+  "cell_id": 11717,
+  "sentence": "Something was civil enough.",
+  "present_pos": 39
+ },
+ {
+  "type": "gold",
+  "cell_id": 10500,
+  "sentence": "Flippy the something happened.",
+  "present_pos": 40
+ },
+ {
+  "type": "gold",
+  "cell_id": 9945,
+  "sentence": "The hilarious something happened.",
+  "present_pos": 41
+ },
+ {
+  "type": "gold",
+  "cell_id": 7941,
+  "sentence": "Something was old and bright.",
+  "present_pos": 42
+ },
+ {
+  "type": "gold",
+  "cell_id": 3884,
+  "sentence": "Something became now.",
+  "present_pos": 43
+ },
+ {
+  "type": "gold",
+  "cell_id": 6725,
+  "sentence": "Something was short enough.",
+  "present_pos": 44
+ },
+ {
+  "type": "gold",
+  "cell_id": 5361,
+  "sentence": "The downstream something happened.",
+  "present_pos": 45
+ },
+ {
+  "type": "gold",
+  "cell_id": 986,
+  "sentence": "Something was more least than something else.",
+  "present_pos": 46
+ },
+ {
+  "type": "gold",
+  "cell_id": 1204,
+  "sentence": "Something was right none.",
+  "present_pos": 47
+ },
+ {
+  "type": "gold",
+  "cell_id": 1602,
+  "sentence": "The somewhereness of something.",
+  "present_pos": 48
+ },
+ {
+  "type": "gold",
+  "cell_id": 9035,
+  "sentence": "The something pressured happened.",
+  "present_pos": 49
+ },
+ {
+  "type": "gold",
+  "cell_id": 6677,
+  "sentence": "Something was wrong enough.",
+  "present_pos": 50
+ },
+ {
+  "type": "gold",
+  "cell_id": 5050,
+  "sentence": "Something was here.",
+  "present_pos": 51
+ },
+ {
+  "type": "gold",
+  "cell_id": 11321,
+  "sentence": "Something happened undefeatedly.",
+  "present_pos": 52
+ },
+ {
+  "type": "gold",
+  "cell_id": 4383,
+  "sentence": "Together of the somethings happened.",
+  "present_pos": 53
+ },
+ {
+  "type": "gold",
+  "cell_id": 9219,
+  "sentence": "Something was acclaimeder than something else.",
+  "present_pos": 54
+ },
+ {
+  "type": "gold",
+  "cell_id": 10135,
+  "sentence": "Something was untypical something.",
+  "present_pos": 55
+ },
+ {
+  "type": "gold",
+  "cell_id": 11738,
+  "sentence": "Something was more thrilling than something else.",
+  "present_pos": 56
+ },
+ {
+  "type": "gold",
+  "cell_id": 2579,
+  "sentence": "The something before happened.",
+  "present_pos": 57
+ },
+ {
+  "type": "gold",
+  "cell_id": 8464,
+  "sentence": "Something was undemocratic.",
+  "present_pos": 58
+ },
+ {
+  "type": "gold",
+  "cell_id": 8781,
+  "sentence": "Something was old and anglo-saxon.",
+  "present_pos": 59
+ },
+ {
+  "type": "gold",
+  "cell_id": 301,
+  "sentence": "Such something happened.",
+  "present_pos": 60
+ },
+ {
+  "type": "gold",
+  "cell_id": 6660,
+  "sentence": "New the something happened.",
+  "present_pos": 61
+ },
+ {
+  "type": "gold",
+  "cell_id": 12386,
+  "sentence": "Something was more channel than something else.",
+  "present_pos": 62
+ },
+ {
+  "type": "gold",
+  "cell_id": 9103,
+  "sentence": "Something was riddled something.",
+  "present_pos": 63
+ },
+ {
+  "type": "gold",
+  "cell_id": 2169,
+  "sentence": "The from something happened.",
+  "present_pos": 64
+ },
+ {
+  "type": "gold",
+  "cell_id": 12446,
+  "sentence": "Someone saw correspondent.",
+  "present_pos": 65
+ },
+ {
+  "type": "gold",
+  "cell_id": 7115,
+  "sentence": "The something big happened.",
+  "present_pos": 66
+ },
+ {
+  "type": "gold",
+  "cell_id": 9066,
+  "sentence": "The pygminess of something.",
+  "present_pos": 67
+ },
+ {
+  "type": "gold",
+  "cell_id": 9306,
+  "sentence": "The neolithicness of something.",
+  "present_pos": 68
+ },
+ {
+  "type": "gold",
+  "cell_id": 2298,
+  "sentence": "The asness of something.",
+  "present_pos": 69
+ },
+ {
+  "type": "gold",
+  "cell_id": 6869,
+  "sentence": "Something was lovely enough.",
+  "present_pos": 70
+ },
+ {
+  "type": "gold",
+  "cell_id": 11678,
+  "sentence": "Someone saw hayes.",
+  "present_pos": 71
+ },
+ {
+  "type": "gold",
+  "cell_id": 6079,
+  "sentence": "Something was upward something.",
+  "present_pos": 72
+ },
+ {
+  "type": "gold",
+  "cell_id": 9891,
+  "sentence": "Something was fleetinger than something else.",
+  "present_pos": 73
+ },
+ {
+  "type": "gold",
+  "cell_id": 11577,
+  "sentence": "The guns something happened.",
+  "present_pos": 74
+ },
+ {
+  "type": "gold",
+  "cell_id": 1612,
+  "sentence": "Something was right somewhat.",
+  "present_pos": 75
+ },
+ {
+  "type": "repeat",
+  "cell_id": 252,
+  "sentence": "Less the something happened.",
+  "present_pos": 76
+ },
+ {
+  "type": "gold",
+  "cell_id": 6865,
+  "sentence": "Something was too lovely.",
+  "present_pos": 77
+ },
+ {
+  "type": "gold",
+  "cell_id": 2338,
+  "sentence": "Something was aboard.",
+  "present_pos": 78
+ },
+ {
+  "type": "gold",
+  "cell_id": 11234,
+  "sentence": "Something was more weepy than something else.",
+  "present_pos": 79
+ },
+ {
+  "type": "gold",
+  "cell_id": 2570,
+  "sentence": "Something was more before than something else.",
+  "present_pos": 80
+ },
+ {
+  "type": "gold",
+  "cell_id": 5469,
+  "sentence": "Something was old and upstairs.",
+  "present_pos": 81
+ },
+ {
+  "type": "gold",
+  "cell_id": 12238,
+  "sentence": "Protecting something, something happened.",
+  "present_pos": 82
+ },
+ {
+  "type": "gold",
+  "cell_id": 1287,
+  "sentence": "Nothing of the somethings happened.",
+  "present_pos": 83
+ },
+ {
+  "type": "gold",
+  "cell_id": 9828,
+  "sentence": "Ah-ah the something happened.",
+  "present_pos": 84
+ },
+ {
+  "type": "gold",
+  "cell_id": 5997,
+  "sentence": "Something was old and rightward.",
+  "present_pos": 85
+ },
+ {
+  "type": "gold",
+  "cell_id": 4649,
+  "sentence": "Something happened therefromly.",
+  "present_pos": 86
+ },
+ {
+  "type": "gold",
+  "cell_id": 8831,
+  "sentence": "The something that something was tentative __",
+  "present_pos": 87
+ },
+ {
+  "type": "gold",
+  "cell_id": 5750,
+  "sentence": "Someone saw downward.",
+  "present_pos": 88
+ },
+ {
+  "type": "gold",
+  "cell_id": 6182,
+  "sentence": "Someone saw ready.",
+  "present_pos": 89
+ },
+ {
+  "type": "repeat",
+  "cell_id": 930,
+  "sentence": "The fewerness of something.",
+  "present_pos": 90
+ },
+ {
+  "type": "gold",
+  "cell_id": 4419,
+  "sentence": "Something was herebier than something else.",
+  "present_pos": 91
+ },
+ {
+  "type": "gold",
+  "cell_id": 8475,
+  "sentence": "Something was leaner than something else.",
+  "present_pos": 92
+ },
+ {
+  "type": "gold",
+  "cell_id": 1717,
+  "sentence": "This something happened.",
+  "present_pos": 93
+ },
+ {
+  "type": "gold",
+  "cell_id": 11797,
+  "sentence": "Grants something happened.",
+  "present_pos": 94
+ },
+ {
+  "type": "gold",
+  "cell_id": 11455,
+  "sentence": "Something was reported something.",
+  "present_pos": 95
+ },
+ {
+  "type": "gold",
+  "cell_id": 1069,
+  "sentence": "Most something happened.",
+  "present_pos": 96
+ },
+ {
+  "type": "gold",
+  "cell_id": 12708,
+  "sentence": "Curve the something happened.",
+  "present_pos": 97
+ },
+ {
+  "type": "gold",
+  "cell_id": 9226,
+  "sentence": "Something was acclaimed.",
+  "present_pos": 98
+ },
+ {
+  "type": "gold",
+  "cell_id": 7915,
+  "sentence": "Something seemed social.",
+  "present_pos": 99
+ },
+ {
+  "type": "repeat",
+  "cell_id": 2890,
+  "sentence": "Something was off.",
+  "present_pos": 100
+ },
+ {
+  "type": "gold",
+  "cell_id": 10106,
+  "sentence": "Something was more groggy than something else.",
+  "present_pos": 101
+ },
+ {
+  "type": "gold",
+  "cell_id": 5379,
+  "sentence": "Something was downwinder than something else.",
+  "present_pos": 102
+ },
+ {
+  "type": "gold",
+  "cell_id": 11064,
+  "sentence": "Something was very suggestive.",
+  "present_pos": 103
+ },
+ {
+  "type": "gold",
+  "cell_id": 7177,
+  "sentence": "Something was too correct.",
+  "present_pos": 104
+ },
+ {
+  "type": "gold",
+  "cell_id": 11996,
+  "sentence": "Something became otters.",
+  "present_pos": 105
+ },
+ {
+  "type": "gold",
+  "cell_id": 856,
+  "sentence": "Something was uneverything.",
+  "present_pos": 106
+ },
+ {
+  "type": "gold",
+  "cell_id": 12671,
+  "sentence": "The something that something was tribe __",
+  "present_pos": 107
+ },
+ {
+  "type": "gold",
+  "cell_id": 6158,
+  "sentence": "Someone saw public.",
+  "present_pos": 108
+ },
+ {
+  "type": "gold",
+  "cell_id": 8587,
+  "sentence": "Something seemed historic.",
+  "present_pos": 109
+ },
+ {
+  "type": "gold",
+  "cell_id": 2890,
+  "sentence": "Something was off.",
+  "present_pos": 110
+ },
+ {
+  "type": "gold",
+  "cell_id": 4313,
+  "sentence": "Something happened backly.",
+  "present_pos": 111
+ },
+ {
+  "type": "gold",
+  "cell_id": 3507,
+  "sentence": "Something was owinger than something else.",
+  "present_pos": 112
+ },
+ {
+  "type": "gold",
+  "cell_id": 7442,
+  "sentence": "Something was more gorgeous than something else.",
+  "present_pos": 113
+ },
+ {
+  "type": "gold",
+  "cell_id": 2468,
+  "sentence": "Something became against.",
+  "present_pos": 114
+ },
+ {
+  "type": "gold",
+  "cell_id": 8684,
+  "sentence": "Something became relevant.",
+  "present_pos": 115
+ },
+ {
+  "type": "gold",
+  "cell_id": 10279,
+  "sentence": "Something was fossilised something.",
+  "present_pos": 116
+ },
+ {
+  "type": "gold",
+  "cell_id": 7855,
+  "sentence": "Something was old-fashioned something.",
+  "present_pos": 117
+ },
+ {
+  "type": "repeat",
+  "cell_id": 12446,
+  "sentence": "Someone saw correspondent.",
+  "present_pos": 118
+ },
+ {
+  "type": "gold",
+  "cell_id": 1570,
+  "sentence": "Something was something.",
+  "present_pos": 119
+ },
+ {
+  "type": "gold",
+  "cell_id": 2267,
+  "sentence": "The something with happened.",
+  "present_pos": 120
+ },
+ {
+  "type": "gold",
+  "cell_id": 1013,
+  "sentence": "Something was many enough.",
+  "present_pos": 121
+ },
+ {
+  "type": "gold",
+  "cell_id": 9447,
+  "sentence": "Inefficient of the somethings happened.",
+  "present_pos": 122
+ },
+ {
+  "type": "gold",
+  "cell_id": 6248,
+  "sentence": "Something was serious doing.",
+  "present_pos": 123
+ },
+ {
+  "type": "gold",
+  "cell_id": 12485,
+  "sentence": "Something was life enough.",
+  "present_pos": 124
+ },
+ {
+  "type": "gold",
+  "cell_id": 5944,
+  "sentence": "Something was unonward.",
+  "present_pos": 125
+ },
+ {
+  "type": "gold",
+  "cell_id": 393,
+  "sentence": "The a something happened.",
+  "present_pos": 126
+ },
+ {
+  "type": "gold",
+  "cell_id": 7108,
+  "sentence": "Something was right big.",
+  "present_pos": 127
+ },
+ {
+  "type": "gold",
+  "cell_id": 6917,
+  "sentence": "Something was bad enough.",
+  "present_pos": 128
+ },
+ {
+  "type": "gold",
+  "cell_id": 3518,
+  "sentence": "Someone saw owing.",
+  "present_pos": 129
+ },
+ {
+  "type": "gold",
+  "cell_id": 5045,
+  "sentence": "Something was here enough.",
+  "present_pos": 130
+ },
+ {
+  "type": "gold",
+  "cell_id": 11947,
+  "sentence": "Something seemed describes.",
+  "present_pos": 131
+ },
+ {
+  "type": "gold",
+  "cell_id": 6424,
+  "sentence": "Something was unsmall.",
+  "present_pos": 132
+ },
+ {
+  "type": "gold",
+  "cell_id": 11419,
+  "sentence": "Something seemed john.",
+  "present_pos": 133
+ },
+ {
+  "type": "gold",
+  "cell_id": 12734,
+  "sentence": "Someone saw stuck.",
+  "present_pos": 134
+ },
+ {
+  "type": "gold",
+  "cell_id": 8702,
+  "sentence": "Someone saw awesome.",
+  "present_pos": 135
+ },
+ {
+  "type": "gold",
+  "cell_id": 11537,
+  "sentence": "Something happened remainly.",
+  "present_pos": 136
+ },
+ {
+  "type": "repeat",
+  "cell_id": 8571,
+  "sentence": "Something was historicer than something else.",
+  "present_pos": 137
+ },
+ {
+  "type": "gold",
+  "cell_id": 8902,
+  "sentence": "Pedestrian something, something happened.",
+  "present_pos": 138
+ },
+ {
+  "type": "gold",
+  "cell_id": 26,
+  "sentence": "Something was more near than something else.",
+  "present_pos": 139
+ },
+ {
+  "type": "gold",
+  "cell_id": 9129,
+  "sentence": "The daring something happened.",
+  "present_pos": 140
+ },
+ {
+  "type": "repeat",
+  "cell_id": 12465,
+  "sentence": "The fifa something happened.",
+  "present_pos": 141
+ },
+ {
+  "type": "gold",
+  "cell_id": 6806,
+  "sentence": "Someone saw nice.",
+  "present_pos": 142
+ },
+ {
+  "type": "gold",
+  "cell_id": 7215,
+  "sentence": "Brilliant of the somethings happened.",
+  "present_pos": 143
+ },
+ {
+  "type": "gold",
+  "cell_id": 8450,
+  "sentence": "Something was more democratic than something else.",
+  "present_pos": 144
+ },
+ {
+  "type": "gold",
+  "cell_id": 3410,
+  "sentence": "Something was more excluding than something else.",
+  "present_pos": 145
+ },
+ {
+  "type": "gold",
+  "cell_id": 12483,
+  "sentence": "Something was lifer than something else.",
+  "present_pos": 146
+ },
+ {
+  "type": "gold",
+  "cell_id": 7173,
+  "sentence": "Something was old and open.",
+  "present_pos": 147
+ },
+ {
+  "type": "gold",
+  "cell_id": 10456,
+  "sentence": "Something was unchauvinistic.",
+  "present_pos": 148
+ },
+ {
+  "type": "gold",
+  "cell_id": 12783,
+  "sentence": "Frederick of the somethings happened.",
+  "present_pos": 149
+ },
+ {
+  "type": "gold",
+  "cell_id": 8893,
+  "sentence": "Pedestrian something happened.",
+  "present_pos": 150
+ },
+ {
+  "type": "gold",
+  "cell_id": 1948,
+  "sentence": "Something was right zero.",
+  "present_pos": 151
+ },
+ {
+  "type": "gold",
+  "cell_id": 9225,
+  "sentence": "The acclaimed something happened.",
+  "present_pos": 152
+ },
+ {
+  "type": "gold",
+  "cell_id": 11334,
+  "sentence": "Something was enough genial.",
+  "present_pos": 153
+ },
+ {
+  "type": "gold",
+  "cell_id": 9084,
+  "sentence": "Rollercoaster the something happened.",
+  "present_pos": 154
+ },
+ {
+  "type": "gold",
+  "cell_id": 5274,
+  "sentence": "The westness of something.",
+  "present_pos": 155
+ },
+ {
+  "type": "gold",
+  "cell_id": 4641,
+  "sentence": "The therefrom something happened.",
+  "present_pos": 156
+ },
+ {
+  "type": "gold",
+  "cell_id": 5018,
+  "sentence": "Something was more whereabouts than something else.",
+  "present_pos": 157
+ },
+ {
+  "type": "gold",
+  "cell_id": 2592,
+  "sentence": "Something was very behind.",
+  "present_pos": 158
+ },
+ {
+  "type": "gold",
+  "cell_id": 4164,
+  "sentence": "Aloft the something happened.",
+  "present_pos": 159
+ },
+ {
+  "type": "gold",
+  "cell_id": 2886,
+  "sentence": "Something was enough off.",
+  "present_pos": 160
+ },
+ {
+  "type": "gold",
+  "cell_id": 11360,
+  "sentence": "Something was kurdish doing.",
+  "present_pos": 161
+ },
+ {
+  "type": "gold",
+  "cell_id": 5783,
+  "sentence": "The something that something was eastward __",
+  "present_pos": 162
+ },
+ {
+  "type": "gold",
+  "cell_id": 3468,
+  "sentence": "Following the something happened.",
+  "present_pos": 163
+ },
+ {
+  "type": "gold",
+  "cell_id": 2478,
+  "sentence": "Something was enough along.",
+  "present_pos": 164
+ },
+ {
+  "type": "repeat",
+  "cell_id": 9137,
+  "sentence": "Something happened daringly.",
+  "present_pos": 165
+ },
+ {
+  "type": "gold",
+  "cell_id": 11012,
+  "sentence": "Something became southwesterly.",
+  "present_pos": 166
+ },
+ {
+  "type": "gold",
+  "cell_id": 666,
+  "sentence": "The anywhereness of something.",
+  "present_pos": 167
+ },
+ {
+  "type": "gold",
+  "cell_id": 11529,
+  "sentence": "The remain something happened.",
+  "present_pos": 168
+ },
+ {
+  "type": "gold",
+  "cell_id": 10025,
+  "sentence": "Something happened showily.",
+  "present_pos": 169
+ },
+ {
+  "type": "gold",
+  "cell_id": 10394,
+  "sentence": "Something was more czechoslovakian than something else.",
+  "present_pos": 170
+ },
+ {
+  "type": "gold",
+  "cell_id": 4214,
+  "sentence": "Someone saw ashore.",
+  "present_pos": 171
+ },
+ {
+  "type": "repeat",
+  "cell_id": 8464,
+  "sentence": "Something was undemocratic.",
+  "present_pos": 172
+ },
+ {
+  "type": "gold",
+  "cell_id": 7544,
+  "sentence": "Something was multiple doing.",
+  "present_pos": 173
+ },
+ {
+  "type": "gold",
+  "cell_id": 8489,
+  "sentence": "Something happened leanly.",
+  "present_pos": 174
+ },
+ {
+  "type": "gold",
+  "cell_id": 10829,
+  "sentence": "Something was endoscopy enough.",
+  "present_pos": 175
+ },
+ {
+  "type": "repeat",
+  "cell_id": 9728,
+  "sentence": "Something was breathless doing.",
+  "present_pos": 176
+ },
+ {
+  "type": "gold",
+  "cell_id": 2150,
+  "sentence": "Someone saw at.",
+  "present_pos": 177
+ },
+ {
+  "type": "gold",
+  "cell_id": 2022,
+  "sentence": "Something was enough eleven.",
+  "present_pos": 178
+ },
+ {
+  "type": "gold",
+  "cell_id": 4096,
+  "sentence": "Something was unadrift.",
+  "present_pos": 179
+ },
+ {
+  "type": "repeat",
+  "cell_id": 3020,
+  "sentence": "Something became past.",
+  "present_pos": 180
+ },
+ {
+  "type": "gold",
+  "cell_id": 12600,
+  "sentence": "Something was very definitely.",
+  "present_pos": 181
+ },
+ {
+  "type": "gold",
+  "cell_id": 6245,
+  "sentence": "Something was serious enough.",
+  "present_pos": 182
+ },
+ {
+  "type": "gold",
+  "cell_id": 10269,
+  "sentence": "Something was old and directorial.",
+  "present_pos": 183
+ },
+ {
+  "type": "gold",
+  "cell_id": 307,
+  "sentence": "Something seemed such.",
+  "present_pos": 184
+ },
+ {
+  "type": "gold",
+  "cell_id": 7744,
+  "sentence": "Something was uninvisible.",
+  "present_pos": 185
+ },
+ {
+  "type": "gold",
+  "cell_id": 2745,
+  "sentence": "The by something happened.",
+  "present_pos": 186
+ },
+ {
+  "type": "repeat",
+  "cell_id": 2209,
+  "sentence": "Something was too onto.",
+  "present_pos": 187
+ },
+ {
+  "type": "gold",
+  "cell_id": 11465,
+  "sentence": "Something happened reportedly.",
+  "present_pos": 188
+ },
+ {
+  "type": "repeat",
+  "cell_id": 7173,
+  "sentence": "Something was old and open.",
+  "present_pos": 189
+ },
+ {
+  "type": "gold",
+  "cell_id": 3768,
+  "sentence": "Something was very providing.",
+  "present_pos": 190
+ },
+ {
+  "type": "gold",
+  "cell_id": 11833,
+  "sentence": "Something was too gilt.",
+  "present_pos": 191
+ },
+ {
+  "type": "gold",
+  "cell_id": 7277,
+  "sentence": "Something was high enough.",
+  "present_pos": 192
+ },
+ {
+  "type": "gold",
+  "cell_id": 12766,
+  "sentence": "Cornish something, something happened.",
+  "present_pos": 193
+ },
+ {
+  "type": "gold",
+  "cell_id": 3951,
+  "sentence": "Afterwards of the somethings happened.",
+  "present_pos": 194
+ },
+ {
+  "type": "gold",
+  "cell_id": 5467,
+  "sentence": "Something seemed upstairs.",
+  "present_pos": 195
+ },
+ {
+  "type": "gold",
+  "cell_id": 2882,
+  "sentence": "Something was more off than something else.",
+  "present_pos": 196
+ },
+ {
+  "type": "gold",
+  "cell_id": 9869,
+  "sentence": "Something was uncommon enough.",
+  "present_pos": 197
+ },
+ {
+  "type": "gold",
+  "cell_id": 3899,
+  "sentence": "The something then happened.",
+  "present_pos": 198
+ },
+ {
+  "type": "gold",
+  "cell_id": 1303,
+  "sentence": "Something was nowhere something.",
+  "present_pos": 199
+ },
+ {
+  "type": "gold",
+  "cell_id": 6961,
+  "sentence": "Something was too double.",
+  "present_pos": 200
+ },
+ {
+  "type": "gold",
+  "cell_id": 11967,
+  "sentence": "Kyle of the somethings happened.",
+  "present_pos": 201
+ },
+ {
+  "type": "gold",
+  "cell_id": 8978,
+  "sentence": "Something was more crippling than something else.",
+  "present_pos": 202
+ },
+ {
+  "type": "gold",
+  "cell_id": 7916,
+  "sentence": "Something became social.",
+  "present_pos": 203
+ },
+ {
+  "type": "gold",
+  "cell_id": 7846,
+  "sentence": "Homeless something, something happened.",
+  "present_pos": 204
+ },
+ {
+  "type": "gold",
+  "cell_id": 2111,
+  "sentence": "The something that something was million __",
+  "present_pos": 205
+ },
+ {
+  "type": "gold",
+  "cell_id": 6605,
+  "sentence": "Something was special enough.",
+  "present_pos": 206
+ },
+ {
+  "type": "gold",
+  "cell_id": 3411,
+  "sentence": "Something was excludinger than something else.",
+  "present_pos": 207
+ },
+ {
+  "type": "gold",
+  "cell_id": 9310,
+  "sentence": "Neolithic something, something happened.",
+  "present_pos": 208
+ },
+ {
+  "type": "gold",
+  "cell_id": 9096,
+  "sentence": "Something was very riddled.",
+  "present_pos": 209
+ },
+ {
+  "type": "gold",
+  "cell_id": 11634,
+  "sentence": "The themeness of something.",
+  "present_pos": 210
+ },
+ {
+  "type": "gold",
+  "cell_id": 11880,
+  "sentence": "Something was very lives.",
+  "present_pos": 211
+ },
+ {
+  "type": "gold",
+  "cell_id": 11166,
+  "sentence": "Something was enough febrile.",
+  "present_pos": 212
+ },
+ {
+  "type": "gold",
+  "cell_id": 3182,
+  "sentence": "Someone saw underneath.",
+  "present_pos": 213
+ },
+ {
+  "type": "gold",
+  "cell_id": 753,
+  "sentence": "The either something happened.",
+  "present_pos": 214
+ },
+ {
+  "type": "gold",
+  "cell_id": 9042,
+  "sentence": "The pressuredness of something.",
+  "present_pos": 215
+ },
+ {
+  "type": "gold",
+  "cell_id": 11701,
+  "sentence": "Rap something happened.",
+  "present_pos": 216
+ },
+ {
+  "type": "gold",
+  "cell_id": 10270,
+  "sentence": "Directorial something, something happened.",
+  "present_pos": 217
+ },
+ {
+  "type": "gold",
+  "cell_id": 6493,
+  "sentence": "Fair something happened.",
+  "present_pos": 218
+ },
+ {
+  "type": "gold",
+  "cell_id": 5015,
+  "sentence": "The something that something was thereabouts __",
+  "present_pos": 219
+ },
+ {
+  "type": "gold",
+  "cell_id": 2939,
+  "sentence": "The something opposite happened.",
+  "present_pos": 220
+ },
+ {
+  "type": "gold",
+  "cell_id": 7349,
+  "sentence": "Something was extra enough.",
+  "present_pos": 221
+ },
+ {
+  "type": "gold",
+  "cell_id": 7254,
+  "sentence": "Something was enough long.",
+  "present_pos": 222
+ },
+ {
+  "type": "gold",
+  "cell_id": 8462,
+  "sentence": "Someone saw democratic.",
+  "present_pos": 223
+ },
+ {
+  "type": "gold",
+  "cell_id": 490,
+  "sentence": "Something was a little.",
+  "present_pos": 224
+ },
+ {
+  "type": "gold",
+  "cell_id": 4367,
+  "sentence": "The something that something was home __",
+  "present_pos": 225
+ },
+ {
+  "type": "gold",
+  "cell_id": 1414,
+  "sentence": "Once something, something happened.",
+  "present_pos": 226
+ },
+ {
+  "type": "gold",
+  "cell_id": 10403,
+  "sentence": "The something czechoslovakian happened.",
+  "present_pos": 227
+ },
+ {
+  "type": "gold",
+  "cell_id": 8461,
+  "sentence": "Democratic something happened.",
+  "present_pos": 228
+ },
+ {
+  "type": "gold",
+  "cell_id": 2773,
+  "sentence": "Down something happened.",
+  "present_pos": 229
+ },
+ {
+  "type": "gold",
+  "cell_id": 6310,
+  "sentence": "Second something, something happened.",
+  "present_pos": 230
+ },
+ {
+  "type": "repeat",
+  "cell_id": 9327,
+  "sentence": "Sedative of the somethings happened.",
+  "present_pos": 231
+ },
+ {
+  "type": "gold",
+  "cell_id": 1482,
+  "sentence": "The severalness of something.",
+  "present_pos": 232
+ },
+ {
+  "type": "gold",
+  "cell_id": 3792,
+  "sentence": "Something was very seeing.",
+  "present_pos": 233
+ },
+ {
+  "type": "gold",
+  "cell_id": 4570,
+  "sentence": "Something was herewith.",
+  "present_pos": 234
+ },
+ {
+  "type": "gold",
+  "cell_id": 12796,
+  "sentence": "Something was right burned.",
+  "present_pos": 235
+ },
+ {
+  "type": "gold",
+  "cell_id": 4316,
+  "sentence": "Something became back.",
+  "present_pos": 236
+ },
+ {
+  "type": "gold",
+  "cell_id": 12584,
+  "sentence": "Something was lasted doing.",
+  "present_pos": 237
+ },
+ {
+  "type": "gold",
+  "cell_id": 11542,
+  "sentence": "Remain something, something happened.",
+  "present_pos": 238
+ },
+ {
+  "type": "gold",
+  "cell_id": 8128,
+  "sentence": "Something was uncoastal.",
+  "present_pos": 239
+ },
+ {
+  "type": "gold",
+  "cell_id": 4106,
+  "sentence": "Something was more aground than something else.",
+  "present_pos": 240
+ },
+ {
+  "type": "gold",
+  "cell_id": 1195,
+  "sentence": "Something seemed no.",
+  "present_pos": 241
+ },
+ {
+  "type": "gold",
+  "cell_id": 3522,
+  "sentence": "The owingness of something.",
+  "present_pos": 242
+ },
+ {
+  "type": "repeat",
+  "cell_id": 11797,
+  "sentence": "Grants something happened.",
+  "present_pos": 243
+ },
+ {
+  "type": "gold",
+  "cell_id": 5468,
+  "sentence": "Something became upstairs.",
+  "present_pos": 244
+ },
+ {
+  "type": "gold",
+  "cell_id": 9728,
+  "sentence": "Something was breathless doing.",
+  "present_pos": 245
+ },
+ {
+  "type": "gold",
+  "cell_id": 10430,
+  "sentence": "Someone saw unfavourable.",
+  "present_pos": 246
+ },
+ {
+  "type": "gold",
+  "cell_id": 12093,
+  "sentence": "Something was old and pitched.",
+  "present_pos": 247
+ },
+ {
+  "type": "gold",
+  "cell_id": 1054,
+  "sentence": "Many a something, something happened.",
+  "present_pos": 248
+ },
+ {
+  "type": "gold",
+  "cell_id": 10632,
+  "sentence": "Something was very kickable.",
+  "present_pos": 249
+ },
+ {
+  "type": "gold",
+  "cell_id": 6377,
+  "sentence": "Something happened frenchly.",
+  "present_pos": 250
+ },
+ {
+  "type": "repeat",
+  "cell_id": 9516,
+  "sentence": "High-profile the something happened.",
+  "present_pos": 251
+ },
+ {
+  "type": "gold",
+  "cell_id": 8252,
+  "sentence": "Something became splendid.",
+  "present_pos": 252
+ },
+ {
+  "type": "gold",
+  "cell_id": 2047,
+  "sentence": "Something was seventy something.",
+  "present_pos": 253
+ },
+ {
+  "type": "gold",
+  "cell_id": 6519,
+  "sentence": "Interesting of the somethings happened.",
+  "present_pos": 254
+ },
+ {
+  "type": "gold",
+  "cell_id": 11957,
+  "sentence": "Something was kyle enough.",
+  "present_pos": 255
+ },
+ {
+  "type": "gold",
+  "cell_id": 3802,
+  "sentence": "Something was seeing.",
+  "present_pos": 256
+ },
+ {
+  "type": "gold",
+  "cell_id": 8258,
+  "sentence": "Something was more rental than something else.",
+  "present_pos": 257
+ },
+ {
+  "type": "gold",
+  "cell_id": 7034,
+  "sentence": "Something was more tough than something else.",
+  "present_pos": 258
+ },
+ {
+  "type": "gold",
+  "cell_id": 12725,
+  "sentence": "Something was stuck enough.",
+  "present_pos": 259
+ },
+ {
+  "type": "gold",
+  "cell_id": 11001,
+  "sentence": "The southwesterly something happened.",
+  "present_pos": 260
+ },
+ {
+  "type": "gold",
+  "cell_id": 5133,
+  "sentence": "Something was old and hence.",
+  "present_pos": 261
+ },
+ {
+  "type": "gold",
+  "cell_id": 2255,
+  "sentence": "The something that something was upon __",
+  "present_pos": 262
+ },
+ {
+  "type": "gold",
+  "cell_id": 4762,
+  "sentence": "Something was therewith.",
+  "present_pos": 263
+ },
+ {
+  "type": "gold",
+  "cell_id": 10036,
+  "sentence": "Something was right misguided.",
+  "present_pos": 264
+ },
+ {
+  "type": "gold",
+  "cell_id": 12118,
+  "sentence": "Comedy something, something happened.",
+  "present_pos": 265
+ },
+ {
+  "type": "gold",
+  "cell_id": 9916,
+  "sentence": "Something was right bravest.",
+  "present_pos": 266
+ },
+ {
+  "type": "gold",
+  "cell_id": 4686,
+  "sentence": "Something was enough thereof.",
+  "present_pos": 267
+ },
+ {
+  "type": "gold",
+  "cell_id": 440,
+  "sentence": "Something was a few doing.",
+  "present_pos": 268
+ },
+ {
+  "type": "gold",
+  "cell_id": 1933,
+  "sentence": "Whichever something happened.",
+  "present_pos": 269
+ },
+ {
+  "type": "gold",
+  "cell_id": 12065,
+  "sentence": "Something happened talkedly.",
+  "present_pos": 270
+ },
+ {
+  "type": "gold",
+  "cell_id": 10571,
+  "sentence": "The something pernickety happened.",
+  "present_pos": 271
+ },
+ {
+  "type": "gold",
+  "cell_id": 2596,
+  "sentence": "Something was right behind.",
+  "present_pos": 272
+ },
+ {
+  "type": "gold",
+  "cell_id": 3609,
+  "sentence": "The saving something happened.",
+  "present_pos": 273
+ },
+ {
+  "type": "gold",
+  "cell_id": 1248,
+  "sentence": "Something was very no one.",
+  "present_pos": 274
+ },
+ {
+  "type": "gold",
+  "cell_id": 4979,
+  "sentence": "The something hereabouts happened.",
+  "present_pos": 275
+ },
+ {
+  "type": "gold",
+  "cell_id": 9586,
+  "sentence": "Something was prosperous.",
+  "present_pos": 276
+ },
+ {
+  "type": "gold",
+  "cell_id": 12512,
+  "sentence": "Something was approve doing.",
+  "present_pos": 277
+ },
+ {
+  "type": "gold",
+  "cell_id": 2086,
+  "sentence": "Hundred something, something happened.",
+  "present_pos": 278
+ },
+ {
+  "type": "gold",
+  "cell_id": 2839,
+  "sentence": "Something was inside something.",
+  "present_pos": 279
+ },
+ {
+  "type": "gold",
+  "cell_id": 260,
+  "sentence": "Something became less.",
+  "present_pos": 280
+ },
+ {
+  "type": "repeat",
+  "cell_id": 12429,
+  "sentence": "Something was old and silly.",
+  "present_pos": 281
+ },
+ {
+  "type": "gold",
+  "cell_id": 930,
+  "sentence": "The fewerness of something.",
+  "present_pos": 282
+ },
+ {
+  "type": "gold",
+  "cell_id": 3969,
+  "sentence": "The beforehand something happened.",
+  "present_pos": 283
+ },
+ {
+  "type": "gold",
+  "cell_id": 10645,
+  "sentence": "Kickable something happened.",
+  "present_pos": 284
+ },
+ {
+  "type": "gold",
+  "cell_id": 1760,
+  "sentence": "Something was the doing.",
+  "present_pos": 285
+ },
+ {
+  "type": "gold",
+  "cell_id": 4441,
+  "sentence": "Something was too herefrom.",
+  "present_pos": 286
+ },
+ {
+  "type": "gold",
+  "cell_id": 3588,
+  "sentence": "Respecting the something happened.",
+  "present_pos": 287
+ },
+ {
+  "type": "gold",
+  "cell_id": 11818,
+  "sentence": "Something was choo.",
+  "present_pos": 288
+ },
+ {
+  "type": "gold",
+  "cell_id": 5998,
+  "sentence": "Rightward something, something happened.",
+  "present_pos": 289
+ },
+ {
+  "type": "gold",
+  "cell_id": 11853,
+  "sentence": "Something was old and gilt.",
+  "present_pos": 290
+ },
+ {
+  "type": "gold",
+  "cell_id": 2996,
+  "sentence": "Something became over.",
+  "present_pos": 291
+ },
+ {
+  "type": "gold",
+  "cell_id": 7987,
+  "sentence": "Something seemed significant.",
+  "present_pos": 292
+ },
+ {
+  "type": "gold",
+  "cell_id": 12004,
+  "sentence": "Something was right hunting.",
+  "present_pos": 293
+ },
+ {
+  "type": "gold",
+  "cell_id": 9725,
+  "sentence": "Something was breathless enough.",
+  "present_pos": 294
+ },
+ {
+  "type": "gold",
+  "cell_id": 5218,
+  "sentence": "Something was north.",
+  "present_pos": 295
+ },
+ {
+  "type": "gold",
+  "cell_id": 7974,
+  "sentence": "Something was enough significant.",
+  "present_pos": 296
+ },
+ {
+  "type": "gold",
+  "cell_id": 10713,
+  "sentence": "The newish something happened.",
+  "present_pos": 297
+ },
+ {
+  "type": "gold",
+  "cell_id": 9667,
+  "sentence": "Something seemed diabolical.",
+  "present_pos": 298
+ },
+ {
+  "type": "gold",
+  "cell_id": 12282,
+  "sentence": "The toadness of something.",
+  "present_pos": 299
+ },
+ {
+  "type": "gold",
+  "cell_id": 6023,
+  "sentence": "The something that something was seaward __",
+  "present_pos": 300
+ },
+ {
+  "type": "gold",
+  "cell_id": 2432,
+  "sentence": "Something was after doing.",
+  "present_pos": 301
+ },
+ {
+  "type": "gold",
+  "cell_id": 11804,
+  "sentence": "Something became grants.",
+  "present_pos": 302
+ },
+ {
+  "type": "gold",
+  "cell_id": 3261,
+  "sentence": "Something was old and without.",
+  "present_pos": 303
+ },
+ {
+  "type": "gold",
+  "cell_id": 10836,
+  "sentence": "Endoscopy the something happened.",
+  "present_pos": 304
+ },
+ {
+  "type": "gold",
+  "cell_id": 4238,
+  "sentence": "Someone saw aside.",
+  "present_pos": 305
+ },
+ {
+  "type": "gold",
+  "cell_id": 5933,
+  "sentence": "Something was onward enough.",
+  "present_pos": 306
+ },
+ {
+  "type": "gold",
+  "cell_id": 6018,
+  "sentence": "The seawardness of something.",
+  "present_pos": 307
+ },
+ {
+  "type": "gold",
+  "cell_id": 6522,
+  "sentence": "The interestingness of something.",
+  "present_pos": 308
+ },
+ {
+  "type": "gold",
+  "cell_id": 2954,
+  "sentence": "Something was more outside than something else.",
+  "present_pos": 309
+ },
+ {
+  "type": "gold",
+  "cell_id": 10416,
+  "sentence": "Something was very unfavourable.",
+  "present_pos": 310
+ },
+ {
+  "type": "gold",
+  "cell_id": 7482,
+  "sentence": "The curiousness of something.",
+  "present_pos": 311
+ },
+ {
+  "type": "gold",
+  "cell_id": 1943,
+  "sentence": "The something that something was whichever __",
+  "present_pos": 312
+ },
+ {
+  "type": "gold",
+  "cell_id": 4189,
+  "sentence": "Apart something happened.",
+  "present_pos": 313
+ },
+ {
+  "type": "gold",
+  "cell_id": 1370,
+  "sentence": "Something was more three than something else.",
+  "present_pos": 314
+ },
+ {
+  "type": "repeat",
+  "cell_id": 11947,
+  "sentence": "Something seemed describes.",
+  "present_pos": 315
+ },
+ {
+  "type": "gold",
+  "cell_id": 2724,
+  "sentence": "Beyond the something happened.",
+  "present_pos": 316
+ },
+ {
+  "type": "gold",
+  "cell_id": 7700,
+  "sentence": "Something became intense.",
+  "present_pos": 317
+ },
+ {
+  "type": "gold",
+  "cell_id": 8880,
+  "sentence": "Something was very pedestrian.",
+  "present_pos": 318
+ },
+ {
+  "type": "gold",
+  "cell_id": 10224,
+  "sentence": "Something was very centrist.",
+  "present_pos": 319
+ },
+ {
+  "type": "gold",
+  "cell_id": 6066,
+  "sentence": "The southwardness of something.",
+  "present_pos": 320
+ },
+ {
+  "type": "gold",
+  "cell_id": 5891,
+  "sentence": "The something leftward happened.",
+  "present_pos": 321
+ },
+ {
+  "type": "gold",
+  "cell_id": 8377,
+  "sentence": "Something was too alien.",
+  "present_pos": 322
+ },
+ {
+  "type": "gold",
+  "cell_id": 11897,
+  "sentence": "Something happened livesly.",
+  "present_pos": 323
+ },
+ {
+  "type": "gold",
+  "cell_id": 6275,
+  "sentence": "The something safe happened.",
+  "present_pos": 324
+ },
+ {
+  "type": "gold",
+  "cell_id": 12080,
+  "sentence": "Something was pitched doing.",
+  "present_pos": 325
+ },
+ {
+  "type": "gold",
+  "cell_id": 828,
+  "sentence": "Everyone the something happened.",
+  "present_pos": 326
+ },
+ {
+  "type": "repeat",
+  "cell_id": 6231,
+  "sentence": "Favourite of the somethings happened.",
+  "present_pos": 327
+ },
+ {
+  "type": "gold",
+  "cell_id": 5281,
+  "sentence": "Something was too downhill.",
+  "present_pos": 328
+ },
+ {
+  "type": "gold",
+  "cell_id": 6979,
+  "sentence": "Something seemed double.",
+  "present_pos": 329
+ },
+ {
+  "type": "gold",
+  "cell_id": 6618,
+  "sentence": "The specialness of something.",
+  "present_pos": 330
+ },
+ {
+  "type": "gold",
+  "cell_id": 7381,
+  "sentence": "Great something happened.",
+  "present_pos": 331
+ },
+ {
+  "type": "gold",
+  "cell_id": 10608,
+  "sentence": "Something was very overspent.",
+  "present_pos": 332
+ },
+ {
+  "type": "gold",
+  "cell_id": 2630,
+  "sentence": "Someone saw below.",
+  "present_pos": 333
+ },
+ {
+  "type": "gold",
+  "cell_id": 8632,
+  "sentence": "Something was unpurple.",
+  "present_pos": 334
+ },
+ {
+  "type": "gold",
+  "cell_id": 11486,
+  "sentence": "Someone saw celebrating.",
+  "present_pos": 335
+ },
+ {
+  "type": "gold",
+  "cell_id": 3553,
+  "sentence": "Something was too regarding.",
+  "present_pos": 336
+ },
+ {
+  "type": "gold",
+  "cell_id": 1661,
+  "sentence": "Something was that enough.",
+  "present_pos": 337
+ },
+ {
+  "type": "gold",
+  "cell_id": 4467,
+  "sentence": "Something was hereiner than something else.",
+  "present_pos": 338
+ },
+ {
+  "type": "gold",
+  "cell_id": 6231,
+  "sentence": "Favourite of the somethings happened.",
+  "present_pos": 339
+ },
+ {
+  "type": "repeat",
+  "cell_id": 1423,
+  "sentence": "Something was twice something.",
+  "present_pos": 340
+ },
+ {
+  "type": "gold",
+  "cell_id": 5153,
+  "sentence": "Something happened thencely.",
+  "present_pos": 341
+ },
+ {
+  "type": "gold",
+  "cell_id": 12263,
+  "sentence": "The something that something was griffin __",
+  "present_pos": 342
+ },
+ {
+  "type": "gold",
+  "cell_id": 5192,
+  "sentence": "Something was east doing.",
+  "present_pos": 343
+ },
+ {
+  "type": "gold",
+  "cell_id": 9321,
+  "sentence": "The sedative something happened.",
+  "present_pos": 344
+ },
+ {
+  "type": "gold",
+  "cell_id": 6529,
+  "sentence": "Something was too possible.",
+  "present_pos": 345
+ },
+ {
+  "type": "gold",
+  "cell_id": 1423,
+  "sentence": "Something was twice something.",
+  "present_pos": 346
+ },
+ {
+  "type": "gold",
+  "cell_id": 12174,
+  "sentence": "Something was enough exploring.",
+  "present_pos": 347
+ },
+ {
+  "type": "gold",
+  "cell_id": 3264,
+  "sentence": "Something was very according.",
+  "present_pos": 348
+ },
+ {
+  "type": "gold",
+  "cell_id": 3023,
+  "sentence": "The something that something was past __",
+  "present_pos": 349
+ },
+ {
+  "type": "gold",
+  "cell_id": 1831,
+  "sentence": "Something was you something.",
+  "present_pos": 350
+ },
+ {
+  "type": "gold",
+  "cell_id": 3148,
+  "sentence": "Something was right under.",
+  "present_pos": 351
+ },
+ {
+  "type": "gold",
+  "cell_id": 6847,
+  "sentence": "Something was sorry something.",
+  "present_pos": 352
+ },
+ {
+  "type": "gold",
+  "cell_id": 7927,
+  "sentence": "Something was bright something.",
+  "present_pos": 353
+ },
+ {
+  "type": "gold",
+  "cell_id": 8865,
+  "sentence": "The unofficial something happened.",
+  "present_pos": 354
+ },
+ {
+  "type": "gold",
+  "cell_id": 12333,
+  "sentence": "Something was old and wibbly.",
+  "present_pos": 355
+ },
+ {
+  "type": "gold",
+  "cell_id": 3177,
+  "sentence": "The underneath something happened.",
+  "present_pos": 356
+ },
+ {
+  "type": "gold",
+  "cell_id": 5773,
+  "sentence": "Eastward something happened.",
+  "present_pos": 357
+ },
+ {
+  "type": "gold",
+  "cell_id": 3607,
+  "sentence": "Something was saving something.",
+  "present_pos": 358
+ },
+ {
+  "type": "gold",
+  "cell_id": 12716,
+  "sentence": "Something became curve.",
+  "present_pos": 359
+ },
+ {
+  "type": "gold",
+  "cell_id": 5457,
+  "sentence": "The upstairs something happened.",
+  "present_pos": 360
+ },
+ {
+  "type": "gold",
+  "cell_id": 11375,
+  "sentence": "The something that something was kurdish __",
+  "present_pos": 361
+ },
+ {
+  "type": "gold",
+  "cell_id": 8610,
+  "sentence": "The delightfulness of something.",
+  "present_pos": 362
+ },
+ {
+  "type": "gold",
+  "cell_id": 7845,
+  "sentence": "Something was old and homeless.",
+  "present_pos": 363
+ },
+ {
+  "type": "gold",
+  "cell_id": 4790,
+  "sentence": "Someone saw whereat.",
+  "present_pos": 364
+ },
+ {
+  "type": "gold",
+  "cell_id": 4688,
+  "sentence": "Something was thereof doing.",
+  "present_pos": 365
+ },
+ {
+  "type": "gold",
+  "cell_id": 9095,
+  "sentence": "The something that something was rollercoaster __",
+  "present_pos": 366
+ },
+ {
+  "type": "gold",
+  "cell_id": 5618,
+  "sentence": "Something was more overland than something else.",
+  "present_pos": 367
+ },
+ {
+  "type": "gold",
+  "cell_id": 5120,
+  "sentence": "Something was hence doing.",
+  "present_pos": 368
+ },
+ {
+  "type": "gold",
+  "cell_id": 12399,
+  "sentence": "Channel of the somethings happened.",
+  "present_pos": 369
+ },
+ {
+  "type": "gold",
+  "cell_id": 2072,
+  "sentence": "Something was hundred doing.",
+  "present_pos": 370
+ },
+ {
+  "type": "gold",
+  "cell_id": 10589,
+  "sentence": "Something was banal enough.",
+  "present_pos": 371
+ },
+ {
+  "type": "gold",
+  "cell_id": 1821,
+  "sentence": "Something was old and we.",
+  "present_pos": 372
+ },
+ {
+  "type": "gold",
+  "cell_id": 9427,
+  "sentence": "Something seemed infested.",
+  "present_pos": 373
+ },
+ {
+  "type": "gold",
+  "cell_id": 576,
+  "sentence": "Something was very anybody.",
+  "present_pos": 374
+ },
+ {
+  "type": "gold",
+  "cell_id": 10807,
+  "sentence": "Something was mechanistic something.",
+  "present_pos": 375
+ },
+ {
+  "type": "gold",
+  "cell_id": 6193,
+  "sentence": "Something was too same.",
+  "present_pos": 376
+ },
+ {
+  "type": "gold",
+  "cell_id": 9327,
+  "sentence": "Sedative of the somethings happened.",
+  "present_pos": 377
+ },
+ {
+  "type": "gold",
+  "cell_id": 11704,
+  "sentence": "Something was unrap.",
+  "present_pos": 378
+ },
+ {
+  "type": "gold",
+  "cell_id": 11660,
+  "sentence": "Something became oyster.",
+  "present_pos": 379
+ },
+ {
+  "type": "gold",
+  "cell_id": 7152,
+  "sentence": "Something was very open.",
+  "present_pos": 380
+ },
+ {
+  "type": "gold",
+  "cell_id": 4324,
+  "sentence": "Something was right forth.",
+  "present_pos": 381
+ },
+ {
+  "type": "gold",
+  "cell_id": 10582,
+  "sentence": "Pernickety something, something happened.",
+  "present_pos": 382
+ },
+ {
+  "type": "gold",
+  "cell_id": 2688,
+  "sentence": "Something was very between.",
+  "present_pos": 383
+ },
+ {
+  "type": "gold",
+  "cell_id": 2342,
+  "sentence": "Someone saw aboard.",
+  "present_pos": 384
+ },
+ {
+  "type": "gold",
+  "cell_id": 8759,
+  "sentence": "The something that something was retail __",
+  "present_pos": 385
+ },
+ {
+  "type": "gold",
+  "cell_id": 3866,
+  "sentence": "Something was more now than something else.",
+  "present_pos": 386
+ },
+ {
+  "type": "gold",
+  "cell_id": 6311,
+  "sentence": "The something that something was second __",
+  "present_pos": 387
+ },
+ {
+  "type": "gold",
+  "cell_id": 11630,
+  "sentence": "Someone saw theme.",
+  "present_pos": 388
+ },
+ {
+  "type": "gold",
+  "cell_id": 641,
+  "sentence": "Something happened anythingly.",
+  "present_pos": 389
+ },
+ {
+  "type": "gold",
+  "cell_id": 2254,
+  "sentence": "Upon something, something happened.",
+  "present_pos": 390
+ },
+ {
+  "type": "gold",
+  "cell_id": 6596,
+  "sentence": "Something became old.",
+  "present_pos": 391
+ },
+ {
+  "type": "gold",
+  "cell_id": 5648,
+  "sentence": "Something was overseas doing.",
+  "present_pos": 392
+ },
+ {
+  "type": "gold",
+  "cell_id": 10181,
+  "sentence": "Something was pumpy enough.",
+  "present_pos": 393
+ },
+ {
+  "type": "gold",
+  "cell_id": 10561,
+  "sentence": "Something was too pernickety.",
+  "present_pos": 394
+ },
+ {
+  "type": "gold",
+  "cell_id": 2896,
+  "sentence": "Something was unoff.",
+  "present_pos": 395
+ },
+ {
+  "type": "gold",
+  "cell_id": 789,
+  "sentence": "Something was old and every.",
+  "present_pos": 396
+ },
+ {
+  "type": "gold",
+  "cell_id": 3065,
+  "sentence": "Something happened sincely.",
+  "present_pos": 397
+ },
+ {
+  "type": "gold",
+  "cell_id": 11688,
+  "sentence": "Something was very rap.",
+  "present_pos": 398
+ },
+ {
+  "type": "gold",
+  "cell_id": 8136,
+  "sentence": "Something was very proper.",
+  "present_pos": 399
+ },
+ {
+  "type": "gold",
+  "cell_id": 5252,
+  "sentence": "Something became south.",
+  "present_pos": 400
+ },
+ {
+  "type": "gold",
+  "cell_id": 10825,
+  "sentence": "Something was too endoscopy.",
+  "present_pos": 401
+ },
+ {
+  "type": "gold",
+  "cell_id": 3020,
+  "sentence": "Something became past.",
+  "present_pos": 402
+ },
+ {
+  "type": "gold",
+  "cell_id": 8323,
+  "sentence": "Something seemed iconic.",
+  "present_pos": 403
+ },
+ {
+  "type": "gold",
+  "cell_id": 12043,
+  "sentence": "Something seemed blair.",
+  "present_pos": 404
+ },
+ {
+  "type": "gold",
+  "cell_id": 3544,
+  "sentence": "Something was unpertaining.",
+  "present_pos": 405
+ },
+ {
+  "type": "gold",
+  "cell_id": 10584,
+  "sentence": "Something was very banal.",
+  "present_pos": 406
+ },
+ {
+  "type": "gold",
+  "cell_id": 3295,
+  "sentence": "Something was allowing something.",
+  "present_pos": 407
+ },
+ {
+  "type": "gold",
+  "cell_id": 898,
+  "sentence": "Something was few.",
+  "present_pos": 408
+ },
+ {
+  "type": "gold",
+  "cell_id": 7068,
+  "sentence": "Late the something happened.",
+  "present_pos": 409
+ },
+ {
+  "type": "gold",
+  "cell_id": 11871,
+  "sentence": "Taliban of the somethings happened.",
+  "present_pos": 410
+ },
+ {
+  "type": "gold",
+  "cell_id": 5593,
+  "sentence": "Something was too overhead.",
+  "present_pos": 411
+ },
+ {
+  "type": "gold",
+  "cell_id": 2151,
+  "sentence": "At of the somethings happened.",
+  "present_pos": 412
+ },
+ {
+  "type": "gold",
+  "cell_id": 1896,
+  "sentence": "Something was very which.",
+  "present_pos": 413
+ },
+ {
+  "type": "gold",
+  "cell_id": 3096,
+  "sentence": "Something was very throughout.",
+  "present_pos": 414
+ },
+ {
+  "type": "gold",
+  "cell_id": 12340,
+  "sentence": "Something was right organise.",
+  "present_pos": 415
+ },
+ {
+  "type": "gold",
+  "cell_id": 625,
+  "sentence": "Something was too anything.",
+  "present_pos": 416
+ },
+ {
+  "type": "gold",
+  "cell_id": 11848,
+  "sentence": "Something was ungilt.",
+  "present_pos": 417
+ },
+ {
+  "type": "gold",
+  "cell_id": 11297,
+  "sentence": "Something happened ploppily.",
+  "present_pos": 418
+ },
+ {
+  "type": "gold",
+  "cell_id": 1190,
+  "sentence": "Someone saw no.",
+  "present_pos": 419
+ },
+ {
+  "type": "gold",
+  "cell_id": 12429,
+  "sentence": "Something was old and silly.",
+  "present_pos": 420
+ },
+ {
+  "type": "gold",
+  "cell_id": 4276,
+  "sentence": "Something was right aft.",
+  "present_pos": 421
+ },
+ {
+  "type": "gold",
+  "cell_id": 4740,
+  "sentence": "Thereto the something happened.",
+  "present_pos": 422
+ },
+ {
+  "type": "gold",
+  "cell_id": 10246,
+  "sentence": "Centrist something, something happened.",
+  "present_pos": 423
+ },
+ {
+  "type": "gold",
+  "cell_id": 9617,
+  "sentence": "Something happened flappily.",
+  "present_pos": 424
+ },
+ {
+  "type": "gold",
+  "cell_id": 8997,
+  "sentence": "Something was old and crippling.",
+  "present_pos": 425
+ },
+ {
+  "type": "gold",
+  "cell_id": 11995,
+  "sentence": "Something seemed otters.",
+  "present_pos": 426
+ },
+ {
+  "type": "gold",
+  "cell_id": 10820,
+  "sentence": "Something became mechanistic.",
+  "present_pos": 427
+ },
+ {
+  "type": "gold",
+  "cell_id": 8733,
+  "sentence": "Something was old and closer.",
+  "present_pos": 428
+ },
+ {
+  "type": "gold",
+  "cell_id": 6075,
+  "sentence": "Something was upwarder than something else.",
+  "present_pos": 429
+ },
+ {
+  "type": "gold",
+  "cell_id": 9316,
+  "sentence": "Something was right sedative.",
+  "present_pos": 430
+ },
+ {
+  "type": "gold",
+  "cell_id": 9077,
+  "sentence": "Something was rollercoaster enough.",
+  "present_pos": 431
+ },
+ {
+  "type": "gold",
+  "cell_id": 1571,
+  "sentence": "The something something happened.",
+  "present_pos": 432
+ },
+ {
+  "type": "gold",
+  "cell_id": 6593,
+  "sentence": "Something happened oldly.",
+  "present_pos": 433
+ },
+ {
+  "type": "gold",
+  "cell_id": 8769,
+  "sentence": "The anglo-saxon something happened.",
+  "present_pos": 434
+ },
+ {
+  "type": "gold",
+  "cell_id": 6518,
+  "sentence": "Someone saw interesting.",
+  "present_pos": 435
+ },
+ {
+  "type": "gold",
+  "cell_id": 11965,
+  "sentence": "Kyle something happened.",
+  "present_pos": 436
+ },
+ {
+  "type": "gold",
+  "cell_id": 3008,
+  "sentence": "Something was past doing.",
+  "present_pos": 437
+ },
+ {
+  "type": "gold",
+  "cell_id": 12284,
+  "sentence": "Something became toad.",
+  "present_pos": 438
+ },
+ {
+  "type": "gold",
+  "cell_id": 9052,
+  "sentence": "Something was right pygmy.",
+  "present_pos": 439
+ },
+ {
+  "type": "gold",
+  "cell_id": 9424,
+  "sentence": "Something was uninfested.",
+  "present_pos": 440
+ },
+ {
+  "type": "gold",
+  "cell_id": 60,
+  "sentence": "Like the something happened.",
+  "present_pos": 441
+ },
+ {
+  "type": "gold",
+  "cell_id": 11348,
+  "sentence": "Something became genial.",
+  "present_pos": 442
+ },
+ {
+  "type": "gold",
+  "cell_id": 7632,
+  "sentence": "Something was very cosy.",
+  "present_pos": 443
+ },
+ {
+  "type": "gold",
+  "cell_id": 7853,
+  "sentence": "Something was old-fashioned enough.",
+  "present_pos": 444
+ },
+ {
+  "type": "gold",
+  "cell_id": 487,
+  "sentence": "Something was a little something.",
+  "present_pos": 445
+ },
+ {
+  "type": "gold",
+  "cell_id": 6920,
+  "sentence": "Something was bad doing.",
+  "present_pos": 446
+ },
+ {
+  "type": "gold",
+  "cell_id": 12670,
+  "sentence": "Tribe something, something happened.",
+  "present_pos": 447
+ },
+ {
+  "type": "gold",
+  "cell_id": 9413,
+  "sentence": "Something was infested enough.",
+  "present_pos": 448
+ },
+ {
+  "type": "gold",
+  "cell_id": 9914,
+  "sentence": "Something was more bravest than something else.",
+  "present_pos": 449
+ },
+ {
+  "type": "gold",
+  "cell_id": 10080,
+  "sentence": "Something was very endothermic.",
+  "present_pos": 450
+ },
+ {
+  "type": "gold",
+  "cell_id": 9639,
+  "sentence": "Reluctant of the somethings happened.",
+  "present_pos": 451
+ },
+ {
+  "type": "gold",
+  "cell_id": 12231,
+  "sentence": "Protecting of the somethings happened.",
+  "present_pos": 452
+ },
+ {
+  "type": "gold",
+  "cell_id": 8122,
+  "sentence": "Something was coastal.",
+  "present_pos": 453
+ },
+ {
+  "type": "gold",
+  "cell_id": 3924,
+  "sentence": "When the something happened.",
+  "present_pos": 454
+ },
+ {
+  "type": "gold",
+  "cell_id": 11825,
+  "sentence": "Something happened chooly.",
+  "present_pos": 455
+ },
+ {
+  "type": "gold",
+  "cell_id": 2486,
+  "sentence": "Someone saw along.",
+  "present_pos": 456
+ },
+ {
+  "type": "gold",
+  "cell_id": 9585,
+  "sentence": "The prosperous something happened.",
+  "present_pos": 457
+ },
+ {
+  "type": "gold",
+  "cell_id": 4045,
+  "sentence": "Abroad something happened.",
+  "present_pos": 458
+ },
+ {
+  "type": "repeat",
+  "cell_id": 11399,
+  "sentence": "The something that something was regimented __",
+  "present_pos": 459
+ },
+ {
+  "type": "gold",
+  "cell_id": 5621,
+  "sentence": "Something was overland enough.",
+  "present_pos": 460
+ },
+ {
+  "type": "gold",
+  "cell_id": 3022,
+  "sentence": "Past something, something happened.",
+  "present_pos": 461
+ },
+ {
+  "type": "gold",
+  "cell_id": 7748,
+  "sentence": "Something became invisible.",
+  "present_pos": 462
+ },
+ {
+  "type": "gold",
+  "cell_id": 7128,
+  "sentence": "Something was very busy.",
+  "present_pos": 463
+ },
+ {
+  "type": "gold",
+  "cell_id": 8355,
+  "sentence": "Something was successfuller than something else.",
+  "present_pos": 464
+ },
+ {
+  "type": "gold",
+  "cell_id": 11609,
+  "sentence": "Something happened introducely.",
+  "present_pos": 465
+ },
+ {
+  "type": "gold",
+  "cell_id": 6524,
+  "sentence": "Something became interesting.",
+  "present_pos": 466
+ },
+ {
+  "type": "gold",
+  "cell_id": 881,
+  "sentence": "Something happened everywherely.",
+  "present_pos": 467
+ },
+ {
+  "type": "gold",
+  "cell_id": 2360,
+  "sentence": "Something was about doing.",
+  "present_pos": 468
+ },
+ {
+  "type": "gold",
+  "cell_id": 889,
+  "sentence": "Something was too few.",
+  "present_pos": 469
+ },
+ {
+  "type": "gold",
+  "cell_id": 4919,
+  "sentence": "The something that something was whereon __",
+  "present_pos": 470
+ },
+ {
+  "type": "gold",
+  "cell_id": 12685,
+  "sentence": "Greatly something happened.",
+  "present_pos": 471
+ },
+ {
+  "type": "gold",
+  "cell_id": 6683,
+  "sentence": "The something wrong happened.",
+  "present_pos": 472
+ },
+ {
+  "type": "gold",
+  "cell_id": 5936,
+  "sentence": "Something was onward doing.",
+  "present_pos": 473
+ },
+ {
+  "type": "gold",
+  "cell_id": 10605,
+  "sentence": "Something was old and banal.",
+  "present_pos": 474
+ },
+ {
+  "type": "gold",
+  "cell_id": 3741,
+  "sentence": "Something was old and granted.",
+  "present_pos": 475
+ },
+ {
+  "type": "gold",
+  "cell_id": 3684,
+  "sentence": "Given the something happened.",
+  "present_pos": 476
+ },
+ {
+  "type": "gold",
+  "cell_id": 4251,
+  "sentence": "Something was awayer than something else.",
+  "present_pos": 477
+ },
+ {
+  "type": "gold",
+  "cell_id": 12225,
+  "sentence": "The protecting something happened.",
+  "present_pos": 478
+ },
+ {
+  "type": "gold",
+  "cell_id": 5899,
+  "sentence": "Something seemed leftward.",
+  "present_pos": 479
+ },
+ {
+  "type": "gold",
+  "cell_id": 7316,
+  "sentence": "Something became difficult.",
+  "present_pos": 480
+ },
+ {
+  "type": "gold",
+  "cell_id": 7747,
+  "sentence": "Something seemed invisible.",
+  "present_pos": 481
+ },
+ {
+  "type": "gold",
+  "cell_id": 7411,
+  "sentence": "Something seemed huge.",
+  "present_pos": 482
+ },
+ {
+  "type": "gold",
+  "cell_id": 7993,
+  "sentence": "Something was too impressed.",
+  "present_pos": 483
+ },
+ {
+  "type": "gold",
+  "cell_id": 11113,
+  "sentence": "Something was too preconceived.",
+  "present_pos": 484
+ },
+ {
+  "type": "gold",
+  "cell_id": 9402,
+  "sentence": "The one-and-a-halfness of something.",
+  "present_pos": 485
+ },
+ {
+  "type": "gold",
+  "cell_id": 190,
+  "sentence": "Asleep something, something happened.",
+  "present_pos": 486
+ },
+ {
+  "type": "gold",
+  "cell_id": 11640,
+  "sentence": "Something was very oyster.",
+  "present_pos": 487
+ },
+ {
+  "type": "gold",
+  "cell_id": 1797,
+  "sentence": "Something was old and us.",
+  "present_pos": 488
+ },
+ {
+  "type": "gold",
+  "cell_id": 10919,
+  "sentence": "The something that something was errant __",
+  "present_pos": 489
+ },
+ {
+  "type": "gold",
+  "cell_id": 10059,
+  "sentence": "Something was convincinger than something else.",
+  "present_pos": 490
+ },
+ {
+  "type": "gold",
+  "cell_id": 7859,
+  "sentence": "The something old-fashioned happened.",
+  "present_pos": 491
+ },
+ {
+  "type": "gold",
+  "cell_id": 9780,
+  "sentence": "Stinging the something happened.",
+  "present_pos": 492
+ },
+ {
+  "type": "gold",
+  "cell_id": 750,
+  "sentence": "Something was enough either.",
+  "present_pos": 493
+ },
+ {
+  "type": "gold",
+  "cell_id": 1160,
+  "sentence": "Something was next doing.",
+  "present_pos": 494
+ },
+ {
+  "type": "gold",
+  "cell_id": 11817,
+  "sentence": "The choo something happened.",
+  "present_pos": 495
+ },
+ {
+  "type": "gold",
+  "cell_id": 12583,
+  "sentence": "Something was lasted something.",
+  "present_pos": 496
+ },
+ {
+  "type": "gold",
+  "cell_id": 4788,
+  "sentence": "Whereat the something happened.",
+  "present_pos": 497
+ },
+ {
+  "type": "gold",
+  "cell_id": 7772,
+  "sentence": "Something became ideal.",
+  "present_pos": 498
+ },
+ {
+  "type": "gold",
+  "cell_id": 1708,
+  "sentence": "Something was right this.",
+  "present_pos": 499
+ },
+ {
+  "type": "gold",
+  "cell_id": 9102,
+  "sentence": "Something was enough riddled.",
+  "present_pos": 500
+ },
+ {
+  "type": "repeat",
+  "cell_id": 10456,
+  "sentence": "Something was unchauvinistic.",
+  "present_pos": 501
+ },
+ {
+  "type": "gold",
+  "cell_id": 3787,
+  "sentence": "Something seemed providing.",
+  "present_pos": 502
+ },
+ {
+  "type": "gold",
+  "cell_id": 7866,
+  "sentence": "The old-fashionedness of something.",
+  "present_pos": 503
+ },
+ {
+  "type": "gold",
+  "cell_id": 9895,
+  "sentence": "Something was fleeting something.",
+  "present_pos": 504
+ },
+ {
+  "type": "gold",
+  "cell_id": 8064,
+  "sentence": "Something was very commercial.",
+  "present_pos": 505
+ },
+ {
+  "type": "repeat",
+  "cell_id": 3065,
+  "sentence": "Something happened sincely.",
+  "present_pos": 506
+ },
+ {
+  "type": "gold",
+  "cell_id": 2076,
+  "sentence": "Hundred the something happened.",
+  "present_pos": 507
+ },
+ {
+  "type": "gold",
+  "cell_id": 6101,
+  "sentence": "Something was westward enough.",
+  "present_pos": 508
+ },
+ {
+  "type": "gold",
+  "cell_id": 7857,
+  "sentence": "The old-fashioned something happened.",
+  "present_pos": 509
+ },
+ {
+  "type": "gold",
+  "cell_id": 2634,
+  "sentence": "The belowness of something.",
+  "present_pos": 510
+ },
+ {
+  "type": "gold",
+  "cell_id": 9858,
+  "sentence": "The sternness of something.",
+  "present_pos": 511
+ },
+ {
+  "type": "gold",
+  "cell_id": 9137,
+  "sentence": "Something happened daringly.",
+  "present_pos": 512
+ },
+ {
+  "type": "gold",
+  "cell_id": 2614,
+  "sentence": "Behind something, something happened.",
+  "present_pos": 513
+ },
+ {
+  "type": "gold",
+  "cell_id": 252,
+  "sentence": "Less the something happened.",
+  "present_pos": 514
+ },
+ {
+  "type": "gold",
+  "cell_id": 12684,
+  "sentence": "Greatly the something happened.",
+  "present_pos": 515
+ },
+ {
+  "type": "gold",
+  "cell_id": 2240,
+  "sentence": "Something was upon doing.",
+  "present_pos": 516
+ },
+ {
+  "type": "gold",
+  "cell_id": 10352,
+  "sentence": "Something was spastic doing.",
+  "present_pos": 517
+ },
+ {
+  "type": "gold",
+  "cell_id": 11358,
+  "sentence": "Something was enough kurdish.",
+  "present_pos": 518
+ },
+ {
+  "type": "gold",
+  "cell_id": 3231,
+  "sentence": "Within of the somethings happened.",
+  "present_pos": 519
+ },
+ {
+  "type": "gold",
+  "cell_id": 1050,
+  "sentence": "The many aness of something.",
+  "present_pos": 520
+ },
+ {
+  "type": "gold",
+  "cell_id": 9351,
+  "sentence": "Obscene of the somethings happened.",
+  "present_pos": 521
+ },
+ {
+  "type": "gold",
+  "cell_id": 7239,
+  "sentence": "National of the somethings happened.",
+  "present_pos": 522
+ },
+ {
+  "type": "gold",
+  "cell_id": 11399,
+  "sentence": "The something that something was regimented __",
+  "present_pos": 523
+ },
+ {
+  "type": "repeat",
+  "cell_id": 11630,
+  "sentence": "Someone saw theme.",
+  "present_pos": 524
+ },
+ {
+  "type": "gold",
+  "cell_id": 6178,
+  "sentence": "Something was ready.",
+  "present_pos": 525
+ },
+ {
+  "type": "repeat",
+  "cell_id": 11634,
+  "sentence": "The themeness of something.",
+  "present_pos": 526
+ },
+ {
+  "type": "gold",
+  "cell_id": 4681,
+  "sentence": "Something was too thereof.",
+  "present_pos": 527
+ },
+ {
+  "type": "gold",
+  "cell_id": 11731,
+  "sentence": "Something seemed civil.",
+  "present_pos": 528
+ },
+ {
+  "type": "gold",
+  "cell_id": 7048,
+  "sentence": "Something was untough.",
+  "present_pos": 529
+ },
+ {
+  "type": "gold",
+  "cell_id": 11228,
+  "sentence": "Something became clandestine.",
+  "present_pos": 530
+ },
+ {
+  "type": "gold",
+  "cell_id": 1135,
+  "sentence": "Something was last something.",
+  "present_pos": 531
+ },
+ {
+  "type": "gold",
+  "cell_id": 10861,
+  "sentence": "Boggy something happened.",
+  "present_pos": 532
+ },
+ {
+  "type": "repeat",
+  "cell_id": 5350,
+  "sentence": "Downstairs something, something happened.",
+  "present_pos": 533
+ },
+ {
+  "type": "gold",
+  "cell_id": 2116,
+  "sentence": "Something was right of.",
+  "present_pos": 534
+ },
+ {
+  "type": "gold",
+  "cell_id": 1882,
+  "sentence": "Something was whatever.",
+  "present_pos": 535
+ },
+ {
+  "type": "gold",
+  "cell_id": 9516,
+  "sentence": "High-profile the something happened.",
+  "present_pos": 536
+ },
+ {
+  "type": "gold",
+  "cell_id": 9170,
+  "sentence": "Something was more disused than something else.",
+  "present_pos": 537
+ },
+ {
+  "type": "gold",
+  "cell_id": 3673,
+  "sentence": "Something was too given.",
+  "present_pos": 538
+ },
+ {
+  "type": "gold",
+  "cell_id": 6494,
+  "sentence": "Someone saw fair.",
+  "present_pos": 539
+ },
+ {
+  "type": "gold",
+  "cell_id": 10583,
+  "sentence": "The something that something was pernickety __",
+  "present_pos": 540
+ },
+ {
+  "type": "gold",
+  "cell_id": 8920,
+  "sentence": "Something was unoverdue.",
+  "present_pos": 541
+ },
+ {
+  "type": "gold",
+  "cell_id": 10397,
+  "sentence": "Something was czechoslovakian enough.",
+  "present_pos": 542
+ },
+ {
+  "type": "gold",
+  "cell_id": 5908,
+  "sentence": "Something was right northward.",
+  "present_pos": 543
+ },
+ {
+  "type": "gold",
+  "cell_id": 5019,
+  "sentence": "Something was whereaboutser than something else.",
+  "present_pos": 544
+ },
+ {
+  "type": "gold",
+  "cell_id": 5109,
+  "sentence": "Something was old and where.",
+  "present_pos": 545
+ },
+ {
+  "type": "gold",
+  "cell_id": 12160,
+  "sentence": "Something was unauctioneer.",
+  "present_pos": 546
+ },
+ {
+  "type": "gold",
+  "cell_id": 6110,
+  "sentence": "Someone saw westward.",
+  "present_pos": 547
+ },
+ {
+  "type": "gold",
+  "cell_id": 4607,
+  "sentence": "The something that something was thereat __",
+  "present_pos": 548
+ },
+ {
+  "type": "gold",
+  "cell_id": 406,
+  "sentence": "A something, something happened.",
+  "present_pos": 549
+ },
+ {
+  "type": "gold",
+  "cell_id": 867,
+  "sentence": "Something was everywherer than something else.",
+  "present_pos": 550
+ },
+ {
+  "type": "gold",
+  "cell_id": 2301,
+  "sentence": "Something was old and as.",
+  "present_pos": 551
+ },
+ {
+  "type": "gold",
+  "cell_id": 10691,
+  "sentence": "The something disloyal happened.",
+  "present_pos": 552
+ },
+ {
+  "type": "gold",
+  "cell_id": 8512,
+  "sentence": "Something was unclassic.",
+  "present_pos": 553
+ },
+ {
+  "type": "gold",
+  "cell_id": 22,
+  "sentence": "Worth something, something happened.",
+  "present_pos": 554
+ },
+ {
+  "type": "gold",
+  "cell_id": 5863,
+  "sentence": "Something was inward something.",
+  "present_pos": 555
+ },
+ {
+  "type": "gold",
+  "cell_id": 9871,
+  "sentence": "Something was uncommon something.",
+  "present_pos": 556
+ },
+ {
+  "type": "gold",
+  "cell_id": 3438,
+  "sentence": "Something was enough failing.",
+  "present_pos": 557
+ },
+ {
+  "type": "gold",
+  "cell_id": 2277,
+  "sentence": "Something was old and with.",
+  "present_pos": 558
+ },
+ {
+  "type": "gold",
+  "cell_id": 3076,
+  "sentence": "Something was right through.",
+  "present_pos": 559
+ },
+ {
+  "type": "gold",
+  "cell_id": 6277,
+  "sentence": "Safe something happened.",
+  "present_pos": 560
+ },
+ {
+  "type": "gold",
+  "cell_id": 9724,
+  "sentence": "Something was right breathless.",
+  "present_pos": 561
+ },
+ {
+  "type": "gold",
+  "cell_id": 144,
+  "sentence": "Something was very ablaze.",
+  "present_pos": 562
+ },
+ {
+  "type": "gold",
+  "cell_id": 2440,
+  "sentence": "Something was unafter.",
+  "present_pos": 563
+ },
+ {
+  "type": "gold",
+  "cell_id": 869,
+  "sentence": "Something was everywhere enough.",
+  "present_pos": 564
+ },
+ {
+  "type": "gold",
+  "cell_id": 7371,
+  "sentence": "Something was greater than something else.",
+  "present_pos": 565
+ },
+ {
+  "type": "repeat",
+  "cell_id": 8068,
+  "sentence": "Something was right commercial.",
+  "present_pos": 566
+ },
+ {
+  "type": "gold",
+  "cell_id": 6251,
+  "sentence": "The something serious happened.",
+  "present_pos": 567
+ },
+ {
+  "type": "gold",
+  "cell_id": 10556,
+  "sentence": "Something became delirious.",
+  "present_pos": 568
+ },
+ {
+  "type": "gold",
+  "cell_id": 2041,
+  "sentence": "Something was too seventy.",
+  "present_pos": 569
+ },
+ {
+  "type": "repeat",
+  "cell_id": 9617,
+  "sentence": "Something happened flappily.",
+  "present_pos": 570
+ },
+ {
+  "type": "gold",
+  "cell_id": 7945,
+  "sentence": "Something was too spinning.",
+  "present_pos": 571
+ },
+ {
+  "type": "gold",
+  "cell_id": 8571,
+  "sentence": "Something was historicer than something else.",
+  "present_pos": 572
+ },
+ {
+  "type": "gold",
+  "cell_id": 4452,
+  "sentence": "Herefrom the something happened.",
+  "present_pos": 573
+ },
+ {
+  "type": "gold",
+  "cell_id": 2209,
+  "sentence": "Something was too onto.",
+  "present_pos": 574
+ },
+ {
+  "type": "gold",
+  "cell_id": 8651,
+  "sentence": "The something comfortable happened.",
+  "present_pos": 575
+ },
+ {
+  "type": "gold",
+  "cell_id": 12110,
+  "sentence": "Someone saw comedy.",
+  "present_pos": 576
+ },
+ {
+  "type": "gold",
+  "cell_id": 2444,
+  "sentence": "Something became after.",
+  "present_pos": 577
+ },
+ {
+  "type": "gold",
+  "cell_id": 7590,
+  "sentence": "Something was enough efficient.",
+  "present_pos": 578
+ },
+ {
+  "type": "gold",
+  "cell_id": 3552,
+  "sentence": "Something was very regarding.",
+  "present_pos": 579
+ },
+ {
+  "type": "gold",
+  "cell_id": 470,
+  "sentence": "Someone saw a great many.",
+  "present_pos": 580
+ },
+ {
+  "type": "repeat",
+  "cell_id": 3410,
+  "sentence": "Something was more excluding than something else.",
+  "present_pos": 581
+ },
+ {
+  "type": "gold",
+  "cell_id": 7376,
+  "sentence": "Something was great doing.",
+  "present_pos": 582
+ },
+ {
+  "type": "gold",
+  "cell_id": 3717,
+  "sentence": "Something was old and gone.",
+  "present_pos": 583
+ },
+ {
+  "type": "gold",
+  "cell_id": 5030,
+  "sentence": "Someone saw whereabouts.",
+  "present_pos": 584
+ },
+ {
+  "type": "gold",
+  "cell_id": 10281,
+  "sentence": "The fossilised something happened.",
+  "present_pos": 585
+ },
+ {
+  "type": "gold",
+  "cell_id": 752,
+  "sentence": "Something was either doing.",
+  "present_pos": 586
+ },
+ {
+  "type": "gold",
+  "cell_id": 2508,
+  "sentence": "Alongside the something happened.",
+  "present_pos": 587
+ },
+ {
+  "type": "gold",
+  "cell_id": 2435,
+  "sentence": "The something after happened.",
+  "present_pos": 588
+ },
+ {
+  "type": "gold",
+  "cell_id": 8338,
+  "sentence": "Something was irish.",
+  "present_pos": 589
+ },
+ {
+  "type": "gold",
+  "cell_id": 2156,
+  "sentence": "Something became at.",
+  "present_pos": 590
+ },
+ {
+  "type": "gold",
+  "cell_id": 1053,
+  "sentence": "Something was old and many a.",
+  "present_pos": 591
+ },
+ {
+  "type": "gold",
+  "cell_id": 4392,
+  "sentence": "Something was very hereat.",
+  "present_pos": 592
+ },
+ {
+  "type": "gold",
+  "cell_id": 481,
+  "sentence": "Something was too a little.",
+  "present_pos": 593
+ },
+ {
+  "type": "gold",
+  "cell_id": 293,
+  "sentence": "Something was such enough.",
+  "present_pos": 594
+ },
+ {
+  "type": "gold",
+  "cell_id": 841,
+  "sentence": "Something was too everything.",
+  "present_pos": 595
+ },
+ {
+  "type": "gold",
+  "cell_id": 6122,
+  "sentence": "Something was more general than something else.",
+  "present_pos": 596
+ },
+ {
+  "type": "gold",
+  "cell_id": 7999,
+  "sentence": "Something was impressed something.",
+  "present_pos": 597
+ },
+ {
+  "type": "gold",
+  "cell_id": 6735,
+  "sentence": "Short of the somethings happened.",
+  "present_pos": 598
+ },
+ {
+  "type": "gold",
+  "cell_id": 7388,
+  "sentence": "Something became great.",
+  "present_pos": 599
+ },
+ {
+  "type": "gold",
+  "cell_id": 10346,
+  "sentence": "Something was more spastic than something else.",
+  "present_pos": 600
+ },
+ {
+  "type": "gold",
+  "cell_id": 5541,
+  "sentence": "Something was old and indoors.",
+  "present_pos": 601
+ },
+ {
+  "type": "gold",
+  "cell_id": 6566,
+  "sentence": "Someone saw beautiful.",
+  "present_pos": 602
+ },
+ {
+  "type": "gold",
+  "cell_id": 11124,
+  "sentence": "Preconceived the something happened.",
+  "present_pos": 603
+ },
+ {
+  "type": "gold",
+  "cell_id": 4884,
+  "sentence": "Whereof the something happened.",
+  "present_pos": 604
+ },
+ {
+  "type": "gold",
+  "cell_id": 10935,
+  "sentence": "Nonsensical of the somethings happened.",
+  "present_pos": 605
+ },
+ {
+  "type": "gold",
+  "cell_id": 10837,
+  "sentence": "Endoscopy something happened.",
+  "present_pos": 606
+ },
+ {
+  "type": "gold",
+  "cell_id": 11068,
+  "sentence": "Something was right suggestive.",
+  "present_pos": 607
+ },
+ {
+  "type": "gold",
+  "cell_id": 749,
+  "sentence": "Something was either enough.",
+  "present_pos": 608
+ },
+ {
+  "type": "gold",
+  "cell_id": 9899,
+  "sentence": "The something fleeting happened.",
+  "present_pos": 609
+ },
+ {
+  "type": "gold",
+  "cell_id": 10433,
+  "sentence": "Something happened unfavourably.",
+  "present_pos": 610
+ },
+ {
+  "type": "gold",
+  "cell_id": 8201,
+  "sentence": "Something happened blankly.",
+  "present_pos": 611
+ },
+ {
+  "type": "gold",
+  "cell_id": 10731,
+  "sentence": "Something was improvisationaller than something else.",
+  "present_pos": 612
+ },
+ {
+  "type": "gold",
+  "cell_id": 9432,
+  "sentence": "Something was very inefficient.",
+  "present_pos": 613
+ },
+ {
+  "type": "gold",
+  "cell_id": 5753,
+  "sentence": "Something happened downwardly.",
+  "present_pos": 614
+ },
+ {
+  "type": "gold",
+  "cell_id": 4578,
+  "sentence": "The herewithness of something.",
+  "present_pos": 615
+ },
+ {
+  "type": "gold",
+  "cell_id": 10482,
+  "sentence": "The backhandedness of something.",
+  "present_pos": 616
+ },
+ {
+  "type": "gold",
+  "cell_id": 6271,
+  "sentence": "Something was safe something.",
+  "present_pos": 617
+ },
+ {
+  "type": "gold",
+  "cell_id": 5071,
+  "sentence": "Something was there something.",
+  "present_pos": 618
+ },
+ {
+  "type": "gold",
+  "cell_id": 11459,
+  "sentence": "The something reported happened.",
+  "present_pos": 619
+ },
+ {
+  "type": "gold",
+  "cell_id": 11939,
+  "sentence": "The something describes happened.",
+  "present_pos": 620
+ },
+ {
+  "type": "gold",
+  "cell_id": 570,
+  "sentence": "The aniness of something.",
+  "present_pos": 621
+ },
+ {
+  "type": "gold",
+  "cell_id": 1861,
+  "sentence": "What something happened.",
+  "present_pos": 622
+ },
+ {
+  "type": "gold",
+  "cell_id": 1491,
+  "sentence": "Something was somer than something else.",
+  "present_pos": 623
+ },
+ {
+  "type": "repeat",
+  "cell_id": 12716,
+  "sentence": "Something became curve.",
+  "present_pos": 624
+ },
+ {
+  "type": "gold",
+  "cell_id": 2714,
+  "sentence": "Something was more beyond than something else.",
+  "present_pos": 625
+ },
+ {
+  "type": "gold",
+  "cell_id": 12325,
+  "sentence": "Wibbly something happened.",
+  "present_pos": 626
+ },
+ {
+  "type": "gold",
+  "cell_id": 521,
+  "sentence": "Something happened ally.",
+  "present_pos": 627
+ },
+ {
+  "type": "gold",
+  "cell_id": 10327,
+  "sentence": "Something was seditious something.",
+  "present_pos": 628
+ },
+ {
+  "type": "gold",
+  "cell_id": 11922,
+  "sentence": "The uncoveredness of something.",
+  "present_pos": 629
+ },
+ {
+  "type": "gold",
+  "cell_id": 1213,
+  "sentence": "None something happened.",
+  "present_pos": 630
+ },
+ {
+  "type": "gold",
+  "cell_id": 9148,
+  "sentence": "Something was right savvy.",
+  "present_pos": 631
+ },
+ {
+  "type": "gold",
+  "cell_id": 12308,
+  "sentence": "Something became sit.",
+  "present_pos": 632
+ },
+ {
+  "type": "gold",
+  "cell_id": 2836,
+  "sentence": "Something was right inside.",
+  "present_pos": 633
+ },
+ {
+  "type": "gold",
+  "cell_id": 7233,
+  "sentence": "The national something happened.",
+  "present_pos": 634
+ },
+ {
+  "type": "gold",
+  "cell_id": 8977,
+  "sentence": "Something was too crippling.",
+  "present_pos": 635
+ },
+ {
+  "type": "gold",
+  "cell_id": 12775,
+  "sentence": "Something was frederick something.",
+  "present_pos": 636
+ },
+ {
+  "type": "gold",
+  "cell_id": 5004,
+  "sentence": "Thereabouts the something happened.",
+  "present_pos": 637
+ },
+ {
+  "type": "gold",
+  "cell_id": 2495,
+  "sentence": "The something that something was along __",
+  "present_pos": 638
+ },
+ {
+  "type": "gold",
+  "cell_id": 4728,
+  "sentence": "Something was very thereto.",
+  "present_pos": 639
+ },
+ {
+  "type": "gold",
+  "cell_id": 10811,
+  "sentence": "The something mechanistic happened.",
+  "present_pos": 640
+ },
+ {
+  "type": "gold",
+  "cell_id": 5088,
+  "sentence": "Something was very where.",
+  "present_pos": 641
+ },
+ {
+  "type": "gold",
+  "cell_id": 7242,
+  "sentence": "The nationalness of something.",
+  "present_pos": 642
+ },
+ {
+  "type": "gold",
+  "cell_id": 5350,
+  "sentence": "Downstairs something, something happened.",
+  "present_pos": 643
+ },
+ {
+  "type": "gold",
+  "cell_id": 9808,
+  "sentence": "Something was unfour-and-a-half.",
+  "present_pos": 644
+ },
+ {
+  "type": "gold",
+  "cell_id": 4593,
+  "sentence": "The thereat something happened.",
+  "present_pos": 645
+ },
+ {
+  "type": "gold",
+  "cell_id": 5096,
+  "sentence": "Something was where doing.",
+  "present_pos": 646
+ },
+ {
+  "type": "gold",
+  "cell_id": 7568,
+  "sentence": "Something was unexpected doing.",
+  "present_pos": 647
+ },
+ {
+  "type": "gold",
+  "cell_id": 12465,
+  "sentence": "The fifa something happened.",
+  "present_pos": 648
+ },
+ {
+  "type": "gold",
+  "cell_id": 112,
+  "sentence": "Something was unfun.",
+  "present_pos": 649
+ },
+ {
+  "type": "gold",
+  "cell_id": 1200,
+  "sentence": "Something was very none.",
+  "present_pos": 650
+ }
+]

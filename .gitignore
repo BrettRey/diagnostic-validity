@@ -20,6 +20,8 @@ results/*
 !results/phase3_instantiate_manifest.json
 !results/gold_coding_blind.csv
 !results/gold_coding_key.csv
+!results/gold_coding_order.json
+!results/gold_coding_responses.csv
 paper/*.aux
 paper/*.bbl
 paper/*.bcf

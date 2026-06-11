@@ -97,10 +97,15 @@ Measured full-grid budget: ~2.44 M input + ~1.02 M output tokens (~$23 mid /
 - **Identical instruction wording** to the §4 prompt, with only the reply-format
   line adapted to the interface -- instruction identity is the PPI construct
   invariant (judge and coder must measure the same thing).
-- **Blind interface built:** `results/gold_coding_blind.csv` (randomized, seed
-  26; sentence strings + a blank rating column; no lexeme/item/stratum). Rejoin
-  key (`results/gold_coding_key.csv`) is executor-only during coding (cell
-  mapping, not judge output).
+- **Coding interface:** `python src/gold_code.py` -- one sentence at a time, no
+  back button, one pass; ~20 non-gold warm-up (discarded) then 600 gold + 30
+  shuffled-in repeats; rate 1-7, keystroke flags `v` (variety) / `u` (unsure);
+  resumable across sessions; logs session id + per-item UTC timestamps. Order
+  pinned in `results/gold_coding_order.json` (seed 26; executor-only -- do not
+  open while coding). Codes -> `results/gold_coding_responses.csv`. (Supersedes
+  the flat `gold_coding_blind.csv`.)
+- **Test-retest:** 30 randomly-repeated gold sentences give a free intra-rater
+  reliability r; stripped before PPI (pre-registered before coding).
 - **Firewall (logged rule):** the gold coder views no judge output until all 600
   codes are committed; the commit hash is the evidence.
 - **Variety:** British English; for any cell where variety uncertainty genuinely
