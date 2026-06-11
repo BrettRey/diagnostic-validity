@@ -1,9 +1,9 @@
 {
   "phase": 3,
   "step": "F4 sampling",
-  "timestamp": "2026-06-11T02:39:06.845144+00:00",
+  "timestamp": "2026-06-11T09:50:04.432398+00:00",
   "seed": 26,
-  "git_rev": "1a5515f12c2d883b1e5a6ef12494fedef6eab9c1",
+  "git_rev": "bf2a1b41c77e18e51ace50f8a59b27a6b395c961",
   "versions": {
     "python": "3.11.4",
     "numpy": "2.1.3",
@@ -38,6 +38,29 @@
   },
   "adjective_per_band_target": 55,
   "adjective_band_underfill_note": null,
+  "adjective_band_accounting": {
+    "zipf>=5": {
+      "drawn": 55,
+      "survived": 48,
+      "lost_to_more_specific": 7
+    },
+    "4-5": {
+      "drawn": 55,
+      "survived": 55,
+      "lost_to_more_specific": 0
+    },
+    "3-4": {
+      "drawn": 55,
+      "survived": 55,
+      "lost_to_more_specific": 0
+    },
+    "2-3": {
+      "drawn": 55,
+      "survived": 55,
+      "lost_to_more_specific": 0
+    }
+  },
+  "grid_size_note": "Judgment grid ~ 522 lexemes x 24 confirmed judgment items (+ ~18 corpus columns) ~ 22k cells. F6 gold sample stays 600 cells as pre-registered -- a thinner sampling fraction (~2.7%) against this grid than against the ~450-lexeme planning estimate; noted per pm (ruling a, keep full 522), not silently absorbed.",
   "strata_counts": {
     "boundary": 16,
     "determinative": 67,

@@ -136,12 +136,16 @@ def main():
         merged_note = (f"bottom band '2-3' has only {band_pops['2-3']} "
                        f"adjectives (<{ADJ_PER_BAND}); took all. Per F2, this "
                        f"is the logged merge/underfill, not a silent cap.")
-    adj_added = 0
+    adj_band_acct = {}
     for name, _, _ in ADJ_BANDS:
+        drawn = len(band_draws[name])
+        surv = 0
         for r in band_draws[name]:
             if add(r["Spelling"], "adjective",
                    {"zipf": round(float(r["z"]), 3), "zipf_band": name}):
-                adj_added += 1
+                surv += 1
+        adj_band_acct[name] = {"drawn": drawn, "survived": surv,
+                               "lost_to_more_specific": drawn - surv}
 
     # F1e category-blind: 60 from the top BLIND_TOPN by Zipf, no PoS cond.
     top = df.sort_values("z", ascending=False).head(BLIND_TOPN)
@@ -185,6 +189,14 @@ def main():
         "adjective_band_populations": band_pops,
         "adjective_per_band_target": ADJ_PER_BAND,
         "adjective_band_underfill_note": merged_note,
+        "adjective_band_accounting": adj_band_acct,
+        "grid_size_note": (
+            "Judgment grid ~ %d lexemes x 24 confirmed judgment items "
+            "(+ ~18 corpus columns) ~ 22k cells. F6 gold sample stays 600 "
+            "cells as pre-registered -- a thinner sampling fraction (~2.7%%) "
+            "against this grid than against the ~450-lexeme planning estimate; "
+            "noted per pm (ruling a, keep full 522), not silently absorbed."
+            % len(rows)),
         "strata_counts": strata_counts,
         "total_unique_lexemes": len(rows),
         "n_collisions": len(collisions),
