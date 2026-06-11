@@ -18,6 +18,7 @@ results/*
 !results/phase3_eyeball_50.csv
 !results/phase3_template_exceptions.md
 !results/phase3_instantiate_manifest.json
+!results/phase3_reliability.json
 !results/gold_coding_blind.csv
 !results/gold_coding_key.csv
 !results/gold_coding_order.json
