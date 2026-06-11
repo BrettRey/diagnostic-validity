@@ -28,6 +28,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(__file__))
+import plot_style  # house chart style
+plot_style.setup()
 from analyze_phase3 import load_gold, load_judge  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -181,7 +183,7 @@ def main():
 
 def _fig_secret(res, judges):
     fig, axes = plt.subplots(1, 2, figsize=(13, 7))
-    colors = {"fable": "#1f77b4", "gpt": "#d62728"}
+    colors = {"fable": plot_style.COLORS["primary"], "gpt": plot_style.COLORS["secondary"]}
     # left: per-item, ordered by fable shrunk residual
     items = sorted(res["by_item"]["fable"],
                    key=lambda k: res["by_item"]["fable"][k]["shrunk"])
@@ -227,7 +229,7 @@ def _fig_secret(res, judges):
 
 def _fig_calibration(res, judges):
     fig, axes = plt.subplots(1, 2, figsize=(13, 5.5))
-    colors = {"fable": "#1f77b4", "gpt": "#d62728"}
+    colors = {"fable": plot_style.COLORS["primary"], "gpt": plot_style.COLORS["secondary"]}
     ax = axes[0]
     for j in judges:
         bands = res["by_gold_band"][j]

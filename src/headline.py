@@ -31,6 +31,8 @@ np.seterr(all="ignore")   # fit_lowrank GD overflows transiently on near-
 # constant columns then clips; results verified NaN-free + rank-monotone.
 
 sys.path.insert(0, os.path.dirname(__file__))
+import plot_style  # house chart style
+plot_style.setup()
 import models  # noqa: E402
 from analyze_phase3 import load_gold, load_judge  # noqa: E402
 
@@ -375,7 +377,7 @@ def _print(res):
 
 
 def _figures(res, lex_order, diag_order, bound_rows):
-    colors = {"fable": "#1f77b4", "gpt": "#d62728"}
+    colors = {"fable": plot_style.COLORS["primary"], "gpt": plot_style.COLORS["secondary"]}
     # Fig 1: verdict-invariance (CV diff in SE units per arm, both judges)
     fig, ax = plt.subplots(figsize=(10, 5))
     arms = list(next(iter(res["judges"].values()))["arms"])

@@ -30,6 +30,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(__file__))
+import plot_style  # house chart style
+plot_style.setup()
 from analyze_phase3 import load_gold, load_judge  # noqa: E402
 from residual_structure import grid_map, eb  # noqa: E402
 
@@ -116,7 +118,7 @@ def main():
         # ---- figures ----
         ax = axes[0, col]
         xs = levels
-        ax.plot(xs, [real[L] for L in xs], "o-", color="#1f77b4", lw=2,
+        ax.plot(xs, [real[L] for L in xs], "o-", color=plot_style.COLORS["primary"], lw=2,
                 label="real frown")
         ax.plot(xs, [null_mid[L] for L in xs], "s--", color="grey",
                 label="mechanical null (mean)")
@@ -131,10 +133,10 @@ def main():
         ax = axes[1, col]
         m = (v + g) / 2
         ax.scatter(m + rng.normal(0, 0.05, m.size), resid + rng.normal(0, 0.05, resid.size),
-                   s=6, alpha=0.3, color="#1f77b4")
+                   s=6, alpha=0.3, color=plot_style.COLORS["primary"])
         bs = stats.linregress(m, resid)
         xx = np.array([m.min(), m.max()])
-        ax.plot(xx, bs.intercept + bs.slope * xx, "r-", lw=2,
+        ax.plot(xx, bs.intercept + bs.slope * xx, "-", color=plot_style.COLORS["secondary"], lw=2,
                 label=f"slope={bs.slope:+.2f} (p={bs.pvalue:.1e})")
         ax.axhline(resid.mean(), color="k", ls="--", lw=0.8,
                    label=f"mean={resid.mean():+.2f}")
