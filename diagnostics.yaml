@@ -20,6 +20,15 @@ meta:
     - "Matthews 2014, The Positions of Adjectives in English (positional diagnostics; boundary inventory)"
     - "Maling 1983 (worth/near; degree and complementation diagnostics)"
     - "Aarts 2007, Syntactic Gradience (diagnostic batteries for A/P boundary)"
+  verification_status: >
+    Sources CONFIRMED 2026-06-10 against paper/item_B_verification.md
+    (per-row verbatim + pinpoints; pm-reviewed). The 'VERIFY:' prefixes in
+    the source fields below are superseded by that record EXCEPT: well_mod
+    (pending-maling, non-gating) and that_clause_complement (needs re-source,
+    non-gating); gerund_gap second pinpoint is a TODO. F5 battery gate CLEARS
+    for the confirmed judgment items + corpus columns once the data/ files
+    land; well_mod and that_clause instantiate late as appended columns, not
+    gates.
 
 diagnostics:
   # --- degree and comparison -------------------------------------------
@@ -49,13 +58,13 @@ diagnostics:
     source: "VERIFY: CGEL on inflected prepositions (near); Maling 1983"
   - id: well_mod
     gloss: "accepts 'well' as degree modifier (standard varieties)"
-    frame: "Something was well LEX something."
+    frame: "Something was well LEX (something)."
     tradition: {adjective: no, preposition: yes, determinative: no}
     op: judgment
     source: "pending-maling (non-gating). NOT in CGEL (§2.2 nor ch.7 modification, checked 2026-06-10); Maling 1983 has no 'well worth' test (intake). pm library scan; if still unsourced, relabel 'novel: this study' (Item B polices attribution, not membership)."
   - id: right_mod
     gloss: "accepts 'right' as modifier"
-    frame: "Something was right LEX something."
+    frame: "Something was right LEX (something)."
     tradition: {adjective: no, preposition: yes, determinative: no}
     op: judgment
     source: "VERIFY: CGEL preposition modification"
@@ -63,7 +72,14 @@ diagnostics:
     gloss: "accepts postposed 'enough' (enough FOLLOWS the head)"
     frame: "Something was LEX enough."
     tradition: {adjective: yes, preposition: no, determinative: no}
-    note: "Maling's one 'purely syntactic' A/P diagnostic -- 'enough follows adjectives, but precedes prepositions' (Maling 1983:263-265; Aarts 2007 §8.4.4). FRAME TEMPLATE drafted from intake verbatim, QUEUED FOR PM CONFIRMATION. Added 2026-06-10 per pm approval (battery -> 25, one pending)."
+    note: "Maling's positional A/P diagnostic -- 'enough follows adjectives, but precedes prepositions' (Maling 1983:263-265; Aarts 2007 §8.4.4). Frame CONFIRMED by pm 2026-06-10. Pairs with enough_preposed."
+    op: judgment
+    source: "Maling 1983:263-265; Aarts 2007 §8.4.4"
+  - id: enough_preposed
+    gloss: "accepts preposed 'enough' (enough PRECEDES the head)"
+    frame: "Something was enough LEX (something)."
+    tradition: {adjective: no, preposition: yes, determinative: no}
+    note: "Pair of enough_postposed -- the other half of Maling's positional contrast (postposed with adjectives, preposed with prepositions; Maling 1983:263-265; Aarts 2007 §8.4.4). Added 2026-06-10 per pm (battery -> 26)."
     op: judgment
     source: "Maling 1983:263-265; Aarts 2007 §8.4.4"
 
@@ -79,14 +95,15 @@ diagnostics:
     frame: "Something was LEX doing."
     tradition: {adjective: partial, preposition: no, determinative: no}
     op: judgment
-    note: "tough-construction-like signature; instantiation needs care per lexeme"
-    source: "VERIFY: CGEL on worth; Maling 1983"
+    note: "tough-construction-like signature; instantiation needs care per lexeme. Re-sourced (Maling has no such test) to CGEL hollow clauses (00-CGEL.md l.1935, 'This idea is worth [giving some thought to]') -- evidences WORTH; the general easy/hard/tough hollow-complement class (which licenses 'adjective: partial') is in CGEL's non-finite-clause chapter -- second pinpoint TODO (non-gating)."
+    source: "CGEL hollow clauses (00-CGEL.md l.1935, worth); easy/tough class pinpoint TODO"
   - id: that_clause_complement
     gloss: "licenses declarative content-clause complement"
     frame: "Someone was LEX that something happened."
     tradition: {adjective: partial, preposition: partial, determinative: no}
     op: both
-    source: "VERIFY: CGEL"
+    note: "NEEDS RE-SOURCE (non-gating, instantiates late). The [9](b) quote concerns NON-expandable bare declaratives (clauses REJECTING 'that') as preposition-licensed -- the OPPOSITE of this frame (LEX that S). The adjective side (glad/aware that S) needs CGEL's adjective declarative-complement statement, paired with the properly-scoped [9]i preposition contrast. The bare-declarative configuration is a CANDIDATE item for a future pm decision (a sharper diagnostic), not entered by drift."
+    source: "RE-SOURCE pending (prior 'VERIFY: CGEL' [9](b) does not support this frame)"
 
   # --- function/position -------------------------------------------------
   - id: attributive
@@ -100,7 +117,8 @@ diagnostics:
     frame: "Something was LEX."
     tradition: {adjective: yes, preposition: partial, determinative: no}
     op: both
-    source: "VERIFY: CGEL"
+    note: "LOW EXPECTED DISCRIMINATION (pre-registered): CGEL ch.6 §2.1 (l.16161) -- 'be allows such a wide range of complements that its value as a diagnostic is quite limited.'"
+    source: "CGEL ch.6 §2.1 (l.16113)"
   - id: postpositive
     gloss: "postpositive modifier"
     frame: "Something LEX happened."
@@ -122,10 +140,11 @@ diagnostics:
     source: "VERIFY: CGEL ch. 5"
   - id: fused_head
     gloss: "fused determiner-head use"
-    frame: "LEX happened. / Someone saw LEX."
+    frame: "Someone saw LEX."
     tradition: {adjective: no, preposition: no, determinative: partial}
     op: both
-    source: "VERIFY: CGEL ch. 5 (fused heads)"
+    note: "Single frame (was two sentences in one cell -- ambiguous; fixed 2026-06-10)."
+    source: "CGEL ch.5 §9.1 (l.12393, fused heads)"
   - id: partitive_of
     gloss: "partitive construction with 'of'"
     frame: "LEX of the somethings happened."
@@ -159,8 +178,8 @@ diagnostics:
     frame: "Something seemed LEX (something)."
     tradition: {adjective: yes, preposition: marginal, determinative: no}
     op: both
-    note: "known confound: seem admits some PPs; keep but expect low discrimination"
-    source: "VERIFY: CGEL"
+    note: "Stronger discrimination than first assumed: CGEL ch.6 §2.1 (l.16161) -- become/make/seem 'wholly or largely exclude PP complements' (ex. 'They all seem content' / *'They all seem outside'). Residual: a few PPs may slip through."
+    source: "CGEL ch.6 §2.1 (l.16161, 16165, 16167)"
   - id: become_complement
     gloss: "complement of 'become'"
     frame: "Something became LEX (something)."
@@ -198,3 +217,16 @@ notes:
      build it, don't silently hand-edit sentences."
   - "Corpus operationalizations (op: both) get query specs in a separate
      file in Phase 3; corpus and judgment columns are distinct items."
+
+template_exceptions:
+  # Pre-known per-lexeme instantiation exceptions (pm 2026-06-10). Build the
+  # table; never silently hand-edit sentences.
+  - diagnostic: inflectional_comparison
+    issue: "LEX-er / LEX-est is a morphological SCHEMA, not a literal string;
+            the synthetic comparative/superlative must be generated per lexeme
+            (good->better, near->nearer, *worth-er). Mark non-comparable
+            lexemes rather than emitting ungrammatical strings."
+  - diagnostic: [enough_postposed, enough_preposed]
+    issue: "When the lexeme under test IS 'enough', it collides with the test
+            word ('Something was enough enough'). Flag 'enough' (boundary set)
+            for both enough items; do not hand-edit."

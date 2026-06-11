@@ -46,10 +46,24 @@ Status: ✅ sourced (verbatim+pinpoint) · ⚠ flag (mis-/un-sourced) · ✋ pm/
 - **fronting_pp** ✅ CGEL ch.7 §2.2 [11]vi: "Prepositions taking NP complements can normally be fronted along with their complement in relative and interrogative constructions… in general, adjectives cannot." (info-packaging cross-ref Ch.16 still to add.)
 - **stranding** ✅ [11]vi (above) + CGEL ch.7 §4.1 stranding (l.18423).
 
-## Summary for pm
-- **23 / 24 diagnostics sourced** verbatim + pinpoint (CGEL chs 5/6/7/19, Maling, Matthews; Aarts corroborates the A/P battery). The 24th, `well_mod`, is **`pending-maling`** and does NOT gate (battery stays ≥40 without it).
-- **Matthews rows are already drafted.** `attributive` + `postpositive` were extracted from Matthews 2014 (the Mendeley copy) by the intake subagent (pp. 2–3, 10, 12–13, 23, 54). So the instantiation-gating Matthews rows for item B are **done** — no separate Matthews session is needed for the gate (a Matthews sitting now bears only on item C, already resolved, and the item-A calibration point).
-- **2 yaml `source:` corrections:** `gerund_gap_complement` → CGEL hollow clauses (not Maling); `un_prefix`/`ness_nominalization` → CGEL **ch.19** (not ch.6).
-- **1 qualified test:** `coordination_with_adj` — CGEL shows coordination joins unlike categories (l.1277), so it is weak; keep, expect low discrimination.
-- **Candidate battery addition (Maling p.263–265; Aarts §8.4.4):** the *enough*-position test — Maling's one "purely syntactic" A/P diagnostic ("*enough* follows adjectives, but precedes prepositions"). pm decision (F5: battery expansion is pm-gated).
-- **Item B is effectively COMPLETE pending pm row-confirmation.** Confirm the rows + the 2 corrections → F5 battery gate clears → instantiation unblocks the moment the data files land. `well_mod` joins later if the Maling library scan confirms it.
+## pm review outcome (2026-06-10) — F5 gate CLEARS conditionally
+pm read every row against its verbatim quote. **21 rows confirmed outright**
+(degree/comparison except well_mod; np_complement; attributive; postpositive;
+predeterminer/determiner/fused_head/partitive; un_/-ly/-ness; become_complement;
+coordination_with_adj as pre-registered; fronting_pp; stranding), plus the ch.19
+corrections and the gerund_gap hollow-clause re-source. Changes from review:
+- **that_clause_complement — FLIPPED to needs-re-source (non-gating).** Its [9](b)
+  quote concerns NON-expandable bare declaratives (clauses REJECTING *that*) as
+  preposition-licensed — the opposite of the "LEX that S" frame; the adjective
+  side (glad/aware that S) is unsupported. Re-source from CGEL's adjective
+  declarative-complement material; the bare-declarative config is logged as a
+  candidate item (not entered by drift).
+- **well_mod — `pending-maling`, non-gating** (CGEL §2.2 and ch.7 modification
+  both lack *well*; novel-this-study fallback if the Maling scan misses).
+- **enough test confirmed + paired:** enough_postposed + enough_preposed added
+  (battery → 26). **5 directives applied** (predicative_be / seem notes;
+  right_mod / well_mod optional complement; fused_head single frame;
+  template_exceptions) — see DECISIONS.md 2026-06-10 for the full ruling.
+- **GATE:** instantiation authorized for the 24 confirmed judgment items +
+  corpus columns the moment the two data/ files land; that_clause_complement and
+  well_mod instantiate late as appended columns, not gates.
