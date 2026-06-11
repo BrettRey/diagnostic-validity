@@ -175,8 +175,103 @@ Sprouse--Almeida replication datasets as the hard-region validation set;
 CoLA; what none of them asked.⟩
 
 \section{Predictions}\label{sec:predictions}
-⟨Table mapping the four positions to expected matrix signatures;
-pre-registered thresholds from PLAN.md \S4.⟩
+
+Each position implies a different structure for the
+lexeme\,$\times$\,diagnostic matrix, so the data can adjudicate between them.
+The mapping in Table~\ref{tab:predictions}, and the decision rule that follows
+it, were registered before any rating existed. Which structure the data show is
+the finding, and this section is written to read the same whichever way it
+falls.
+
+\begin{table}[t]
+\centering\small
+\caption{What each position predicts for the lexeme\,$\times$\,diagnostic
+matrix, in plain terms. \emph{Predicts better}: which model more accurately fills
+in ratings it was not shown. \emph{Dominant dimension}: whether one underlying
+dimension towers over the rest (the fingerprint of a single common cause), the
+variation spreads across several with no leader (mutual constraint,
+\emph{not dominant}), or there is no structure at all (\emph{flat}).
+\emph{Clusters}: whether words grouped by their diagnostic profiles recover the
+traditional categories. \emph{Boundary items}: how the pre-named hard cases
+(\textit{worth}, \textit{near}, and the rest) behave under the winning model.}
+\label{tab:predictions}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Position & Predicts better & Dominant dimension & Clusters & Boundary items \\
+\midrule
+Discrete essence & reflective & dominant & match categories & fit normally \\
+Croftian fragmentation & neither & flat & none stable & scattered \\
+Aartsian gradience & reflective & dominant & match categories & fit, score low \\
+Maintained cluster & network & not dominant & categories + overlap & misfit \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two positions, the discrete-essence tradition and \textcite{aarts2007}, both
+predict a reflective matrix, and they part only on the boundary items. Under
+discrete essence a word is in a category or out of it, so \textit{worth} and
+\textit{near} should fit the reflective model as well as any central member.
+Under subsective gradience they fit it too, but at low prototypicality, a graded
+position inside a sharply bounded category rather than extra structure. The
+maintained-cluster view predicts instead that they misfit the winning model, and
+\textcite{croft2001} predicts no stable model for them to misfit at all.
+
+The verdict turns on prediction. I compare the two models by how well each fills
+in ratings it was not shown: a random tenth of the cells is hidden, each model is
+fitted to what remains, and its predictions are checked against the hidden values
+(cross-validation; \S\ref{sec:methods} gives the procedure). A model that has
+found real structure predicts the hidden cells well; one that has only traced
+noise does not. Hide the cell for \textit{worth} with \textit{very}, say: the
+reflective model predicts it from where \textit{worth} sits on a shared adjective
+dimension, the network model from \textit{worth}'s direct links to the other
+tests, and the closer prediction wins, totalled over many hidden cells.
+
+The two scores rarely tie, so I ask whether the gap between them is real or
+chance. Each carries a margin of error, and I treat the models as genuinely
+separated only when their gap is at least twice that margin, the familiar
+two-standard-error bar; a narrower gap is a tie.
+
+Prediction says which model fits; the shape of the correlations says why. If a
+single common cause drives the diagnostics, their shared variation piles onto one
+large dimension, as a strong first factor does in factor analysis. If the
+diagnostics instead constrain each other piecemeal, that variation splits across
+several comparable dimensions with no leader. I read this off the largest
+dimension relative to the next (the ratio of the first two eigenvalues of the
+diagnostics' association matrix): above three points to a common cause, below
+three to a web of local constraints.
+
+Two safeguards keep the verdict honest. Acceptability is a matter of degree, but
+the models read a flat accept-or-reject, so each rating is first cut into a yes or
+no; because that cut-off is a choice, the verdict must hold under several of them,
+and one that reverses when the cut-off moves is reported as unstable, not as a
+finding. And a battery is a measuring instrument only if its tests inform one
+another: at least ten diagnostics must measurably sharpen prediction of a word's
+remaining profile, their projectibility (\S\ref{sec:intro}), or the toolkit
+measures nothing.
+
+The boundary prediction attaches to named words. A word \emph{misfits} when the
+winning model cannot reproduce its profile: its pattern of acceptances and
+rejections pulls in directions the model does not expect. The pre-named set,
+\textit{worth}, \textit{near}, \textit{fun}, \textit{galore}, \textit{like},
+\textit{due}, \textit{ablaze}, \textit{asleep}, \textit{more}, \textit{less},
+\textit{enough}, \textit{such}, and \textit{own}, is predicted to land among the
+worst-fitting tenth of words (the top misfit decile); if it doesn't, the informal
+boundary-item literature is miscalibrated, itself a result. Claims about any
+single word are held to a floor of forty diagnostics, below which one word's
+misfit is too noisy to read.
+
+One sharper prediction is registered in advance from independent syntactic
+work: the profiles of \textit{more} and \textit{less} should cluster with the
+determinatives, not with the adjectives or the adverbs.
+% ⟨pm: P1's more/less cite is a SEPARATE work from reynolds2021 (= "Quantifying
+% determinatives", Cadernos); Brett to name the more/less paper's venue/status
+% before this cite is added. See DECISIONS 2026-06-11.⟩
+
+The commitment runs the other way too. If a clean reflective model fits, with one
+dimension per category and unremarkable misfit at the boundary, the
+maintained-cluster framing is wrong for this region and the discussion will say
+so. Three of the four rows in Table~\ref{tab:predictions} would each falsify the
+position this paper's framework comes from.
 
 \section{Study 1: MegaAcceptability reanalysis}\label{sec:study1}
 ⟨RESULT⟩

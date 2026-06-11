@@ -45,6 +45,11 @@ MORPH = {"ness_nominalization", "un_prefix", "ly_adverb_base",
 # PLAN §RQ3 named boundary set
 BOUNDARY = {"worth", "near", "fun", "like", "due", "galore", "ablaze",
             "asleep", "more", "less", "enough", "such", "own"}
+# Human-readable arm labels for figures (avoids the raw-key "primary_z0" /
+# oldstyle-zero ambiguity flagged in pm review 2026-06-11).
+ARM_LABELS = {"primary_z0": "primary (z>0)", "ge5": r"raw $\geq$5",
+              "ge4": r"raw $\geq$4", "morph_out": "morphology out",
+              "core96": "core 96", "calibrated": "calibrated"}
 
 
 def load_grid_index():
@@ -384,35 +389,49 @@ def _figures(res, lex_order, diag_order, bound_rows):
     yy = np.arange(len(arms))
     for jn in res["judges"]:
         xs = [res["judges"][jn]["arms"][a]["cv_se_units"] for a in arms]
-        ax.plot(xs, yy + (0.12 if jn == "gpt" else -0.12), "o", ms=8,
+        ax.plot(xs, yy + (0.12 if jn == "gpt" else -0.12),
+                "o" if jn == "fable" else "s", ms=8,
                 color=colors[jn], label=jn)
     ax.axvline(2, color="grey", ls="--", lw=0.8)
     ax.axvline(-2, color="grey", ls="--", lw=0.8)
     ax.axvline(0, color="k", lw=0.8)
     ax.set_yticks(yy)
-    ax.set_yticklabels(arms)
+    ax.set_yticklabels([ARM_LABELS.get(a, a) for a in arms])
     ax.set_xlabel("CV log-loss diff (SE units); + network better, - low-rank better; |2| = threshold")
     ax.set_title("RQ1 verdict-invariance across arms")
     ax.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(RESULTS, "phase3_fig_verdict.png"), dpi=130)
+    plt.savefig(os.path.join(RESULTS, "phase3_fig_verdict.png"), dpi=300)
     plt.close()
-    # Fig 2: misfit by lexeme with boundary items highlighted (both judges)
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
+    # Fig 2: boundary-lexeme misfit. Names are y-ticks (legible, collision-free);
+    # the rug shows every lexeme so boundary items read as mid-pack, not extreme.
+    bidx = sorted(bound_rows)
+    mis_all = {jn: np.array(res["judges"][jn]["_misfit"]) for jn in res["judges"]}
+    meanb = {i: float(np.mean([mis_all[jn][i] for jn in res["judges"]])) for i in bidx}
+    order_idx = sorted(bidx, key=lambda i: meanb[i])      # worst boundary item on top
+    order_names = [lex_order[i] for i in order_idx]
+    yy = np.arange(len(order_idx))
+    mk = {"fable": "o", "gpt": "s"}
+    fig, axes = plt.subplots(1, 2, figsize=(11, 6), sharey=True)
     for ax, jn in zip(axes, res["judges"]):
-        mis = np.array(res["judges"][jn]["_misfit"])
-        ordr = np.argsort(mis)
-        ax.plot(np.arange(len(mis)), mis[ordr], ".", ms=3, color="#999")
-        for i in bound_rows:
-            rank = int(np.where(ordr == i)[0][0])
-            ax.plot(rank, mis[i], "o", ms=7, color=colors[jn])
-            ax.annotate(lex_order[i], (rank, mis[i]), fontsize=6)
-        ax.axhline(np.percentile(mis, 90), color="grey", ls="--", lw=0.8)
-        ax.set_title(f"{jn}: lexeme misfit (boundary items marked; --=90th pct)")
-        ax.set_xlabel("lexeme rank")
-        ax.set_ylabel("network misfit z")
+        mis = mis_all[jn]
+        thr = float(np.percentile(mis, 90))
+        ax.plot(mis, np.full(mis.size, -1.1), "|", ms=7, color="#bbb",
+                alpha=0.5, clip_on=False)                 # rug = full distribution
+        ax.axvline(0, color="k", lw=0.6)
+        ax.axvline(thr, color=colors[jn], ls="--", lw=0.9)
+        ax.plot([mis[i] for i in order_idx], yy, mk[jn], ms=7, color=colors[jn])
+        ax.annotate("90th pct", (thr, -0.5), xytext=(4, 0),
+                    textcoords="offset points", color=colors[jn], fontsize=7,
+                    ha="left", va="center")
+        ax.set_title(f"{jn}: boundary-lexeme misfit\n(rug = all {mis.size} lexemes)")
+        ax.set_xlabel("network misfit z")
+        ax.set_xlim(mis.min() - 0.2, mis.max() + 0.2)     # range-frame to full extent
+    axes[0].set_yticks(yy)
+    axes[0].set_yticklabels(order_names, fontsize=8, fontstyle="italic")
+    axes[0].set_ylim(-1.6, len(yy) - 0.3)
     plt.tight_layout()
-    plt.savefig(os.path.join(RESULTS, "phase3_fig_misfit.png"), dpi=130)
+    plt.savefig(os.path.join(RESULTS, "phase3_fig_misfit.png"), dpi=300)
     plt.close()
     # Fig 3: projectibility per diagnostic
     fig, ax = plt.subplots(figsize=(9, 7))
@@ -420,7 +439,8 @@ def _figures(res, lex_order, diag_order, bound_rows):
     yy = np.arange(len(dg))
     for jn in res["judges"]:
         xs = [res["judges"][jn]["projectibility"][d] for d in dg]
-        ax.plot(xs, yy + (0.12 if jn == "gpt" else -0.12), "o", ms=5,
+        ax.plot(xs, yy + (0.12 if jn == "gpt" else -0.12),
+                "o" if jn == "fable" else "s", ms=5,
                 color=colors[jn], label=jn)
     ax.axvline(0, color="k", lw=0.8)
     ax.set_yticks(yy)
@@ -429,7 +449,7 @@ def _figures(res, lex_order, diag_order, bound_rows):
     ax.set_title("RQ2 projectibility per diagnostic")
     ax.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(RESULTS, "phase3_fig_projectibility.png"), dpi=130)
+    plt.savefig(os.path.join(RESULTS, "phase3_fig_projectibility.png"), dpi=300)
     plt.close()
 
 
@@ -511,4 +531,14 @@ def _findings(res, diag_order):
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--figures" in sys.argv:
+        # Regenerate figures from the committed JSON; no model recompute.
+        with open(os.path.join(RESULTS, "phase3_headline.json")) as f:
+            _res = json.load(f)
+        _lex, _diag, _, _, _ = load_grid_index()
+        _bound = {i for i, lx in enumerate(_lex) if lx in BOUNDARY}
+        _figures(_res, _lex, _diag, _bound)
+        print("regenerated headline figures from phase3_headline.json")
+    else:
+        main()

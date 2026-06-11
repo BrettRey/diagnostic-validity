@@ -193,8 +193,8 @@ def _fig_secret(res, judges):
         xs = [res["by_item"][j][k]["shrunk"] for k in items]
         es = [1.96 * res["by_item"][j][k]["post_sd"] for k in items]
         off = -0.15 if j == "fable" else 0.15
-        ax.errorbar(xs, y + off, xerr=es, fmt="o", ms=4, color=colors[j],
-                    label=j, capsize=2, lw=1)
+        ax.errorbar(xs, y + off, xerr=es, fmt="o" if j == "fable" else "s",
+                    ms=4, color=colors[j], label=j, capsize=2, lw=1)
     ax.axvline(0, color="k", lw=0.8)
     for j in judges:
         ax.axvline(res["global_offset"][j]["mean"], color=colors[j], ls="--", lw=0.8)
@@ -212,8 +212,8 @@ def _fig_secret(res, judges):
         xs = [res["by_stratum"][j][s]["shrunk"] for s in strata]
         es = [1.96 * res["by_stratum"][j][s]["post_sd"] for s in strata]
         off = -0.1 if j == "fable" else 0.1
-        ax.errorbar(xs, y + off, xerr=es, fmt="s", ms=7, color=colors[j],
-                    label=j, capsize=3, lw=1.5)
+        ax.errorbar(xs, y + off, xerr=es, fmt="o" if j == "fable" else "s",
+                    ms=7, color=colors[j], label=j, capsize=3, lw=1.5)
     ax.axvline(0, color="k", lw=0.8)
     ax.set_yticks(y)
     ax.set_yticklabels(strata)
@@ -222,7 +222,7 @@ def _fig_secret(res, judges):
     ax.legend(fontsize=8)
     plt.tight_layout()
     p = os.path.join(RESULTS, "phase3_fig_residual_structure.png")
-    plt.savefig(p, dpi=130)
+    plt.savefig(p, dpi=300)
     plt.close()
     print("wrote", os.path.relpath(p, ROOT))
 
@@ -235,7 +235,7 @@ def _fig_calibration(res, judges):
         bands = res["by_gold_band"][j]
         xs = [int(k) for k in bands]
         ys = [bands[k]["mean_judge"] for k in bands]
-        ax.plot(xs, ys, "o-", color=colors[j], label=j)
+        ax.plot(xs, ys, "o-" if j == "fable" else "s--", color=colors[j], label=j)
     ax.plot([1, 7], [1, 7], "k--", lw=0.8, label="y=x (perfect)")
     ax.set_xlabel("your gold rating")
     ax.set_ylabel("mean judge rating")
@@ -246,7 +246,7 @@ def _fig_calibration(res, judges):
         bands = res["by_gold_band"][j]
         xs = [int(k) for k in bands]
         ys = [bands[k]["mean_resid"] for k in bands]
-        ax.plot(xs, ys, "o-", color=colors[j], label=j)
+        ax.plot(xs, ys, "o-" if j == "fable" else "s--", color=colors[j], label=j)
     ax.axhline(0, color="k", lw=0.8)
     ax.set_xlabel("your gold rating")
     ax.set_ylabel("mean residual (judge - gold)")
@@ -254,7 +254,7 @@ def _fig_calibration(res, judges):
     ax.legend(fontsize=8)
     plt.tight_layout()
     p = os.path.join(RESULTS, "phase3_fig_calibration.png")
-    plt.savefig(p, dpi=130)
+    plt.savefig(p, dpi=300)
     plt.close()
     print("wrote", os.path.relpath(p, ROOT))
 

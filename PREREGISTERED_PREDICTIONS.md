@@ -18,12 +18,14 @@ profiles of *more* and *less* cluster with the determinative community, not with
 adjectives or adverbs. Both lexemes are forced into the grid via the boundary set;
 the test is which community their profiles join under the measurement models.
 
-## Candidate parallel predictions (NOT yet registered -- await author wording)
+## Candidate parallel predictions -- NOT REGISTERED (ruled 2026-06-11; now exploratory)
 
-The same falsifiable form applies to two further authorial positions. Their exact
-wording must come from the source papers (source-grounding: not formulated from
-memory), so they are listed as candidates, to be registered only once the author
-supplies or confirms the precise claim:
+RULING (pm, 2026-06-11): these are NOT registered. Phase 3 results now exist, and
+registering a prediction after the ratings are computed is forking-paths theatre
+regardless of intent. Only P1 (above) counts as pre-registered, because it
+predates the ratings. The two proform analyses below RUN AS EXPLORATORY, labelled
+as such in the paper; they are not falsification tests. Listed here for the record
+of what was considered and deliberately left unregistered:
 
 - *what* / *which* are always determinatives (personhood-and-proforms paper):
   would predict their profiles cluster with determinatives rather than forming a

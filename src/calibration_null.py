@@ -149,7 +149,7 @@ def main():
 
     plt.tight_layout()
     p = os.path.join(RESULTS, "phase3_fig_calibration_null.png")
-    plt.savefig(p, dpi=130)
+    plt.savefig(p, dpi=300)
     plt.close()
     with open(os.path.join(RESULTS, "phase3_calibration_null.json"), "w") as f:
         json.dump(out, f, indent=2)
