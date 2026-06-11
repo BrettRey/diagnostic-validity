@@ -17,3 +17,5 @@ paper/*.blg
 paper/*.log
 paper/*.run.xml
 paper/*.pdf
+intake/*.pdf
+intake/*_extracted.txt

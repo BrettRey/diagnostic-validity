@@ -211,3 +211,58 @@ F. §1 characterizes Aarts 2007 as defending "graded membership" — verify.
      §1 "graded membership" → "subsective gradience / graded prototypicality"
      (outcome-neutral intro). The RQ4 prediction mapping (subsective gradience
      → low-rank with graded scores) is unaffected and correct.
+
+G. CoLA (Warstadt, Singh & Bowman 2019, TACL 7:625–641, DOI
+   10.1162/tacl_a_00290) corpus size — internal discrepancy in the published
+   paper. [READ 2026-06-10 — arXiv:1805.12471 full text;
+   intake/cola_warstadt_quotes.md] Total = 10,657 sentences (abstract, robust;
+   matches Table 2 "Total" row 10657). BUT the in-domain count does not
+   reconcile: Table 2 "In-Domain" N = 9515, while the "Splitting the Data"
+   text sums to 9608 (training 8551 + dev 527 + test 530). Out-of-domain is
+   consistent: dev 516 + test 533 = 1049 = Table 2 "Out-of-Domain". Delta = 93,
+   internal to the paper. RESOLUTION: if the paper cites only the total, use
+   10,657 (safe). If a per-split count is needed, take it from the released
+   split files (nyu-mll/CoLA-baselines) and manifest in results/ — do not
+   cite either printed in-domain figure as authoritative.
+
+## Web-methods intake — RESOLVED 2026-06-10 (verbatim in intake/; pm to promote cites)
+
+- Item 3 (Marsman 2018, §2.2). marsman2018 already in bib; authors past
+  Waldorp confirmed (van der Maas, Maris); DOI 10.1080/00273171.2017.1379379.
+  EQUIVALENCE SCOPE (intake/marsman2018_quotes.md): STATISTICAL, not
+  theoretical/causal — "not a full-blown equivalence of theoretical models,
+  but only of statistical models that describe a given data set" (p.27);
+  "full statistical equivalence" only "in certain cases" (p.16); the general
+  Ising↔MD-2PL map is exact full-rank (Kac integral) but latent dims are not
+  uniquely identified, and LOW-RANK is a SEPARATE downstream approximation
+  (Eckart–Young); normal-prior IRT fits Ising only when interactions are weak.
+  → §2.2 caution should be worded as statistical (data-distribution)
+  equivalence licensing no causal inference, with low-rank as a downstream
+  approximation. Resolves the §2.2 ⟨VERIFY: Marsman⟩ on these terms.
+- Item 6 (PPI). Angelopoulos, Bates, Fannjiang, Jordan & Zrnic 2023, Science
+  382(6671):669–674, DOI 10.1126/science.adi6000 (arXiv:2301.09633). Combines
+  abundant predictions with scarce gold-standard data for valid CIs
+  (intake/ppi_angelopoulos_quotes.md). pm to promote. Gates Study 2 methods.
+- Item 7 (DSL). Egami, Hinck, Stewart & Wei 2023, NeurIPS 36 / arXiv:2306.04746.
+  Design-based: known-probability gold sample + surrogate labels → consistent,
+  valid estimates even if surrogates are arbitrarily biased
+  (intake/dsl_egami_quotes.md). pm to promote. CAVEAT: no explicit DSL-vs-PPI
+  contrast found in the v3 HTML; re-confirm vs the PDF before any such claim.
+- Item 8 (CoLA) — see item G. Total 10,657 sentences; Warstadt, Singh & Bowman
+  2019, TACL 7:625–641, DOI 10.1162/tacl_a_00290. pm to promote; cite the
+  total, not the discrepant in-domain figure.
+- Item 12 (van der Maas 2006). van der Maas, Dolan, Grasman, Wicherts,
+  Huizenga & Raijmakers 2006, Psychological Review 113(4):842–861, DOI
+  10.1037/0033-295X.113.4.842. Verbatim (p.842): "the positive manifold
+  emerges purely by positive beneficial interactions between cognitive
+  processes during development. A single underlying g factor plays no role in
+  the model" (intake/vandermaas2006_quotes.md). pm to promote. CAVEAT:
+  existence proof (positive manifold WITHOUT a common cause), NOT a refutation
+  of g as a summary/index — use as "a strong first eigenvalue need not imply a
+  reflective common cause," not as anti-g.
+
+## Rewrites APPLIED + cites PROMOTED 2026-06-10
+- Item C (§2.1 Matthews drift): pm-authored §2.1 paragraph APPLIED (build
+  clean); the drift mischaracterization is fixed, ⟨VERIFY⟩ resolved.
+- Item F (§1 Aarts): §1 rewritten to "subsective gradience" APPLIED.
+- Item 5 (Sprouse): sprousealmeida2012 + sprouse2013 PROMOTED to references.bib.
