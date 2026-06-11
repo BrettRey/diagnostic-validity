@@ -78,14 +78,22 @@ def make_fable():
 
 
 def make_gpt():
-    if not os.environ.get("OPENAI_API_KEY"):
-        return None, None, None
     import openai
-    client = openai.OpenAI(max_retries=5)
+    key = os.environ.get("OPENAI_API_KEY")
+    if not key:   # fall back to the codex login's stored key
+        p = os.path.expanduser("~/.codex/auth.json")
+        if os.path.exists(p):
+            key = json.load(open(p)).get("OPENAI_API_KEY")
+    if not key:
+        return None, None, None
+    client = openai.OpenAI(api_key=key, max_retries=5)
 
     def call(sentence):
+        # gpt-5.5 is a reasoning model: no temperature; reasoning_effort='none'
+        # (snap percept, no reasoning tokens); max_completion_tokens not max_tokens.
         r = client.chat.completions.create(
-            model=GPT_MODEL, temperature=0, max_tokens=MAX_OUT,
+            model=GPT_MODEL, max_completion_tokens=MAX_OUT,
+            reasoning_effort="none",
             messages=[{"role": "user",
                        "content": PROMPT.format(sentence=sentence)}])
         txt = (r.choices[0].message.content or "").strip()
@@ -184,7 +192,8 @@ def main():
         "model_resolved": resolved["model"], "provider": provider,
         "run_date": datetime.now(timezone.utc).isoformat(),
         "temperature": ("deprecated_model_default" if args.judge == "fable"
-                        else 0),
+                        else "not_sent"),
+        "reasoning_effort": (None if args.judge == "fable" else "none"),
         "max_tokens": MAX_OUT, "one_call_per_cell": True,
         "randomization_seed": SEED, "library_version": libver,
         "git_rev": git_rev(), "n_cells": len(cells),
