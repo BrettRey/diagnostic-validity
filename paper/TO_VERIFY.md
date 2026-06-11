@@ -266,3 +266,19 @@ G. CoLA (Warstadt, Singh & Bowman 2019, TACL 7:625–641, DOI
   clean); the drift mischaracterization is fixed, ⟨VERIFY⟩ resolved.
 - Item F (§1 Aarts): §1 rewritten to "subsective gradience" APPLIED.
 - Item 5 (Sprouse): sprousealmeida2012 + sprouse2013 PROMOTED to references.bib.
+
+## Candidate methods citations — acceptability vs grammaticality (added 2026-06-11)
+For the §Methods paragraph framing the elicitation choice (we measure
+acceptability, the observable; grammaticality is the theory-laden construct the
+diagnostic tradition's stars assert; the percept->category inference lives in the
+model, not the elicitation). See DECISIONS.md 2026-06-11 "Elicit ACCEPTABILITY".
+- **Schütze, The Empirical Base of Linguistics: Grammaticality Judgments and
+  Linguistic Methodology** — book-length treatment of the acceptability/
+  grammaticality linking problem. ⟨VERIFY full bib⟩: original University of
+  Chicago Press 1996; open-access reissue Language Science Press 2016 (Classics
+  in Linguistics). Confirm year/publisher/edition + page refs before promoting
+  to references.bib (pm-only). DO NOT cite from memory.
+- **Sprouse — linking problem** (acceptability percept -> grammaticality
+  inference): pinpoint the specific chapter/section for this paragraph;
+  sprousealmeida2012/sprouse2013 already in references.bib cover the
+  replication/validation side, the linking-problem cite is separate.

@@ -1,9 +1,9 @@
 # JUDGING.md — judging protocol pre-registration (Phase 3)
 
-Status: **pm-signed-off 2026-06-11 (A1–A5 applied), CONDITIONAL on prompt
-confirmation (§4).** Freeze is effective when the pm confirms the §4 wording;
-no further round-trip otherwise. Registered before any rating exists; git
-history is the timestamp. F6 order: instantiate → gold → judge.
+Status: **pm-signed-off + FROZEN 2026-06-11 (A1–A5 applied).** The operative
+sign-off (the A1–A5 message) froze the no-examples §4 prompt and authorized the
+run with no further round-trip. Registered before any rating exists; git history
+is the timestamp. F6 order: instantiate → gold → judge.
 
 ## 1. Purpose and principle
 
@@ -42,31 +42,22 @@ expectations, or any hint the items are constructed. Presentation order
 randomized once (seed 26). One sentence per call (no batching) so earlier items
 cannot contaminate later ones.
 
-## 4. Prompt (A2 — PENDING pm confirmation; freeze on confirm)
+## 4. Prompt (A2 — FROZEN)
 
-Anchors are example sentences whose lexemes were **scripted** to share nothing
-with the grid's 535 (or the bleach tokens): `Dogs barked loudly.` / `Barked
-loudly dogs.` (same three words, flipped by order; clash = NONE, verified). Exact
-proposed text:
+**No example sentences.** The operative sign-off (the A1–A5 message, temporally
+second) accepted the no-examples design, overruling the earlier example-anchor
+requirement: deleting examples prevents lexeme contamination more thoroughly
+than auditing them, and endpoint verbal anchors preserve scale interpretability.
+The plausibility guard is retained (the bleached grid is bland-to-odd by design;
+without it judges discount uninformative-but-grammatical items). Frozen text,
+exactly:
 
-> You are judging the acceptability of English sentences (British English). Rate
-> how natural and acceptable the following sentence is to a native speaker, on a
-> scale from 1 to 7, where 1 = completely unacceptable, not a possible English
-> sentence (for example: Barked loudly dogs.), and 7 = completely natural, a
-> fully acceptable English sentence (for example: Dogs barked loudly.). Some
-> sentences may be unusual or uninformative; judge only whether the sentence is
-> possible, natural English, not whether it is likely, sensible, or informative.
-> Reply with a single integer from 1 to 7 and nothing else.
+> You are judging the acceptability of English sentences (British English). Rate how natural and acceptable the following sentence is to a native speaker, on a scale from 1 to 7, where 1 = completely unacceptable (not a possible English sentence) and 7 = completely natural (a fully acceptable English sentence). Some sentences may be unusual or uninformative; judge only whether the sentence is possible, natural English, not whether it is likely, sensible, or informative. Reply with a single integer from 1 to 7 and nothing else.
 >
 > Sentence: {sentence}
 
-Two points flagged for the one-pass review: (a) Message-1 (A2) had removed
-examples; Message-2 reinstates them as lexeme-checked anchors -- I followed
-Message-2. (b) The plausibility-guard sentence ("Some sentences may be unusual
-…") is the one element beyond bare "rate the acceptability"; it guards the
-known confound that the bleached grid is bland-to-odd by design (without it,
-judges discount uninformative-but-grammatical items). Recommendation: keep it.
-Strike either if you disagree; otherwise confirm verbatim → freeze.
+Same text, reply-line adapted to the interface, is the gold-coding instruction
+(A4 construct invariant). The runner stores this exact string in its manifest.
 
 ## 5. Rating scale + dichotomization (A3 — pre-registered)
 
@@ -115,6 +106,8 @@ Strike either if you disagree; otherwise confirm verbatim → freeze.
 - [x] British English; identical wording to judge + gold coder (A4).
 - [x] Dichotomization resolved (A3).
 - [x] Gold plan: coder = pm, blind, same scale/instructions, firewall (A4).
-- [ ] **Prompt wording (§4) confirmed by pm** ← the only open item.
+- [x] Prompt frozen (§4; no-examples design per the operative sign-off).
 
-Prompt confirmed → JUDGING.md freezes → run both judges.
+**JUDGING.md FROZEN 2026-06-11.** Run authorized (no further round-trip).
+Access note: primary `claude-fable-5` runs from this environment now; second
+`GPT-5.5` runs when an `OPENAI_API_KEY` is present (robustness-only, non-blocking).
