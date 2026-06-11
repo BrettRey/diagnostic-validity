@@ -5,14 +5,11 @@
 % executor from memory.
 
 \documentclass[12pt]{article}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{csquotes}
-\usepackage[style=apa,backend=biber]{biblatex}
-\addbibresource{references.bib}
-\usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage{gb4e}\noautomath
+
+% House style preamble (snapshot of .house-style/preamble.tex; XeLaTeX).
+% Loads fonts, biblatex-APA, csquotes, langsci-gb4e, semantic macros, and
+% \addbibresource{references.bib} (the verified-only project bib).
+\input{.house-style/preamble.tex}
 
 \title{Do categorial diagnostics measure anything?\\
 \large A psychometric study of English lexical categories}
