@@ -17,7 +17,7 @@ Status: ✅ sourced (verbatim+pinpoint) · ⚠ flag (mis-/un-sourced) · ✋ pm/
 - **too_mod** ✅ same sentence ([11]iii).
 - **comparative_more** ✅ [11]iii ("…inflectional or analytic comparatives and superlatives; in general, prepositions do not").
 - **inflectional_comparison** ✅ [11]iii + **Maling p.270**: "It takes a synthetic comparative and superlative…" (near/nearer/nearest as adjectival evidence; table (45) p.273). yaml's "near" cue confirmed.
-- **well_mod** ⚠ **NO VALID SOURCE.** Maling has no *well worth* test (intake/maling Target 2 = NOT FOUND); CGEL [9]iii/[11]v cite *right*/*straight*, never *well*. diagnostics.yaml credits "Maling 1983; CGEL" — both wrong for *well*. **pm: drop the row, or supply a source.**
+- **well_mod** ⚠ **`pending-maling` (does NOT gate instantiation).** CGEL checked first per pm: §2.2 *worth* discussion covers *very*/*very much*, *enough*, *straight*/*right* — **no *well*** (00-CGEL.md l.18587–18589); CGEL [9]iii/[11]v likewise cite only *right*/*straight*. So CGEL does not carry it. Maling has no *well worth* test either (intake/maling Target 2 = NOT FOUND), and Maling 1983 (Heny & Richards) is not in the drop pile — a library scan for pm. Row flagged `pending-maling`; joins late if verification succeeds. Battery stays ≥40 (42 vs 43), so the floor holds without it. NB §2.1 prose still says *worth* "accepts degree *well* like a preposition (*well worth the trip*)" — *well worth* is attested, but the **preposition-diagnostic framing is the same unsourced claim**; pm may want to soften that clause too.
 - **right_mod** ✅ CGEL ch.7 §2 [9]iii: "A subset of prepositions are distinguished by their acceptance of such adverbs as *right* and *straight* as modifiers"; [11]v. **Maling p.262**: "certain specifiers such as *right* are good" (ex.20). (*straight*: in CGEL/Aarts, not Maling.)
 
 ## Complementation
@@ -42,13 +42,14 @@ Status: ✅ sourced (verbatim+pinpoint) · ⚠ flag (mis-/un-sourced) · ✋ pm/
 ## Clause-level & other
 - **seem_complement** ✅ CGEL ch.6 §2.1 l.16161: "…*become* and *make*, and to a lesser extent *seem*, appear, feel, look, sound, which take a more restricted range of complements… largely exclude PP complements" (ex. "They all seem content" / *"They all seem outside").
 - **become_complement** ✅ CGEL ch.7 §2.2 [11]ii: "AdjPs, other than those restricted to attributive or postpositive function, can mostly occur as complement to *become*; in general, PPs cannot." Aarts §8.4.4.
-- **coordination_with_adj** ⚠ **TO LOCATE.** yaml = "standard coordination diagnostic; locate canonical statement." Not in the CGEL ch.5/6/7/19 or Maling/Matthews/Aarts extracts pulled. Next pass: CGEL ch.15 (coordination) like-category constraint. Currently unsourced.
+- **coordination_with_adj** ✅-with-caveat. CGEL **qualifies** this test: coordination does NOT require same-category coordinates — "assigning the whole coordination to the same category as its coordinate parts does not work in those cases where there is coordination of different categories" (CGEL ch.1, l.1277; cf. category-by-internal-structure, l.822). So "coordinates with a clear adjective ⟹ adjective" is a **weak diagnostic** (unlike-category coordination exists), not a clean category test. Keep but expect low discrimination (cf. seem_complement). pm to confirm the framing.
 - **fronting_pp** ✅ CGEL ch.7 §2.2 [11]vi: "Prepositions taking NP complements can normally be fronted along with their complement in relative and interrogative constructions… in general, adjectives cannot." (info-packaging cross-ref Ch.16 still to add.)
 - **stranding** ✅ [11]vi (above) + CGEL ch.7 §4.1 stranding (l.18423).
 
 ## Summary for pm
-- **22 / 24 diagnostics sourced** verbatim + pinpoint (CGEL chs 5/6/7/19, Maling, Matthews; Aarts corroborates the A/P battery).
-- **2 flags need a pm/executor decision:** `well_mod` (no valid source — drop or supply) and `coordination_with_adj` (locate in CGEL ch.15).
+- **23 / 24 diagnostics sourced** verbatim + pinpoint (CGEL chs 5/6/7/19, Maling, Matthews; Aarts corroborates the A/P battery). The 24th, `well_mod`, is **`pending-maling`** and does NOT gate (battery stays ≥40 without it).
+- **Matthews rows are already drafted.** `attributive` + `postpositive` were extracted from Matthews 2014 (the Mendeley copy) by the intake subagent (pp. 2–3, 10, 12–13, 23, 54). So the instantiation-gating Matthews rows for item B are **done** — no separate Matthews session is needed for the gate (a Matthews sitting now bears only on item C, already resolved, and the item-A calibration point).
 - **2 yaml `source:` corrections:** `gerund_gap_complement` → CGEL hollow clauses (not Maling); `un_prefix`/`ness_nominalization` → CGEL **ch.19** (not ch.6).
+- **1 qualified test:** `coordination_with_adj` — CGEL shows coordination joins unlike categories (l.1277), so it is weak; keep, expect low discrimination.
 - **Candidate battery addition (Maling p.263–265; Aarts §8.4.4):** the *enough*-position test — Maling's one "purely syntactic" A/P diagnostic ("*enough* follows adjectives, but precedes prepositions"). pm decision (F5: battery expansion is pm-gated).
-- Once pm confirms these rows + resolves the 2 flags, **F5 battery gate clears** → instantiation unblocks.
+- **Item B is effectively COMPLETE pending pm row-confirmation.** Confirm the rows + the 2 corrections → F5 battery gate clears → instantiation unblocks the moment the data files land. `well_mod` joins later if the Maling library scan confirms it.

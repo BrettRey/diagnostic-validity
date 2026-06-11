@@ -110,8 +110,9 @@ A. CGEL's actual classification of *worth* (adjective with exceptional
      RESOLUTION: the §2.1 clause "the Cambridge Grammar weighs it
      differently" (sc. from Maling 1983's preposition/completed-reanalysis
      reading) is CORRECT — CGEL = adjective. pm prior (~0.6 adj) confirmed
-     and arguably understated. pm to rewrite §2.1, drop the ⟨VERIFY⟩, cite
-     CGEL ch.7 §2.2.
+     and arguably understated. §2.1 REWRITTEN 2026-06-10 — pm-authored text
+     applied, ⟨VERIFY⟩ dropped; now \parencite[ch.~7, \S2.2]{cgel2002} and
+     PARAPHRASES (no direct quote in the paper).
    - [CROSS-REF 2026-06-10 — Maling 1983 + Aarts 2007] Boundary-item picture
      is a three-way disagreement, citable for §2.1/RQ3: Maling p.269 "*worth*
      is a perfectly well-behaved preposition in modern English"; p.266 *near*
@@ -122,6 +123,14 @@ A. CGEL's actual classification of *worth* (adjective with exceptional
      CGEL 2002:609 that near is "highly exceptional… combining a number of
      adjectival properties with those of the preposition." Reinforces §2.1's
      "both verdicts discard stable, replicable facts as noise."
+   - [QUOTE-HYGIENE 2026-06-10 — pm caution] If a DIRECT CGEL quote is ever
+     wanted, use the clean unbracketed conclusion (00-CGEL.md l.18595): "We
+     conclude that although worth differs markedly from central members of the
+     adjective category, the evidence shows that that is the category to which
+     it belongs." The only brackets in CGEL's worth passage are CGEL's OWN AdjP
+     marking — "The paintings are [worth thousands of dollars]" — not editorial
+     substitutions. §2.1 currently paraphrases, so no direct quote is in the
+     paper.
 B. Every `source:` field in diagnostics.yaml — confirm each diagnostic's
    canonical statement and location before the battery is frozen.
    - [DRAFTED 2026-06-10 — see paper/item_B_verification.md]. 22/24
@@ -135,6 +144,13 @@ B. Every `source:` field in diagnostics.yaml — confirm each diagnostic's
      not ch.6. CANDIDATE ADDITION: the *enough*-position test (Maling p.263–
      265; Aarts §8.4.4), Maling's one "purely syntactic" A/P diagnostic. pm
      confirms rows + resolves the 2 flags → F5 battery gate clears.
+   - [UPDATE 2026-06-10] well_mod: CGEL §2.2 confirmed NO *well* (l.18587–89)
+     → `pending-maling`, NON-gating (battery ≥40 without it; Maling not in the
+     drop pile → pm library scan). coordination_with_adj: sourced w/ caveat
+     (CGEL l.1277 — coordination joins UNLIKE categories → weak test; keep,
+     low discrimination). Matthews attributive/postpositive already drafted
+     from the Mendeley Matthews 2014 → NO Matthews session needed for the
+     item-B gate. Item B effectively COMPLETE pending pm row-confirmation.
 C. Matthews 2014 "diagnostics have drifted" characterization in §2.1 —
    re-read the relevant chapters and either support with specifics or
    soften.
