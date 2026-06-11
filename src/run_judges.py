@@ -42,6 +42,7 @@ PROMPT = (
 
 FABLE_MODEL = "claude-fable-5"
 GPT_MODEL = "gpt-5.5"
+MAX_OUT = 1024   # fable-5 is a reasoning model (mandatory thinking); 8 truncates
 INT_RE = re.compile(r"[1-7]")
 
 
@@ -64,8 +65,10 @@ def make_fable():
     client = anthropic.Anthropic(max_retries=5)
 
     def call(sentence):
+        # NB: claude-fable-5 DEPRECATES the temperature param -> not sent;
+        # the model's default sampling applies (logged deviation, JUDGING.md §6).
         r = client.messages.create(
-            model=FABLE_MODEL, max_tokens=8, temperature=0,
+            model=FABLE_MODEL, max_tokens=MAX_OUT,
             messages=[{"role": "user",
                        "content": PROMPT.format(sentence=sentence)}])
         txt = "".join(b.text for b in r.content if b.type == "text").strip()
@@ -82,7 +85,7 @@ def make_gpt():
 
     def call(sentence):
         r = client.chat.completions.create(
-            model=GPT_MODEL, temperature=0, max_tokens=8,
+            model=GPT_MODEL, temperature=0, max_tokens=MAX_OUT,
             messages=[{"role": "user",
                        "content": PROMPT.format(sentence=sentence)}])
         txt = (r.choices[0].message.content or "").strip()
@@ -177,7 +180,9 @@ def main():
         "model_requested": FABLE_MODEL if args.judge == "fable" else GPT_MODEL,
         "model_resolved": resolved["model"], "provider": provider,
         "run_date": datetime.now(timezone.utc).isoformat(),
-        "temperature": 0, "max_tokens": 8, "one_call_per_cell": True,
+        "temperature": ("deprecated_model_default" if args.judge == "fable"
+                        else 0),
+        "max_tokens": MAX_OUT, "one_call_per_cell": True,
         "randomization_seed": SEED, "library_version": libver,
         "git_rev": git_rev(), "n_cells": len(cells),
         "n_rated_this_run": counts["ok"], "n_missing_this_run": counts["missing"],

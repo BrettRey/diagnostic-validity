@@ -72,13 +72,25 @@ Same text, reply-line adapted to the interface, is the gold-coding instruction
 ## 6. Procedure + manifest (A5)
 
 1. Input = `results/phase3_grid_judgment.csv`, **sentence column only**.
-2. Randomize order (seed 26); one call per sentence; temperature 0.
+2. Randomize order (seed 26); one call per sentence; max_tokens 1024.
 3. Parse a single integer 1–7. Non-integer / refusal: **retry once, then mark
    judge-missing** -- never silently imputed, never silently dropped.
 4. Manifest schema (named so absence is a test failure, not an oversight),
-   **per judge**: model id, snapshot string, provider, run date, temperature +
-   all API params, randomization seed, library versions, git rev, n cells,
-   n missing.
+   **per judge**: model id, snapshot string, provider, run date, sampling params,
+   randomization seed, library versions, git rev, n cells, n missing.
+
+**Runtime deviations (logged 2026-06-11, measured pre-run).** `claude-fable-5`
+is a reasoning model: (a) it DEPRECATES `temperature`, so it is not sent (model
+default sampling) -- the pre-registered "temperature 0" is unattainable for this
+model and is absorbed by the one-rating-per-cell design and the "determinism not
+guaranteed" hedge; (b) thinking is MANDATORY and cannot be disabled, so
+`max_tokens` is 1024 (8 truncated mid-thought) and output averages ~79 tokens
+(~76 reasoning). The primary judge therefore DELIBERATES rather than snap-judges;
+this does not break the design -- PPI anchors the headline estimates to the human
+gold (the construct), debiasing whatever the judge's deliberation adds. The
+GPT-5.5 second judge will run at `reasoning_effort=minimal` (settable there).
+Measured full-grid budget: ~2.44 M input + ~1.02 M output tokens (~$23 mid /
+~$113 premium live; ~half via Batch).
 
 ## 7. Gold coding (A4)
 
