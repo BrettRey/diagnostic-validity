@@ -52,13 +52,20 @@ diagnostics:
     frame: "Something was well LEX something."
     tradition: {adjective: no, preposition: yes, determinative: no}
     op: judgment
-    source: "VERIFY: Maling 1983; CGEL preposition modification"
+    source: "pending-maling (non-gating). NOT in CGEL (§2.2 nor ch.7 modification, checked 2026-06-10); Maling 1983 has no 'well worth' test (intake). pm library scan; if still unsourced, relabel 'novel: this study' (Item B polices attribution, not membership)."
   - id: right_mod
     gloss: "accepts 'right' as modifier"
     frame: "Something was right LEX something."
     tradition: {adjective: no, preposition: yes, determinative: no}
     op: judgment
     source: "VERIFY: CGEL preposition modification"
+  - id: enough_postposed
+    gloss: "accepts postposed 'enough' (enough FOLLOWS the head)"
+    frame: "Something was LEX enough."
+    tradition: {adjective: yes, preposition: no, determinative: no}
+    note: "Maling's one 'purely syntactic' A/P diagnostic -- 'enough follows adjectives, but precedes prepositions' (Maling 1983:263-265; Aarts 2007 §8.4.4). FRAME TEMPLATE drafted from intake verbatim, QUEUED FOR PM CONFIRMATION. Added 2026-06-10 per pm approval (battery -> 25, one pending)."
+    op: judgment
+    source: "Maling 1983:263-265; Aarts 2007 §8.4.4"
 
   # --- complementation --------------------------------------------------
   - id: np_complement
@@ -165,7 +172,8 @@ diagnostics:
     frame: "Something was old and LEX (something)."
     tradition: {adjective: yes, preposition: marginal, determinative: no}
     op: judgment
-    source: "VERIFY: standard coordination diagnostic; locate canonical statement"
+    note: "WEAK TEST, low discrimination pre-registered: CGEL allows coordination of UNLIKE categories (ch.1, 00-CGEL.md l.1277; ch.15), so coordinating with an adjective does not entail adjectivehood."
+    source: "CGEL ch.1 (l.1277) / ch.15 -- qualifies (does not license) the test; verified 2026-06-10"
   - id: fronting_pp
     gloss: "phrase headed by LEX fronts as locative/complement preposing"
     frame: "LEX something, something happened."
