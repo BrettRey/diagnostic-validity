@@ -37,6 +37,7 @@ SUBTLEX = os.path.join(DATA, "SUBTLEX-UK.txt")
 MATRIX = os.path.join(DATA, "reynolds2021_determinative_matrix.csv")
 PREPS = os.path.join(SAMPLING, "prepositions_cgel_ch7.csv")
 DETS = os.path.join(SAMPLING, "determinatives_reynolds73.txt")
+DETS_EXT = os.path.join(SAMPLING, "determinatives_extension2026.txt")
 DIAG = os.path.join(ROOT, "diagnostics.yaml")
 
 # F1(a) amended bands (Zipf); 55 adjectives per band.
@@ -104,7 +105,15 @@ def main():
                   if l.strip() and not l.startswith("#")]
     assert len(det_labels) == 73, f"expected 73 dets, got {len(det_labels)}"
     for lab in det_labels:
-        add(det_surface(lab), "determinative", {"reynolds_label": lab})
+        add(det_surface(lab), "determinative",
+            {"reynolds_label": lab, "det_flag": "core2021"})
+    # F1c amendment (2026-06-11, author-proposed, pm-approved): numeral extension.
+    # Distinct flag so the verbatim-2021 core stays identifiable (core-as-sensitivity).
+    ext_labels = [l.strip() for l in open(DETS_EXT)
+                  if l.strip() and not l.startswith("#")]
+    for lab in ext_labels:
+        add(det_surface(lab), "determinative",
+            {"reynolds_label": lab, "det_flag": "extension2026"})
 
     # F1b prepositions (CGEL ch.7 full inventory; scope flag retained)
     with open(PREPS) as f:
@@ -159,7 +168,7 @@ def main():
 
     # ---- write deliverables -------------------------------------------
     os.makedirs(RESULTS, exist_ok=True)
-    cols = ["lexeme", "stratum", "reynolds_label", "prep_scope",
+    cols = ["lexeme", "stratum", "det_flag", "reynolds_label", "prep_scope",
             "zipf", "zipf_band", "dompos"]
     with open(os.path.join(RESULTS, "phase3_sample.csv"), "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols)
@@ -168,8 +177,16 @@ def main():
             w.writerow({c: r.get(c, "") for c in cols})
 
     strata_counts = {}
+    det_flag_counts = {}
+    surface_conversions = {}   # label -> surface (suffix strips + underscore->space)
     for r in rows:
         strata_counts[r["stratum"]] = strata_counts.get(r["stratum"], 0) + 1
+        if r["stratum"] == "determinative":
+            fl = r.get("det_flag", "")
+            det_flag_counts[fl] = det_flag_counts.get(fl, 0) + 1
+        lab = r.get("reynolds_label", "")
+        if lab and lab != r["lexeme"]:
+            surface_conversions[lab] = r["lexeme"]
 
     manifest = {
         "phase": 3, "step": "F4 sampling",
@@ -185,18 +202,22 @@ def main():
                              "sha256": sha256(PREPS)},
             "determinatives": {"path": os.path.relpath(DETS, ROOT),
                                "sha256": sha256(DETS)},
+            "determinatives_ext": {"path": os.path.relpath(DETS_EXT, ROOT),
+                                   "sha256": sha256(DETS_EXT)},
         },
+        "determinative_flag_counts": det_flag_counts,
+        "determinative_surface_conversions": surface_conversions,
         "adjective_band_populations": band_pops,
         "adjective_per_band_target": ADJ_PER_BAND,
         "adjective_band_underfill_note": merged_note,
         "adjective_band_accounting": adj_band_acct,
         "grid_size_note": (
-            "Judgment grid ~ %d lexemes x 24 confirmed judgment items "
-            "(+ ~18 corpus columns) ~ 22k cells. F6 gold sample stays 600 "
-            "cells as pre-registered -- a thinner sampling fraction (~2.7%%) "
-            "against this grid than against the ~450-lexeme planning estimate; "
-            "noted per pm (ruling a, keep full 522), not silently absorbed."
-            % len(rows)),
+            "Judgment grid ~ %d lexemes x 24 confirmed judgment items = %d "
+            "judgment cells (+ corpus columns). F6 gold sample stays 600 cells "
+            "as pre-registered = %.1f%% of judgment cells -- a thinner fraction "
+            "against the full grid than the ~450-lexeme planning estimate; "
+            "logged per pm (ruling a, keep full sample), not silently absorbed."
+            % (len(rows), len(rows) * 24, 100 * 600 / (len(rows) * 24))),
         "strata_counts": strata_counts,
         "total_unique_lexemes": len(rows),
         "n_collisions": len(collisions),
@@ -209,6 +230,7 @@ def main():
     print("Phase 3 sample drawn (seed %d). Total unique lexemes: %d"
           % (SEED, len(rows)))
     print("Strata:", strata_counts)
+    print("Determinative flags:", det_flag_counts)
     print("Adjective band populations (available):", band_pops)
     print("Collisions (deduped toward more specific):", len(collisions))
     for c in collisions:

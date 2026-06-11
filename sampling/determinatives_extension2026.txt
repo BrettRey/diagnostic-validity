@@ -1,0 +1,19 @@
+# determinatives_extension2026.txt -- author-proposed numeral extension (F1c amendment).
+#
+# NOT part of the Reynolds 2021 verbatim core. Added post-freeze, author-proposed
+# (Reynolds, numeratives paper), pm-approved 2026-06-11. Each enters the sample as
+# stratum=determinative, det_flag=extension2026, so the verbatim-2021 determinative
+# core stays identifiable and analyses can run core-as-sensitivity (mirrors the
+# preposition core96/extended mechanism).
+#
+# Rationale: the 2021 matrix carries only one/two/three. These five extend numeral
+# coverage across the cline where determinative-hood gets nounier (hundreds of,
+# a million) -- RQ3 boundary territory. With zero (zero_det) already in the core,
+# the grid now spans the numeral range zero -- million: a round simplex (ten), the
+# irregular teen (eleven), a -ty form (seventy), and the two noun-leaning high
+# numerals (hundred, million).
+ten
+eleven
+seventy
+hundred
+million

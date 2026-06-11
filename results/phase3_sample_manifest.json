@@ -1,9 +1,9 @@
 {
   "phase": 3,
   "step": "F4 sampling",
-  "timestamp": "2026-06-11T09:50:04.432398+00:00",
+  "timestamp": "2026-06-11T10:26:13.658302+00:00",
   "seed": 26,
-  "git_rev": "bf2a1b41c77e18e51ace50f8a59b27a6b395c961",
+  "git_rev": "987d9e735fdbac7a933dc72cad5bf6b8ac264758",
   "versions": {
     "python": "3.11.4",
     "numpy": "2.1.3",
@@ -28,7 +28,35 @@
     "determinatives": {
       "path": "sampling/determinatives_reynolds73.txt",
       "sha256": "b77f2eaad6b4fc1165c43b0f1e145534d9f2ee0dc8878f78907037c06899a8da"
+    },
+    "determinatives_ext": {
+      "path": "sampling/determinatives_extension2026.txt",
+      "sha256": "c9ef722c2fd57bd4765a5b0a7ad412890670c05d16cd90f99ed62144488100f0"
     }
+  },
+  "determinative_flag_counts": {
+    "core2021": 67,
+    "extension2026": 5
+  },
+  "determinative_surface_conversions": {
+    "a_certain": "a certain",
+    "a_few": "a few",
+    "a_great_many": "a great many",
+    "a_little": "a little",
+    "many_a": "many a",
+    "no_one": "no one",
+    "one_det": "one",
+    "two_det": "two",
+    "three_det": "three",
+    "us_det": "us",
+    "we_det": "we",
+    "you_det": "you",
+    "what_det": "what",
+    "whatever_det": "whatever",
+    "which_rel_det": "which",
+    "whichever_rel_det": "whichever",
+    "zero_det": "zero",
+    "various_det": "various"
   },
   "adjective_band_populations": {
     "zipf>=5": 119,
@@ -56,20 +84,20 @@
     },
     "2-3": {
       "drawn": 55,
-      "survived": 55,
-      "lost_to_more_specific": 0
+      "survived": 54,
+      "lost_to_more_specific": 1
     }
   },
-  "grid_size_note": "Judgment grid ~ 522 lexemes x 24 confirmed judgment items (+ ~18 corpus columns) ~ 22k cells. F6 gold sample stays 600 cells as pre-registered -- a thinner sampling fraction (~2.7%) against this grid than against the ~450-lexeme planning estimate; noted per pm (ruling a, keep full 522), not silently absorbed.",
+  "grid_size_note": "Judgment grid ~ 526 lexemes x 24 confirmed judgment items = 12624 judgment cells (+ corpus columns). F6 gold sample stays 600 cells as pre-registered = 4.8% of judgment cells -- a thinner fraction against the full grid than the ~450-lexeme planning estimate; logged per pm (ruling a, keep full sample), not silently absorbed.",
   "strata_counts": {
     "boundary": 16,
-    "determinative": 67,
+    "determinative": 72,
     "preposition": 167,
-    "adjective": 213,
+    "adjective": 212,
     "blind": 59
   },
-  "total_unique_lexemes": 522,
-  "n_collisions": 15,
+  "total_unique_lexemes": 526,
+  "n_collisions": 16,
   "collisions": [
     {
       "lexeme": "enough",
@@ -139,6 +167,11 @@
     {
       "lexeme": "own",
       "kept": "boundary",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "seventy",
+      "kept": "determinative",
       "dropped": "adjective"
     },
     {
