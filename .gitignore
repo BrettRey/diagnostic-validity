@@ -18,6 +18,8 @@ results/*
 !results/phase3_eyeball_50.csv
 !results/phase3_template_exceptions.md
 !results/phase3_instantiate_manifest.json
+!results/gold_coding_blind.csv
+!results/gold_coding_key.csv
 paper/*.aux
 paper/*.bbl
 paper/*.bcf

@@ -1,94 +1,120 @@
 # JUDGING.md — judging protocol pre-registration (Phase 3)
 
-Status: **DRAFT for pm sign-off.** Registered before any rating exists; the git
-history of this file is the timestamp. This is the last document between here and
-data. Nothing is rated until this is signed off and the gold sample is drawn
-(F6 order: instantiate -> gold -> judge).
+Status: **pm-signed-off 2026-06-11 (A1–A5 applied), CONDITIONAL on prompt
+confirmation (§4).** Freeze is effective when the pm confirms the §4 wording;
+no further round-trip otherwise. Registered before any rating exists; git
+history is the timestamp. F6 order: instantiate → gold → judge.
 
 ## 1. Purpose and principle
 
-The LLM judge is the measurement instrument: it rates each bleached sentence in
-the grid for acceptability. It stands in for human raters; its systematic error
-is corrected against the expert-coded gold sample via prediction-powered
-inference (PPI; the DSL framing is equivalent for the uniform gold draw). The
-judge must be **blind**: it sees only sentences, never what is being tested.
-Everything that could leak the diagnostic, the category, or the design is
-withheld.
+The LLM judge is the measurement instrument: it rates each bleached sentence for
+acceptability. Its systematic error is corrected against the expert-coded gold
+sample via prediction-powered inference (PPI; DSL is equivalent for the uniform
+gold draw). The judge is **blind** -- it sees only sentences, never the
+diagnostic, category, lexeme, or design.
 
-## 2. Judge model(s)
+## 2. Judge models (A1 — pinned)
 
-- **Pin the exact model ID and release date at run time.** Model names go stale
-  fast; verify current names when judging starts, do not trust a name written
-  here weeks earlier. ⟨PIN-AT-RUN-TIME⟩
-- As of 2026-06-11 the strongest Claude option is Opus-class (`claude-opus-4-8`).
-  Recommendation for pm: one **primary** judge (a strong current model) plus one
-  **independent-vendor second** judge (a current OpenAI or Google model) so that
-  inter-judge agreement is a robustness check and no single vendor's quirks drive
-  the result. Each judge's bias is separately gold-corrected.
-- **Temperature 0** (deterministic, reproducible) for the primary run. One rating
-  per cell per judge.
-- Log model id, version/release date, provider, temperature, and all sampling
-  params to a run manifest (per-call if they can drift).
+- **Primary: `claude-fable-5`** (Anthropic). Dated snapshot string logged at run
+  time. Its PPI-corrected estimates are the **headline** numbers.
+- **Second (independent vendor): `GPT-5.5`** (OpenAI, shipped 2026-04-23). Dated
+  snapshot logged. A **robustness check** only: inter-judge agreement + a
+  parallel PPI-corrected re-estimate.
+- The two are **never ensembled or averaged** (an ensemble is an unpinnable
+  judge). Current-names checked 2026-06-11 (Anthropic: Fable 5, Opus 4.8;
+  OpenAI: GPT-5.5; Google: Gemini 3.1 Pro). Fable 5 supersedes the earlier
+  Opus-class note -- the stale-names catch working as designed.
+- **Temperature 0**, but determinism is not guaranteed across infrastructure, so
+  the design is **one rating per cell per judge** (gold correction absorbs judge
+  noise; we do not chase it with repeats).
+
+**Disclosure (goes in the paper's methods):** the judging model and the drafting
+workflow share a vendor (and indeed a model family), which is why the design
+never leans on judge authority -- PPI correction against human gold makes the
+headline estimates unbiased under judge error by construction, and the
+cross-vendor second judge covers family-quirk concerns.
 
 ## 3. Blinding (non-negotiable)
 
-The judge receives **only the sentence string**. It never sees: the stratum
-label, the diagnostic id or gloss, the lexeme-under-test (not highlighted, not
-named), the `tradition` expectations, or any indication that the items are
-constructed tests. Presentation order is randomized once (seed 26) so adjacent
-items do not cue a pattern. Cells are sent one per call (no batching) so earlier
-items cannot contaminate later judgments.
+The judge receives **only the sentence string**: never the stratum, diagnostic
+id/gloss, lexeme-under-test (not named, not highlighted), `tradition`
+expectations, or any hint the items are constructed. Presentation order
+randomized once (seed 26). One sentence per call (no batching) so earlier items
+cannot contaminate later ones.
 
-## 4. Prompt template (exact, to be frozen at sign-off)
+## 4. Prompt (A2 — PENDING pm confirmation; freeze on confirm)
 
-> You are judging the acceptability of English sentences (British English).
-> Rate how natural and acceptable the following sentence is to a native speaker,
-> on a scale from 1 to 7, where 1 = completely unacceptable (not a possible
-> English sentence) and 7 = completely natural (a fully acceptable English
-> sentence). Reply with a single integer from 1 to 7 and nothing else.
+Anchors are example sentences whose lexemes were **scripted** to share nothing
+with the grid's 535 (or the bleach tokens): `Dogs barked loudly.` / `Barked
+loudly dogs.` (same three words, flipped by order; clash = NONE, verified). Exact
+proposed text:
+
+> You are judging the acceptability of English sentences (British English). Rate
+> how natural and acceptable the following sentence is to a native speaker, on a
+> scale from 1 to 7, where 1 = completely unacceptable, not a possible English
+> sentence (for example: Barked loudly dogs.), and 7 = completely natural, a
+> fully acceptable English sentence (for example: Dogs barked loudly.). Some
+> sentences may be unusual or uninformative; judge only whether the sentence is
+> possible, natural English, not whether it is likely, sensible, or informative.
+> Reply with a single integer from 1 to 7 and nothing else.
 >
 > Sentence: {sentence}
 
-No examples are given (calibration examples would anchor and bias). The scale
-wording is fixed; only `{sentence}` varies.
+Two points flagged for the one-pass review: (a) Message-1 (A2) had removed
+examples; Message-2 reinstates them as lexeme-checked anchors -- I followed
+Message-2. (b) The plausibility-guard sentence ("Some sentences may be unusual
+…") is the one element beyond bare "rate the acceptability"; it guards the
+known confound that the bleached grid is bland-to-odd by design (without it,
+judges discount uninformative-but-grammatical items). Recommendation: keep it.
+Strike either if you disagree; otherwise confirm verbatim → freeze.
 
-## 5. Rating scale and anchoring
+## 5. Rating scale + dichotomization (A3 — pre-registered)
 
-- **1–7 ordinal** (matches MegaAcceptability v2 and PLAN.md). Endpoints anchored
-  in the prompt (1 = completely unacceptable, 7 = completely natural).
-- Dichotomization for the binary measurement models follows the pre-registered
-  PLAN.md threshold; the raw 1–7 is retained for sensitivity.
+- **1–7 ordinal**, endpoints anchored in the prompt.
+- The Phase-1 cut (z̄ > 0) was defined over MULTIPLE human raters per cell; the
+  grid has ONE deterministic rating per judge per cell, so it does not transfer.
+  **Primary cut = within-judge z > 0** (each judge's ratings standardized over
+  its own full 12,840-cell set, mirroring Phase 1's rater-relative logic).
+  **Sensitivity arms = raw ≥ 5 and raw ≥ 4.** Verdict-invariance across arms
+  applies exactly as in Phase 1. Mirrored in PLAN.md §3.
 
-## 6. Procedure
+## 6. Procedure + manifest (A5)
 
 1. Input = `results/phase3_grid_judgment.csv`, **sentence column only**.
-2. Randomize order (seed 26); one sentence per API call; temperature 0.
-3. Parse a single integer 1–7. On a non-integer or refusal, retry once; if still
-   invalid, record the cell as missing (handled in analysis, not silently
-   dropped) and log it.
-4. Write ratings + a manifest (model id/version/date, params, git rev, library
-   versions, n cells, n missing) to `results/`.
-5. Morphology cells (comparative/-ly/-ness/un-) are already realized strings
-   (Decision 2); the judge rates them like any other sentence. Their badness,
-   where the form is non-existent, is the datum.
+2. Randomize order (seed 26); one call per sentence; temperature 0.
+3. Parse a single integer 1–7. Non-integer / refusal: **retry once, then mark
+   judge-missing** -- never silently imputed, never silently dropped.
+4. Manifest schema (named so absence is a test failure, not an oversight),
+   **per judge**: model id, snapshot string, provider, run date, temperature +
+   all API params, randomization seed, library versions, git rev, n cells,
+   n missing.
 
-## 7. Gold coding (the correction's other half)
+## 7. Gold coding (A4)
 
-- The 600-cell gold sample (`results/phase3_gold_sample.csv`, drawn before any
-  rating) is **expert-coded blind** on the same 1–7 scale, by a human coder who
-  also does not see stratum/diagnostic labels — only sentences.
-- The judge's ratings on the gold cells are compared to the expert codes; the
-  PPI estimator uses the gold residuals to debias every population estimate. The
-  stored uniform inclusion probability (0.04673) feeds the estimator.
+- **Identical instruction wording** to the §4 prompt, with only the reply-format
+  line adapted to the interface -- instruction identity is the PPI construct
+  invariant (judge and coder must measure the same thing).
+- **Blind interface built:** `results/gold_coding_blind.csv` (randomized, seed
+  26; sentence strings + a blank rating column; no lexeme/item/stratum). Rejoin
+  key (`results/gold_coding_key.csv`) is executor-only during coding (cell
+  mapping, not judge output).
+- **Firewall (logged rule):** the gold coder views no judge output until all 600
+  codes are committed; the commit hash is the evidence.
+- **Variety:** British English; for any cell where variety uncertainty genuinely
+  arises, the coder **flags, does not guess** (Canadian-intuition nuisance).
+- **Inclusion-probability assert:** the PPI code asserts stored
+  `inclusion_prob == 600 / 12840` (= 0.04673) at load -- the number changed once
+  during the D1 re-draw (0.04753 → 0.04673), so the assert makes the manifest
+  self-checking.
+- 200-cell κ subset waits on the Pullum email (gates nothing).
 
-## 8. Sign-off checklist (pm)
+## 8. Sign-off checklist
 
-- [ ] Pin primary (and any second) model id + release date.
-- [ ] Confirm temperature, one-per-call, randomized order.
-- [ ] Freeze the prompt wording (section 4).
-- [ ] Confirm British English as the rating variety (matches SUBTLEX-UK frame).
-- [ ] Confirm the gold-coding plan (who codes; blind; same scale).
-- [ ] Confirm dichotomization threshold reference (PLAN.md).
+- [x] Models pinned (A1: `claude-fable-5` primary, `GPT-5.5` second).
+- [x] Temperature 0, one-per-call, randomized order.
+- [x] British English; identical wording to judge + gold coder (A4).
+- [x] Dichotomization resolved (A3).
+- [x] Gold plan: coder = pm, blind, same scale/instructions, firewall (A4).
+- [ ] **Prompt wording (§4) confirmed by pm** ← the only open item.
 
-Once signed off: draw nothing new, run the judge, and the ordering invariant
-(gold-before-judge) is satisfied because the gold already exists.
+Prompt confirmed → JUDGING.md freezes → run both judges.

@@ -88,6 +88,17 @@ membership define strata for coverage and known-groups validity checks
 ONLY; no analysis conditions on them as ground truth — the measurement
 models see an unlabeled lexeme × item matrix.
 
+AMENDMENT 2026-06-11 (pm, pre-registered before any rating exists).
+Dichotomization threshold transfer for Phase 3. The Phase-1 cut (z̄ > 0)
+was defined over MULTIPLE human raters per cell; the Phase 3 grid has ONE
+deterministic rating per judge per cell, so there is no within-cell rater
+pool to standardize over and z̄ > 0 does not transfer. Primary cut =
+WITHIN-JUDGE z > 0 (each judge's ratings standardized over its own full
+12,840-cell set, mirroring Phase 1's rater-relative logic); sensitivity
+arms = raw ≥ 5 and raw ≥ 4; the verdict-invariance criterion across arms
+applies exactly as in Phase 1. Mirrored in JUDGING.md §5. Logged now to
+prevent a silent forking path discovered after data.
+
 ## 4. Go/no-go thresholds (pre-registered, Phase 1 → Phase 2)
 
 GO if, on MegaAcceptability:
