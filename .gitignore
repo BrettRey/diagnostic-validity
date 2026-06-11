@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
-data/
+data/*
+!data/reynolds2021_determinative_matrix.csv
 results/*
 !results/.gitkeep
 !results/pilot_findings.md
