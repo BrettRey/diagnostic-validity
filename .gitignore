@@ -19,6 +19,9 @@ results/*
 !results/phase3_template_exceptions.md
 !results/phase3_instantiate_manifest.json
 !results/phase3_reliability.json
+!results/phase3_residual_structure.json
+!results/phase3_fig_residual_structure.png
+!results/phase3_fig_calibration.png
 !results/gold_coding_blind.csv
 !results/gold_coding_key.csv
 !results/gold_coding_order.json

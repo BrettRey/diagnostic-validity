@@ -1,0 +1,518 @@
+{
+  "global_offset": {
+    "fable": {
+      "mean": -0.89,
+      "ci95": [
+        -0.996,
+        -0.784
+      ],
+      "sd": 1.319,
+      "n": 599
+    },
+    "gpt": {
+      "mean": -0.763,
+      "ci95": [
+        -0.88,
+        -0.647
+      ],
+      "sd": 1.452,
+      "n": 600
+    }
+  },
+  "by_item": {
+    "fable": {
+      "stranding": {
+        "raw": 0.0,
+        "shrunk": -0.198,
+        "post_sd": 0.296,
+        "n": 22
+      },
+      "right_mod": {
+        "raw": -0.481,
+        "shrunk": -0.532,
+        "post_sd": 0.22,
+        "n": 27
+      },
+      "gerund_gap_complement": {
+        "raw": -0.481,
+        "shrunk": -0.515,
+        "post_sd": 0.18,
+        "n": 27
+      },
+      "predeterminer_position": {
+        "raw": -0.448,
+        "shrunk": -0.496,
+        "post_sd": 0.207,
+        "n": 29
+      },
+      "predicative_be": {
+        "raw": -1.167,
+        "shrunk": -1.087,
+        "post_sd": 0.336,
+        "n": 18
+      },
+      "enough_postposed": {
+        "raw": -1.226,
+        "shrunk": -1.198,
+        "post_sd": 0.181,
+        "n": 31
+      },
+      "comparative_more": {
+        "raw": -0.429,
+        "shrunk": -0.453,
+        "post_sd": 0.145,
+        "n": 28
+      },
+      "fronting_pp": {
+        "raw": 0.958,
+        "shrunk": 0.585,
+        "post_sd": 0.282,
+        "n": 24
+      },
+      "un_prefix": {
+        "raw": -1.5,
+        "shrunk": -1.387,
+        "post_sd": 0.27,
+        "n": 22
+      },
+      "inflectional_comparison": {
+        "raw": -1.3,
+        "shrunk": -1.247,
+        "post_sd": 0.226,
+        "n": 20
+      },
+      "ly_adverb_base": {
+        "raw": -1.269,
+        "shrunk": -1.221,
+        "post_sd": 0.223,
+        "n": 26
+      },
+      "attributive": {
+        "raw": -1.071,
+        "shrunk": -1.05,
+        "post_sd": 0.216,
+        "n": 28
+      },
+      "coordination_with_adj": {
+        "raw": -1.231,
+        "shrunk": -1.199,
+        "post_sd": 0.193,
+        "n": 26
+      },
+      "become_complement": {
+        "raw": -0.935,
+        "shrunk": -0.932,
+        "post_sd": 0.161,
+        "n": 31
+      },
+      "ness_nominalization": {
+        "raw": -2.25,
+        "shrunk": -2.151,
+        "post_sd": 0.169,
+        "n": 28
+      },
+      "postpositive": {
+        "raw": -1.909,
+        "shrunk": -1.704,
+        "post_sd": 0.281,
+        "n": 22
+      },
+      "partitive_of": {
+        "raw": 0.05,
+        "shrunk": 0.044,
+        "post_sd": 0.05,
+        "n": 20
+      },
+      "np_complement": {
+        "raw": -0.577,
+        "shrunk": -0.594,
+        "post_sd": 0.145,
+        "n": 26
+      },
+      "determiner_function": {
+        "raw": -0.783,
+        "shrunk": -0.814,
+        "post_sd": 0.339,
+        "n": 23
+      },
+      "fused_head": {
+        "raw": -0.828,
+        "shrunk": -0.835,
+        "post_sd": 0.21,
+        "n": 29
+      },
+      "too_mod": {
+        "raw": -1.36,
+        "shrunk": -1.317,
+        "post_sd": 0.19,
+        "n": 25
+      },
+      "seem_complement": {
+        "raw": -0.684,
+        "shrunk": -0.701,
+        "post_sd": 0.18,
+        "n": 19
+      },
+      "very_mod": {
+        "raw": -1.0,
+        "shrunk": -0.996,
+        "post_sd": 0.124,
+        "n": 34
+      },
+      "enough_preposed": {
+        "raw": -1.5,
+        "shrunk": -1.322,
+        "post_sd": 0.339,
+        "n": 14
+      }
+    },
+    "gpt": {
+      "stranding": {
+        "raw": -0.409,
+        "shrunk": -0.491,
+        "post_sd": 0.287,
+        "n": 22
+      },
+      "right_mod": {
+        "raw": -0.593,
+        "shrunk": -0.616,
+        "post_sd": 0.223,
+        "n": 27
+      },
+      "gerund_gap_complement": {
+        "raw": -0.519,
+        "shrunk": -0.534,
+        "post_sd": 0.149,
+        "n": 27
+      },
+      "predeterminer_position": {
+        "raw": -0.621,
+        "shrunk": -0.641,
+        "post_sd": 0.227,
+        "n": 29
+      },
+      "predicative_be": {
+        "raw": -0.722,
+        "shrunk": -0.732,
+        "post_sd": 0.29,
+        "n": 18
+      },
+      "enough_postposed": {
+        "raw": -1.387,
+        "shrunk": -1.309,
+        "post_sd": 0.211,
+        "n": 31
+      },
+      "comparative_more": {
+        "raw": -0.143,
+        "shrunk": -0.193,
+        "post_sd": 0.169,
+        "n": 28
+      },
+      "fronting_pp": {
+        "raw": 1.292,
+        "shrunk": 0.651,
+        "post_sd": 0.333,
+        "n": 24
+      },
+      "un_prefix": {
+        "raw": -1.0,
+        "shrunk": -0.921,
+        "post_sd": 0.344,
+        "n": 22
+      },
+      "inflectional_comparison": {
+        "raw": -1.5,
+        "shrunk": -1.37,
+        "post_sd": 0.251,
+        "n": 20
+      },
+      "ly_adverb_base": {
+        "raw": -1.231,
+        "shrunk": -1.164,
+        "post_sd": 0.226,
+        "n": 26
+      },
+      "attributive": {
+        "raw": -1.179,
+        "shrunk": -1.116,
+        "post_sd": 0.232,
+        "n": 28
+      },
+      "coordination_with_adj": {
+        "raw": -0.577,
+        "shrunk": -0.601,
+        "post_sd": 0.214,
+        "n": 26
+      },
+      "become_complement": {
+        "raw": -1.0,
+        "shrunk": -0.974,
+        "post_sd": 0.196,
+        "n": 31
+      },
+      "ness_nominalization": {
+        "raw": -1.786,
+        "shrunk": -1.681,
+        "post_sd": 0.191,
+        "n": 28
+      },
+      "postpositive": {
+        "raw": -1.545,
+        "shrunk": -1.354,
+        "post_sd": 0.295,
+        "n": 22
+      },
+      "partitive_of": {
+        "raw": 0.1,
+        "shrunk": 0.076,
+        "post_sd": 0.099,
+        "n": 20
+      },
+      "np_complement": {
+        "raw": -0.407,
+        "shrunk": -0.437,
+        "post_sd": 0.172,
+        "n": 27
+      },
+      "determiner_function": {
+        "raw": -0.435,
+        "shrunk": -0.542,
+        "post_sd": 0.341,
+        "n": 23
+      },
+      "fused_head": {
+        "raw": -1.069,
+        "shrunk": -0.988,
+        "post_sd": 0.307,
+        "n": 29
+      },
+      "too_mod": {
+        "raw": -1.28,
+        "shrunk": -1.226,
+        "post_sd": 0.193,
+        "n": 25
+      },
+      "seem_complement": {
+        "raw": -0.263,
+        "shrunk": -0.327,
+        "post_sd": 0.212,
+        "n": 19
+      },
+      "very_mod": {
+        "raw": -0.559,
+        "shrunk": -0.574,
+        "post_sd": 0.163,
+        "n": 34
+      },
+      "enough_preposed": {
+        "raw": -1.357,
+        "shrunk": -1.181,
+        "post_sd": 0.324,
+        "n": 14
+      }
+    }
+  },
+  "by_stratum": {
+    "fable": {
+      "determinative": {
+        "raw": -0.934,
+        "shrunk": -0.89,
+        "post_sd": 0.16,
+        "n": 76
+      },
+      "adjective": {
+        "raw": -0.819,
+        "shrunk": -0.89,
+        "post_sd": 0.076,
+        "n": 249
+      },
+      "preposition": {
+        "raw": -1.022,
+        "shrunk": -0.89,
+        "post_sd": 0.109,
+        "n": 179
+      },
+      "blind": {
+        "raw": -0.783,
+        "shrunk": -0.89,
+        "post_sd": 0.138,
+        "n": 83
+      },
+      "boundary": {
+        "raw": -0.833,
+        "shrunk": -0.89,
+        "post_sd": 0.423,
+        "n": 12
+      }
+    },
+    "gpt": {
+      "determinative": {
+        "raw": -0.618,
+        "shrunk": -0.763,
+        "post_sd": 0.196,
+        "n": 76
+      },
+      "adjective": {
+        "raw": -0.716,
+        "shrunk": -0.763,
+        "post_sd": 0.081,
+        "n": 250
+      },
+      "preposition": {
+        "raw": -0.961,
+        "shrunk": -0.763,
+        "post_sd": 0.111,
+        "n": 179
+      },
+      "blind": {
+        "raw": -0.663,
+        "shrunk": -0.763,
+        "post_sd": 0.174,
+        "n": 83
+      },
+      "boundary": {
+        "raw": -0.417,
+        "shrunk": -0.763,
+        "post_sd": 0.468,
+        "n": 12
+      }
+    }
+  },
+  "by_gold_band": {
+    "fable": {
+      "1": {
+        "mean_resid": 0.366,
+        "n": 134,
+        "mean_judge": 1.366
+      },
+      "2": {
+        "mean_resid": -0.603,
+        "n": 126,
+        "mean_judge": 1.397
+      },
+      "3": {
+        "mean_resid": -1.034,
+        "n": 87,
+        "mean_judge": 1.966
+      },
+      "4": {
+        "mean_resid": -1.738,
+        "n": 42,
+        "mean_judge": 2.262
+      },
+      "5": {
+        "mean_resid": -1.875,
+        "n": 48,
+        "mean_judge": 3.125
+      },
+      "6": {
+        "mean_resid": -2.415,
+        "n": 53,
+        "mean_judge": 3.585
+      },
+      "7": {
+        "mean_resid": -1.147,
+        "n": 109,
+        "mean_judge": 5.853
+      }
+    },
+    "gpt": {
+      "1": {
+        "mean_resid": 0.459,
+        "n": 135,
+        "mean_judge": 1.459
+      },
+      "2": {
+        "mean_resid": -0.563,
+        "n": 126,
+        "mean_judge": 1.437
+      },
+      "3": {
+        "mean_resid": -0.954,
+        "n": 87,
+        "mean_judge": 2.046
+      },
+      "4": {
+        "mean_resid": -1.31,
+        "n": 42,
+        "mean_judge": 2.69
+      },
+      "5": {
+        "mean_resid": -1.833,
+        "n": 48,
+        "mean_judge": 3.167
+      },
+      "6": {
+        "mean_resid": -2.0,
+        "n": 53,
+        "mean_judge": 4.0
+      },
+      "7": {
+        "mean_resid": -1.073,
+        "n": 109,
+        "mean_judge": 5.927
+      }
+    }
+  },
+  "post_dichot": {
+    "fable": {
+      "z>0": {
+        "kappa": 0.657,
+        "misclass_pct": 16.4,
+        "gold_accept_pct": 42.1,
+        "judge_accept_pct": 35.7
+      },
+      "raw>=5": {
+        "kappa": 0.61,
+        "misclass_pct": 16.0,
+        "gold_accept_pct": 35.1,
+        "judge_accept_pct": 20.0
+      },
+      "raw>=4": {
+        "kappa": 0.584,
+        "misclass_pct": 19.2,
+        "gold_accept_pct": 42.1,
+        "judge_accept_pct": 25.5
+      }
+    },
+    "gpt": {
+      "z>0": {
+        "kappa": 0.63,
+        "misclass_pct": 17.8,
+        "gold_accept_pct": 42.0,
+        "judge_accept_pct": 38.8
+      },
+      "raw>=5": {
+        "kappa": 0.577,
+        "misclass_pct": 17.5,
+        "gold_accept_pct": 35.0,
+        "judge_accept_pct": 21.2
+      },
+      "raw>=4": {
+        "kappa": 0.602,
+        "misclass_pct": 18.7,
+        "gold_accept_pct": 42.0,
+        "judge_accept_pct": 31.0
+      }
+    }
+  },
+  "variance_sd": {
+    "fable": {
+      "global": -0.89,
+      "tau_item": 0.628,
+      "tau_stratum": 0.0
+    },
+    "gpt": {
+      "global": -0.763,
+      "tau_item": 0.597,
+      "tau_stratum": 0.0
+    }
+  },
+  "outcome": {
+    "tau_item_max": 0.628,
+    "tau_stratum_max": 0.0,
+    "strata_separating_2sd": {},
+    "read": "ii_item_structured"
+  }
+}
