@@ -2,10 +2,13 @@
 
 Draws the Phase 3 lexeme sample per the pre-registration (DECISIONS.md
 F1-F7, amended): adjectives in SUBTLEX-UK Zipf bands, a category-blind
-stratum, plus the forced category seed-lists (prepositions, the 73 Reynolds
-determinatives, the boundary set). Dedups toward the more specific stratum
-and logs collisions. Emits the sample CSV + a manifest (frame hashes, seed,
-band populations, collisions, git rev). NO instantiation here (F5-gated).
+stratum, plus the forced category seed-lists (prepositions, the Reynolds
+determinatives + numeral extension, the boundary set). Dedups toward the
+more specific stratum and logs collisions. Decision 1 (2026-06-11): a
+rule-based inflection filter excludes inflectional comparative/superlative
+variants from the adjective + blind strata (an inflected form is not a
+lexeme), with random backfill from the same band. Emits the sample CSV +
+a manifest. NO instantiation here (F5-gated).
 
 Run from the repo root:  python src/sample_phase3.py
 """
@@ -47,6 +50,12 @@ ADJ_PER_BAND = 55
 BLIND_TOPN = 10000
 BLIND_N = 60
 
+# Decision 1: inflectional comparative/superlative suppletives (logged rule).
+# -ed/-ing participials are deliberately NOT filtered (conversion-zone lexemes).
+SUPPLETIVE_INFL = {"better", "best", "worse", "worst", "more", "most",
+                   "less", "least", "further", "furthest", "farther",
+                   "farthest", "elder", "eldest"}
+
 
 def sha256(path):
     h = hashlib.sha256()
@@ -76,6 +85,31 @@ def norm(form):
     return form.strip().lower()
 
 
+def _deinflect(x):
+    """Candidate adjective bases for a putative -er/-est form."""
+    cands = []
+    for suf in ("er", "est"):
+        if x.endswith(suf):
+            stem = x[:-len(suf)]
+            cands += [stem, stem + "e"]
+            if len(stem) >= 2 and stem[-1] == stem[-2]:
+                cands.append(stem[:-1])          # bigger -> big
+            if stem.endswith("i"):
+                cands.append(stem[:-1] + "y")    # happier -> happy
+    return cands
+
+
+def is_inflectional(x, adjforms):
+    """True if x is an inflectional comparative/superlative of an attested
+    adjective base (regular -er/-est, or suppletive). Leaves -ed/-ing
+    participials and non-comparative -er words (clever, proper) alone."""
+    if x in SUPPLETIVE_INFL:
+        return True
+    if x.endswith(("er", "est")):
+        return any(b in adjforms for b in _deinflect(x))
+    return False
+
+
 def main():
     rng = np.random.default_rng(SEED)
     collisions = []           # (lexeme, kept_stratum, dropped_stratum)
@@ -89,12 +123,10 @@ def main():
             collisions.append((surface, claimed[k], stratum))
             return False
         claimed[k] = stratum
-        rows.append({"lexeme": surface, "stratum": stratum,
-                     **(extra or {})})
+        rows.append({"lexeme": surface, "stratum": stratum, **(extra or {})})
         return True
 
     # ---- forced seed-lists first (most specific) -----------------------
-    # F1d boundary set (most specific; forced inclusion)
     diag = yaml.safe_load(open(DIAG))
     boundary = [b.strip() for b in diag["boundary_set"]]
     for w in boundary:
@@ -108,7 +140,6 @@ def main():
         add(det_surface(lab), "determinative",
             {"reynolds_label": lab, "det_flag": "core2021"})
     # F1c amendment (2026-06-11, author-proposed, pm-approved): numeral extension.
-    # Distinct flag so the verbatim-2021 core stays identifiable (core-as-sensitivity).
     ext_labels = [l.strip() for l in open(DETS_EXT)
                   if l.strip() and not l.startswith("#")]
     for lab in ext_labels:
@@ -129,42 +160,53 @@ def main():
     df["z"] = pd.to_numeric(df["LogFreq(Zipf)"], errors="coerce")
     df = df.dropna(subset=["z"])
 
-    # F1a adjectives by Zipf band
+    # F1a adjectives by Zipf band: shuffle, skip inflectional variants
+    # (Decision 1) + dedup, take until ADJ_PER_BAND (random backfill from the
+    # same band). This also resolves the earlier top-band imbalance.
     adj = df[df["DomPoS"] == "adjective"]
-    band_pops = {}
-    band_draws = {}
+    adjforms = set(adj["Spelling"])
+    band_pops, adj_band_acct = {}, {}
     for name, lo, hi in ADJ_BANDS:
-        pool = adj[(adj["z"] >= lo) & (adj["z"] < hi)]
+        pool = adj[(adj["z"] >= lo) & (adj["z"] < hi)].reset_index(drop=True)
         band_pops[name] = int(len(pool))
-        n = min(ADJ_PER_BAND, len(pool))
-        idx = rng.choice(len(pool), size=n, replace=False) if n else []
-        band_draws[name] = [pool.iloc[i] for i in idx]
-    # merge note if the bottom band underfills (F2 amendment)
-    merged_note = None
-    if band_pops[ADJ_BANDS[-1][0]] < ADJ_PER_BAND:
-        merged_note = (f"bottom band '2-3' has only {band_pops['2-3']} "
-                       f"adjectives (<{ADJ_PER_BAND}); took all. Per F2, this "
-                       f"is the logged merge/underfill, not a silent cap.")
-    adj_band_acct = {}
-    for name, _, _ in ADJ_BANDS:
-        drawn = len(band_draws[name])
-        surv = 0
-        for r in band_draws[name]:
+        order = rng.permutation(len(pool)) if len(pool) else []
+        taken = skip_infl = 0
+        for j in order:
+            if taken >= ADJ_PER_BAND:
+                break
+            r = pool.iloc[int(j)]
+            if is_inflectional(r["Spelling"], adjforms):
+                skip_infl += 1
+                continue
             if add(r["Spelling"], "adjective",
                    {"zipf": round(float(r["z"]), 3), "zipf_band": name}):
-                surv += 1
-        adj_band_acct[name] = {"drawn": drawn, "survived": surv,
-                               "lost_to_more_specific": drawn - surv}
+                taken += 1
+        adj_band_acct[name] = {"target": ADJ_PER_BAND, "taken": taken,
+                               "skipped_inflectional": skip_infl,
+                               "pool": band_pops[name]}
+    short = [b for b in adj_band_acct if adj_band_acct[b]["taken"] < ADJ_PER_BAND]
+    merged_note = (None if not short else
+                   "under target after inflection-filter + backfill: "
+                   + ", ".join(f"{b}={adj_band_acct[b]['taken']}" for b in short))
 
-    # F1e category-blind: 60 from the top BLIND_TOPN by Zipf, no PoS cond.
-    top = df.sort_values("z", ascending=False).head(BLIND_TOPN)
-    bidx = rng.choice(len(top), size=BLIND_N, replace=False)
-    blind_added = 0
-    for i in bidx:
-        r = top.iloc[i]
+    # F1e category-blind: top BLIND_TOPN by Zipf, no PoS cond; same inflection
+    # filter; shuffle-take BLIND_N with random backfill.
+    top = df.sort_values("z", ascending=False).head(BLIND_TOPN).reset_index(
+        drop=True)
+    order = rng.permutation(len(top))
+    taken = skip_infl = 0
+    for j in order:
+        if taken >= BLIND_N:
+            break
+        r = top.iloc[int(j)]
+        if is_inflectional(r["Spelling"], adjforms):
+            skip_infl += 1
+            continue
         if add(r["Spelling"], "blind",
                {"zipf": round(float(r["z"]), 3), "dompos": r["DomPoS"]}):
-            blind_added += 1
+            taken += 1
+    blind_acct = {"target": BLIND_N, "taken": taken,
+                  "skipped_inflectional": skip_infl}
 
     # ---- write deliverables -------------------------------------------
     os.makedirs(RESULTS, exist_ok=True)
@@ -207,16 +249,22 @@ def main():
         },
         "determinative_flag_counts": det_flag_counts,
         "determinative_surface_conversions": surface_conversions,
+        "inflection_filter": {
+            "rule": "exclude regular -er/-est of an attested DomPoS=adjective "
+                    "base, plus the suppletive set; backfill randomly from the "
+                    "same band/pool. -ed/-ing participials NOT filtered.",
+            "suppletive_set": sorted(SUPPLETIVE_INFL),
+            "applies_to": ["adjective", "blind"]},
         "adjective_band_populations": band_pops,
         "adjective_per_band_target": ADJ_PER_BAND,
         "adjective_band_underfill_note": merged_note,
         "adjective_band_accounting": adj_band_acct,
+        "blind_accounting": blind_acct,
         "grid_size_note": (
             "Judgment grid ~ %d lexemes x 24 confirmed judgment items = %d "
             "judgment cells (+ corpus columns). F6 gold sample stays 600 cells "
-            "as pre-registered = %.1f%% of judgment cells -- a thinner fraction "
-            "against the full grid than the ~450-lexeme planning estimate; "
-            "logged per pm (ruling a, keep full sample), not silently absorbed."
+            "as pre-registered = %.1f%% of judgment cells; logged per pm, not "
+            "silently absorbed."
             % (len(rows), len(rows) * 24, 100 * 600 / (len(rows) * 24))),
         "strata_counts": strata_counts,
         "total_unique_lexemes": len(rows),
@@ -231,10 +279,13 @@ def main():
           % (SEED, len(rows)))
     print("Strata:", strata_counts)
     print("Determinative flags:", det_flag_counts)
-    print("Adjective band populations (available):", band_pops)
+    print("Adjective bands (taken / skipped_inflectional / pool):")
+    for b, a in adj_band_acct.items():
+        print("   %-8s %d / %d / %d"
+              % (b, a["taken"], a["skipped_inflectional"], a["pool"]))
+    print("Blind: taken %d, skipped_inflectional %d"
+          % (blind_acct["taken"], blind_acct["skipped_inflectional"]))
     print("Collisions (deduped toward more specific):", len(collisions))
-    for c in collisions:
-        print("   ", c[0], ":", c[2], "->", c[1])
     if merged_note:
         print("NOTE:", merged_note)
 

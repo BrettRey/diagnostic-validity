@@ -43,10 +43,64 @@ DIAG = os.path.join(ROOT, "diagnostics.yaml")
 
 # Instantiate-late (not gates): appended after their resolution.
 DEFER = {"well_mod", "that_clause_complement"}
-# Stem-affecting derivations -> schema, realized per-lexeme before judging.
-MORPH = {"inflectional_comparison": "+er",
-         "ly_adverb_base": "+ly",
-         "ness_nominalization": "+ness"}
+
+# Decision 2 (2026-06-11): charitable realization. The instantiator makes
+# SPELLING decisions, never acceptability decisions: realize every cell with
+# the lexeme's most charitable well-formed candidate and let raters judge
+# (worther/beautifuller being rated bad IS the datum). Suppletive lookups +
+# orthographic rules are logged dictionary facts (template-exception file).
+SUPPLETIVE_COMPARATIVE = {"good": "better", "bad": "worse", "far": "further",
+                          "little": "less", "well": "better"}
+IRREGULAR_LY = {"true": "truly", "due": "duly", "whole": "wholly",
+                "full": "fully"}
+
+
+def _syllables(w):
+    return len(re.findall(r"[aeiouy]+", w))
+
+
+def reg_er(w):
+    """Regular synthetic comparative orthography."""
+    if " " in w:
+        return w + "er"                          # multiword: garbage-is-data
+    if w.endswith("e"):
+        return w + "r"                           # nice->nicer, large->larger
+    if w.endswith("y") and len(w) > 2 and w[-2] not in "aeiou":
+        return w[:-1] + "ier"                    # happy->happier
+    if w.endswith("l") and len(w) > 2 and w[-2] in "aeiou" and w[-3] not in "aeiou":
+        return w + "ler"                         # British -l doubling: cruel->crueller
+    if (len(w) >= 3 and w[-1] not in "aeiouwxy" and w[-2] in "aeiou"
+            and w[-3] not in "aeiou" and _syllables(w) == 1):
+        return w + w[-1] + "er"                  # big->bigger (CVC monosyll)
+    return w + "er"                              # worth->worther (badness=datum)
+
+
+def comparative(w):
+    return SUPPLETIVE_COMPARATIVE.get(w, reg_er(w))
+
+
+def reg_ly(w):
+    if w in IRREGULAR_LY:
+        return IRREGULAR_LY[w]
+    if w.endswith("ic"):
+        return w + "ally"                        # basic->basically
+    if w.endswith("le") and len(w) > 2 and w[-3] not in "aeiou":
+        return w[:-1] + "y"                      # gentle->gently, able->ably
+    if w.endswith("y") and len(w) > 2 and w[-2] not in "aeiou":
+        return w[:-1] + "ily"                    # happy->happily
+    if w.endswith("ll"):
+        return w + "y"                           # dull->dully
+    return w + "ly"                              # worth->worthly (datum)
+
+
+def reg_ness(w):
+    if w.endswith("y") and len(w) > 2 and w[-2] not in "aeiou":
+        return w[:-1] + "iness"                  # happy->happiness
+    return w + "ness"
+
+
+def reg_un(w):
+    return "un" + w                              # un+stem; unnear (datum)
 
 
 def sha256(path):
@@ -76,20 +130,17 @@ def instantiate(diag, surface):
     did = diag["id"]
     frame = diag["frame"]
 
-    # morphology schemas: explicit '+' marker, realized per lexeme before judging
-    if did in MORPH:
-        suf = MORPH[did]
-        if did == "inflectional_comparison":
-            sent = frame.replace("LEX-er", surface + suf)
-        elif did == "ly_adverb_base":
-            sent = frame.replace("LEXly", surface + suf)
-        else:  # ness_nominalization
-            sent = frame.replace("LEXness", surface + suf)
-        return sent, "", "morphology" + suf
-
-    # un- prefix: concatenation (un- does not alter the stem); garbage = data
+    # morphology: realize the charitable well-formed candidate (spelling only,
+    # never acceptability). Suppletive where attested, else orthographic rules.
+    if did == "inflectional_comparison":
+        return (frame.replace("LEX-er", comparative(surface)),
+                "realized:comparative", "")
+    if did == "ly_adverb_base":
+        return frame.replace("LEXly", reg_ly(surface)), "realized:ly", ""
+    if did == "ness_nominalization":
+        return frame.replace("LEXness", reg_ness(surface)), "realized:ness", ""
     if did == "un_prefix":
-        return frame.replace("LEX", surface), "orthographic_un", ""
+        return frame.replace("unLEX", reg_un(surface)), "realized:un", ""
 
     # postpositive: pm note-form ('the something LEX')
     if did == "postpositive":
@@ -178,23 +229,30 @@ def main():
                 f"Grid = {len(lexemes)} lexemes x {len(diags)} confirmed "
                 f"judgment diagnostics = {n} cells. well_mod + "
                 "that_clause_complement instantiate late (appended), not here.\n\n")
-        f.write("## Morphology schemas (flagged `needs_realization`)\n")
-        f.write("Stem-affecting derivations are emitted as schemas with a `+` "
-                "marker (e.g. *happy+er*, *happy+ly*, *happy+ness*) and realized "
-                "per lexeme BEFORE judging (good->better, good->well, "
-                "true->truly; non-applicable forms marked, not silently "
-                "concatenated -- avoids rating spelling errors as the "
-                "diagnostic). Extends the pre-known comparative exception to "
-                "-ly/-ness on the same suppletion/spelling logic.\n")
-        for did, suf in MORPH.items():
-            f.write(f"- `{did}` ({suf}): {by_need.get('morphology'+suf,0)} "
-                    "cells, all lexemes.\n")
-        f.write("\n## un- prefix (produced; garbage-is-data)\n")
-        f.write(f"`un_prefix`: {by_flag.get('orthographic_un',0)} cells, "
-                "concatenated `un`+surface (un- does not alter the stem). "
-                "Off-category strings (*unnear*, *una few*) are correct data, "
-                "not errors; the orthographic flag marks hyphenation review "
-                "(un-X vs unX) for the realization pass.\n")
+        f.write("## Morphology realization (spelling, never acceptability)\n")
+        f.write("Every cell is realized with the lexeme's most charitable "
+                "well-formed candidate; raters judge it. *worther*/*beautifuller* "
+                "rated bad IS the datum (that the base fails synthetic comparison; "
+                "the periphrastic escape is the separate comparative_more item). "
+                "The instantiator makes spelling decisions only -- it never marks "
+                "a cell non-applicable (that would smuggle the verdict into the "
+                "template). Counts: "
+                f"comparative {by_flag.get('realized:comparative',0)}, "
+                f"-ly {by_flag.get('realized:ly',0)}, "
+                f"-ness {by_flag.get('realized:ness',0)}, "
+                f"un- {by_flag.get('realized:un',0)} cells (all lexemes).\n\n")
+        f.write("Logged dictionary facts + orthographic rules:\n")
+        f.write(f"- Suppletive comparatives: {SUPPLETIVE_COMPARATIVE} "
+                "(e.g. good->better, never *gooder).\n")
+        f.write("- Regular comparative: e->+r (nice->nicer); y->ier "
+                "(happy->happier); CVC monosyllable doubles (big->bigger); "
+                "else +er (worth->worther).\n")
+        f.write(f"- Irregular -ly: {IRREGULAR_LY}; -ic->-ically; -le->-ly "
+                "(gentle->gently); y->ily (happy->happily); else +ly.\n")
+        f.write("- -ness: y->iness (happy->happiness); else +ness.\n")
+        f.write("- un-: un+stem, no stem change (unhappy, unnear). Hyphenation "
+                "(un-X vs unX) and off-category strings (*unnear*, *una few*) "
+                "stand as garbage-is-data.\n")
         f.write("\n## enough collision\n")
         f.write(f"`enough_postposed`/`enough_preposed` x lexeme *enough*: "
                 f"{by_flag.get('collision_enough',0)} cells ('enough enough'), "
@@ -228,12 +286,11 @@ def main():
         "n_lexemes": len(lexemes), "n_diagnostics": len(diags),
         "deferred_diagnostics": sorted(DEFER),
         "n_cells": n, "cells_by_flag": by_flag,
-        "cells_needs_realization": by_need,
         "gold": {"n": GOLD_N, "pool": n, "inclusion_prob": incl_p,
                  "seed": SEED, "uniform": True,
-                 "note": "Drawn BEFORE any rating (F6). Morphology-schema cells "
-                         "in the pool are realized per-lexeme before expert "
-                         "coding; gold-before-judge preserved (no judging yet)."},
+                 "note": "Drawn BEFORE any rating (F6). All cells are realized "
+                         "strings (charity = spelling, not acceptability); "
+                         "gold-before-judge preserved (no judging yet)."},
         "eyeball": {"n": EYEBALL_N, "seed": SEED,
                     "note": "second draw from the seed-26 stream after gold"},
     }
@@ -244,7 +301,6 @@ def main():
     print("Instantiated %d cells (%d lexemes x %d diagnostics)."
           % (n, len(lexemes), len(diags)))
     print("Flags:", by_flag)
-    print("needs_realization (morphology schemas):", by_need)
     print("Gold: %d cells, uniform, inclusion_prob %.5f (seed %d)."
           % (GOLD_N, incl_p, SEED))
     print("Eyeball: %d cells -> results/phase3_eyeball_50.csv" % EYEBALL_N)

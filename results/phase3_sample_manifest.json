@@ -1,9 +1,9 @@
 {
   "phase": 3,
   "step": "F4 sampling",
-  "timestamp": "2026-06-11T10:26:13.658302+00:00",
+  "timestamp": "2026-06-11T11:15:35.381483+00:00",
   "seed": 26,
-  "git_rev": "987d9e735fdbac7a933dc72cad5bf6b8ac264758",
+  "git_rev": "6fac5f7e6dd80f5be0c5ebec3f19cb40c407b11e",
   "versions": {
     "python": "3.11.4",
     "numpy": "2.1.3",
@@ -58,6 +58,29 @@
     "zero_det": "zero",
     "various_det": "various"
   },
+  "inflection_filter": {
+    "rule": "exclude regular -er/-est of an attested DomPoS=adjective base, plus the suppletive set; backfill randomly from the same band/pool. -ed/-ing participials NOT filtered.",
+    "suppletive_set": [
+      "best",
+      "better",
+      "elder",
+      "eldest",
+      "farther",
+      "farthest",
+      "further",
+      "furthest",
+      "least",
+      "less",
+      "more",
+      "most",
+      "worse",
+      "worst"
+    ],
+    "applies_to": [
+      "adjective",
+      "blind"
+    ]
+  },
   "adjective_band_populations": {
     "zipf>=5": 119,
     "4-5": 595,
@@ -68,35 +91,44 @@
   "adjective_band_underfill_note": null,
   "adjective_band_accounting": {
     "zipf>=5": {
-      "drawn": 55,
-      "survived": 48,
-      "lost_to_more_specific": 7
+      "target": 55,
+      "taken": 55,
+      "skipped_inflectional": 5,
+      "pool": 119
     },
     "4-5": {
-      "drawn": 55,
-      "survived": 55,
-      "lost_to_more_specific": 0
+      "target": 55,
+      "taken": 55,
+      "skipped_inflectional": 2,
+      "pool": 595
     },
     "3-4": {
-      "drawn": 55,
-      "survived": 55,
-      "lost_to_more_specific": 0
+      "target": 55,
+      "taken": 55,
+      "skipped_inflectional": 2,
+      "pool": 2131
     },
     "2-3": {
-      "drawn": 55,
-      "survived": 54,
-      "lost_to_more_specific": 1
+      "target": 55,
+      "taken": 55,
+      "skipped_inflectional": 1,
+      "pool": 3686
     }
   },
-  "grid_size_note": "Judgment grid ~ 526 lexemes x 24 confirmed judgment items = 12624 judgment cells (+ corpus columns). F6 gold sample stays 600 cells as pre-registered = 4.8% of judgment cells -- a thinner fraction against the full grid than the ~450-lexeme planning estimate; logged per pm (ruling a, keep full sample), not silently absorbed.",
+  "blind_accounting": {
+    "target": 60,
+    "taken": 60,
+    "skipped_inflectional": 0
+  },
+  "grid_size_note": "Judgment grid ~ 535 lexemes x 24 confirmed judgment items = 12840 judgment cells (+ corpus columns). F6 gold sample stays 600 cells as pre-registered = 4.7% of judgment cells; logged per pm, not silently absorbed.",
   "strata_counts": {
     "boundary": 16,
     "determinative": 72,
     "preposition": 167,
-    "adjective": 212,
-    "blind": 59
+    "adjective": 220,
+    "blind": 60
   },
-  "total_unique_lexemes": 526,
+  "total_unique_lexemes": 535,
   "n_collisions": 16,
   "collisions": [
     {
@@ -135,7 +167,7 @@
       "dropped": "preposition"
     },
     {
-      "lexeme": "less",
+      "lexeme": "own",
       "kept": "boundary",
       "dropped": "adjective"
     },
@@ -145,13 +177,18 @@
       "dropped": "adjective"
     },
     {
-      "lexeme": "last",
+      "lexeme": "next",
       "kept": "determinative",
       "dropped": "adjective"
     },
     {
-      "lexeme": "such",
-      "kept": "boundary",
+      "lexeme": "past",
+      "kept": "preposition",
+      "dropped": "adjective"
+    },
+    {
+      "lexeme": "many",
+      "kept": "determinative",
       "dropped": "adjective"
     },
     {
@@ -160,23 +197,18 @@
       "dropped": "adjective"
     },
     {
-      "lexeme": "little",
-      "kept": "determinative",
-      "dropped": "adjective"
-    },
-    {
-      "lexeme": "own",
+      "lexeme": "due",
       "kept": "boundary",
       "dropped": "adjective"
     },
     {
-      "lexeme": "seventy",
+      "lexeme": "one",
       "kept": "determinative",
-      "dropped": "adjective"
+      "dropped": "blind"
     },
     {
-      "lexeme": "strong",
-      "kept": "adjective",
+      "lexeme": "everywhere",
+      "kept": "determinative",
       "dropped": "blind"
     }
   ]

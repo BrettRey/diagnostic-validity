@@ -1,601 +1,601 @@
 cell_id,lexeme,stratum,det_flag,diagnostic,op,sentence,flag,needs_realization,inclusion_prob
-21,worth,boundary,,coordination_with_adj,judgment,Something was old and worth.,,,0.047529
-22,worth,boundary,,fronting_pp,judgment,"Worth something, something happened.",,,0.047529
-25,near,boundary,,too_mod,both,Something was too near.,,,0.047529
-59,like,boundary,,postpositive,judgment,The something like happened.,note_postpositive,,0.047529
-110,fun,boundary,,fused_head,both,Someone saw fun.,,,0.047529
-142,galore,boundary,,fronting_pp,judgment,"Galore something, something happened.",,,0.047529
-186,asleep,boundary,,ness_nominalization,both,The asleep+ness of something.,,morphology+ness,0.047529
-247,less,boundary,,np_complement,both,Something was less something.,,,0.047529
-256,less,boundary,,un_prefix,both,Something was unless.,orthographic_un,,0.047529
-288,such,boundary,,very_mod,both,Something was very such.,,,0.047529
-295,such,boundary,,np_complement,both,Something was such something.,,,0.047529
-302,such,boundary,,fused_head,both,Someone saw such.,,,0.047529
-311,such,boundary,,stranding,judgment,The something that something was such __,,,0.047529
-387,a,determinative,core2021,inflectional_comparison,both,Something was a+er than something else.,,morphology+er,0.047529
-399,a,determinative,core2021,partitive_of,both,A of the somethings happened.,,,0.047529
-432,a few,determinative,core2021,very_mod,both,Something was very a few.,,,0.047529
-461,a great many,determinative,core2021,enough_postposed,judgment,Something was a great many enough.,,,0.047529
-472,a great many,determinative,core2021,un_prefix,both,Something was una great many.,orthographic_un,,0.047529
-479,a great many,determinative,core2021,stranding,judgment,The something that something was a great many __,,,0.047529
-482,a little,determinative,core2021,comparative_more,both,Something was more a little than something else.,,,0.047529
-511,all,determinative,core2021,np_complement,both,Something was all something.,,,0.047529
-560,any,determinative,core2021,gerund_gap_complement,judgment,Something was any doing.,,,0.047529
-566,any,determinative,core2021,fused_head,both,Someone saw any.,,,0.047529
-614,anyone,determinative,core2021,fused_head,both,Someone saw anyone.,,,0.047529
-630,anything,determinative,core2021,enough_preposed,judgment,Something was enough anything.,,,0.047529
-655,anywhere,determinative,core2021,np_complement,both,Something was anywhere something.,,,0.047529
-736,each,determinative,core2021,un_prefix,both,Something was uneach.,orthographic_un,,0.047529
-737,each,determinative,core2021,ly_adverb_base,both,Something happened each+ly.,,morphology+ly,0.047529
-740,each,determinative,core2021,become_complement,both,Something became each.,,,0.047529
-775,every,determinative,core2021,np_complement,both,Something was every something.,,,0.047529
-814,everybody,determinative,core2021,fronting_pp,judgment,"Everybody something, something happened.",,,0.047529
-827,everyone,determinative,core2021,postpositive,judgment,The something everyone happened.,note_postpositive,,0.047529
-841,everything,determinative,core2021,too_mod,both,Something was too everything.,,,0.047529
-853,everything,determinative,core2021,determiner_function,both,Everything something happened.,,,0.047529
-865,everywhere,determinative,core2021,too_mod,both,Something was too everywhere.,,,0.047529
-874,everywhere,determinative,core2021,predicative_be,both,Something was everywhere.,,,0.047529
-882,everywhere,determinative,core2021,ness_nominalization,both,The everywhere+ness of something.,,morphology+ness,0.047529
-914,fewer,determinative,core2021,comparative_more,both,Something was more fewer than something else.,,,0.047529
-968,little,determinative,core2021,gerund_gap_complement,judgment,Something was little doing.,,,0.047529
-995,least,determinative,core2021,postpositive,judgment,The something least happened.,note_postpositive,,0.047529
-1032,many a,determinative,core2021,very_mod,both,Something was very many a.,,,0.047529
-1035,many a,determinative,core2021,inflectional_comparison,both,Something was many a+er than something else.,,morphology+er,0.047529
-1036,many a,determinative,core2021,right_mod,judgment,Something was right many a.,,,0.047529
-1050,many a,determinative,core2021,ness_nominalization,both,The many a+ness of something.,,morphology+ness,0.047529
-1116,neither,determinative,core2021,predeterminer_position,both,Neither the something happened.,,,0.047529
-1139,last,determinative,core2021,postpositive,judgment,The something last happened.,note_postpositive,,0.047529
-1169,next,determinative,core2021,ly_adverb_base,both,Something happened next+ly.,,morphology+ly,0.047529
-1174,next,determinative,core2021,fronting_pp,judgment,"Next something, something happened.",,,0.047529
-1180,no,determinative,core2021,right_mod,judgment,Something was right no.,,,0.047529
-1183,no,determinative,core2021,np_complement,both,Something was no something.,,,0.047529
-1192,no,determinative,core2021,un_prefix,both,Something was unno.,orthographic_un,,0.047529
-1226,nobody,determinative,core2021,comparative_more,both,Something was more nobody than something else.,,,0.047529
-1229,nobody,determinative,core2021,enough_postposed,judgment,Something was nobody enough.,,,0.047529
-1266,no one,determinative,core2021,ness_nominalization,both,The no one+ness of something.,,morphology+ness,0.047529
-1281,nothing,determinative,core2021,attributive,both,The nothing something happened.,,,0.047529
-1314,nowhere,determinative,core2021,ness_nominalization,both,The nowhere+ness of something.,,morphology+ness,0.047529
-1347,two,determinative,core2021,inflectional_comparison,both,Something was two+er than something else.,,morphology+er,0.047529
-1390,three,determinative,core2021,fronting_pp,judgment,"Three something, something happened.",,,0.047529
-1399,once,determinative,core2021,np_complement,both,Something was once something.,,,0.047529
-1456,thrice,determinative,core2021,un_prefix,both,Something was unthrice.,orthographic_un,,0.047529
-1465,several,determinative,core2021,too_mod,both,Something was too several.,,,0.047529
-1542,someone,determinative,core2021,enough_preposed,judgment,Something was enough someone.,,,0.047529
-1544,someone,determinative,core2021,gerund_gap_complement,judgment,Something was someone doing.,,,0.047529
-1575,something,determinative,core2021,partitive_of,both,Something of the somethings happened.,,,0.047529
-1583,something,determinative,core2021,stranding,judgment,The something that something was something __,,,0.047529
-1632,sufficient,determinative,core2021,very_mod,both,Something was very sufficient.,,,0.047529
-1679,that,determinative,core2021,stranding,judgment,The something that something was that __,,,0.047529
-1687,these,determinative,core2021,np_complement,both,Something was these something.,,,0.047529
-1730,those,determinative,core2021,comparative_more,both,Something was more those than something else.,,,0.047529
-1767,the,determinative,core2021,partitive_of,both,The of the somethings happened.,,,0.047529
-1789,us,determinative,core2021,determiner_function,both,Us something happened.,,,0.047529
-1799,us,determinative,core2021,stranding,judgment,The something that something was us __,,,0.047529
-1829,you,determinative,core2021,enough_postposed,judgment,Something was you enough.,,,0.047529
-1851,what,determinative,core2021,inflectional_comparison,both,Something was what+er than something else.,,morphology+er,0.047529
-1863,what,determinative,core2021,partitive_of,both,What of the somethings happened.,,,0.047529
-1868,what,determinative,core2021,become_complement,both,Something became what.,,,0.047529
-1900,which,determinative,core2021,right_mod,judgment,Something was right which.,,,0.047529
-1910,which,determinative,core2021,fused_head,both,Someone saw which.,,,0.047529
-1914,which,determinative,core2021,ness_nominalization,both,The which+ness of something.,,morphology+ness,0.047529
-1932,whichever,determinative,core2021,predeterminer_position,both,Whichever the something happened.,,,0.047529
-1986,various,determinative,core2021,ness_nominalization,both,The various+ness of something.,,morphology+ness,0.047529
-2007,ten,determinative,extension2026,partitive_of,both,Ten of the somethings happened.,,,0.047529
-2013,ten,determinative,extension2026,coordination_with_adj,judgment,Something was old and ten.,,,0.047529
-2036,eleven,determinative,extension2026,become_complement,both,Something became eleven.,,,0.047529
-2040,seventy,determinative,extension2026,very_mod,both,Something was very seventy.,,,0.047529
-2050,seventy,determinative,extension2026,predicative_be,both,Something was seventy.,,,0.047529
-2074,hundred,determinative,extension2026,predicative_be,both,Something was hundred.,,,0.047529
-2080,hundred,determinative,extension2026,un_prefix,both,Something was unhundred.,orthographic_un,,0.047529
-2113,of,preposition,,too_mod,both,Something was too of.,,,0.047529
-2120,of,preposition,,gerund_gap_complement,judgment,Something was of doing.,,,0.047529
-2133,of,preposition,,coordination_with_adj,judgment,Something was old and of.,,,0.047529
-2170,from,preposition,,predicative_be,both,Something was from.,,,0.047529
-2202,into,preposition,,ness_nominalization,both,The into+ness of something.,,morphology+ness,0.047529
-2216,onto,preposition,,gerund_gap_complement,judgment,Something was onto doing.,,,0.047529
-2217,onto,preposition,,attributive,both,The onto something happened.,,,0.047529
-2228,onto,preposition,,become_complement,both,Something became onto.,,,0.047529
-2234,upon,preposition,,comparative_more,both,Something was more upon than something else.,,,0.047529
-2238,upon,preposition,,enough_preposed,judgment,Something was enough upon.,,,0.047529
-2258,with,preposition,,comparative_more,both,Something was more with than something else.,,,0.047529
-2262,with,preposition,,enough_preposed,judgment,Something was enough with.,,,0.047529
-2297,as,preposition,,ly_adverb_base,both,Something happened as+ly.,,morphology+ly,0.047529
-2301,as,preposition,,coordination_with_adj,judgment,Something was old and as.,,,0.047529
-2320,until,preposition,,un_prefix,both,Something was ununtil.,orthographic_un,,0.047529
-2339,aboard,preposition,,postpositive,judgment,The something aboard happened.,note_postpositive,,0.047529
-2390,above,preposition,,fused_head,both,Someone saw above.,,,0.047529
-2394,above,preposition,,ness_nominalization,both,The above+ness of something.,,morphology+ness,0.047529
-2398,above,preposition,,fronting_pp,judgment,"Above something, something happened.",,,0.047529
-2401,across,preposition,,too_mod,both,Something was too across.,,,0.047529
-2425,after,preposition,,too_mod,both,Something was too after.,,,0.047529
-2435,after,preposition,,postpositive,judgment,The something after happened.,note_postpositive,,0.047529
-2444,after,preposition,,become_complement,both,Something became after.,,,0.047529
-2452,against,preposition,,right_mod,judgment,Something was right against.,,,0.047529
-2465,against,preposition,,ly_adverb_base,both,Something happened against+ly.,,morphology+ly,0.047529
-2526,apropos,preposition,,enough_preposed,judgment,Something was enough apropos.,,,0.047529
-2534,apropos,preposition,,fused_head,both,Someone saw apropos.,,,0.047529
-2548,around,preposition,,right_mod,judgment,Something was right around.,,,0.047529
-2552,around,preposition,,gerund_gap_complement,judgment,Something was around doing.,,,0.047529
-2570,before,preposition,,comparative_more,both,Something was more before than something else.,,,0.047529
-2585,before,preposition,,ly_adverb_base,both,Something happened before+ly.,,morphology+ly,0.047529
-2588,before,preposition,,become_complement,both,Something became before.,,,0.047529
-2641,beneath,preposition,,too_mod,both,Something was too beneath.,,,0.047529
-2666,besides,preposition,,comparative_more,both,Something was more besides than something else.,,,0.047529
-2677,besides,preposition,,determiner_function,both,Besides something happened.,,,0.047529
-2698,between,preposition,,predicative_be,both,Something was between.,,,0.047529
-2726,beyond,preposition,,fused_head,both,Someone saw beyond.,,,0.047529
-2787,for,preposition,,inflectional_comparison,both,Something was for+er than something else.,,morphology+er,0.047529
-2791,for,preposition,,np_complement,both,Something was for something.,,,0.047529
-2832,inside,preposition,,very_mod,both,Something was very inside.,,,0.047529
-2837,inside,preposition,,enough_postposed,judgment,Something was inside enough.,,,0.047529
-2839,inside,preposition,,np_complement,both,Something was inside something.,,,0.047529
-2847,inside,preposition,,partitive_of,both,Inside of the somethings happened.,,,0.047529
-2888,off,preposition,,gerund_gap_complement,judgment,Something was off doing.,,,0.047529
-2903,off,preposition,,stranding,judgment,The something that something was off __,,,0.047529
-2945,opposite,preposition,,ly_adverb_base,both,Something happened opposite+ly.,,morphology+ly,0.047529
-2958,outside,preposition,,enough_preposed,judgment,Something was enough outside.,,,0.047529
-2968,outside,preposition,,un_prefix,both,Something was unoutside.,orthographic_un,,0.047529
-2969,outside,preposition,,ly_adverb_base,both,Something happened outside+ly.,,morphology+ly,0.047529
-2972,outside,preposition,,become_complement,both,Something became outside.,,,0.047529
-3013,past,preposition,,determiner_function,both,Past something happened.,,,0.047529
-3024,round,preposition,,very_mod,both,Something was very round.,,,0.047529
-3043,round,preposition,,seem_complement,both,Something seemed round.,,,0.047529
-3093,through,preposition,,coordination_with_adj,judgment,Something was old and through.,,,0.047529
-3122,to,preposition,,comparative_more,both,Something was more to than something else.,,,0.047529
-3126,to,preposition,,enough_preposed,judgment,Something was enough to.,,,0.047529
-3127,to,preposition,,np_complement,both,Something was to something.,,,0.047529
-3177,underneath,preposition,,attributive,both,The underneath something happened.,,,0.047529
-3204,up,preposition,,predeterminer_position,both,Up the something happened.,,,0.047529
-3209,up,preposition,,ly_adverb_base,both,Something happened up+ly.,,morphology+ly,0.047529
-3240,without,preposition,,very_mod,both,Something was very without.,,,0.047529
-3352,concerning,preposition,,un_prefix,both,Something was unconcerning.,orthographic_un,,0.047529
-3379,counting,preposition,,seem_complement,both,Something seemed counting.,,,0.047529
-3407,excepting,preposition,,stranding,judgment,The something that something was excepting __,,,0.047529
-3445,failing,preposition,,determiner_function,both,Failing something happened.,,,0.047529
-3457,following,preposition,,too_mod,both,Something was too following.,,,0.047529
-3463,following,preposition,,np_complement,both,Something was following something.,,,0.047529
-3483,including,preposition,,inflectional_comparison,both,Something was including+er than something else.,,morphology+er,0.047529
-3491,including,preposition,,postpositive,judgment,The something including happened.,note_postpositive,,0.047529
-3492,including,preposition,,predeterminer_position,both,Including the something happened.,,,0.047529
-3527,owing,preposition,,stranding,judgment,The something that something was owing __,,,0.047529
-3545,pertaining,preposition,,ly_adverb_base,both,Something happened pertaining+ly.,,morphology+ly,0.047529
-3548,pertaining,preposition,,become_complement,both,Something became pertaining.,,,0.047529
-3564,regarding,preposition,,predeterminer_position,both,Regarding the something happened.,,,0.047529
-3610,saving,preposition,,predicative_be,both,Something was saving.,,,0.047529
-3622,saving,preposition,,fronting_pp,judgment,"Saving something, something happened.",,,0.047529
-3653,wanting,preposition,,enough_postposed,judgment,Something was wanting enough.,,,0.047529
-3678,given,preposition,,enough_preposed,judgment,Something was enough given.,,,0.047529
-3704,gone,preposition,,gerund_gap_complement,judgment,Something was gone doing.,,,0.047529
-3720,granted,preposition,,very_mod,both,Something was very granted.,,,0.047529
-3726,granted,preposition,,enough_preposed,judgment,Something was enough granted.,,,0.047529
-3736,granted,preposition,,un_prefix,both,Something was ungranted.,orthographic_un,,0.047529
-3799,seeing,preposition,,np_complement,both,Something was seeing something.,,,0.047529
-3818,during,preposition,,comparative_more,both,Something was more during than something else.,,,0.047529
-3831,during,preposition,,partitive_of,both,During of the somethings happened.,,,0.047529
-3858,pending,preposition,,ness_nominalization,both,The pending+ness of something.,,morphology+ness,0.047529
-3882,now,preposition,,ness_nominalization,both,The now+ness of something.,,morphology+ness,0.047529
-3901,then,preposition,,determiner_function,both,Then something happened.,,,0.047529
-3974,beforehand,preposition,,fused_head,both,Someone saw beforehand.,,,0.047529
-4026,thenceforth,preposition,,ness_nominalization,both,The thenceforth+ness of something.,,morphology+ness,0.047529
-4036,abroad,preposition,,right_mod,judgment,Something was right abroad.,,,0.047529
-4091,adrift,preposition,,postpositive,judgment,The something adrift happened.,note_postpositive,,0.047529
-4118,aground,preposition,,fused_head,both,Someone saw aground.,,,0.047529
-4142,ahead,preposition,,fused_head,both,Someone saw ahead.,,,0.047529
-4165,aloft,preposition,,determiner_function,both,Aloft something happened.,,,0.047529
-4179,apart,preposition,,inflectional_comparison,both,Something was apart+er than something else.,,morphology+er,0.047529
-4201,ashore,preposition,,too_mod,both,Something was too ashore.,,,0.047529
-4239,aside,preposition,,partitive_of,both,Aside of the somethings happened.,,,0.047529
-4243,aside,preposition,,seem_complement,both,Something seemed aside.,,,0.047529
-4250,away,preposition,,comparative_more,both,Something was more away than something else.,,,0.047529
-4291,aft,preposition,,seem_complement,both,Something seemed aft.,,,0.047529
-4309,back,preposition,,determiner_function,both,Back something happened.,,,0.047529
-4317,back,preposition,,coordination_with_adj,judgment,Something was old and back.,,,0.047529
-4341,forth,preposition,,coordination_with_adj,judgment,Something was old and forth.,,,0.047529
-4364,home,preposition,,become_complement,both,Something became home.,,,0.047529
-4376,together,preposition,,gerund_gap_complement,judgment,Something was together doing.,,,0.047529
-4390,together,preposition,,fronting_pp,judgment,"Together something, something happened.",,,0.047529
-4492,hereof,preposition,,right_mod,judgment,Something was right hereof.,,,0.047529
-4498,hereof,preposition,,predicative_be,both,Something was hereof.,,,0.047529
-4515,hereon,preposition,,inflectional_comparison,both,Something was hereon+er than something else.,,morphology+er,0.047529
-4529,hereon,preposition,,ly_adverb_base,both,Something happened hereon+ly.,,morphology+ly,0.047529
-4561,herewith,preposition,,too_mod,both,Something was too herewith.,,,0.047529
-4569,herewith,preposition,,attributive,both,The herewith something happened.,,,0.047529
-4600,thereat,preposition,,un_prefix,both,Something was unthereat.,orthographic_un,,0.047529
-4604,thereat,preposition,,become_complement,both,Something became thereat.,,,0.047529
-4608,thereby,preposition,,very_mod,both,Something was very thereby.,,,0.047529
-4646,therefrom,preposition,,fused_head,both,Someone saw therefrom.,,,0.047529
-4658,therein,preposition,,comparative_more,both,Something was more therein than something else.,,,0.047529
-4679,therein,preposition,,stranding,judgment,The something that something was therein __,,,0.047529
-4705,thereon,preposition,,too_mod,both,Something was too thereon.,,,0.047529
-4708,thereon,preposition,,right_mod,judgment,Something was right thereon.,,,0.047529
-4800,whereby,preposition,,very_mod,both,Something was very whereby.,,,0.047529
-4833,wherefrom,preposition,,attributive,both,The wherefrom something happened.,,,0.047529
-4892,whereof,preposition,,become_complement,both,Something became whereof.,,,0.047529
-4919,whereon,preposition,,stranding,judgment,The something that something was whereon __,,,0.047529
-4930,whereto,preposition,,predicative_be,both,Something was whereto.,,,0.047529
-4932,whereto,preposition,,predeterminer_position,both,Whereto the something happened.,,,0.047529
-4933,whereto,preposition,,determiner_function,both,Whereto something happened.,,,0.047529
-4945,wherewith,preposition,,too_mod,both,Something was too wherewith.,,,0.047529
-4959,wherewith,preposition,,partitive_of,both,Wherewith of the somethings happened.,,,0.047529
-4962,wherewith,preposition,,ness_nominalization,both,The wherewith+ness of something.,,morphology+ness,0.047529
-4983,hereabouts,preposition,,partitive_of,both,Hereabouts of the somethings happened.,,,0.047529
-5000,thereabouts,preposition,,gerund_gap_complement,judgment,Something was thereabouts doing.,,,0.047529
-5007,thereabouts,preposition,,partitive_of,both,Thereabouts of the somethings happened.,,,0.047529
-5019,whereabouts,preposition,,inflectional_comparison,both,Something was whereabouts+er than something else.,,morphology+er,0.047529
-5032,whereabouts,preposition,,un_prefix,both,Something was unwhereabouts.,orthographic_un,,0.047529
-5045,here,preposition,,enough_postposed,judgment,Something was here enough.,,,0.047529
-5062,here,preposition,,fronting_pp,judgment,"Here something, something happened.",,,0.047529
-5101,where,preposition,,determiner_function,both,Where something happened.,,,0.047529
-5127,hence,preposition,,partitive_of,both,Hence of the somethings happened.,,,0.047529
-5163,whence,preposition,,inflectional_comparison,both,Something was whence+er than something else.,,morphology+er,0.047529
-5182,whence,preposition,,fronting_pp,judgment,"Whence something, something happened.",,,0.047529
-5191,east,preposition,,np_complement,both,Something was east something.,,,0.047529
-5259,west,preposition,,inflectional_comparison,both,Something was west+er than something else.,,morphology+er,0.047529
-5268,west,preposition,,predeterminer_position,both,West the something happened.,,,0.047529
-5288,downhill,preposition,,gerund_gap_complement,judgment,Something was downhill doing.,,,0.047529
-5361,downstream,preposition,,attributive,both,The downstream something happened.,,,0.047529
-5371,downstream,preposition,,seem_complement,both,Something seemed downstream.,,,0.047529
-5373,downstream,preposition,,coordination_with_adj,judgment,Something was old and downstream.,,,0.047529
-5375,downstream,preposition,,stranding,judgment,The something that something was downstream __,,,0.047529
-5446,upstage,preposition,,fronting_pp,judgment,"Upstage something, something happened.",,,0.047529
-5497,upwind,preposition,,too_mod,both,Something was too upwind.,,,0.047529
-5521,indoors,preposition,,too_mod,both,Something was too indoors.,,,0.047529
-5524,indoors,preposition,,right_mod,judgment,Something was right indoors.,,,0.047529
-5532,indoors,preposition,,predeterminer_position,both,Indoors the something happened.,,,0.047529
-5550,outdoors,preposition,,enough_preposed,judgment,Something was enough outdoors.,,,0.047529
-5650,overseas,preposition,,predicative_be,both,Something was overseas.,,,0.047529
-5655,overseas,preposition,,partitive_of,both,Overseas of the somethings happened.,,,0.047529
-5672,underfoot,preposition,,gerund_gap_complement,judgment,Something was underfoot doing.,,,0.047529
-5684,underfoot,preposition,,become_complement,both,Something became underfoot.,,,0.047529
-5761,eastward,preposition,,too_mod,both,Something was too eastward.,,,0.047529
-5791,forward,preposition,,np_complement,both,Something was forward something.,,,0.047529
-5796,forward,preposition,,predeterminer_position,both,Forward the something happened.,,,0.047529
-5804,forward,preposition,,become_complement,both,Something became forward.,,,0.047529
-5830,heavenward,preposition,,fronting_pp,judgment,"Heavenward something, something happened.",,,0.047529
-5833,homeward,preposition,,too_mod,both,Something was too homeward.,,,0.047529
-5841,homeward,preposition,,attributive,both,The homeward something happened.,,,0.047529
-5858,inward,preposition,,comparative_more,both,Something was more inward than something else.,,,0.047529
-5859,inward,preposition,,inflectional_comparison,both,Something was inward+er than something else.,,morphology+er,0.047529
-5892,leftward,preposition,,predeterminer_position,both,Leftward the something happened.,,,0.047529
-5897,leftward,preposition,,ly_adverb_base,both,Something happened leftward+ly.,,morphology+ly,0.047529
-5912,northward,preposition,,gerund_gap_complement,judgment,Something was northward doing.,,,0.047529
-5919,northward,preposition,,partitive_of,both,Northward of the somethings happened.,,,0.047529
-5962,outward,preposition,,predicative_be,both,Something was outward.,,,0.047529
-5968,outward,preposition,,un_prefix,both,Something was unoutward.,orthographic_un,,0.047529
-5972,outward,preposition,,become_complement,both,Something became outward.,,,0.047529
-5998,rightward,preposition,,fronting_pp,judgment,"Rightward something, something happened.",,,0.047529
-6002,seaward,preposition,,comparative_more,both,Something was more seaward than something else.,,,0.047529
-6014,seaward,preposition,,fused_head,both,Someone saw seaward.,,,0.047529
-6044,skyward,preposition,,become_complement,both,Something became skyward.,,,0.047529
-6049,southward,preposition,,too_mod,both,Something was too southward.,,,0.047529
-6071,southward,preposition,,stranding,judgment,The something that something was southward __,,,0.047529
-6077,upward,preposition,,enough_postposed,judgment,Something was upward enough.,,,0.047529
-6084,upward,preposition,,predeterminer_position,both,Upward the something happened.,,,0.047529
-6124,special,adjective,,right_mod,judgment,Something was right special.,,,0.047529
-6137,special,adjective,,ly_adverb_base,both,Something happened special+ly.,,morphology+ly,0.047529
-6142,special,adjective,,fronting_pp,judgment,"Special something, something happened.",,,0.047529
-6144,public,adjective,,very_mod,both,Something was very public.,,,0.047529
-6165,public,adjective,,coordination_with_adj,judgment,Something was old and public.,,,0.047529
-6168,sure,adjective,,very_mod,both,Something was very sure.,,,0.047529
-6169,sure,adjective,,too_mod,both,Something was too sure.,,,0.047529
-6201,third,adjective,,attributive,both,The third something happened.,,,0.047529
-6205,third,adjective,,determiner_function,both,Third something happened.,,,0.047529
-6265,funny,adjective,,too_mod,both,Something was too funny.,,,0.047529
-6299,european,adjective,,postpositive,judgment,The something european happened.,note_postpositive,,0.047529
-6301,european,adjective,,determiner_function,both,European something happened.,,,0.047529
-6314,welcome,adjective,,comparative_more,both,Something was more welcome than something else.,,,0.047529
-6369,correct,adjective,,attributive,both,The correct something happened.,,,0.047529
-6384,simple,adjective,,very_mod,both,Something was very simple.,,,0.047529
-6403,simple,adjective,,seem_complement,both,Something seemed simple.,,,0.047529
-6406,simple,adjective,,fronting_pp,judgment,"Simple something, something happened.",,,0.047529
-6411,extra,adjective,,inflectional_comparison,both,Something was extra+er than something else.,,morphology+er,0.047529
-6412,extra,adjective,,right_mod,judgment,Something was right extra.,,,0.047529
-6418,extra,adjective,,predicative_be,both,Something was extra.,,,0.047529
-6451,biggest,adjective,,seem_complement,both,Something seemed biggest.,,,0.047529
-6479,hard,adjective,,stranding,judgment,The something that something was hard __,,,0.047529
-6481,british,adjective,,too_mod,both,Something was too british.,,,0.047529
-6493,british,adjective,,determiner_function,both,British something happened.,,,0.047529
-6506,top,adjective,,comparative_more,both,Something was more top than something else.,,,0.047529
-6547,scottish,adjective,,seem_complement,both,Something seemed scottish.,,,0.047529
-6560,good,adjective,,gerund_gap_complement,judgment,Something was good doing.,,,0.047529
-6568,good,adjective,,un_prefix,both,Something was ungood.,orthographic_un,,0.047529
-6608,old,adjective,,gerund_gap_complement,judgment,Something was old doing.,,,0.047529
-6620,old,adjective,,become_complement,both,Something became old.,,,0.047529
-6691,real,adjective,,seem_complement,both,Something seemed real.,,,0.047529
-6731,bigger,adjective,,postpositive,judgment,The something bigger happened.,note_postpositive,,0.047529
-6748,wonderful,adjective,,right_mod,judgment,Something was right wonderful.,,,0.047529
-6750,wonderful,adjective,,enough_preposed,judgment,Something was enough wonderful.,,,0.047529
-6799,brilliant,adjective,,np_complement,both,Something was brilliant something.,,,0.047529
-6802,brilliant,adjective,,predicative_be,both,Something was brilliant.,,,0.047529
-6842,blue,adjective,,comparative_more,both,Something was more blue than something else.,,,0.047529
-6856,blue,adjective,,un_prefix,both,Something was unblue.,orthographic_un,,0.047529
-6916,long,adjective,,right_mod,judgment,Something was right long.,,,0.047529
-6930,long,adjective,,ness_nominalization,both,The long+ness of something.,,morphology+ness,0.047529
-6945,safe,adjective,,attributive,both,The safe something happened.,,,0.047529
-6988,red,adjective,,right_mod,judgment,Something was right red.,,,0.047529
-6996,red,adjective,,predeterminer_position,both,Red the something happened.,,,0.047529
-7004,red,adjective,,become_complement,both,Something became red.,,,0.047529
-7007,red,adjective,,stranding,judgment,The something that something was red __,,,0.047529
-7029,fair,adjective,,coordination_with_adj,judgment,Something was old and fair.,,,0.047529
-7050,large,adjective,,ness_nominalization,both,The large+ness of something.,,morphology+ness,0.047529
-7054,large,adjective,,fronting_pp,judgment,"Large something, something happened.",,,0.047529
-7089,able,adjective,,attributive,both,The able something happened.,,,0.047529
-7108,favourite,adjective,,right_mod,judgment,Something was right favourite.,,,0.047529
-7114,favourite,adjective,,predicative_be,both,Something was favourite.,,,0.047529
-7115,favourite,adjective,,postpositive,judgment,The something favourite happened.,note_postpositive,,0.047529
-7127,favourite,adjective,,stranding,judgment,The something that something was favourite __,,,0.047529
-7149,great,adjective,,coordination_with_adj,judgment,Something was old and great.,,,0.047529
-7188,happy,adjective,,predeterminer_position,both,Happy the something happened.,,,0.047529
-7223,french,adjective,,stranding,judgment,The something that something was french __,,,0.047529
-7245,major,adjective,,coordination_with_adj,judgment,Something was old and major.,,,0.047529
-7247,major,adjective,,stranding,judgment,The something that something was major __,,,0.047529
-7251,full,adjective,,inflectional_comparison,both,Something was full+er than something else.,,morphology+er,0.047529
-7260,full,adjective,,predeterminer_position,both,Full the something happened.,,,0.047529
-7283,soft,adjective,,postpositive,judgment,The something soft happened.,note_postpositive,,0.047529
-7314,damp,adjective,,ness_nominalization,both,The damp+ness of something.,,morphology+ness,0.047529
-7351,historical,adjective,,np_complement,both,Something was historical something.,,,0.047529
-7411,tart,adjective,,seem_complement,both,Something seemed tart.,,,0.047529
-7439,upset,adjective,,stranding,judgment,The something that something was upset __,,,0.047529
-7461,regular,adjective,,coordination_with_adj,judgment,Something was old and regular.,,,0.047529
-7501,strongest,adjective,,determiner_function,both,Strongest something happened.,,,0.047529
-7569,asian,adjective,,attributive,both,The asian something happened.,,,0.047529
-7611,complete,adjective,,inflectional_comparison,both,Something was complete+er than something else.,,morphology+er,0.047529
-7612,complete,adjective,,right_mod,judgment,Something was right complete.,,,0.047529
-7613,complete,adjective,,enough_postposed,judgment,Something was complete enough.,,,0.047529
-7639,unlikely,adjective,,np_complement,both,Something was unlikely something.,,,0.047529
-7710,sunny,adjective,,enough_preposed,judgment,Something was enough sunny.,,,0.047529
-7714,sunny,adjective,,predicative_be,both,Something was sunny.,,,0.047529
-7717,sunny,adjective,,determiner_function,both,Sunny something happened.,,,0.047529
-7719,sunny,adjective,,partitive_of,both,Sunny of the somethings happened.,,,0.047529
-7724,sunny,adjective,,become_complement,both,Something became sunny.,,,0.047529
-7728,quiet,adjective,,very_mod,both,Something was very quiet.,,,0.047529
-7781,warmer,adjective,,enough_postposed,judgment,Something was warmer enough.,,,0.047529
-7790,warmer,adjective,,fused_head,both,Someone saw warmer.,,,0.047529
-7803,ill,adjective,,inflectional_comparison,both,Something was ill+er than something else.,,morphology+er,0.047529
-7809,ill,adjective,,attributive,both,The ill something happened.,,,0.047529
-7835,spare,adjective,,postpositive,judgment,The something spare happened.,note_postpositive,,0.047529
-7851,splendid,adjective,,inflectional_comparison,both,Something was splendid+er than something else.,,morphology+er,0.047529
-7853,splendid,adjective,,enough_postposed,judgment,Something was splendid enough.,,,0.047529
-7864,splendid,adjective,,un_prefix,both,Something was unsplendid.,orthographic_un,,0.047529
-7922,annoyed,adjective,,comparative_more,both,Something was more annoyed than something else.,,,0.047529
-7928,annoyed,adjective,,gerund_gap_complement,judgment,Something was annoyed doing.,,,0.047529
-7984,painful,adjective,,un_prefix,both,Something was unpainful.,orthographic_un,,0.047529
-7988,painful,adjective,,become_complement,both,Something became painful.,,,0.047529
-7999,cosy,adjective,,np_complement,both,Something was cosy something.,,,0.047529
-8060,random,adjective,,become_complement,both,Something became random.,,,0.047529
-8109,funeral,adjective,,coordination_with_adj,judgment,Something was old and funeral.,,,0.047529
-8114,spinning,adjective,,comparative_more,both,Something was more spinning than something else.,,,0.047529
-8180,rich,adjective,,become_complement,both,Something became rich.,,,0.047529
-8191,healthy,adjective,,np_complement,both,Something was healthy something.,,,0.047529
-8209,astonishing,adjective,,too_mod,both,Something was too astonishing.,,,0.047529
-8231,astonishing,adjective,,stranding,judgment,The something that something was astonishing __,,,0.047529
-8306,fifth,adjective,,comparative_more,both,Something was more fifth than something else.,,,0.047529
-8315,fifth,adjective,,postpositive,judgment,The something fifth happened.,note_postpositive,,0.047529
-8316,fifth,adjective,,predeterminer_position,both,Fifth the something happened.,,,0.047529
-8321,fifth,adjective,,ly_adverb_base,both,Something happened fifth+ly.,,morphology+ly,0.047529
-8327,fifth,adjective,,stranding,judgment,The something that something was fifth __,,,0.047529
-8343,vulnerable,adjective,,partitive_of,both,Vulnerable of the somethings happened.,,,0.047529
-8364,fat,adjective,,predeterminer_position,both,Fat the something happened.,,,0.047529
-8421,vast,adjective,,coordination_with_adj,judgment,Something was old and vast.,,,0.047529
-8441,medical,adjective,,ly_adverb_base,both,Something happened medical+ly.,,morphology+ly,0.047529
-8459,embarrassed,adjective,,postpositive,judgment,The something embarrassed happened.,note_postpositive,,0.047529
-8486,unique,adjective,,fused_head,both,Someone saw unique.,,,0.047529
-8500,previous,adjective,,right_mod,judgment,Something was right previous.,,,0.047529
-8538,everyday,adjective,,ness_nominalization,both,The everyday+ness of something.,,morphology+ness,0.047529
-8555,tasty,adjective,,postpositive,judgment,The something tasty happened.,note_postpositive,,0.047529
-8579,lazy,adjective,,postpositive,judgment,The something lazy happened.,note_postpositive,,0.047529
-8606,spoilt,adjective,,fused_head,both,Someone saw spoilt.,,,0.047529
-8615,spoilt,adjective,,stranding,judgment,The something that something was spoilt __,,,0.047529
-8631,stray,adjective,,partitive_of,both,Stray of the somethings happened.,,,0.047529
-8675,emotive,adjective,,postpositive,judgment,The something emotive happened.,note_postpositive,,0.047529
-8714,integral,adjective,,comparative_more,both,Something was more integral than something else.,,,0.047529
-8726,integral,adjective,,fused_head,both,Someone saw integral.,,,0.047529
-8739,nigh,adjective,,inflectional_comparison,both,Something was nigh+er than something else.,,morphology+er,0.047529
-8749,nigh,adjective,,determiner_function,both,Nigh something happened.,,,0.047529
-8769,endemic,adjective,,attributive,both,The endemic something happened.,,,0.047529
-8821,dissident,adjective,,determiner_function,both,Dissident something happened.,,,0.047529
-8825,dissident,adjective,,ly_adverb_base,both,Something happened dissident+ly.,,morphology+ly,0.047529
-8839,excessive,adjective,,np_complement,both,Something was excessive something.,,,0.047529
-8876,orphan,adjective,,become_complement,both,Something became orphan.,,,0.047529
-8888,unharmed,adjective,,gerund_gap_complement,judgment,Something was unharmed doing.,,,0.047529
-8897,unharmed,adjective,,ly_adverb_base,both,Something happened unharmed+ly.,,morphology+ly,0.047529
-8907,watery,adjective,,inflectional_comparison,both,Something was watery+er than something else.,,morphology+er,0.047529
-8921,watery,adjective,,ly_adverb_base,both,Something happened watery+ly.,,morphology+ly,0.047529
-8925,watery,adjective,,coordination_with_adj,judgment,Something was old and watery.,,,0.047529
-8935,sectarian,adjective,,np_complement,both,Something was sectarian something.,,,0.047529
-8936,sectarian,adjective,,gerund_gap_complement,judgment,Something was sectarian doing.,,,0.047529
-8943,sectarian,adjective,,partitive_of,both,Sectarian of the somethings happened.,,,0.047529
-8948,sectarian,adjective,,become_complement,both,Something became sectarian.,,,0.047529
-8975,famed,adjective,,stranding,judgment,The something that something was famed __,,,0.047529
-8980,aquatic,adjective,,right_mod,judgment,Something was right aquatic.,,,0.047529
-8994,aquatic,adjective,,ness_nominalization,both,The aquatic+ness of something.,,morphology+ness,0.047529
-9010,renewable,adjective,,predicative_be,both,Something was renewable.,,,0.047529
-9059,low-paid,adjective,,postpositive,judgment,The something low-paid happened.,note_postpositive,,0.047529
-9066,low-paid,adjective,,ness_nominalization,both,The low-paid+ness of something.,,morphology+ness,0.047529
-9068,low-paid,adjective,,become_complement,both,Something became low-paid.,,,0.047529
-9146,sedate,adjective,,comparative_more,both,Something was more sedate than something else.,,,0.047529
-9148,sedate,adjective,,right_mod,judgment,Something was right sedate.,,,0.047529
-9158,sedate,adjective,,fused_head,both,Someone saw sedate.,,,0.047529
-9169,top-notch,adjective,,too_mod,both,Something was too top-notch.,,,0.047529
-9187,top-notch,adjective,,seem_complement,both,Something seemed top-notch.,,,0.047529
-9237,milder,adjective,,coordination_with_adj,judgment,Something was old and milder.,,,0.047529
-9248,self-sufficient,adjective,,gerund_gap_complement,judgment,Something was self-sufficient doing.,,,0.047529
-9265,narrower,adjective,,too_mod,both,Something was too narrower.,,,0.047529
-9268,narrower,adjective,,right_mod,judgment,Something was right narrower.,,,0.047529
-9271,narrower,adjective,,np_complement,both,Something was narrower something.,,,0.047529
-9288,persuasive,adjective,,very_mod,both,Something was very persuasive.,,,0.047529
-9352,digestive,adjective,,un_prefix,both,Something was undigestive.,orthographic_un,,0.047529
-9418,fast-moving,adjective,,predicative_be,both,Something was fast-moving.,,,0.047529
-9424,fast-moving,adjective,,un_prefix,both,Something was unfast-moving.,orthographic_un,,0.047529
-9453,missionary,adjective,,coordination_with_adj,judgment,Something was old and missionary.,,,0.047529
-9472,probable,adjective,,un_prefix,both,Something was unprobable.,orthographic_un,,0.047529
-9499,mythical,adjective,,seem_complement,both,Something seemed mythical.,,,0.047529
-9552,customary,adjective,,very_mod,both,Something was very customary.,,,0.047529
-9555,customary,adjective,,inflectional_comparison,both,Something was customary+er than something else.,,morphology+er,0.047529
-9556,customary,adjective,,right_mod,judgment,Something was right customary.,,,0.047529
-9615,distressing,adjective,,partitive_of,both,Distressing of the somethings happened.,,,0.047529
-9641,wishful,adjective,,ly_adverb_base,both,Something happened wishful+ly.,,morphology+ly,0.047529
-9660,compelling,adjective,,predeterminer_position,both,Compelling the something happened.,,,0.047529
-9691,phoney,adjective,,seem_complement,both,Something seemed phoney.,,,0.047529
-9697,disused,adjective,,too_mod,both,Something was too disused.,,,0.047529
-9701,disused,adjective,,enough_postposed,judgment,Something was disused enough.,,,0.047529
-9719,disused,adjective,,stranding,judgment,The something that something was disused __,,,0.047529
-9723,unhealthy,adjective,,inflectional_comparison,both,Something was unhealthy+er than something else.,,morphology+er,0.047529
-9730,unhealthy,adjective,,predicative_be,both,Something was unhealthy.,,,0.047529
-9741,unhealthy,adjective,,coordination_with_adj,judgment,Something was old and unhealthy.,,,0.047529
-9743,unhealthy,adjective,,stranding,judgment,The something that something was unhealthy __,,,0.047529
-9777,sole,adjective,,attributive,both,The sole something happened.,,,0.047529
-9820,repetitive,adjective,,right_mod,judgment,Something was right repetitive.,,,0.047529
-9852,evocative,adjective,,predeterminer_position,both,Evocative the something happened.,,,0.047529
-9861,evocative,adjective,,coordination_with_adj,judgment,Something was old and evocative.,,,0.047529
-9889,satirical,adjective,,too_mod,both,Something was too satirical.,,,0.047529
-9907,satirical,adjective,,seem_complement,both,Something seemed satirical.,,,0.047529
-9934,reedy,adjective,,fronting_pp,judgment,"Reedy something, something happened.",,,0.047529
-9959,intemperate,adjective,,stranding,judgment,The something that something was intemperate __,,,0.047529
-10004,aromatherapy,adjective,,become_complement,both,Something became aromatherapy.,,,0.047529
-10050,pallid,adjective,,ness_nominalization,both,The pallid+ness of something.,,morphology+ness,0.047529
-10070,spinny,adjective,,fused_head,both,Someone saw spinny.,,,0.047529
-10091,groundnut,adjective,,postpositive,judgment,The something groundnut happened.,note_postpositive,,0.047529
-10093,groundnut,adjective,,determiner_function,both,Groundnut something happened.,,,0.047529
-10097,groundnut,adjective,,ly_adverb_base,both,Something happened groundnut+ly.,,morphology+ly,0.047529
-10099,groundnut,adjective,,seem_complement,both,Something seemed groundnut.,,,0.047529
-10100,groundnut,adjective,,become_complement,both,Something became groundnut.,,,0.047529
-10147,unannounced,adjective,,seem_complement,both,Something seemed unannounced.,,,0.047529
-10164,ephemeral,adjective,,predeterminer_position,both,Ephemeral the something happened.,,,0.047529
-10173,ephemeral,adjective,,coordination_with_adj,judgment,Something was old and ephemeral.,,,0.047529
-10214,bouffant,adjective,,fused_head,both,Someone saw bouffant.,,,0.047529
-10215,bouffant,adjective,,partitive_of,both,Bouffant of the somethings happened.,,,0.047529
-10227,emotionless,adjective,,inflectional_comparison,both,Something was emotionless+er than something else.,,morphology+er,0.047529
-10236,emotionless,adjective,,predeterminer_position,both,Emotionless the something happened.,,,0.047529
-10249,intermediate,adjective,,too_mod,both,Something was too intermediate.,,,0.047529
-10257,intermediate,adjective,,attributive,both,The intermediate something happened.,,,0.047529
-10272,retentive,adjective,,very_mod,both,Something was very retentive.,,,0.047529
-10300,balmy,adjective,,right_mod,judgment,Something was right balmy.,,,0.047529
-10322,laborious,adjective,,comparative_more,both,Something was more laborious than something else.,,,0.047529
-10376,ebullient,adjective,,gerund_gap_complement,judgment,Something was ebullient doing.,,,0.047529
-10381,ebullient,adjective,,determiner_function,both,Ebullient something happened.,,,0.047529
-10387,ebullient,adjective,,seem_complement,both,Something seemed ebullient.,,,0.047529
-10397,choosy,adjective,,enough_postposed,judgment,Something was choosy enough.,,,0.047529
-10399,choosy,adjective,,np_complement,both,Something was choosy something.,,,0.047529
-10401,choosy,adjective,,attributive,both,The choosy something happened.,,,0.047529
-10408,choosy,adjective,,un_prefix,both,Something was unchoosy.,orthographic_un,,0.047529
-10421,carbonic,adjective,,enough_postposed,judgment,Something was carbonic enough.,,,0.047529
-10424,carbonic,adjective,,gerund_gap_complement,judgment,Something was carbonic doing.,,,0.047529
-10451,truest,adjective,,postpositive,judgment,The something truest happened.,note_postpositive,,0.047529
-10459,truest,adjective,,seem_complement,both,Something seemed truest.,,,0.047529
-10504,righthand,adjective,,un_prefix,both,Something was unrighthand.,orthographic_un,,0.047529
-10530,veritable,adjective,,ness_nominalization,both,The veritable+ness of something.,,morphology+ness,0.047529
-10546,broody,adjective,,predicative_be,both,Something was broody.,,,0.047529
-10619,dooby,adjective,,postpositive,judgment,The something dooby happened.,note_postpositive,,0.047529
-10624,dooby,adjective,,un_prefix,both,Something was undooby.,orthographic_un,,0.047529
-10631,dooby,adjective,,stranding,judgment,The something that something was dooby __,,,0.047529
-10639,stupidest,adjective,,np_complement,both,Something was stupidest something.,,,0.047529
-10646,stupidest,adjective,,fused_head,both,Someone saw stupidest.,,,0.047529
-10652,stupidest,adjective,,become_complement,both,Something became stupidest.,,,0.047529
-10678,gravest,adjective,,fronting_pp,judgment,"Gravest something, something happened.",,,0.047529
-10699,bothersome,adjective,,seem_complement,both,Something seemed bothersome.,,,0.047529
-10733,toasty,adjective,,enough_postposed,judgment,Something was toasty enough.,,,0.047529
-10745,toasty,adjective,,ly_adverb_base,both,Something happened toasty+ly.,,morphology+ly,0.047529
-10814,sinuous,adjective,,fused_head,both,Someone saw sinuous.,,,0.047529
-10824,chesty,adjective,,very_mod,both,Something was very chesty.,,,0.047529
-10868,half-past,adjective,,become_complement,both,Something became half-past.,,,0.047529
-10882,cutesy,adjective,,predicative_be,both,Something was cutesy.,,,0.047529
-10922,waxy,adjective,,comparative_more,both,Something was more waxy than something else.,,,0.047529
-10934,waxy,adjective,,fused_head,both,Someone saw waxy.,,,0.047529
-10974,drop-in,adjective,,enough_preposed,judgment,Something was enough drop-in.,,,0.047529
-11038,uninviting,adjective,,fronting_pp,judgment,"Uninviting something, something happened.",,,0.047529
-11043,in-house,adjective,,inflectional_comparison,both,Something was in-house+er than something else.,,morphology+er,0.047529
-11103,unfurnished,adjective,,partitive_of,both,Unfurnished of the somethings happened.,,,0.047529
-11129,compliant,adjective,,ly_adverb_base,both,Something happened compliant+ly.,,morphology+ly,0.047529
-11134,compliant,adjective,,fronting_pp,judgment,"Compliant something, something happened.",,,0.047529
-11153,crony,adjective,,ly_adverb_base,both,Something happened crony+ly.,,morphology+ly,0.047529
-11161,diminutive,adjective,,too_mod,both,Something was too diminutive.,,,0.047529
-11175,diminutive,adjective,,partitive_of,both,Diminutive of the somethings happened.,,,0.047529
-11202,distal,adjective,,ness_nominalization,both,The distal+ness of something.,,morphology+ness,0.047529
-11222,basic,blind,,fused_head,both,Someone saw basic.,,,0.047529
-11260,commentary,blind,,right_mod,judgment,Something was right commentary.,,,0.047529
-11261,commentary,blind,,enough_postposed,judgment,Something was commentary enough.,,,0.047529
-11268,commentary,blind,,predeterminer_position,both,Commentary the something happened.,,,0.047529
-11287,marion,blind,,np_complement,both,Something was marion something.,,,0.047529
-11334,ceremony,blind,,enough_preposed,judgment,Something was enough ceremony.,,,0.047529
-11341,ceremony,blind,,determiner_function,both,Ceremony something happened.,,,0.047529
-11343,ceremony,blind,,partitive_of,both,Ceremony of the somethings happened.,,,0.047529
-11381,loo,blind,,enough_postposed,judgment,Something was loo enough.,,,0.047529
-11405,pie,blind,,enough_postposed,judgment,Something was pie enough.,,,0.047529
-11429,wayne,blind,,enough_postposed,judgment,Something was wayne enough.,,,0.047529
-11432,wayne,blind,,gerund_gap_complement,judgment,Something was wayne doing.,,,0.047529
-11442,wayne,blind,,ness_nominalization,both,The wayne+ness of something.,,morphology+ness,0.047529
-11457,humble,blind,,attributive,both,The humble something happened.,,,0.047529
-11477,nil,blind,,enough_postposed,judgment,Something was nil enough.,,,0.047529
-11487,nil,blind,,partitive_of,both,Nil of the somethings happened.,,,0.047529
-11502,breasts,blind,,enough_preposed,judgment,Something was enough breasts.,,,0.047529
-11506,breasts,blind,,predicative_be,both,Something was breasts.,,,0.047529
-11515,breasts,blind,,seem_complement,both,Something seemed breasts.,,,0.047529
-11529,rehearsing,blind,,attributive,both,The rehearsing something happened.,,,0.047529
-11530,rehearsing,blind,,predicative_be,both,Something was rehearsing.,,,0.047529
-11533,rehearsing,blind,,determiner_function,both,Rehearsing something happened.,,,0.047529
-11540,rehearsing,blind,,become_complement,both,Something became rehearsing.,,,0.047529
-11594,sucking,blind,,comparative_more,both,Something was more sucking than something else.,,,0.047529
-11604,sucking,blind,,predeterminer_position,both,Sucking the something happened.,,,0.047529
-11609,sucking,blind,,ly_adverb_base,both,Something happened sucking+ly.,,morphology+ly,0.047529
-11610,sucking,blind,,ness_nominalization,both,The sucking+ness of something.,,morphology+ness,0.047529
-11622,shareholders,blind,,enough_preposed,judgment,Something was enough shareholders.,,,0.047529
-11627,shareholders,blind,,postpositive,judgment,The something shareholders happened.,note_postpositive,,0.047529
-11642,nearer,blind,,comparative_more,both,Something was more nearer than something else.,,,0.047529
-11651,nearer,blind,,postpositive,judgment,The something nearer happened.,note_postpositive,,0.047529
-11670,gloria,blind,,enough_preposed,judgment,Something was enough gloria.,,,0.047529
-11680,gloria,blind,,un_prefix,both,Something was ungloria.,orthographic_un,,0.047529
-11692,graduates,blind,,right_mod,judgment,Something was right graduates.,,,0.047529
-11721,maybe,blind,,attributive,both,The maybe something happened.,,,0.047529
-11732,maybe,blind,,become_complement,both,Something became maybe.,,,0.047529
-11737,veg,blind,,too_mod,both,Something was too veg.,,,0.047529
-11750,veg,blind,,fused_head,both,Someone saw veg.,,,0.047529
-11762,earning,blind,,comparative_more,both,Something was more earning than something else.,,,0.047529
-11763,earning,blind,,inflectional_comparison,both,Something was earning+er than something else.,,morphology+er,0.047529
-11789,trust,blind,,enough_postposed,judgment,Something was trust enough.,,,0.047529
-11792,trust,blind,,gerund_gap_complement,judgment,Something was trust doing.,,,0.047529
-11799,trust,blind,,partitive_of,both,Trust of the somethings happened.,,,0.047529
-11832,cardinal,blind,,very_mod,both,Something was very cardinal.,,,0.047529
-11854,cardinal,blind,,fronting_pp,judgment,"Cardinal something, something happened.",,,0.047529
-11876,chesterfield,blind,,become_complement,both,Something became chesterfield.,,,0.047529
-11881,staff,blind,,too_mod,both,Something was too staff.,,,0.047529
-11896,staff,blind,,un_prefix,both,Something was unstaff.,orthographic_un,,0.047529
-11914,victims,blind,,predicative_be,both,Something was victims.,,,0.047529
-11955,holyrood,blind,,inflectional_comparison,both,Something was holyrood+er than something else.,,morphology+er,0.047529
-11960,holyrood,blind,,gerund_gap_complement,judgment,Something was holyrood doing.,,,0.047529
-12018,disappear,blind,,ness_nominalization,both,The disappear+ness of something.,,morphology+ness,0.047529
-12021,disappear,blind,,coordination_with_adj,judgment,Something was old and disappear.,,,0.047529
-12026,effectively,blind,,comparative_more,both,Something was more effectively than something else.,,,0.047529
-12048,bare,blind,,very_mod,both,Something was very bare.,,,0.047529
-12074,dolphin,blind,,comparative_more,both,Something was more dolphin than something else.,,,0.047529
-12098,flower,blind,,comparative_more,both,Something was more flower than something else.,,,0.047529
-12117,flower,blind,,coordination_with_adj,judgment,Something was old and flower.,,,0.047529
-12125,destined,blind,,enough_postposed,judgment,Something was destined enough.,,,0.047529
-12170,structure,blind,,comparative_more,both,Something was more structure than something else.,,,0.047529
-12183,structure,blind,,partitive_of,both,Structure of the somethings happened.,,,0.047529
-12195,sword,blind,,inflectional_comparison,both,Something was sword+er than something else.,,morphology+er,0.047529
-12231,power,blind,,partitive_of,both,Power of the somethings happened.,,,0.047529
-12236,power,blind,,become_complement,both,Something became power.,,,0.047529
-12250,martyn,blind,,predicative_be,both,Something was martyn.,,,0.047529
-12267,itv,blind,,inflectional_comparison,both,Something was itv+er than something else.,,morphology+er,0.047529
-12297,notion,blind,,attributive,both,The notion something happened.,,,0.047529
-12328,matching,blind,,un_prefix,both,Something was unmatching.,orthographic_un,,0.047529
-12367,experts,blind,,np_complement,both,Something was experts something.,,,0.047529
-12369,experts,blind,,attributive,both,The experts something happened.,,,0.047529
-12435,baker,blind,,inflectional_comparison,both,Something was baker+er than something else.,,morphology+er,0.047529
-12448,baker,blind,,un_prefix,both,Something was unbaker.,orthographic_un,,0.047529
-12457,mixing,blind,,too_mod,both,Something was too mixing.,,,0.047529
-12459,mixing,blind,,inflectional_comparison,both,Something was mixing+er than something else.,,morphology+er,0.047529
-12469,mixing,blind,,determiner_function,both,Mixing something happened.,,,0.047529
-12471,mixing,blind,,partitive_of,both,Mixing of the somethings happened.,,,0.047529
-12488,basis,blind,,gerund_gap_complement,judgment,Something was basis doing.,,,0.047529
-12492,basis,blind,,predeterminer_position,both,Basis the something happened.,,,0.047529
-12496,basis,blind,,un_prefix,both,Something was unbasis.,orthographic_un,,0.047529
-12509,tales,blind,,enough_postposed,judgment,Something was tales enough.,,,0.047529
-12510,tales,blind,,enough_preposed,judgment,Something was enough tales.,,,0.047529
-12546,legend,blind,,ness_nominalization,both,The legend+ness of something.,,morphology+ness,0.047529
-12547,legend,blind,,seem_complement,both,Something seemed legend.,,,0.047529
-12551,legend,blind,,stranding,judgment,The something that something was legend __,,,0.047529
-12598,arguments,blind,,fronting_pp,judgment,"Arguments something, something happened.",,,0.047529
-12602,ipswich,blind,,comparative_more,both,Something was more ipswich than something else.,,,0.047529
-12618,ipswich,blind,,ness_nominalization,both,The ipswich+ness of something.,,morphology+ness,0.047529
+22,worth,boundary,,fronting_pp,judgment,"Worth something, something happened.",,,0.046729
+26,near,boundary,,comparative_more,both,Something was more near than something else.,,,0.046729
+60,like,boundary,,predeterminer_position,both,Like the something happened.,,,0.046729
+112,fun,boundary,,un_prefix,both,Something was unfun.,realized:un,,0.046729
+144,ablaze,boundary,,very_mod,both,Something was very ablaze.,,,0.046729
+190,asleep,boundary,,fronting_pp,judgment,"Asleep something, something happened.",,,0.046729
+252,less,boundary,,predeterminer_position,both,Less the something happened.,,,0.046729
+260,less,boundary,,become_complement,both,Something became less.,,,0.046729
+293,such,boundary,,enough_postposed,judgment,Something was such enough.,,,0.046729
+301,such,boundary,,determiner_function,both,Such something happened.,,,0.046729
+307,such,boundary,,seem_complement,both,Something seemed such.,,,0.046729
+316,own,boundary,,right_mod,judgment,Something was right own.,,,0.046729
+393,a,determinative,core2021,attributive,both,The a something happened.,,,0.046729
+406,a,determinative,core2021,fronting_pp,judgment,"A something, something happened.",,,0.046729
+440,a few,determinative,core2021,gerund_gap_complement,judgment,Something was a few doing.,,,0.046729
+470,a great many,determinative,core2021,fused_head,both,Someone saw a great many.,,,0.046729
+481,a little,determinative,core2021,too_mod,both,Something was too a little.,,,0.046729
+487,a little,determinative,core2021,np_complement,both,Something was a little something.,,,0.046729
+490,a little,determinative,core2021,predicative_be,both,Something was a little.,,,0.046729
+521,all,determinative,core2021,ly_adverb_base,both,Something happened ally.,realized:ly,,0.046729
+570,any,determinative,core2021,ness_nominalization,both,The aniness of something.,realized:ness,,0.046729
+576,anybody,determinative,core2021,very_mod,both,Something was very anybody.,,,0.046729
+625,anything,determinative,core2021,too_mod,both,Something was too anything.,,,0.046729
+641,anything,determinative,core2021,ly_adverb_base,both,Something happened anythingly.,realized:ly,,0.046729
+666,anywhere,determinative,core2021,ness_nominalization,both,The anywhereness of something.,realized:ness,,0.046729
+749,either,determinative,core2021,enough_postposed,judgment,Something was either enough.,,,0.046729
+750,either,determinative,core2021,enough_preposed,judgment,Something was enough either.,,,0.046729
+752,either,determinative,core2021,gerund_gap_complement,judgment,Something was either doing.,,,0.046729
+753,either,determinative,core2021,attributive,both,The either something happened.,,,0.046729
+789,every,determinative,core2021,coordination_with_adj,judgment,Something was old and every.,,,0.046729
+828,everyone,determinative,core2021,predeterminer_position,both,Everyone the something happened.,,,0.046729
+841,everything,determinative,core2021,too_mod,both,Something was too everything.,,,0.046729
+856,everything,determinative,core2021,un_prefix,both,Something was uneverything.,realized:un,,0.046729
+867,everywhere,determinative,core2021,inflectional_comparison,both,Something was everywherer than something else.,realized:comparative,,0.046729
+869,everywhere,determinative,core2021,enough_postposed,judgment,Something was everywhere enough.,,,0.046729
+881,everywhere,determinative,core2021,ly_adverb_base,both,Something happened everywherely.,realized:ly,,0.046729
+889,few,determinative,core2021,too_mod,both,Something was too few.,,,0.046729
+898,few,determinative,core2021,predicative_be,both,Something was few.,,,0.046729
+930,fewer,determinative,core2021,ness_nominalization,both,The fewerness of something.,realized:ness,,0.046729
+986,least,determinative,core2021,comparative_more,both,Something was more least than something else.,,,0.046729
+1013,many,determinative,core2021,enough_postposed,judgment,Something was many enough.,,,0.046729
+1050,many a,determinative,core2021,ness_nominalization,both,The many aness of something.,realized:ness,,0.046729
+1053,many a,determinative,core2021,coordination_with_adj,judgment,Something was old and many a.,,,0.046729
+1054,many a,determinative,core2021,fronting_pp,judgment,"Many a something, something happened.",,,0.046729
+1069,most,determinative,core2021,determiner_function,both,Most something happened.,,,0.046729
+1135,last,determinative,core2021,np_complement,both,Something was last something.,,,0.046729
+1160,next,determinative,core2021,gerund_gap_complement,judgment,Something was next doing.,,,0.046729
+1190,no,determinative,core2021,fused_head,both,Someone saw no.,,,0.046729
+1195,no,determinative,core2021,seem_complement,both,Something seemed no.,,,0.046729
+1200,none,determinative,core2021,very_mod,both,Something was very none.,,,0.046729
+1204,none,determinative,core2021,right_mod,judgment,Something was right none.,,,0.046729
+1213,none,determinative,core2021,determiner_function,both,None something happened.,,,0.046729
+1248,no one,determinative,core2021,very_mod,both,Something was very no one.,,,0.046729
+1250,no one,determinative,core2021,comparative_more,both,Something was more no one than something else.,,,0.046729
+1287,nothing,determinative,core2021,partitive_of,both,Nothing of the somethings happened.,,,0.046729
+1303,nowhere,determinative,core2021,np_complement,both,Something was nowhere something.,,,0.046729
+1337,one,determinative,core2021,ly_adverb_base,both,Something happened onely.,realized:ly,,0.046729
+1370,three,determinative,core2021,comparative_more,both,Something was more three than something else.,,,0.046729
+1414,once,determinative,core2021,fronting_pp,judgment,"Once something, something happened.",,,0.046729
+1423,twice,determinative,core2021,np_complement,both,Something was twice something.,,,0.046729
+1482,several,determinative,core2021,ness_nominalization,both,The severalness of something.,realized:ness,,0.046729
+1491,some,determinative,core2021,inflectional_comparison,both,Something was somer than something else.,realized:comparative,,0.046729
+1570,something,determinative,core2021,predicative_be,both,Something was something.,,,0.046729
+1571,something,determinative,core2021,postpositive,judgment,The something something happened.,note_postpositive,,0.046729
+1602,somewhere,determinative,core2021,ness_nominalization,both,The somewhereness of something.,realized:ness,,0.046729
+1612,somewhat,determinative,core2021,right_mod,judgment,Something was right somewhat.,,,0.046729
+1661,that,determinative,core2021,enough_postposed,judgment,Something was that enough.,,,0.046729
+1708,this,determinative,core2021,right_mod,judgment,Something was right this.,,,0.046729
+1717,this,determinative,core2021,determiner_function,both,This something happened.,,,0.046729
+1760,the,determinative,core2021,gerund_gap_complement,judgment,Something was the doing.,,,0.046729
+1797,us,determinative,core2021,coordination_with_adj,judgment,Something was old and us.,,,0.046729
+1821,we,determinative,core2021,coordination_with_adj,judgment,Something was old and we.,,,0.046729
+1831,you,determinative,core2021,np_complement,both,Something was you something.,,,0.046729
+1861,what,determinative,core2021,determiner_function,both,What something happened.,,,0.046729
+1882,whatever,determinative,core2021,predicative_be,both,Something was whatever.,,,0.046729
+1896,which,determinative,core2021,very_mod,both,Something was very which.,,,0.046729
+1901,which,determinative,core2021,enough_postposed,judgment,Something was which enough.,,,0.046729
+1933,whichever,determinative,core2021,determiner_function,both,Whichever something happened.,,,0.046729
+1943,whichever,determinative,core2021,stranding,judgment,The something that something was whichever __,,,0.046729
+1948,zero,determinative,core2021,right_mod,judgment,Something was right zero.,,,0.046729
+1967,zero,determinative,core2021,stranding,judgment,The something that something was zero __,,,0.046729
+2022,eleven,determinative,extension2026,enough_preposed,judgment,Something was enough eleven.,,,0.046729
+2041,seventy,determinative,extension2026,too_mod,both,Something was too seventy.,,,0.046729
+2047,seventy,determinative,extension2026,np_complement,both,Something was seventy something.,,,0.046729
+2072,hundred,determinative,extension2026,gerund_gap_complement,judgment,Something was hundred doing.,,,0.046729
+2076,hundred,determinative,extension2026,predeterminer_position,both,Hundred the something happened.,,,0.046729
+2086,hundred,determinative,extension2026,fronting_pp,judgment,"Hundred something, something happened.",,,0.046729
+2111,million,determinative,extension2026,stranding,judgment,The something that something was million __,,,0.046729
+2116,of,preposition,,right_mod,judgment,Something was right of.,,,0.046729
+2150,at,preposition,,fused_head,both,Someone saw at.,,,0.046729
+2151,at,preposition,,partitive_of,both,At of the somethings happened.,,,0.046729
+2156,at,preposition,,become_complement,both,Something became at.,,,0.046729
+2169,from,preposition,,attributive,both,The from something happened.,,,0.046729
+2209,onto,preposition,,too_mod,both,Something was too onto.,,,0.046729
+2240,upon,preposition,,gerund_gap_complement,judgment,Something was upon doing.,,,0.046729
+2254,upon,preposition,,fronting_pp,judgment,"Upon something, something happened.",,,0.046729
+2255,upon,preposition,,stranding,judgment,The something that something was upon __,,,0.046729
+2267,with,preposition,,postpositive,judgment,The something with happened.,note_postpositive,,0.046729
+2273,with,preposition,,ly_adverb_base,both,Something happened withly.,realized:ly,,0.046729
+2277,with,preposition,,coordination_with_adj,judgment,Something was old and with.,,,0.046729
+2298,as,preposition,,ness_nominalization,both,The asness of something.,realized:ness,,0.046729
+2301,as,preposition,,coordination_with_adj,judgment,Something was old and as.,,,0.046729
+2338,aboard,preposition,,predicative_be,both,Something was aboard.,,,0.046729
+2342,aboard,preposition,,fused_head,both,Someone saw aboard.,,,0.046729
+2360,about,preposition,,gerund_gap_complement,judgment,Something was about doing.,,,0.046729
+2380,above,preposition,,right_mod,judgment,Something was right above.,,,0.046729
+2432,after,preposition,,gerund_gap_complement,judgment,Something was after doing.,,,0.046729
+2435,after,preposition,,postpositive,judgment,The something after happened.,note_postpositive,,0.046729
+2440,after,preposition,,un_prefix,both,Something was unafter.,realized:un,,0.046729
+2444,after,preposition,,become_complement,both,Something became after.,,,0.046729
+2468,against,preposition,,become_complement,both,Something became against.,,,0.046729
+2478,along,preposition,,enough_preposed,judgment,Something was enough along.,,,0.046729
+2486,along,preposition,,fused_head,both,Someone saw along.,,,0.046729
+2495,along,preposition,,stranding,judgment,The something that something was along __,,,0.046729
+2508,alongside,preposition,,predeterminer_position,both,Alongside the something happened.,,,0.046729
+2570,before,preposition,,comparative_more,both,Something was more before than something else.,,,0.046729
+2579,before,preposition,,postpositive,judgment,The something before happened.,note_postpositive,,0.046729
+2592,behind,preposition,,very_mod,both,Something was very behind.,,,0.046729
+2596,behind,preposition,,right_mod,judgment,Something was right behind.,,,0.046729
+2614,behind,preposition,,fronting_pp,judgment,"Behind something, something happened.",,,0.046729
+2630,below,preposition,,fused_head,both,Someone saw below.,,,0.046729
+2634,below,preposition,,ness_nominalization,both,The belowness of something.,realized:ness,,0.046729
+2688,between,preposition,,very_mod,both,Something was very between.,,,0.046729
+2714,beyond,preposition,,comparative_more,both,Something was more beyond than something else.,,,0.046729
+2724,beyond,preposition,,predeterminer_position,both,Beyond the something happened.,,,0.046729
+2745,by,preposition,,attributive,both,The by something happened.,,,0.046729
+2773,down,preposition,,determiner_function,both,Down something happened.,,,0.046729
+2836,inside,preposition,,right_mod,judgment,Something was right inside.,,,0.046729
+2839,inside,preposition,,np_complement,both,Something was inside something.,,,0.046729
+2882,off,preposition,,comparative_more,both,Something was more off than something else.,,,0.046729
+2886,off,preposition,,enough_preposed,judgment,Something was enough off.,,,0.046729
+2890,off,preposition,,predicative_be,both,Something was off.,,,0.046729
+2896,off,preposition,,un_prefix,both,Something was unoff.,realized:un,,0.046729
+2939,opposite,preposition,,postpositive,judgment,The something opposite happened.,note_postpositive,,0.046729
+2954,outside,preposition,,comparative_more,both,Something was more outside than something else.,,,0.046729
+2996,over,preposition,,become_complement,both,Something became over.,,,0.046729
+3008,past,preposition,,gerund_gap_complement,judgment,Something was past doing.,,,0.046729
+3020,past,preposition,,become_complement,both,Something became past.,,,0.046729
+3022,past,preposition,,fronting_pp,judgment,"Past something, something happened.",,,0.046729
+3023,past,preposition,,stranding,judgment,The something that something was past __,,,0.046729
+3065,since,preposition,,ly_adverb_base,both,Something happened sincely.,realized:ly,,0.046729
+3076,through,preposition,,right_mod,judgment,Something was right through.,,,0.046729
+3096,throughout,preposition,,very_mod,both,Something was very throughout.,,,0.046729
+3148,under,preposition,,right_mod,judgment,Something was right under.,,,0.046729
+3177,underneath,preposition,,attributive,both,The underneath something happened.,,,0.046729
+3182,underneath,preposition,,fused_head,both,Someone saw underneath.,,,0.046729
+3231,within,preposition,,partitive_of,both,Within of the somethings happened.,,,0.046729
+3261,without,preposition,,coordination_with_adj,judgment,Something was old and without.,,,0.046729
+3264,according,preposition,,very_mod,both,Something was very according.,,,0.046729
+3295,allowing,preposition,,np_complement,both,Something was allowing something.,,,0.046729
+3410,excluding,preposition,,comparative_more,both,Something was more excluding than something else.,,,0.046729
+3411,excluding,preposition,,inflectional_comparison,both,Something was excludinger than something else.,realized:comparative,,0.046729
+3438,failing,preposition,,enough_preposed,judgment,Something was enough failing.,,,0.046729
+3468,following,preposition,,predeterminer_position,both,Following the something happened.,,,0.046729
+3507,owing,preposition,,inflectional_comparison,both,Something was owinger than something else.,realized:comparative,,0.046729
+3518,owing,preposition,,fused_head,both,Someone saw owing.,,,0.046729
+3522,owing,preposition,,ness_nominalization,both,The owingness of something.,realized:ness,,0.046729
+3544,pertaining,preposition,,un_prefix,both,Something was unpertaining.,realized:un,,0.046729
+3552,regarding,preposition,,very_mod,both,Something was very regarding.,,,0.046729
+3553,regarding,preposition,,too_mod,both,Something was too regarding.,,,0.046729
+3588,respecting,preposition,,predeterminer_position,both,Respecting the something happened.,,,0.046729
+3607,saving,preposition,,np_complement,both,Something was saving something.,,,0.046729
+3609,saving,preposition,,attributive,both,The saving something happened.,,,0.046729
+3626,touching,preposition,,comparative_more,both,Something was more touching than something else.,,,0.046729
+3673,given,preposition,,too_mod,both,Something was too given.,,,0.046729
+3684,given,preposition,,predeterminer_position,both,Given the something happened.,,,0.046729
+3717,gone,preposition,,coordination_with_adj,judgment,Something was old and gone.,,,0.046729
+3741,granted,preposition,,coordination_with_adj,judgment,Something was old and granted.,,,0.046729
+3768,providing,preposition,,very_mod,both,Something was very providing.,,,0.046729
+3787,providing,preposition,,seem_complement,both,Something seemed providing.,,,0.046729
+3792,seeing,preposition,,very_mod,both,Something was very seeing.,,,0.046729
+3802,seeing,preposition,,predicative_be,both,Something was seeing.,,,0.046729
+3866,now,preposition,,comparative_more,both,Something was more now than something else.,,,0.046729
+3884,now,preposition,,become_complement,both,Something became now.,,,0.046729
+3899,then,preposition,,postpositive,judgment,The something then happened.,note_postpositive,,0.046729
+3924,when,preposition,,predeterminer_position,both,When the something happened.,,,0.046729
+3951,afterwards,preposition,,partitive_of,both,Afterwards of the somethings happened.,,,0.046729
+3969,beforehand,preposition,,attributive,both,The beforehand something happened.,,,0.046729
+4045,abroad,preposition,,determiner_function,both,Abroad something happened.,,,0.046729
+4096,adrift,preposition,,un_prefix,both,Something was unadrift.,realized:un,,0.046729
+4106,aground,preposition,,comparative_more,both,Something was more aground than something else.,,,0.046729
+4164,aloft,preposition,,predeterminer_position,both,Aloft the something happened.,,,0.046729
+4189,apart,preposition,,determiner_function,both,Apart something happened.,,,0.046729
+4214,ashore,preposition,,fused_head,both,Someone saw ashore.,,,0.046729
+4238,aside,preposition,,fused_head,both,Someone saw aside.,,,0.046729
+4251,away,preposition,,inflectional_comparison,both,Something was awayer than something else.,realized:comparative,,0.046729
+4276,aft,preposition,,right_mod,judgment,Something was right aft.,,,0.046729
+4313,back,preposition,,ly_adverb_base,both,Something happened backly.,realized:ly,,0.046729
+4316,back,preposition,,become_complement,both,Something became back.,,,0.046729
+4324,forth,preposition,,right_mod,judgment,Something was right forth.,,,0.046729
+4367,home,preposition,,stranding,judgment,The something that something was home __,,,0.046729
+4383,together,preposition,,partitive_of,both,Together of the somethings happened.,,,0.046729
+4392,hereat,preposition,,very_mod,both,Something was very hereat.,,,0.046729
+4419,hereby,preposition,,inflectional_comparison,both,Something was herebier than something else.,realized:comparative,,0.046729
+4441,herefrom,preposition,,too_mod,both,Something was too herefrom.,,,0.046729
+4452,herefrom,preposition,,predeterminer_position,both,Herefrom the something happened.,,,0.046729
+4467,herein,preposition,,inflectional_comparison,both,Something was hereiner than something else.,realized:comparative,,0.046729
+4570,herewith,preposition,,predicative_be,both,Something was herewith.,,,0.046729
+4578,herewith,preposition,,ness_nominalization,both,The herewithness of something.,realized:ness,,0.046729
+4593,thereat,preposition,,attributive,both,The thereat something happened.,,,0.046729
+4607,thereat,preposition,,stranding,judgment,The something that something was thereat __,,,0.046729
+4641,therefrom,preposition,,attributive,both,The therefrom something happened.,,,0.046729
+4649,therefrom,preposition,,ly_adverb_base,both,Something happened therefromly.,realized:ly,,0.046729
+4681,thereof,preposition,,too_mod,both,Something was too thereof.,,,0.046729
+4686,thereof,preposition,,enough_preposed,judgment,Something was enough thereof.,,,0.046729
+4688,thereof,preposition,,gerund_gap_complement,judgment,Something was thereof doing.,,,0.046729
+4728,thereto,preposition,,very_mod,both,Something was very thereto.,,,0.046729
+4740,thereto,preposition,,predeterminer_position,both,Thereto the something happened.,,,0.046729
+4762,therewith,preposition,,predicative_be,both,Something was therewith.,,,0.046729
+4788,whereat,preposition,,predeterminer_position,both,Whereat the something happened.,,,0.046729
+4790,whereat,preposition,,fused_head,both,Someone saw whereat.,,,0.046729
+4884,whereof,preposition,,predeterminer_position,both,Whereof the something happened.,,,0.046729
+4919,whereon,preposition,,stranding,judgment,The something that something was whereon __,,,0.046729
+4979,hereabouts,preposition,,postpositive,judgment,The something hereabouts happened.,note_postpositive,,0.046729
+5004,thereabouts,preposition,,predeterminer_position,both,Thereabouts the something happened.,,,0.046729
+5015,thereabouts,preposition,,stranding,judgment,The something that something was thereabouts __,,,0.046729
+5018,whereabouts,preposition,,comparative_more,both,Something was more whereabouts than something else.,,,0.046729
+5019,whereabouts,preposition,,inflectional_comparison,both,Something was whereaboutser than something else.,realized:comparative,,0.046729
+5030,whereabouts,preposition,,fused_head,both,Someone saw whereabouts.,,,0.046729
+5045,here,preposition,,enough_postposed,judgment,Something was here enough.,,,0.046729
+5050,here,preposition,,predicative_be,both,Something was here.,,,0.046729
+5071,there,preposition,,np_complement,both,Something was there something.,,,0.046729
+5088,where,preposition,,very_mod,both,Something was very where.,,,0.046729
+5096,where,preposition,,gerund_gap_complement,judgment,Something was where doing.,,,0.046729
+5109,where,preposition,,coordination_with_adj,judgment,Something was old and where.,,,0.046729
+5120,hence,preposition,,gerund_gap_complement,judgment,Something was hence doing.,,,0.046729
+5133,hence,preposition,,coordination_with_adj,judgment,Something was old and hence.,,,0.046729
+5153,thence,preposition,,ly_adverb_base,both,Something happened thencely.,realized:ly,,0.046729
+5192,east,preposition,,gerund_gap_complement,judgment,Something was east doing.,,,0.046729
+5218,north,preposition,,predicative_be,both,Something was north.,,,0.046729
+5252,south,preposition,,become_complement,both,Something became south.,,,0.046729
+5274,west,preposition,,ness_nominalization,both,The westness of something.,realized:ness,,0.046729
+5281,downhill,preposition,,too_mod,both,Something was too downhill.,,,0.046729
+5350,downstairs,preposition,,fronting_pp,judgment,"Downstairs something, something happened.",,,0.046729
+5361,downstream,preposition,,attributive,both,The downstream something happened.,,,0.046729
+5379,downwind,preposition,,inflectional_comparison,both,Something was downwinder than something else.,realized:comparative,,0.046729
+5457,upstairs,preposition,,attributive,both,The upstairs something happened.,,,0.046729
+5467,upstairs,preposition,,seem_complement,both,Something seemed upstairs.,,,0.046729
+5468,upstairs,preposition,,become_complement,both,Something became upstairs.,,,0.046729
+5469,upstairs,preposition,,coordination_with_adj,judgment,Something was old and upstairs.,,,0.046729
+5541,indoors,preposition,,coordination_with_adj,judgment,Something was old and indoors.,,,0.046729
+5593,overhead,preposition,,too_mod,both,Something was too overhead.,,,0.046729
+5618,overland,preposition,,comparative_more,both,Something was more overland than something else.,,,0.046729
+5621,overland,preposition,,enough_postposed,judgment,Something was overland enough.,,,0.046729
+5628,overland,preposition,,predeterminer_position,both,Overland the something happened.,,,0.046729
+5648,overseas,preposition,,gerund_gap_complement,judgment,Something was overseas doing.,,,0.046729
+5750,downward,preposition,,fused_head,both,Someone saw downward.,,,0.046729
+5753,downward,preposition,,ly_adverb_base,both,Something happened downwardly.,realized:ly,,0.046729
+5773,eastward,preposition,,determiner_function,both,Eastward something happened.,,,0.046729
+5783,eastward,preposition,,stranding,judgment,The something that something was eastward __,,,0.046729
+5863,inward,preposition,,np_complement,both,Something was inward something.,,,0.046729
+5891,leftward,preposition,,postpositive,judgment,The something leftward happened.,note_postpositive,,0.046729
+5899,leftward,preposition,,seem_complement,both,Something seemed leftward.,,,0.046729
+5908,northward,preposition,,right_mod,judgment,Something was right northward.,,,0.046729
+5933,onward,preposition,,enough_postposed,judgment,Something was onward enough.,,,0.046729
+5936,onward,preposition,,gerund_gap_complement,judgment,Something was onward doing.,,,0.046729
+5944,onward,preposition,,un_prefix,both,Something was unonward.,realized:un,,0.046729
+5962,outward,preposition,,predicative_be,both,Something was outward.,,,0.046729
+5997,rightward,preposition,,coordination_with_adj,judgment,Something was old and rightward.,,,0.046729
+5998,rightward,preposition,,fronting_pp,judgment,"Rightward something, something happened.",,,0.046729
+6018,seaward,preposition,,ness_nominalization,both,The seawardness of something.,realized:ness,,0.046729
+6023,seaward,preposition,,stranding,judgment,The something that something was seaward __,,,0.046729
+6066,southward,preposition,,ness_nominalization,both,The southwardness of something.,realized:ness,,0.046729
+6075,upward,preposition,,inflectional_comparison,both,Something was upwarder than something else.,realized:comparative,,0.046729
+6079,upward,preposition,,np_complement,both,Something was upward something.,,,0.046729
+6101,westward,preposition,,enough_postposed,judgment,Something was westward enough.,,,0.046729
+6110,westward,preposition,,fused_head,both,Someone saw westward.,,,0.046729
+6122,general,adjective,,comparative_more,both,Something was more general than something else.,,,0.046729
+6152,public,adjective,,gerund_gap_complement,judgment,Something was public doing.,,,0.046729
+6158,public,adjective,,fused_head,both,Someone saw public.,,,0.046729
+6178,ready,adjective,,predicative_be,both,Something was ready.,,,0.046729
+6182,ready,adjective,,fused_head,both,Someone saw ready.,,,0.046729
+6193,same,adjective,,too_mod,both,Something was too same.,,,0.046729
+6231,favourite,adjective,,partitive_of,both,Favourite of the somethings happened.,,,0.046729
+6245,serious,adjective,,enough_postposed,judgment,Something was serious enough.,,,0.046729
+6248,serious,adjective,,gerund_gap_complement,judgment,Something was serious doing.,,,0.046729
+6251,serious,adjective,,postpositive,judgment,The something serious happened.,note_postpositive,,0.046729
+6271,safe,adjective,,np_complement,both,Something was safe something.,,,0.046729
+6275,safe,adjective,,postpositive,judgment,The something safe happened.,note_postpositive,,0.046729
+6277,safe,adjective,,determiner_function,both,Safe something happened.,,,0.046729
+6310,second,adjective,,fronting_pp,judgment,"Second something, something happened.",,,0.046729
+6311,second,adjective,,stranding,judgment,The something that something was second __,,,0.046729
+6377,french,adjective,,ly_adverb_base,both,Something happened frenchly.,realized:ly,,0.046729
+6412,small,adjective,,right_mod,judgment,Something was right small.,,,0.046729
+6424,small,adjective,,un_prefix,both,Something was unsmall.,realized:un,,0.046729
+6483,fair,adjective,,inflectional_comparison,both,Something was fairer than something else.,realized:comparative,,0.046729
+6493,fair,adjective,,determiner_function,both,Fair something happened.,,,0.046729
+6494,fair,adjective,,fused_head,both,Someone saw fair.,,,0.046729
+6518,interesting,adjective,,fused_head,both,Someone saw interesting.,,,0.046729
+6519,interesting,adjective,,partitive_of,both,Interesting of the somethings happened.,,,0.046729
+6522,interesting,adjective,,ness_nominalization,both,The interestingness of something.,realized:ness,,0.046729
+6524,interesting,adjective,,become_complement,both,Something became interesting.,,,0.046729
+6529,possible,adjective,,too_mod,both,Something was too possible.,,,0.046729
+6566,beautiful,adjective,,fused_head,both,Someone saw beautiful.,,,0.046729
+6593,old,adjective,,ly_adverb_base,both,Something happened oldly.,realized:ly,,0.046729
+6596,old,adjective,,become_complement,both,Something became old.,,,0.046729
+6605,special,adjective,,enough_postposed,judgment,Something was special enough.,,,0.046729
+6618,special,adjective,,ness_nominalization,both,The specialness of something.,realized:ness,,0.046729
+6660,new,adjective,,predeterminer_position,both,New the something happened.,,,0.046729
+6677,wrong,adjective,,enough_postposed,judgment,Something was wrong enough.,,,0.046729
+6683,wrong,adjective,,postpositive,judgment,The something wrong happened.,note_postpositive,,0.046729
+6725,short,adjective,,enough_postposed,judgment,Something was short enough.,,,0.046729
+6735,short,adjective,,partitive_of,both,Short of the somethings happened.,,,0.046729
+6806,nice,adjective,,fused_head,both,Someone saw nice.,,,0.046729
+6847,sorry,adjective,,np_complement,both,Something was sorry something.,,,0.046729
+6865,lovely,adjective,,too_mod,both,Something was too lovely.,,,0.046729
+6869,lovely,adjective,,enough_postposed,judgment,Something was lovely enough.,,,0.046729
+6917,bad,adjective,,enough_postposed,judgment,Something was bad enough.,,,0.046729
+6920,bad,adjective,,gerund_gap_complement,judgment,Something was bad doing.,,,0.046729
+6961,double,adjective,,too_mod,both,Something was too double.,,,0.046729
+6979,double,adjective,,seem_complement,both,Something seemed double.,,,0.046729
+7034,tough,adjective,,comparative_more,both,Something was more tough than something else.,,,0.046729
+7048,tough,adjective,,un_prefix,both,Something was untough.,realized:un,,0.046729
+7068,late,adjective,,predeterminer_position,both,Late the something happened.,,,0.046729
+7108,big,adjective,,right_mod,judgment,Something was right big.,,,0.046729
+7115,big,adjective,,postpositive,judgment,The something big happened.,note_postpositive,,0.046729
+7128,busy,adjective,,very_mod,both,Something was very busy.,,,0.046729
+7152,open,adjective,,very_mod,both,Something was very open.,,,0.046729
+7173,open,adjective,,coordination_with_adj,judgment,Something was old and open.,,,0.046729
+7177,correct,adjective,,too_mod,both,Something was too correct.,,,0.046729
+7215,brilliant,adjective,,partitive_of,both,Brilliant of the somethings happened.,,,0.046729
+7233,national,adjective,,attributive,both,The national something happened.,,,0.046729
+7239,national,adjective,,partitive_of,both,National of the somethings happened.,,,0.046729
+7242,national,adjective,,ness_nominalization,both,The nationalness of something.,realized:ness,,0.046729
+7254,long,adjective,,enough_preposed,judgment,Something was enough long.,,,0.046729
+7277,high,adjective,,enough_postposed,judgment,Something was high enough.,,,0.046729
+7316,difficult,adjective,,become_complement,both,Something became difficult.,,,0.046729
+7349,extra,adjective,,enough_postposed,judgment,Something was extra enough.,,,0.046729
+7371,great,adjective,,inflectional_comparison,both,Something was greater than something else.,realized:comparative,,0.046729
+7376,great,adjective,,gerund_gap_complement,judgment,Something was great doing.,,,0.046729
+7381,great,adjective,,determiner_function,both,Great something happened.,,,0.046729
+7388,great,adjective,,become_complement,both,Something became great.,,,0.046729
+7411,huge,adjective,,seem_complement,both,Something seemed huge.,,,0.046729
+7442,gorgeous,adjective,,comparative_more,both,Something was more gorgeous than something else.,,,0.046729
+7482,curious,adjective,,ness_nominalization,both,The curiousness of something.,realized:ness,,0.046729
+7544,multiple,adjective,,gerund_gap_complement,judgment,Something was multiple doing.,,,0.046729
+7568,unexpected,adjective,,gerund_gap_complement,judgment,Something was unexpected doing.,,,0.046729
+7590,efficient,adjective,,enough_preposed,judgment,Something was enough efficient.,,,0.046729
+7632,cosy,adjective,,very_mod,both,Something was very cosy.,,,0.046729
+7700,intense,adjective,,become_complement,both,Something became intense.,,,0.046729
+7744,invisible,adjective,,un_prefix,both,Something was uninvisible.,realized:un,,0.046729
+7747,invisible,adjective,,seem_complement,both,Something seemed invisible.,,,0.046729
+7748,invisible,adjective,,become_complement,both,Something became invisible.,,,0.046729
+7772,ideal,adjective,,become_complement,both,Something became ideal.,,,0.046729
+7845,homeless,adjective,,coordination_with_adj,judgment,Something was old and homeless.,,,0.046729
+7846,homeless,adjective,,fronting_pp,judgment,"Homeless something, something happened.",,,0.046729
+7853,old-fashioned,adjective,,enough_postposed,judgment,Something was old-fashioned enough.,,,0.046729
+7855,old-fashioned,adjective,,np_complement,both,Something was old-fashioned something.,,,0.046729
+7857,old-fashioned,adjective,,attributive,both,The old-fashioned something happened.,,,0.046729
+7859,old-fashioned,adjective,,postpositive,judgment,The something old-fashioned happened.,note_postpositive,,0.046729
+7866,old-fashioned,adjective,,ness_nominalization,both,The old-fashionedness of something.,realized:ness,,0.046729
+7915,social,adjective,,seem_complement,both,Something seemed social.,,,0.046729
+7916,social,adjective,,become_complement,both,Something became social.,,,0.046729
+7927,bright,adjective,,np_complement,both,Something was bright something.,,,0.046729
+7941,bright,adjective,,coordination_with_adj,judgment,Something was old and bright.,,,0.046729
+7945,spinning,adjective,,too_mod,both,Something was too spinning.,,,0.046729
+7974,significant,adjective,,enough_preposed,judgment,Something was enough significant.,,,0.046729
+7987,significant,adjective,,seem_complement,both,Something seemed significant.,,,0.046729
+7993,impressed,adjective,,too_mod,both,Something was too impressed.,,,0.046729
+7999,impressed,adjective,,np_complement,both,Something was impressed something.,,,0.046729
+8064,commercial,adjective,,very_mod,both,Something was very commercial.,,,0.046729
+8068,commercial,adjective,,right_mod,judgment,Something was right commercial.,,,0.046729
+8122,coastal,adjective,,predicative_be,both,Something was coastal.,,,0.046729
+8128,coastal,adjective,,un_prefix,both,Something was uncoastal.,realized:un,,0.046729
+8136,proper,adjective,,very_mod,both,Something was very proper.,,,0.046729
+8201,blank,adjective,,ly_adverb_base,both,Something happened blankly.,realized:ly,,0.046729
+8252,splendid,adjective,,become_complement,both,Something became splendid.,,,0.046729
+8258,rental,adjective,,comparative_more,both,Something was more rental than something else.,,,0.046729
+8323,iconic,adjective,,seem_complement,both,Something seemed iconic.,,,0.046729
+8338,irish,adjective,,predicative_be,both,Something was irish.,,,0.046729
+8355,successful,adjective,,inflectional_comparison,both,Something was successfuller than something else.,realized:comparative,,0.046729
+8377,alien,adjective,,too_mod,both,Something was too alien.,,,0.046729
+8450,democratic,adjective,,comparative_more,both,Something was more democratic than something else.,,,0.046729
+8461,democratic,adjective,,determiner_function,both,Democratic something happened.,,,0.046729
+8462,democratic,adjective,,fused_head,both,Someone saw democratic.,,,0.046729
+8464,democratic,adjective,,un_prefix,both,Something was undemocratic.,realized:un,,0.046729
+8475,lean,adjective,,inflectional_comparison,both,Something was leaner than something else.,realized:comparative,,0.046729
+8489,lean,adjective,,ly_adverb_base,both,Something happened leanly.,realized:ly,,0.046729
+8512,classic,adjective,,un_prefix,both,Something was unclassic.,realized:un,,0.046729
+8571,historic,adjective,,inflectional_comparison,both,Something was historicer than something else.,realized:comparative,,0.046729
+8587,historic,adjective,,seem_complement,both,Something seemed historic.,,,0.046729
+8610,delightful,adjective,,ness_nominalization,both,The delightfulness of something.,realized:ness,,0.046729
+8632,purple,adjective,,un_prefix,both,Something was unpurple.,realized:un,,0.046729
+8651,comfortable,adjective,,postpositive,judgment,The something comfortable happened.,note_postpositive,,0.046729
+8684,relevant,adjective,,become_complement,both,Something became relevant.,,,0.046729
+8702,awesome,adjective,,fused_head,both,Someone saw awesome.,,,0.046729
+8733,closer,adjective,,coordination_with_adj,judgment,Something was old and closer.,,,0.046729
+8759,retail,adjective,,stranding,judgment,The something that something was retail __,,,0.046729
+8769,anglo-saxon,adjective,,attributive,both,The anglo-saxon something happened.,,,0.046729
+8781,anglo-saxon,adjective,,coordination_with_adj,judgment,Something was old and anglo-saxon.,,,0.046729
+8831,tentative,adjective,,stranding,judgment,The something that something was tentative __,,,0.046729
+8865,unofficial,adjective,,attributive,both,The unofficial something happened.,,,0.046729
+8880,pedestrian,adjective,,very_mod,both,Something was very pedestrian.,,,0.046729
+8893,pedestrian,adjective,,determiner_function,both,Pedestrian something happened.,,,0.046729
+8902,pedestrian,adjective,,fronting_pp,judgment,"Pedestrian something, something happened.",,,0.046729
+8920,overdue,adjective,,un_prefix,both,Something was unoverdue.,realized:un,,0.046729
+8977,crippling,adjective,,too_mod,both,Something was too crippling.,,,0.046729
+8978,crippling,adjective,,comparative_more,both,Something was more crippling than something else.,,,0.046729
+8997,crippling,adjective,,coordination_with_adj,judgment,Something was old and crippling.,,,0.046729
+9035,pressured,adjective,,postpositive,judgment,The something pressured happened.,note_postpositive,,0.046729
+9042,pressured,adjective,,ness_nominalization,both,The pressuredness of something.,realized:ness,,0.046729
+9052,pygmy,adjective,,right_mod,judgment,Something was right pygmy.,,,0.046729
+9066,pygmy,adjective,,ness_nominalization,both,The pygminess of something.,realized:ness,,0.046729
+9077,rollercoaster,adjective,,enough_postposed,judgment,Something was rollercoaster enough.,,,0.046729
+9084,rollercoaster,adjective,,predeterminer_position,both,Rollercoaster the something happened.,,,0.046729
+9095,rollercoaster,adjective,,stranding,judgment,The something that something was rollercoaster __,,,0.046729
+9096,riddled,adjective,,very_mod,both,Something was very riddled.,,,0.046729
+9102,riddled,adjective,,enough_preposed,judgment,Something was enough riddled.,,,0.046729
+9103,riddled,adjective,,np_complement,both,Something was riddled something.,,,0.046729
+9129,daring,adjective,,attributive,both,The daring something happened.,,,0.046729
+9137,daring,adjective,,ly_adverb_base,both,Something happened daringly.,realized:ly,,0.046729
+9148,savvy,adjective,,right_mod,judgment,Something was right savvy.,,,0.046729
+9170,disused,adjective,,comparative_more,both,Something was more disused than something else.,,,0.046729
+9219,acclaimed,adjective,,inflectional_comparison,both,Something was acclaimeder than something else.,realized:comparative,,0.046729
+9225,acclaimed,adjective,,attributive,both,The acclaimed something happened.,,,0.046729
+9226,acclaimed,adjective,,predicative_be,both,Something was acclaimed.,,,0.046729
+9306,neolithic,adjective,,ness_nominalization,both,The neolithicness of something.,realized:ness,,0.046729
+9310,neolithic,adjective,,fronting_pp,judgment,"Neolithic something, something happened.",,,0.046729
+9316,sedative,adjective,,right_mod,judgment,Something was right sedative.,,,0.046729
+9321,sedative,adjective,,attributive,both,The sedative something happened.,,,0.046729
+9327,sedative,adjective,,partitive_of,both,Sedative of the somethings happened.,,,0.046729
+9351,obscene,adjective,,partitive_of,both,Obscene of the somethings happened.,,,0.046729
+9402,one-and-a-half,adjective,,ness_nominalization,both,The one-and-a-halfness of something.,realized:ness,,0.046729
+9413,infested,adjective,,enough_postposed,judgment,Something was infested enough.,,,0.046729
+9424,infested,adjective,,un_prefix,both,Something was uninfested.,realized:un,,0.046729
+9427,infested,adjective,,seem_complement,both,Something seemed infested.,,,0.046729
+9432,inefficient,adjective,,very_mod,both,Something was very inefficient.,,,0.046729
+9447,inefficient,adjective,,partitive_of,both,Inefficient of the somethings happened.,,,0.046729
+9516,high-profile,adjective,,predeterminer_position,both,High-profile the something happened.,,,0.046729
+9585,prosperous,adjective,,attributive,both,The prosperous something happened.,,,0.046729
+9586,prosperous,adjective,,predicative_be,both,Something was prosperous.,,,0.046729
+9617,flappy,adjective,,ly_adverb_base,both,Something happened flappily.,realized:ly,,0.046729
+9639,reluctant,adjective,,partitive_of,both,Reluctant of the somethings happened.,,,0.046729
+9667,diabolical,adjective,,seem_complement,both,Something seemed diabolical.,,,0.046729
+9724,breathless,adjective,,right_mod,judgment,Something was right breathless.,,,0.046729
+9725,breathless,adjective,,enough_postposed,judgment,Something was breathless enough.,,,0.046729
+9728,breathless,adjective,,gerund_gap_complement,judgment,Something was breathless doing.,,,0.046729
+9780,stinging,adjective,,predeterminer_position,both,Stinging the something happened.,,,0.046729
+9808,four-and-a-half,adjective,,un_prefix,both,Something was unfour-and-a-half.,realized:un,,0.046729
+9828,ah-ah,adjective,,predeterminer_position,both,Ah-ah the something happened.,,,0.046729
+9858,stern,adjective,,ness_nominalization,both,The sternness of something.,realized:ness,,0.046729
+9869,uncommon,adjective,,enough_postposed,judgment,Something was uncommon enough.,,,0.046729
+9871,uncommon,adjective,,np_complement,both,Something was uncommon something.,,,0.046729
+9891,fleeting,adjective,,inflectional_comparison,both,Something was fleetinger than something else.,realized:comparative,,0.046729
+9895,fleeting,adjective,,np_complement,both,Something was fleeting something.,,,0.046729
+9899,fleeting,adjective,,postpositive,judgment,The something fleeting happened.,note_postpositive,,0.046729
+9914,bravest,adjective,,comparative_more,both,Something was more bravest than something else.,,,0.046729
+9916,bravest,adjective,,right_mod,judgment,Something was right bravest.,,,0.046729
+9945,hilarious,adjective,,attributive,both,The hilarious something happened.,,,0.046729
+9996,feeble,adjective,,predeterminer_position,both,Feeble the something happened.,,,0.046729
+10025,showy,adjective,,ly_adverb_base,both,Something happened showily.,realized:ly,,0.046729
+10036,misguided,adjective,,right_mod,judgment,Something was right misguided.,,,0.046729
+10059,convincing,adjective,,inflectional_comparison,both,Something was convincinger than something else.,realized:comparative,,0.046729
+10080,endothermic,adjective,,very_mod,both,Something was very endothermic.,,,0.046729
+10106,groggy,adjective,,comparative_more,both,Something was more groggy than something else.,,,0.046729
+10135,untypical,adjective,,np_complement,both,Something was untypical something.,,,0.046729
+10181,pumpy,adjective,,enough_postposed,judgment,Something was pumpy enough.,,,0.046729
+10224,centrist,adjective,,very_mod,both,Something was very centrist.,,,0.046729
+10246,centrist,adjective,,fronting_pp,judgment,"Centrist something, something happened.",,,0.046729
+10269,directorial,adjective,,coordination_with_adj,judgment,Something was old and directorial.,,,0.046729
+10270,directorial,adjective,,fronting_pp,judgment,"Directorial something, something happened.",,,0.046729
+10279,fossilised,adjective,,np_complement,both,Something was fossilised something.,,,0.046729
+10281,fossilised,adjective,,attributive,both,The fossilised something happened.,,,0.046729
+10327,seditious,adjective,,np_complement,both,Something was seditious something.,,,0.046729
+10346,spastic,adjective,,comparative_more,both,Something was more spastic than something else.,,,0.046729
+10352,spastic,adjective,,gerund_gap_complement,judgment,Something was spastic doing.,,,0.046729
+10394,czechoslovakian,adjective,,comparative_more,both,Something was more czechoslovakian than something else.,,,0.046729
+10397,czechoslovakian,adjective,,enough_postposed,judgment,Something was czechoslovakian enough.,,,0.046729
+10403,czechoslovakian,adjective,,postpositive,judgment,The something czechoslovakian happened.,note_postpositive,,0.046729
+10416,unfavourable,adjective,,very_mod,both,Something was very unfavourable.,,,0.046729
+10430,unfavourable,adjective,,fused_head,both,Someone saw unfavourable.,,,0.046729
+10433,unfavourable,adjective,,ly_adverb_base,both,Something happened unfavourably.,realized:ly,,0.046729
+10456,chauvinistic,adjective,,un_prefix,both,Something was unchauvinistic.,realized:un,,0.046729
+10482,backhanded,adjective,,ness_nominalization,both,The backhandedness of something.,realized:ness,,0.046729
+10500,flippy,adjective,,predeterminer_position,both,Flippy the something happened.,,,0.046729
+10556,delirious,adjective,,become_complement,both,Something became delirious.,,,0.046729
+10561,pernickety,adjective,,too_mod,both,Something was too pernickety.,,,0.046729
+10571,pernickety,adjective,,postpositive,judgment,The something pernickety happened.,note_postpositive,,0.046729
+10582,pernickety,adjective,,fronting_pp,judgment,"Pernickety something, something happened.",,,0.046729
+10583,pernickety,adjective,,stranding,judgment,The something that something was pernickety __,,,0.046729
+10584,banal,adjective,,very_mod,both,Something was very banal.,,,0.046729
+10589,banal,adjective,,enough_postposed,judgment,Something was banal enough.,,,0.046729
+10605,banal,adjective,,coordination_with_adj,judgment,Something was old and banal.,,,0.046729
+10608,overspent,adjective,,very_mod,both,Something was very overspent.,,,0.046729
+10632,kickable,adjective,,very_mod,both,Something was very kickable.,,,0.046729
+10645,kickable,adjective,,determiner_function,both,Kickable something happened.,,,0.046729
+10691,disloyal,adjective,,postpositive,judgment,The something disloyal happened.,note_postpositive,,0.046729
+10713,newish,adjective,,attributive,both,The newish something happened.,,,0.046729
+10731,improvisational,adjective,,inflectional_comparison,both,Something was improvisationaller than something else.,realized:comparative,,0.046729
+10807,mechanistic,adjective,,np_complement,both,Something was mechanistic something.,,,0.046729
+10811,mechanistic,adjective,,postpositive,judgment,The something mechanistic happened.,note_postpositive,,0.046729
+10820,mechanistic,adjective,,become_complement,both,Something became mechanistic.,,,0.046729
+10825,endoscopy,adjective,,too_mod,both,Something was too endoscopy.,,,0.046729
+10829,endoscopy,adjective,,enough_postposed,judgment,Something was endoscopy enough.,,,0.046729
+10836,endoscopy,adjective,,predeterminer_position,both,Endoscopy the something happened.,,,0.046729
+10837,endoscopy,adjective,,determiner_function,both,Endoscopy something happened.,,,0.046729
+10861,boggy,adjective,,determiner_function,both,Boggy something happened.,,,0.046729
+10888,barnstable,adjective,,un_prefix,both,Something was unbarnstable.,realized:un,,0.046729
+10919,errant,adjective,,stranding,judgment,The something that something was errant __,,,0.046729
+10935,nonsensical,adjective,,partitive_of,both,Nonsensical of the somethings happened.,,,0.046729
+11001,southwesterly,adjective,,attributive,both,The southwesterly something happened.,,,0.046729
+11012,southwesterly,adjective,,become_complement,both,Something became southwesterly.,,,0.046729
+11064,suggestive,adjective,,very_mod,both,Something was very suggestive.,,,0.046729
+11068,suggestive,adjective,,right_mod,judgment,Something was right suggestive.,,,0.046729
+11113,preconceived,adjective,,too_mod,both,Something was too preconceived.,,,0.046729
+11124,preconceived,adjective,,predeterminer_position,both,Preconceived the something happened.,,,0.046729
+11166,febrile,adjective,,enough_preposed,judgment,Something was enough febrile.,,,0.046729
+11228,clandestine,adjective,,become_complement,both,Something became clandestine.,,,0.046729
+11234,weepy,adjective,,comparative_more,both,Something was more weepy than something else.,,,0.046729
+11297,ploppy,adjective,,ly_adverb_base,both,Something happened ploppily.,realized:ly,,0.046729
+11321,undefeated,adjective,,ly_adverb_base,both,Something happened undefeatedly.,realized:ly,,0.046729
+11334,genial,adjective,,enough_preposed,judgment,Something was enough genial.,,,0.046729
+11348,genial,adjective,,become_complement,both,Something became genial.,,,0.046729
+11358,kurdish,adjective,,enough_preposed,judgment,Something was enough kurdish.,,,0.046729
+11360,kurdish,adjective,,gerund_gap_complement,judgment,Something was kurdish doing.,,,0.046729
+11375,kurdish,adjective,,stranding,judgment,The something that something was kurdish __,,,0.046729
+11399,regimented,adjective,,stranding,judgment,The something that something was regimented __,,,0.046729
+11419,john,blind,,seem_complement,both,Something seemed john.,,,0.046729
+11455,reported,blind,,np_complement,both,Something was reported something.,,,0.046729
+11459,reported,blind,,postpositive,judgment,The something reported happened.,note_postpositive,,0.046729
+11465,reported,blind,,ly_adverb_base,both,Something happened reportedly.,realized:ly,,0.046729
+11486,celebrating,blind,,fused_head,both,Someone saw celebrating.,,,0.046729
+11529,remain,blind,,attributive,both,The remain something happened.,,,0.046729
+11537,remain,blind,,ly_adverb_base,both,Something happened remainly.,realized:ly,,0.046729
+11542,remain,blind,,fronting_pp,judgment,"Remain something, something happened.",,,0.046729
+11577,guns,blind,,attributive,both,The guns something happened.,,,0.046729
+11609,introduce,blind,,ly_adverb_base,both,Something happened introducely.,realized:ly,,0.046729
+11630,theme,blind,,fused_head,both,Someone saw theme.,,,0.046729
+11634,theme,blind,,ness_nominalization,both,The themeness of something.,realized:ness,,0.046729
+11640,oyster,blind,,very_mod,both,Something was very oyster.,,,0.046729
+11660,oyster,blind,,become_complement,both,Something became oyster.,,,0.046729
+11678,hayes,blind,,fused_head,both,Someone saw hayes.,,,0.046729
+11688,rap,blind,,very_mod,both,Something was very rap.,,,0.046729
+11701,rap,blind,,determiner_function,both,Rap something happened.,,,0.046729
+11704,rap,blind,,un_prefix,both,Something was unrap.,realized:un,,0.046729
+11717,civil,blind,,enough_postposed,judgment,Something was civil enough.,,,0.046729
+11731,civil,blind,,seem_complement,both,Something seemed civil.,,,0.046729
+11734,civil,blind,,fronting_pp,judgment,"Civil something, something happened.",,,0.046729
+11738,thrilling,blind,,comparative_more,both,Something was more thrilling than something else.,,,0.046729
+11797,grants,blind,,determiner_function,both,Grants something happened.,,,0.046729
+11804,grants,blind,,become_complement,both,Something became grants.,,,0.046729
+11817,choo,blind,,attributive,both,The choo something happened.,,,0.046729
+11818,choo,blind,,predicative_be,both,Something was choo.,,,0.046729
+11825,choo,blind,,ly_adverb_base,both,Something happened chooly.,realized:ly,,0.046729
+11833,gilt,blind,,too_mod,both,Something was too gilt.,,,0.046729
+11848,gilt,blind,,un_prefix,both,Something was ungilt.,realized:un,,0.046729
+11853,gilt,blind,,coordination_with_adj,judgment,Something was old and gilt.,,,0.046729
+11871,taliban,blind,,partitive_of,both,Taliban of the somethings happened.,,,0.046729
+11880,lives,blind,,very_mod,both,Something was very lives.,,,0.046729
+11897,lives,blind,,ly_adverb_base,both,Something happened livesly.,realized:ly,,0.046729
+11922,uncovered,blind,,ness_nominalization,both,The uncoveredness of something.,realized:ness,,0.046729
+11939,describes,blind,,postpositive,judgment,The something describes happened.,note_postpositive,,0.046729
+11947,describes,blind,,seem_complement,both,Something seemed describes.,,,0.046729
+11957,kyle,blind,,enough_postposed,judgment,Something was kyle enough.,,,0.046729
+11965,kyle,blind,,determiner_function,both,Kyle something happened.,,,0.046729
+11967,kyle,blind,,partitive_of,both,Kyle of the somethings happened.,,,0.046729
+11995,otters,blind,,seem_complement,both,Something seemed otters.,,,0.046729
+11996,otters,blind,,become_complement,both,Something became otters.,,,0.046729
+12004,hunting,blind,,right_mod,judgment,Something was right hunting.,,,0.046729
+12043,blair,blind,,seem_complement,both,Something seemed blair.,,,0.046729
+12065,talked,blind,,ly_adverb_base,both,Something happened talkedly.,realized:ly,,0.046729
+12080,pitched,blind,,gerund_gap_complement,judgment,Something was pitched doing.,,,0.046729
+12093,pitched,blind,,coordination_with_adj,judgment,Something was old and pitched.,,,0.046729
+12110,comedy,blind,,fused_head,both,Someone saw comedy.,,,0.046729
+12118,comedy,blind,,fronting_pp,judgment,"Comedy something, something happened.",,,0.046729
+12160,auctioneer,blind,,un_prefix,both,Something was unauctioneer.,realized:un,,0.046729
+12174,exploring,blind,,enough_preposed,judgment,Something was enough exploring.,,,0.046729
+12225,protecting,blind,,attributive,both,The protecting something happened.,,,0.046729
+12231,protecting,blind,,partitive_of,both,Protecting of the somethings happened.,,,0.046729
+12238,protecting,blind,,fronting_pp,judgment,"Protecting something, something happened.",,,0.046729
+12263,griffin,blind,,stranding,judgment,The something that something was griffin __,,,0.046729
+12282,toad,blind,,ness_nominalization,both,The toadness of something.,realized:ness,,0.046729
+12284,toad,blind,,become_complement,both,Something became toad.,,,0.046729
+12308,sit,blind,,become_complement,both,Something became sit.,,,0.046729
+12325,wibbly,blind,,determiner_function,both,Wibbly something happened.,,,0.046729
+12333,wibbly,blind,,coordination_with_adj,judgment,Something was old and wibbly.,,,0.046729
+12340,organise,blind,,right_mod,judgment,Something was right organise.,,,0.046729
+12386,channel,blind,,comparative_more,both,Something was more channel than something else.,,,0.046729
+12399,channel,blind,,partitive_of,both,Channel of the somethings happened.,,,0.046729
+12429,silly,blind,,coordination_with_adj,judgment,Something was old and silly.,,,0.046729
+12446,correspondent,blind,,fused_head,both,Someone saw correspondent.,,,0.046729
+12465,fifa,blind,,attributive,both,The fifa something happened.,,,0.046729
+12483,life,blind,,inflectional_comparison,both,Something was lifer than something else.,realized:comparative,,0.046729
+12485,life,blind,,enough_postposed,judgment,Something was life enough.,,,0.046729
+12512,approve,blind,,gerund_gap_complement,judgment,Something was approve doing.,,,0.046729
+12583,lasted,blind,,np_complement,both,Something was lasted something.,,,0.046729
+12584,lasted,blind,,gerund_gap_complement,judgment,Something was lasted doing.,,,0.046729
+12600,definitely,blind,,very_mod,both,Something was very definitely.,,,0.046729
+12670,tribe,blind,,fronting_pp,judgment,"Tribe something, something happened.",,,0.046729
+12671,tribe,blind,,stranding,judgment,The something that something was tribe __,,,0.046729
+12684,greatly,blind,,predeterminer_position,both,Greatly the something happened.,,,0.046729
+12685,greatly,blind,,determiner_function,both,Greatly something happened.,,,0.046729
+12708,curve,blind,,predeterminer_position,both,Curve the something happened.,,,0.046729
+12716,curve,blind,,become_complement,both,Something became curve.,,,0.046729
+12725,stuck,blind,,enough_postposed,judgment,Something was stuck enough.,,,0.046729
+12734,stuck,blind,,fused_head,both,Someone saw stuck.,,,0.046729
+12766,cornish,blind,,fronting_pp,judgment,"Cornish something, something happened.",,,0.046729
+12775,frederick,blind,,np_complement,both,Something was frederick something.,,,0.046729
+12783,frederick,blind,,partitive_of,both,Frederick of the somethings happened.,,,0.046729
+12796,burned,blind,,right_mod,judgment,Something was right burned.,,,0.046729
