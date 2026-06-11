@@ -121,11 +121,14 @@ def main():
     present = {cid: pos for pos, cid in enumerate(order, 1)}
 
     out = os.path.join(RESULTS, f"phase3_ratings_{args.judge}.csv")
-    done = set()
+    done = set()   # skip only OK cells; re-attempt missing on resume
     if os.path.exists(out):
         with open(out) as f:
             for r in csv.DictReader(f):
-                done.add(int(r["cell_id"]))
+                if r.get("status") == "ok":
+                    done.add(int(r["cell_id"]))
+    # NB: a resumed run may append a fresh row for a previously-missing cell;
+    # readers dedup by cell_id keeping status==ok (latest wins).
 
     todo = [cells[cid] for cid in order if cid not in done]
     if args.limit:
