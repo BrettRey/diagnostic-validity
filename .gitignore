@@ -24,6 +24,10 @@ results/*
 !results/phase3_fig_calibration.png
 !results/phase3_calibration_null.json
 !results/phase3_fig_calibration_null.png
+!results/phase3_headline.json
+!results/phase3_fig_verdict.png
+!results/phase3_fig_misfit.png
+!results/phase3_fig_projectibility.png
 !results/gold_coding_blind.csv
 !results/gold_coding_key.csv
 !results/gold_coding_order.json
