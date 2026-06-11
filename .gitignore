@@ -13,6 +13,11 @@ results/*
 !results/pilot_projectibility_bootstrap.csv
 !results/phase3_sample.csv
 !results/phase3_sample_manifest.json
+!results/phase3_grid_judgment.csv
+!results/phase3_gold_sample.csv
+!results/phase3_eyeball_50.csv
+!results/phase3_template_exceptions.md
+!results/phase3_instantiate_manifest.json
 paper/*.aux
 paper/*.bbl
 paper/*.bcf

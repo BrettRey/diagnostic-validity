@@ -1,0 +1,53 @@
+{
+  "phase": 3,
+  "step": "F5 instantiation + F6 gold",
+  "timestamp": "2026-06-11T10:37:09.049079+00:00",
+  "seed": 26,
+  "git_rev": "ed2b8909a17dabf9efcaf085394e21134285b5f4",
+  "versions": {
+    "python": "3.11.4",
+    "numpy": "2.1.3",
+    "scikit_learn": "1.6.1",
+    "pandas": "2.3.3"
+  },
+  "frames": {
+    "sample": {
+      "path": "results/phase3_sample.csv",
+      "sha256": "6b31ae9d6a3cc439ccfee11e8fb4cb1433122698af347aa2edc0fff81c060057"
+    },
+    "diagnostics": {
+      "path": "diagnostics.yaml",
+      "sha256": "4ac4b28488e6459df67ff55b4ba5f5e6cc0d9033e9de43dcdb30e7cf9ec4d25c"
+    }
+  },
+  "n_lexemes": 526,
+  "n_diagnostics": 24,
+  "deferred_diagnostics": [
+    "that_clause_complement",
+    "well_mod"
+  ],
+  "n_cells": 12624,
+  "cells_by_flag": {
+    "note_postpositive": 526,
+    "orthographic_un": 526,
+    "collision_enough": 2
+  },
+  "cells_needs_realization": {
+    "morphology+er": 526,
+    "morphology+ly": 526,
+    "morphology+ness": 526
+  },
+  "gold": {
+    "n": 600,
+    "pool": 12624,
+    "inclusion_prob": 0.04752851711026616,
+    "seed": 26,
+    "uniform": true,
+    "note": "Drawn BEFORE any rating (F6). Morphology-schema cells in the pool are realized per-lexeme before expert coding; gold-before-judge preserved (no judging yet)."
+  },
+  "eyeball": {
+    "n": 50,
+    "seed": 26,
+    "note": "second draw from the seed-26 stream after gold"
+  }
+}
