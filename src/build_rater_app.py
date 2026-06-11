@@ -38,6 +38,7 @@ INSTR = (run_judges.PROMPT.split("\n\nSentence:")[0].replace(
 
 TEMPLATE = r"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <title>Acceptability rating</title>
 <style>
  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:0 auto;padding:24px;color:#222;line-height:1.45}
