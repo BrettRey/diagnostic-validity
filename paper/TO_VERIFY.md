@@ -48,6 +48,17 @@ here; only the pm node RESOLVES them.
      chapter reports ~3% sign-reversal for the Linguistic Inquiry
      replication data, with subsequent replications at 0–6%. Use these
      real numbers (never "95%") once the chapter is read; see item 13.
+   - [RESOLVED 2026-06-10 — primary sources read; intake/sprouse_replication_rates.md].
+     Sprouse & Almeida 2012, *J. Linguistics* 48(3):609–652, DOI
+     10.1017/S0022226712000011 — "the minimum replication rate of these 469
+     data points is 98%" (Adger *Core Syntax*; 365 phenomena; 440 ppts; ZERO
+     reversed-direction results in the main analyses). Sprouse, Schütze &
+     Almeida 2013, *Lingua* 134:219–248, DOI 10.1016/j.lingua.2013.07.002 —
+     "a convergence rate of 95% … margin of error of 5.3–5.8%" (LI 2001–2010
+     random sample; range 86–99%; divergences 1–14%; 296 pts/148 phenomena;
+     936 ppts). CONSTRUCTS DIFFER: 98% = textbook replication; 95% = informal-
+     vs-formal convergence — do not merge into one figure. Both ready for bib
+     promotion. Supersedes the handbook plan (item 13 now optional).
 6. Prediction-powered inference — Angelopoulos et al., Science, ~2023.
 7. Design-based supervised learning — Egami et al. (NeurIPS?). Items 6-7
    gate the Study 2 methods text.
@@ -101,11 +112,43 @@ A. CGEL's actual classification of *worth* (adjective with exceptional
      reading) is CORRECT — CGEL = adjective. pm prior (~0.6 adj) confirmed
      and arguably understated. pm to rewrite §2.1, drop the ⟨VERIFY⟩, cite
      CGEL ch.7 §2.2.
+   - [CROSS-REF 2026-06-10 — Maling 1983 + Aarts 2007] Boundary-item picture
+     is a three-way disagreement, citable for §2.1/RQ3: Maling p.269 "*worth*
+     is a perfectly well-behaved preposition in modern English"; p.266 *near*
+     = "perhaps the only surviving relic of the class of transitive
+     adjectives" (so Maling: worth=P, near=A — the inverse of CGEL). Aarts
+     2007 §8.4.4: near is configuration-dependent ("Pace Maling, in the cases
+     where it is followed by an NP, near is a preposition"), and he quotes
+     CGEL 2002:609 that near is "highly exceptional… combining a number of
+     adjectival properties with those of the preposition." Reinforces §2.1's
+     "both verdicts discard stable, replicable facts as noise."
 B. Every `source:` field in diagnostics.yaml — confirm each diagnostic's
    canonical statement and location before the battery is frozen.
+   - [DRAFTED 2026-06-10 — see paper/item_B_verification.md]. 22/24
+     diagnostics sourced verbatim+pinpoint (CGEL chs 5/6/7/19, Maling 1983,
+     Matthews 2014; Aarts 2007 §8.4.4 corroborates the A/P battery, itself
+     CGEL's own H&P 2002:606). FLAGS for pm: (a) well_mod has NO valid source
+     (Maling has no *well worth*; CGEL cites *right*/*straight*) — drop or
+     supply; (b) coordination_with_adj still to locate (CGEL ch.15).
+     CORRECTIONS: gerund_gap_complement → CGEL hollow clauses (l.1935), not
+     Maling; un_prefix + ness_nominalization → CGEL ch.19 (§5.5.1/§5.1.1),
+     not ch.6. CANDIDATE ADDITION: the *enough*-position test (Maling p.263–
+     265; Aarts §8.4.4), Maling's one "purely syntactic" A/P diagnostic. pm
+     confirms rows + resolves the 2 flags → F5 battery gate clears.
 C. Matthews 2014 "diagnostics have drifted" characterization in §2.1 —
    re-read the relevant chapters and either support with specifics or
    soften.
+   - [READ 2026-06-10 — Matthews 2014; intake/matthews_2014_quotes.md].
+     Does NOT hold as framed. Matthews's "drift" is Sapir's drift of the
+     LANGUAGE (attributive/predicative *uses* diverging), p.173: "The drift,
+     in the sense of Sapir (1921), continues." He makes NO claim that
+     linguists' positional *diagnostics* were quietly reweighted. Milder
+     claims he DOES support: a one-time disciplinary retreat from necessary-
+     and-sufficient criteria to a "cluster of syntactic properties" for
+     central members (p.21); positional criteria give fuzzy boundaries where
+     "the evidence may be less than decisive" (p.24). RESOLUTION: pm to SOFTEN
+     / re-attribute the §2.1 sentence (drop "quietly reweighted", or re-ground
+     on p.21/p.24); keep ⟨VERIFY⟩ until rewritten.
 D. MegaAcceptability v2 normalization procedure details (gates the
    dichotomization step in Phase 1).
    - [READ 2026-06-10 — W&R 2020 §3, §4.3, App. B] W&R normalize with an
@@ -139,3 +182,16 @@ E. W&R 2020 factorization section — what was factorized and how it
      claim that W&R found "low-rank weak on this grid" stays OUT of §5 (pm
      self-correction confirmed). The LFA model does factorize a verb×frame
      Π, but its evaluation target and baseline differ from ours.
+
+F. §1 characterizes Aarts 2007 as defending "graded membership" — verify.
+   - [READ 2026-06-10 — Aarts 2007 §8.2; intake/aarts2007_verbatim_quotes.md
+     l.350]. MISCHARACTERIZATION. Aarts EXPLICITLY rejects graded class
+     membership: "I am not claiming that there are degrees of class
+     membership, as Zadeh has done: utter is as much an adjective as thin is;
+     it is merely less prototypically a member of that class." His view =
+     subsective gradience (graded PROTOTYPICALITY within sharply-bounded
+     classes) + intersective gradience (overlap of property-sets, "not …
+     an intersection of the categories themselves"). RESOLUTION: pm to change
+     §1 "graded membership" → "subsective gradience / graded prototypicality"
+     (outcome-neutral intro). The RQ4 prediction mapping (subsective gradience
+     → low-rank with graded scores) is unaffected and correct.

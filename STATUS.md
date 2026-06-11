@@ -48,8 +48,11 @@ sklearn 1.6.1 on this machine.
 
 2026-06-10 — Phase 1 complete: bib firewall restored, manifests versioned, W&R 2020 read, pre-registration logged, MegaAcceptability v2 analysed. Awaiting Phase 2 (pm).
 
-**RESUME HERE (2026-06-10, post-reset):** literature intake done; 5 source
-extracts saved in `intake/`; assembly into item B + TO_VERIFY pending. Full
-resume plan + key findings: **`intake/HANDOFF.md`**. Phase 3 frame frozen
-(prepositions stratum done); awaiting two pm file-drops (SUBTLEX-UK + Reynolds
-matrix → `data/`) before the F4 sampler can run.
+**STATE (2026-06-10):** literature intake DONE and assembled — item B drafted
+(`paper/item_B_verification.md`, 22/24 sourced), TO_VERIFY items B/C/5/A + new
+F updated, findings logged in DECISIONS. Raw verbatim extracts in `intake/`.
+Pending **pm**: confirm item-B rows + resolve 2 flags (well_mod, coordination);
+§1 Aarts wording + §2.1 Matthews/worth-near rewrites; promote Sprouse cites.
+Pending **build**: two file-drops (SUBTLEX-UK + Reynolds matrix → `data/`) to
+run the F4 sampler; web-methods cluster (Marsman/PPI/DSL/CoLA/vanderMaas) intake
+not yet fetched. (Earlier checkpoint detail: `intake/HANDOFF.md`.)
