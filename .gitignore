@@ -32,6 +32,10 @@ results/*
 !results/gold_coding_key.csv
 !results/gold_coding_order.json
 !results/gold_coding_responses.csv
+
+# External rater data -- named individual ratings; keep out of the public repo
+rater_app/responses/*.json
+
 paper/*.aux
 paper/*.bbl
 paper/*.bcf

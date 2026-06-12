@@ -23,8 +23,9 @@ Brett + Claude chat. PLAN.md governs; this file governs how you work.
 
 ## House style (paper text)
 
-- LaTeX; biblatex-APA. Linguistic objects in \textit{}; single quotes
-  only for meanings ('definite'); \enquote{} otherwise.
+- LaTeX; biblatex-APA. Linguistic objects (word-forms under discussion)
+  in \mention{} (titles stay \textit{}); single quotes only for meanings
+  ('definite'); \enquote{} otherwise.
 - En-dash with spaces for parentheticals (~-- like this~--), never
   em-dash. Oxford spelling (-ize). Contractions fine. Metric units.
 - Paragraphs ~60 words, max 100. No throat-clearing. Concrete before
